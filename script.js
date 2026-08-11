@@ -34,9 +34,7 @@ async function loadFilms() {
 
         films = data;
 
-        films.sort((a, b) => {
-            return b.year - a.year;
-        });
+        films.sort((a, b) => b.year - a.year);
 
         populateYears();
         renderFilms();
@@ -89,9 +87,7 @@ function getFilteredFilms() {
                 .toLowerCase()
                 .includes(searchTerm);
         })
-        .sort((a, b) => {
-            return b.year - a.year;
-        });
+        .sort((a, b) => b.year - a.year);
 }
 
 function createWatchOptions(sources, nowShowing) {
@@ -121,10 +117,7 @@ function createWatchOptions(sources, nowShowing) {
                 platformNames[type] ||
                 "No known source";
 
-            if (
-                type === "external" &&
-                source.url
-            ) {
+            if (type === "external" && source.url) {
                 return `
                     <a
                         class="platform external"
@@ -176,15 +169,33 @@ function createFilmCard(film, index) {
                 ${film.title}
             </div>
 
-            <div class="film-description">
+            <div
+                class="film-description"
+                data-full-text="${escapeAttribute(
+                    film.description || ""
+                )}"
+            >
                 ${film.description || ""}
             </div>
+
+            <button
+                class="see-more"
+                type="button"
+                data-target="description"
+            >
+                SEE MORE
+            </button>
 
             <div class="film-cast-label">
                 DIRECTOR
             </div>
 
-            <div class="film-cast">
+            <div
+                class="film-cast"
+                data-full-text="${escapeAttribute(
+                    film.director || ""
+                )}"
+            >
                 ${film.director || "Director information unavailable"}
             </div>
 
@@ -192,9 +203,22 @@ function createFilmCard(film, index) {
                 CAST
             </div>
 
-            <div class="film-cast">
+            <div
+                class="film-cast"
+                data-full-text="${escapeAttribute(
+                    film.cast || ""
+                )}"
+            >
                 ${film.cast || "Cast information unavailable"}
             </div>
+
+            <button
+                class="see-more"
+                type="button"
+                data-target="cast"
+            >
+                SEE MORE
+            </button>
 
             <div class="watch-label">
                 Where to watch:
@@ -231,7 +255,83 @@ function createFilmCard(film, index) {
         }
     );
 
+    setupSeeMore(card);
+
     return card;
+}
+
+function setupSeeMore(card) {
+    const buttons =
+        card.querySelectorAll(".see-more");
+
+    buttons.forEach(button => {
+        const targetType =
+            button.dataset.target;
+
+        const target =
+            targetType === "description"
+                ? card.querySelector(
+                    ".film-description"
+                )
+                : card.querySelector(
+                    ".film-cast"
+                );
+
+        if (!target) {
+            button.remove();
+            return;
+        }
+
+        /*
+            Check whether the text actually
+            exceeds three lines.
+        */
+
+        requestAnimationFrame(() => {
+            if (
+                target.scrollHeight <=
+                target.clientHeight + 1
+            ) {
+                button.remove();
+            }
+        });
+
+        button.addEventListener(
+            "click",
+            () => {
+
+                const expanded =
+                    target.classList.contains(
+                        "expanded"
+                    );
+
+                if (expanded) {
+                    target.classList.remove(
+                        "expanded"
+                    );
+
+                    button.textContent =
+                        "SEE MORE";
+
+                } else {
+                    target.classList.add(
+                        "expanded"
+                    );
+
+                    button.textContent =
+                        "SEE LESS";
+                }
+            }
+        );
+    });
+}
+
+function escapeAttribute(value) {
+    return String(value)
+        .replace(/&/g, "&amp;")
+        .replace(/"/g, "&quot;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;");
 }
 
 function renderFilms() {
@@ -250,17 +350,15 @@ function renderFilms() {
         return;
     }
 
-    filteredFilms.forEach(
-        (film, index) => {
-            const card =
-                createFilmCard(
-                    film,
-                    index
-                );
+    filteredFilms.forEach((film, index) => {
+        const card =
+            createFilmCard(
+                film,
+                index
+            );
 
-            filmsGrid.appendChild(card);
-        }
-    );
+        filmsGrid.appendChild(card);
+    });
 }
 
 yearFilter.addEventListener(
