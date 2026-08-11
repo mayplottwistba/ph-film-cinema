@@ -1289,6 +1289,219 @@
                     "type": "none"
                 }
             ]
+    },
+    {
+        "year": 2008,
+        "title": "100",
+        "poster": "assets/100.jpg",
+        "description": "With only three months left to live, a cancer patient compiles a list of tasks to complete before she dies.",
+        "cast": "Mylene Dizon, Eugene Domingo, Tessie Tomas, TJ Trinidad, Ryan Eigenmann, Simon Ibarra, Cecile Paz",
+        "director": "Chris Martinez",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "external",
+                    "url": "https://www.bilibili.tv/en/video/2040474195"
+                }
+            ]
+    },
+    {
+        "year": 2008,
+        "title": "Boses",
+        "poster": "assets/boses.jpg",
+        "description": "Boses (Voices) is the story of a musician named Ariel who offers violin lessons to a child of the slums. Through the violin, the abused child Onyok is able to get back his voice from a mute, desensitized existence. A violin teacher and his student, a mute 7-year old abused child in a shelter, develop a friendship stemming from their love of music.",
+        "cast": "Coke Bolipata, Julian Duque, Ricky Davao, Meryll Soriano, Tala Santos, Cherry Pie Picache",
+        "director": "Ellen Ongkeko-Marfil",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2008,
+        "title": "Brutus",
+        "poster": "assets/brutus.jpg",
+        "description": "Shot in Oriental Mindoro, Philippines, Brutus follows two kids smuggling logs from the mountains. It is about the journey that opens their eyes to a ‘world’ that is ruled by greed and torn by the political conflicts.",
+        "cast": "Ronnie Lazaro, Yul Servo, Timothy Castllo, Rhea Medina",
+        "director": "Tara Illenberger",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2008,
+        "title": "Concerto",
+        "poster": "assets/concerto.jpg",
+        "description": "Concerto is about how, in the last part of World War II, a special piano concert is held in the forest outside Davao City, in Mindanao.",
+        "cast": "Jay Aquitania, Meryll Soriano, Shamaine Buencamino, Nonoy Froilan, Elijah Castillo, Alyssa Lescano",
+        "director": "Paul Alexander Morales",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2008,
+        "title": "My Fake American Accent",
+        "poster": "assets/fake.jpg",
+        "description": "A slice-of-life workplace comedy following the lives of technical support call center agents in the span of six months. Speaking with a fake American accent is a prerequisite for the job. This ensemble comedy is an inside look into the maddening, sleep-deprived, caffeine-fuelled lives of those who ply their trade in the call center industry.",
+        "cast": "Mailes Kanapi, Jonathan Neri, Martin dela Paz, Cherry Mae Canton, Miro Valera, Tracy Abad, Maan Asuncion, Bidz de Leon, Vince de Jose, Jose Esguerra, Cenon Palamores",
+        "director": "Ned Trespeces",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2008,
+        "title": "Namets!",
+        "poster": "assets/namets.jpg",
+        "description": "Follows the flirtation between Manuel and Lourdes, two Negrosanon whose lives revolve around food. Along the way, we are treated to the full panorama of Negrosanon cuisine and the idiosyncrasies of Negrosanon eating.",
+        "cast": "Christian Vasquez, Angel Jacob, Peque Gallaga, Dwight Gaston, Monsour Del Rosario, JM Rodriguez, John Arceo, Joel Torre, Ronnie Lazaro",
+        "director": "Jay Abello",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "external",
+                    "url": "https://www.bilibili.tv/en/video/2043055727"
+                }
+            ]
+    },
+    {
+        "year": 2008,
+        "title": "Ranchero",
+        "poster": "assets/ranchero.jpg",
+        "description": "Ranchero unfolds in a small provincial jail in Rizal. It’s about Ricardo whose last day in jail is today. He and his close friend Miyong work in the jail’s kitchen. The two spent the whole morning talking about Ricardo’s plans when he gets out of jail.",
+        "cast": "Archie Adamos, Garry Lim, Joselito Carascal, Robert Correa, Edwin Pamanian, Jess Evardone, Moises Joy Magisa, Perry Escaño, Luigi Nacario, Daniel Magisa, Tony Leyba, Diosdado Finez Jr., Abel Napuran, Ronald S. Solidum, Miller Enverga Ursolino, Ian Gaya, Jack Nanta",
+        "director": "Michael Christian Cardoz",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2009,
+        "title": "24K",
+        "poster": "assets/24k.jpg",
+        "description": "Manok is a middle-class treasure hunter who’s been digging for Japanese treasure for years. He and his companions are in the final stage of their current site in the mountains of Suyo, Ilocos Sur, an area reputed as a Japanese stronghold during World War II.",
+        "cast": "Julio Diaz, Archi Adamos, Jojit Lorenzo, Archristian Galura, Miguel Vasquez, Andoy Ranay",
+        "director": "Ana Agabin",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2009,
+        "title": "Colorum",
+        "poster": "assets/colorum.jpg",
+        "description": "After spending thirty years in prison, Pedro (Lou Veloso), aging and obviously clueless as to what has become of the world outside the penitentiary, is finally freed.",
+        "cast": "Lou Veloso, Alfred Vargas, Archie Adamos, Jose Mari Avellana",
+        "director": "Jobin Ballesteros",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2009,
+        "title": "Dinig Sana Kita (If I Knew What You Said)",
+        "poster": "assets/dinig.jpg",
+        "description": "Deaf dancing boy meets troubled rocker chick in a Baguio camp for Deaf and hearing kids where find that they have more in common with each other including a love for music.",
+        "cast": "Lou Veloso, Alfred Vargas, Archie Adamos, Jose Mari Avellana",
+        "director": "Mike Sandejas",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2009,
+        "title": "Engkwentro",
+        "poster": "assets/engkwentro.jpg",
+        "description": "Two teenage brothers are attempting to escape an unnamed city controlled by an iron-fisted mayor. They must first break away from the cycle of crime, while trying to run from rival gang leaders and the state’s murderous vigilantes.",
+        "cast": "Felix Roco, Daniel Medrana, Eda Nolan, Zyrus Desamprado, Bayang Barrios, Celso Ad Castillo",
+        "director": "Pepe Diokno",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "external",
+                    "url":"https://www.bilibili.tv/en/video/2043509629"
+                }
+            ]
+    },
+    {
+        "year": 2009,
+        "title": "Last Supper No. 3",
+        "poster": "assets/supper.jpg",
+        "description": "Assistant Production Designer Wilson Nañawa is tasked to look for a Last Supper to use as a prop for a TV commercial. He finds three, but loses the one owned by Gareth Pugeda.",
+        "cast": "Joey Paras, Jojit Lorenzo, JM de Guzman, Beverly Salviejo, Debraliz Valesote, Dante Balois, Ness Roque, Andoy Ranay, Cecile Torre, Marlon Hofer, Rommel Luna, Malou Crisologo, Mark Meily, Bernard Laxa, Maricel Soriano, Alex Tiglao, Gina Lumauig, Kalila Aguilos, Jason Moss, Rita Iringan, Liza Lorena, Ronli Vergel de Dios, Ricky Davao",
+        "director": "Veronica B. Velasco",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2009,
+        "title": "Ang Nerseri",
+        "poster": "assets/nerseri.jpg",
+        "description": "Cocoy, 12, takes on a great responsibility of taking care of his older siblings while his mother, Mai, goes to the province to get money to pay the expensive hospital bills for her three mentally sick children.",
+        "cast": "Timothy Mabalot, Jaclyn Jose, Lance Raymundo, Alwyn Uytingco, Claudia Enriquez, Ynes Veneracion, Tony Mabesa",
+        "director": "Vic Acedillo Jr.",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2009,
+        "title": "Sanglaan (The Pawnshop)",
+        "poster": "assets/sanglaan.jpg",
+        "description": "Follows the lives of four different people, each linked to the other by the house of business.",
+        "cast": "Tessie Tomas, Ina Feleo, Joem Bascon, Neil Carme Sanchez, Mica Torre, Karla Pambid, Giovanni Baldesseri",
+        "director": "Milo Sogueco",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+     {
+        "year": 2009,
+        "title": "Astig",
+        "poster": "assets/astig.jpg",
+        "description": "Four men, four stories, all intersect in Manila. Episode one is about Ariel, a con-man. Episode two is about Boy, an expectant father. In the third episode, Ronald goes to Manila to sell a building. And in the fourth story Baste saves his sister from Ariel.",
+        "cast": "Dennis Trillo, Sid Lucero, Arnold Reyes, Edgar Allan Guzman, Glaiza De Castro",
+        "director": "G.B. Sampedro",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=j0PYbKUKfHM"
+                }
+            ]
     }
-    
 ]
