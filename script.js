@@ -394,4 +394,17 @@ searchInput.addEventListener(
     renderFilms
 );
 
+const developerModal =
+    document.getElementById("developerModal");
+
+const developerClose =
+    document.getElementById("developerClose");
+
+developerClose.addEventListener(
+    "click",
+    () => {
+        developerModal.style.display = "none";
+    }
+);
+
 loadFilms();
