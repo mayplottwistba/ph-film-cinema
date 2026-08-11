@@ -80,7 +80,6 @@
         "director": "May-i Guia Padilla",
         "now_showing": true
     },
-
     {
         "year": 2013,
         "title": "Ekstra (The Bit Player)",
@@ -93,6 +92,66 @@
                 {
                     "type": "youtube",
                     "url": "https://www.youtube.com/watch?v=GO6F1l-L9d4"
+                }
+            ]
+    },
+    {
+        "year": 2018,
+        "title": "ML",
+        "poster": "assets/ml.jpg",
+        "description": "Carlo, an unapologetically millennial college jock, thinks that Martial Law wasn’t all that bad. No one in his family had anything bad to say about it, all he’s ever read are online posts on human rights violations. Confronted by a frustrated History professor, Carlo sets out to prove he is right and looks for someone who lived through that period to tell the tale.",
+        "cast": "Eddie Garcia, Tony Labrusca, Lianne Valentin, Henz Villaraiz, Jojit Lorenzo, Rafa Siguion-Reyna, Chanel Latorre, Chrome Cosio, Richard Manabat, Maritess Joaquin, Kino Rementilla, Jindric Macapagal, Rein Adriano, Khalifa Floresta, Mila Talagtag",
+        "director": "Benedict Mique",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=ZYpNhcHi85I&pp=ygUHTUwgMjAxOA%3D%3D"
+                }
+            ]
+    },
+    {
+        "year": 2018,
+        "title": "Liway",
+        "poster": "assets/liway.jpg",
+        "description": "The true story of a young mother who uses story-telling to protect her child from the reality of growing up in prison and the difficult life she endured.",
+        "cast": "Glaiza de Castro, Dominic Roco, Kenken Nuyad, Sue Prado, Soliman Cruz, Joel Saracho, Paolo O’Hara, Madeleine Nicolas, Ebong Joson, Nico Antonio, Gerry Cornejo, Diana Alferez, Julie Bautista, Pau Benitez, Liway Gabo, She Maala, Renante Bustamante",
+        "director": "Kip Oebanda",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=jVzF8xqctco&t=2149s&pp=ygUFbGl3YXk%3D"
+                }
+            ]
+    },
+    {
+        "year": 2005,
+        "title": "Ang Pagdadalaga ni Maximo Oliveros",
+        "poster": "assets/maximo.jpg",
+        "description": "Maxi, a boy on the cusp of his teens, is already comfortable with his homosexual feelings, with acceptance from his family. When Maxi is assaulted one evening, Victor, a police officer, comes to his aid. Maxi soon develops a crush on Victor, who shows a platonic affection for the young lad.",
+        "cast": "Nathan Lopez, Soliman Cruz, Neil Ryan Sese, Ping Medina, JR Valentin, Bodjie Pascua, Elmo Redrico, Ivan Camacho, Lucito Lopez, Jett Desalesa, Anastacio Cruz, Roychell Torre, Peter Anthony Tumbaga, Edwin Pamanian, Rodney Luengu, Claudine Najera, Rebecca Padilla, Arnold Cruz, Julius Ray Caringal, Buck Harold Pago, Remedios Calinangan, Pepe Smith",
+        "director": "Kanakan-Balintagos",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=mYDe6o_oa08"
+                }
+            ]
+    },
+    {
+        "year": 2013,
+        "title": "Babagwa",
+        "poster": "assets/babagwa.jpg",
+        "description": "An Internet scammer falls in love with a wealthy old maid while trying to swindle her using a fake Facebook profile.",
+        "cast": "Alex Medina, Joey Paras, Alma Concepcion, Kiko Matos, Nico Antonio, Chanel Latorre, Marx Topacio, Raqs Regalado, Gary Lim, Sunshine Teodoro, Menggie Cobarrubias, Vicky Vega-Cabigting, Earl Policarpio, Aurel Ayson, Clarence Ayuyao, Bong Russo, Aaron Agustin, Julie Mae Barrios, Jhayz Cariazo, Gerard Garcia, Lester Paul Lacson, Marlon Del Rosario, Jerick Rodriguez, Clarklouis Sanchez, Reiniel Troy Mercado, Elison Kalel Ramos, Steven Brent Santuangco, Sheree Dwayne Torres, Nessa Rae Trinidad, Angela Cassandra Serrano, Angela Chloe Amio, Zephrine Dane Cura",
+        "director": "Jason Paul Laxamana",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=u0QoSWIZL1k"
                 }
             ]
     }
