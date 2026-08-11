@@ -154,5 +154,50 @@
                     "url": "https://www.youtube.com/watch?v=u0QoSWIZL1k"
                 }
             ]
+    },
+    {
+        "year": 2013,
+        "title": "Instant Mommy",
+        "poster": "assets/instant-mommy.webp",
+        "description": "Instant Mommy follows the story of Bechayda, a two-months-pregnant wardrobe assistant for TV commercial production. In the fear of losing her Japanese lover and her dreams of a better life, she embarks on a plan that will get herself out of her predicament. Or so she thinks.",
+        "cast": "Eugene Domingo, Yuki Matsuzaki, Adrian Alandy, Rico J. Puno, Tuesday Vargas, Shamaine Buencamino, Aaron Ching, Matt Evans, Nicco Manalo, Earl Ignacio, Jojit Lorenzo, Delphine Buencamino, Mitoy Sta. Ana, Dudz Teraña, Nico Antonio, Angel Aquino, Anne Feo, Madeleine Nicolas, Suzette Ranillo, Kiel Rodriguez",
+        "director": "Leo Abaya",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=Nz7scr8xn_g"
+                }
+            ]
+    },
+    {
+        "year": 2012,
+        "title": "Mga Mumunting Lihim",
+        "poster": "assets/lihim.jpg",
+        "description": "After Mariel's death, her best friend receoves her diaries. Ignoring warnings from their friends, Carla reads and discovers shocking truths about their long friendship. ",
+        "cast": "Judy Ann Santos, Janice de Belen, Iza Calzado, Agot Isidro, Lui Manansala, Madeleine Nicolas, Roeder Camañag, Gino Dela Pena, Kim Rodriguez, Mikylla Ramirez",
+        "director": "Jose Javier Reyes",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=xogDnUbkKPc"
+                }
+            ]
+    },
+    {
+        "year": 2014,
+        "title": "1st Ko Si 3rd",
+        "poster": "assets/3rd.webp",
+        "description": "The film is about a 65-year old retiree Cory who gets reunited with her 1st love and finally, the supposed date happens 5 decades after they got separated. ",
+        "cast": "Nova Villa, Dante Rivero, Freddie Webb, Ruby Ruiz, Lara Morena, RJ Agustin, Denise Barbacena, Coleen Borgonia, Ken Chan, Dennis Marasigan",
+        "director": "Real Florido",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=oyLZvRZvDvk"
+                }
+            ]
     }
 ]
