@@ -615,6 +615,271 @@
                     "type": "netflix"
                 }
             ]
+    },
+    {
+        "year": 2016,
+        "title": "Mercury is Mine",
+        "poster": "assets/mercury.jpg",
+        "description": "Carmen, a middle-aged cook, is about to close down her eatery at the foot of Mt. Arayat when a white American teenage boy named Mercury approaches her and begs for work in exchange of nothing but shelter.",
+        "cast": "Marietta Subong, Bret Jackson, Vincent de Jesus, Lee O'Brian, Maey Bautista, Bea Vega, Mitzi Ong, Liya Sarmiento, Justine Dizon, Waka Hasegawa, Uzziel Delamide, Kristof Garcia",
+        "director": "Jason Paul Laxamana",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "juanflix"
+                }
+            ]
+    },
+    {
+        "year": 2014,
+        "title": "Dagitab",
+        "poster": "assets/dagitab.jpg",
+        "description": "A crumbling marriage between two professors takes a strange turn: the wife is entangled in a scandal with a young student, while her husband falls in love with a deity appearing as the ghost of an old flame.",
+        "cast": "Eula Valdez, Nonie Buencamino, Ronnie Lazaro, Max Eigenmann, Martin del Rosario, Sandino Martin, Rolando Inocencio, Frances Ignacio, Pepe Herrera, Aaron Abion",
+        "director": "Giancarlo Abrahan",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "juanflix"
+                }
+            ]
+    },
+    {
+        "year": 2019,
+        "title": "John Denver Trending",
+        "poster": "assets/john-denver-trending.jpg",
+        "description": "A fourteen-year-old farm boy’s life is suddenly upended when a video of him brutally attacking a classmate goes viral.",
+        "cast": "Jansen Magpusao, Meryll Soriano, Glenn Mas, Sammy Rubido, Vince Philip Alegre, Jofranz Ambubuyog, Christian Alarcon, Zandro Leo Canlog, Andy Yuarata, Ricky Perez, Renato Sagot, Enrique Sanchez, Janet Samulde, Elmer Yuarata, Eldin Labris, Sunshine Teodoro, Luz Venus, Estela Patino, Joerlyn Samulde, Akia Buenaflor, Shan Estoya, Jinalyn Tandoy",
+        "director": "Arden Rod Condez",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "juanflix"
+                }
+            ]
+    },
+    {
+        "year": 2023,
+        "title": "Gitling (Hyphen)",
+        "poster": "assets/gitling.jpg",
+        "description": "While creating the subtitles of a film, a young Filipina translator and a middle-aged Japanese director test the limits of language and understanding.",
+        "cast": "Gabby Padilla, Ken Yamamura, Emmanuel Dela Cruz, Carlos Sison",
+        "director": "Jopy Arnaldo",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "juanflix"
+                }
+            ]
+    },
+    {
+        "year": 2012,
+        "title": "Bwakaw",
+        "poster": "assets/bwakaw.jpg",
+        "description": "Gruff retiree Rene rejects most human contact, but begins to soften once he comes to terms with his homosexuality.",
+        "cast": "Eddie Garcia, Rez Cortez, Joey Paras, Soxy Topacio, Armida Siguion-Reyna, Bibeth Orteza, Beverly Salviejo, Luz Valdez, Gardo Versoza, Allan Paule, Soliman Cruz, Roni Bertubin, May-i Fabros, Jonathan Neri",
+        "director": " Jun Robles Lana",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "juanflix"
+                }
+            ]
+    },
+    {
+        "year": 2024,
+        "title": "Tumandok",
+        "poster": "assets/tumandok.jpg",
+        "description": "According to legend, an Ati chieftain traded their land to Bornean datus for a gold necklace and hat, leaving the mountains to the Atis. Today, even those are threatened and violently seized.",
+        "cast": "Jenaica Sangher, Felipe Ganancial, Ariel Barba, Arnel Barba, Alicia Ganancial, Ronnie Elosendo, Rowena Casten, Susan Casten, Noel Palacios, Erlino Elosendo, Domingga Eno, Jay Trenas",
+        "director": "Richard Salvadico, Arlie Sumagaysay",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "juanflix"
+                }
+            ]
+    },
+    {
+        "year": 2012,
+        "title": "Aparisyon",
+        "poster": "assets/aparisyon.jpg",
+        "description": "In a remote forest convent, nuns live a quiet life of prayer and chores until Marcos declares martial law. As political violence reaches them, their isolation is shattered, testing their faith and conscience.",
+        "cast": "Mylene Dizon, Jodi Sta. Maria, Raquel Villavicencio, Fides Cuyugan-Asensio, Rustica Carpio, Star Orjaliza, Madeleine Nicolas, Al Gatmaitan, Angelita Raymundo, Antonette Garcia, Irene Celebre, Maria Monica Reyes, Regina De Vera, Ellen Rowy, Wilma Olivar, Caroleen Joy Ileto, Amante Pulido, Danny Carolino, Constancio Gan, John Relucio, Shielbert Manuel, Rey Peru, Jose Gallego, Bobby Tamayo, Moises Magisa, John Christian Dela Cruz, Ces Aldaba, Louise Gupit, Katrina Corda, Kimberly Legaspi, Joan Guevara, Michelle Cruz, Joyce Bargan, Patricia 'Star' Meneses, Garry Lim, Jojo Riguera, Jessie Morena, Rolly Saquilabon",
+        "director": "Isabel Sandoval",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "juanflix"
+                }
+            ]
+    },
+    {
+        "year": 2011,
+        "title": "Ang Sayaw ng Dalawang Kaliwang Paa",
+        "poster": "assets/kaliwa.jpg",
+        "description": "An unconventional love triangle that springs from a college student’s infatuation with his much older dance teacher. Wanting her attention, he asked the class beadle for dance training. Little did he know that he is in love with him.",
+        "cast": "Paulo Avelino, Rocco Nacino, Jean Garcia",
+        "director": "Alvin Yapan",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "juanflix"
+                }
+            ]
+    },
+    {
+        "year": 2011,
+        "title": "Isda",
+        "poster": "assets/isda.jpg",
+        "description": "Living in poverty in a garbage dump, childless couple Miguel and Lina become celebrities when Lina miraculously gives birth to a fish. As fame divides them, the story examines how they cope with their strange miracle.",
+        "cast": "Cherry Pie Picache, Bembol Roco, Anita Linda, Rosanna Roces, Angel Aquino, Allan Paule, Arnold Reyes, Evelyn Vargas",
+        "director": "Adolfo Alix, Jr.",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "juanflix"
+                }
+            ]
+    },
+    {
+        "year": 2017,
+        "title": "Kiko Boksingero",
+        "poster": "assets/kiko-boksingero.jpg",
+        "description": "Kiko, an 11-year-old boy left aimlessly alone with his nanny after the recent death of his mother, rekindles a long lost relationship with his father in an attempt to find a new lease on life.",
+        "cast": "Noel Comia Jr., Yayo Aguila, Yul Servo, JM Canlas, Denise Soliva, William Buenavente",
+        "director": "Thop Nazareno",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "juanflix"
+                }
+            ]
+    },
+    {
+        "year": 2013,
+        "title": "Debosyon",
+        "poster": "assets/debosyon.jpg",
+        "description": "Mando, a devotee of the Virgin of Peñafrancia, injures himself in the forest and is nursed by Salome, with whom he falls in love. When she refuses to leave due to a curse and a devastating secret, Mando turns to his faith to break it.",
+        "cast": "Paulo Avelino, Mara Lopez",
+        "director": "Alvin B. Yapan",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "juanflix"
+                }
+            ]
+    },
+    {
+        "year": 2005,
+        "title": "Pepot Artista",
+        "poster": "assets/debosyon.jpg",
+        "description": "A comedy-musical about a ten-year-old Pepot who dreams to be a movie star. Coming from a poor family, he overcomes adversity to have a chance at fulfilling his dream.",
+        "cast": "Elijah Castillo, Rio Locsin, Cris Villanueva, Epy Quizon, Bituin Escalante, Joy Soler-de Castro, Nonie Buencamino, Shiela Mae Junsay, Cedrick Lamberte, Jian Pascual, Niña Joyel de Jesus, Tado, Lou Veloso, Yoyoy Villame, Ces Quesada, Nina Medina, Missy Maramara, Josel Batil, Jasper Clarence Ferrer, Jeon Macatangay, Nelson Evangelista, Jascha Borlas, Jonelle Francisco, Kristoffer Orbina, Robert Carl Arrojo, Richard Macaroyo, Mary Antonette Olmoguez, Emhel Sario, Joy Ann de Vera, Kate Nicole Tengco, Yvez Bañaga, Christian Macalinao, Sherwin Layoso, Cherry Lambarte, Grace Castillo, Ramon del Prado, Piah Luna, John Lawrence Layoso, Jobert Salvador, Michael Kho Lim, Melanie Casul, Joni Cham, Boots Anson-Roa, Ricky Davao, Butch Francisco, Jose Javier Reyes, Roxlee, Lourd De Veyra, Amante del Mundo, Vim Nadera, Joe Jardi, Rey Langit, Joel Torre, Tirso Cruz III",
+        "director": "Clodualdo del Mundo Jr.",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "juanflix"
+                }
+            ]
+    },
+    {
+        "year": 2008,
+        "title": "Jay",
+        "poster": "assets/jay.jpg",
+        "description": "In the film, two protagonists named Jay—one living, one dead—intersect when the living Jay makes a documentary about the murdered gay teacher. As he uncovers his subject’s hidden life and secret love, his own life begins to unravel.",
+        "cast": "Baron Geisler, Coco Martin, Flor Salanga, Angelica Rivera, Rjay Payawal, JC Santos",
+        "director": "Francis Xavier Pasion",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "juanflix"
+                }
+            ]
+    },
+    {
+        "year": 2009,
+        "title": "Ang Panggagahasa kay Fe",
+        "poster": "assets/fe.jpg",
+        "description": "Fe returns to the Philippines and her abusive husband Dante. Caught between him and her affair with weak factory manager Arturo, plus an unknown admirer, she fights desperately for independence.",
+        "cast": "Irma Adlawan, TJ Trinidad, Nonie Buencamino, Meeyo Candelaria, Joel Molina, Mercedes Cabral, Jerry Respeto, Morny de Guzman, Fonz Deza, Jessica Junio, Paolo Sanz",
+        "director": "Alvin Yapan",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "juanflix"
+                }
+            ]
+    },
+    {
+        "year": 2014,
+        "title": "Bwaya",
+        "poster": "assets/bwaya.jpg",
+        "description": "Divina searches the Agusan marshlands for her daughter Rowena, attacked by a crocodile on her 13th birthday. She discovers not all predators live underwater. Based on true events.",
+        "cast": "Angeli Bayani, Karl Medina, R.S. Francisco, Jolina Salvado",
+        "director": "Francis Pasion",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "juanflix"
+                }
+            ]
+    },
+    {
+        "year": 2014,
+        "title": "K'na, The Dreamweaver",
+        "poster": "assets/kna.jpg",
+        "description": "When Kana, a young T’boli woman, becomes a dreamweaver, she has the chance to weave together her village’s warring clans. But, will she give up true love to do so?",
+        "cast": "Mara Lopez, RK Bagatsing, Erlinda Villalobos, Nonie Buencamino, Bembol Roco, Alex Medina, Hazel Ann Sulan, Sarah Jane Cayugan, Michelle Manuel, Janelyn Dalisan",
+        "director": "Ida Anita del Mundo",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "juanflix"
+                }
+            ]
+    },
+    {
+        "year": 2017,
+        "title": "Nabubulok",
+        "poster": "assets/nabubulok.jpg",
+        "description": "A husband takes flight when his wife goes missing.",
+        "cast": "Gina Alajar, Billy Ray Gallion, Jameson Blake, Elaine Yu, Lito Pimentel, Jerom Canlas, Sue Prado, Krystal Mejes, Dannah Cardoza, Jojo Riguerra, Lao Rodriguez, Raul Morit, JC Santos",
+        "director": "Sonny Calvento",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "juanflix"
+                }
+            ]
+    },
+    {
+        "year": 2014,
+        "title": "Kasal",
+        "poster": "assets/kasal.jpg",
+        "description": "Kasal is a slice of life drama of a gay couple whose resolve to stay together is challenged as they attend a wedding. It also is an examination on how a gay couple navigates through the different institutions in Philippine society.",
+        "cast": "Oliver Aquino, Arnold Reyes, Rita Avila, Maureen Mauricio, Rener Concepcion, Ruby Ruiz, Ron Cieno, Chloe Carpio",
+        "director": "Joselito Altarejos",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "juanflix"
+                }
+            ]
+    },
+    {
+        "year": 2023,
+        "title": "Huling Palabas",
+        "poster": "assets/palabas.jpg",
+        "description": "In the summer of 2001, 16-year-old Andoy searches for his long-lost father in the most unlikely of things — VHS tapes. His reality becomes mystified when two movie-like characters appear in their small hometown.",
+        "cast": "Shun Mark Gomez, Bon Andrew Lentejas, Cedrick Juan, Serena Magiliw, Jay Gonzaga, Senanda Gomez, Adelyn Fabon, Glenn Mas",
+        "director": "Ryan Machado",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "juanflix"
+                }
+            ]
     }
-           
 ]
