@@ -129,59 +129,46 @@ function getFilteredFilms() {
         );
 
 }
+function createWatchOptions(sources, nowShowing) {
 
+    let html = "";
 
-function createWatchOptions(
-    sources
-) {
+    if (nowShowing) {
+        html += `
+            <span class="platform now-showing">
+                NOW SHOWING
+            </span>
+        `;
+    }
 
-    return sources
-        .map(
-            source => {
+    html += sources
+        .map(source => {
 
-                const type =
-                    source.type;
+            const type = source.type;
+            const name = platformNames[type] || "No known source";
 
-                const name =
-                    platformNames[type]
-                    || "No known source";
-
-                if (
-                    type === "external"
-                    &&
-                    source.url
-                ) {
-
-                    return `
-                        <a
-                            class="
-                                platform
-                                external
-                            "
-                            href="${source.url}"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            ${name}
-                        </a>
-
-                    `;
-
-                }
-
+            if (type === "external" && source.url) {
                 return `
-                    <span
-                        class="
-                            platform
-                            ${type}
-                        "
+                    <a
+                        class="platform external"
+                        href="${source.url}"
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
                         ${name}
-                    </span>
+                    </a>
                 `;
             }
-        )
+
+            return `
+                <span class="platform ${type}">
+                    ${name}
+                </span>
+            `;
+        })
         .join("");
+
+    return html;
 }
 
 function createFilmCard(
@@ -197,9 +184,10 @@ function createFilmCard(
         "film-card";
 
     const watchOptions =
-        createWatchOptions(
-            film.watch || []
-        );
+    createWatchOptions(
+        film.watch || [],
+        film.now_showing
+    );
 
     card.innerHTML = `
         <!-- POSTER -->
