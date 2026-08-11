@@ -16,17 +16,27 @@ body {
 }
 
 .platform.youtube {
-    background: red;
-    color: red;
-    border-color: #ff0000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 55px;
+    height: 22px;
+    padding: 0 8px;
+    background: #ff0000 !important;
+    color: #fff !important;
+    border: 1px solid #ff0000 !important;
+    font-family: monospace;
+    font-size: 8px;
+    font-weight: 900;
+    text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
 }
 
 .platform.youtube:hover {
-    background: #111;
-    color: #fff;
-    border-color: #111;
+    background: #cc0000 !important;
+    color: #fff !important;
+    border-color: #cc0000 !important;
 }
 
 .container {
