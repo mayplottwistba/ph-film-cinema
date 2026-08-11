@@ -186,16 +186,11 @@ function createFilmCard(film, index) {
                 SEE MORE
             </button>
 
-            <div class="film-cast-label">
+            <div class="film-director-label">
                 DIRECTOR
             </div>
 
-            <div
-                class="film-cast"
-                data-full-text="${escapeAttribute(
-                    film.director || ""
-                )}"
-            >
+            <div class="film-director">
                 ${film.director || "Director information unavailable"}
             </div>
 
@@ -268,24 +263,24 @@ function setupSeeMore(card) {
         const targetType =
             button.dataset.target;
 
-        const target =
-            targetType === "description"
-                ? card.querySelector(
+        let target;
+
+        if (targetType === "description") {
+            target =
+                card.querySelector(
                     ".film-description"
-                )
-                : card.querySelector(
+                );
+        } else if (targetType === "cast") {
+            target =
+                card.querySelector(
                     ".film-cast"
                 );
+        }
 
         if (!target) {
             button.remove();
             return;
         }
-
-        /*
-            Check whether the text actually
-            exceeds three lines.
-        */
 
         requestAnimationFrame(() => {
             if (
@@ -299,7 +294,6 @@ function setupSeeMore(card) {
         button.addEventListener(
             "click",
             () => {
-
                 const expanded =
                     target.classList.contains(
                         "expanded"
@@ -350,15 +344,17 @@ function renderFilms() {
         return;
     }
 
-    filteredFilms.forEach((film, index) => {
-        const card =
-            createFilmCard(
-                film,
-                index
-            );
+    filteredFilms.forEach(
+        (film, index) => {
+            const card =
+                createFilmCard(
+                    film,
+                    index
+                );
 
-        filmsGrid.appendChild(card);
-    });
+            filmsGrid.appendChild(card);
+        }
+    );
 }
 
 yearFilter.addEventListener(
