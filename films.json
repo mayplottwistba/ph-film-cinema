@@ -1,0 +1,125 @@
+[
+    {
+        "year": 2026,
+        "title": "2 Valid IDs",
+        "poster": "posters/2-valid-ids.jpeg",
+        "description": "Sylvia, a poor farmer, is unable to claim the money sent to her because she lacks the required two valid IDs. In her struggle to secure the IDs, Sylvia finds herself in a situation that challenges her character, beliefs, and morality.",
+        "cast": "Cast Member 1, Cast Member 2, Cast Member 3",
+        "watch": [
+            {
+                "type": "netflix"
+            },
+            {
+                "type": "ccp"
+            }
+        ]
+    },
+
+    {
+        "year": 2026,
+        "title": "A.ni.mál",
+        "poster": "posters/animal.jpg",
+        "description": "In a provincial Philippine town, the naïve daughter of the mayor comes home with a video of a powerful family friend abusing his dog.",
+        "cast": "Cast Member 1, Cast Member 2, Cast Member 3",
+        "watch": [
+            {
+                "type": "juanflix"
+            },
+            {
+                "type": "external",
+                "url": "https://example.com/animal"
+            }
+        ]
+    },
+
+    {
+        "year": 2026,
+        "title": "Ganggang",
+        "poster": "posters/ganggang.jpg",
+        "description": "At the first clash of their fighting spiders, Ilay and Ten-ten knew they would go home as losers. Anton, the winner of the fight, will once again lord over their school.",
+        "cast": "Cast Member 1, Cast Member 2, Cast Member 3",
+        "watch": [
+            {
+                "type": "ccp"
+            },
+            {
+                "type": "external",
+                "url": "https://example.com/ganggang"
+            }
+        ]
+    },
+
+    {
+        "year": 2026,
+        "title": "Hand of God",
+        "poster": "posters/hand-of-god.jpg",
+        "description": "In a remote village scarred by years of conflict, a young army lieutenant introduces football to children. As the game begins to heal wounds and rebuild trust, he forms a fragile bond with a child soldier.",
+        "cast": "Cast Member 1, Cast Member 2, Cast Member 3",
+        "watch": [
+            {
+                "type": "netflix"
+            },
+            {
+                "type": "external",
+                "url": "https://example.com/hand-of-god"
+            }
+        ]
+    },
+
+    {
+        "year": 2025,
+        "title": "Previous Film",
+        "poster": "posters/previous-film.jpg",
+        "description": "An example film from a previous festival year.",
+        "cast": "Actor 1, Actor 2, Actor 3",
+        "watch": [
+            {
+                "type": "none"
+            }
+        ]
+    },
+
+    {
+        "year": 2024,
+        "title": "Another Film",
+        "poster": "posters/another-film.jpg",
+        "description": "Another example full-length film.",
+        "cast": "Actor 1, Actor 2",
+        "watch": [
+            {
+                "type": "netflix"
+            },
+            {
+                "type": "external",
+                "url": "https://example.com/another-film"
+            }
+        ]
+    },
+
+    {
+        "year": 2007,
+        "title": "Old Festival Film",
+        "poster": "posters/old-film.jpg",
+        "description": "An example film from the 2007 festival.",
+        "cast": "Actor 1, Actor 2",
+        "watch": [
+            {
+                "type": "none"
+            }
+        ]
+    },
+
+    {
+        "year": 2005,
+        "title": "First Example Film",
+        "poster": "posters/first-film.jpg",
+        "description": "An example film from the 2005 festival.",
+        "cast": "Actor 1, Actor 2",
+        "watch": [
+            {
+                "type": "external",
+                "url": "https://example.com/first-film"
+            }
+        ]
+    }
+]
