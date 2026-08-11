@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cinemalaya Films</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <main class="container">
+
+        <header class="films-header">
+            <div class="header-title">
+                <div class="section-label">
+                    CINEMALAYA FILMS
+                </div>
+
+                <h1>
+                    ARCHIVES
+                </h1>
+
+            </div>
+
+            <div class="film-filters">
+
+                <select
+                    id="yearFilter"
+                    class="year-filter">
+                    <option value="all">
+                        All
+                    </option>
+
+                </select>
+
+                <div class="search-wrap">
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        class="search-input"
+                        placeholder="SEARCH FILM TITLE..."
+                        autocomplete="off">
+                    <span class="search-icon">
+                        /
+                    </span>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div
+                id="filmsGrid"
+                class="films-grid"
+            ></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
