@@ -16,7 +16,7 @@ body {
 }
 
 .platform.youtube {
-    background: #ff0000;
+    background: red;
     color: #fff;
     border-color: #ff0000;
     text-decoration: none;
