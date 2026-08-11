@@ -5,16 +5,7 @@
         "poster": "assets/2-valid-ids.jpeg",
         "description": "Sylvia, a poor farmer, is unable to claim the money sent to her because she lacks the required two valid IDs.",
         "cast": "Actor 1, Actor 2, Actor 3",
-        "now_showing": true,
-        "watch": [
-            {
-                "type": "ccp"
-            },
-            {
-                "type": "external",
-                "url": "https://example.com/2-valid-ids"
-            }
-        ]
+        "now_showing": true
     },
     {
         "year": 2026,
