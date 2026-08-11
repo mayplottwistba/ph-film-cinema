@@ -2,6 +2,7 @@ const platformNames = {
     netflix: "Netflix",
     juanflix: "Juanflix",
     ccp: "CCP",
+    youtube: "YouTube",
     external: "External",
     none: "No known source"
 };
@@ -117,7 +118,10 @@ function createWatchOptions(sources, nowShowing) {
                 platformNames[type] ||
                 "No known source";
 
-            if (type === "external" && source.url) {
+            if (
+                (type === "external" || type === "youtube") &&
+                source.url
+            ) {
                 return `
                     <a
                         class="platform external"
