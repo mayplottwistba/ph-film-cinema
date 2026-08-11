@@ -469,5 +469,152 @@
                     "url": "https://www.youtube.com/watch?si=rudMdi6yyzgxScSC&v=MEUzhQV5UxA&feature=youtu.be"
                 }
             ]
+    },
+    {
+        "year": 2005,
+        "title": "Big Time",
+        "poster": "assets/big-time.jpg",
+        "description": "Danny and Jonas are petty crooks whose idea of going big-time is kidnapping the only daughter of a middle-class couple for a ransom price of 50,000 pesos.",
+        "cast": "Michael De Mesa, Winston Elizalde, Nor Domingo, Joanne Miller, Jamie Wilson, Kelvin Yu, Lito Atienza, Jon Santos, Soxy Topacio, Arnold Reyes, Ryan Eigenmann",
+        "director": "Mario Cornejo",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=yEJaSsje63s"
+                }
+            ]
+    },
+    {
+        "year": 2013,
+        "title": "Sana Dati",
+        "poster": "assets/sana-dati.jpg",
+        "description": "Andrea Gonzaga is about to marry a man she doesn’t love when a mysterious guest arrives and suddenly reminds her of the man she truly loves.",
+        "cast": "Lovi Poe, Paulo Avelino, TJ Trinidad, Benjamin Alves, Chinggoy Alonzo, Carla Martinez, Liesl Batucan, Ria Garcia, Nico Antonio, Gee Canlas, Nonie Buencamino, Menggie Cobarrubias, Cai Cortez, Bong Cabrera, Jess Evardone, Gaby Dela Merced, Mihk Vergara, Star Orjaliza",
+        "director": "Jerrold Tarog",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=bvR9l1mKKws"
+                },
+                {
+                    "type": "juanflix"
+                }
+            ]
+    },
+    {
+        "year": 2019,
+        "title": "F#*@BOIS (FUCCBOIS)",
+        "poster": "assets/fuccbois.jpg",
+        "description": "Ace, 23, and Miko, 17, desperately want to become famous actors but it seems the Universe has a different plan for their lives.",
+        "cast": "Royce Cabrera, Kokoy de Santos, Ricky Davao, Yayo Aguila, Ruby Ruiz, Janvier Daily, Mimi Juareza, Miguel Villasis, Marlon Marcia, Vandave Lopez, Jericho Bautista, Ron Martin Angeles, Daniel Corbe Jr., Bamba Leaño, G.A. Villafuerte, Lexter Tarriela, Whitney Palma, Med Valentus",
+        "director": "Eduardo Roy Jr.",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=PEBQxjY1rdQ&rco=1"
+                }
+            ]
+    },
+    {
+        "year": 2024,
+        "title": "Love Child",
+        "poster": "assets/love-child.jpg",
+        "description": "A young couple navigates the challenges of raising their autistic son in an increasingly unforgiving world, testing their love and resilience.",
+        "cast": "RK Bagatsing, Jane Oineza, John Tyrron Ramos, Milton Dionzon, Mai-Mai Montelibano, Jaden Biel Fernandez, Chart Motus, Mary Jane Quilisadio, Mandy Alonso, Tey Sevilleno",
+        "director": "Jonathan Jurilla",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "netflix"
+                }
+            ]
+    },
+    {
+        "year": 2024,
+        "title": "Balota",
+        "poster": "assets/balota.jpg",
+        "description": "A land-grabbing tycoon and a former sexy male actor are in a tight race for mayor in a small town. When violence erupts, Emmy, a teacher, runs into the wilderness with a ballot box, the last copy of the election result.",
+        "cast": "Marian Rivera, Will Ashley, Royce Cabrera, Nico Antonio, Donna Cariaga, Sassa Gurl, Esnyr Ranollo, Sue Prado, Raheel Bhyria, Joel Saracho, Gardo Versoza, Mae Paner, Myke Salomon, Carlo Enciso Catu, Dylan Ray Talon, Jade Castro",
+        "director": "Kip Oebanda",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "netflix"
+                }
+            }
+    },
+    {
+        "year": 2023,
+        "title": "Iti Mapukpukaw (The Missing)",
+        "poster": "assets/mapukpukaw.jpg",
+        "description": "When an alien comes back to take him, a mouthless young man’s life twists and turns as his memories untangle.",
+        "cast": "Carlo Aquino, Gio Gahol, Dolly de Leon, Christela Marquez, Jeremy F. Mendoza, Jeydah Cawed, Joshua Cabiladas, Janzeil Siachongco, Willy Malit, Gina Mian, Red Musni, Anna Marie Mendoza, Anna Velario, Armando Salonga, Clarisse Grajo, Dan Villegas, Eero Yves Francisco, Emmanuel Salulog, Hazel Valera, Jan Arthur Miro Embog, Jules Custodio, Kennejin Rivera, Kyle Jumayne Francisco, Levi Jagonia, Maxine Joaquin, Mercy Malit, Meriam Lopez, Orville Alia, Ma. Sarah Perez, Shaira Advincula, Wendy Barredo, Zara Jerisha Loayon",
+        "director": "Carl Joseph E. Papa",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "netflix"
+                }
+            }
+    },
+    {
+        "year": 2022,
+        "title": "Blue Room",
+        "poster": "assets/blue-room.jpg",
+        "description": "A progressive rock band composed of privileged teenagers get arrested for drug possession, and are brought into the “Blue Room” where they must make the difficult choice between freedom or standing up for what they believe in.",
+        "cast": "Elijah Canlas, Juan Karlos Labajo, Nour Hooshmand, Harvey Bautista, Keoni Jin, Soliman Cruz, Bombi Plata, Jericho Arceo, Bon Andrew Lentejas, Ricardo Cepeda",
+        "director": "Ma-an Asuncion-Dagñalan",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "netflix"
+                }
+            }
+    },
+    {
+        "year": 2022,
+        "title": "12 Weeks",
+        "poster": "assets/12-weeks.jpg",
+        "description": "After ending her toxic relationship with her boyfriend Ben, 40-year-old Alice discovers she is pregnant. With her age and current relationship status, her first instinct is to have the pregnancy terminated. As her body undergoes dramatic changes, Alice struggles and needs to decide what to do.",
+        "cast": "Max Eigenmann, Bing Pimentel, Vance Larena, Claudia Enriquez, Nor Domingo, Pamela Miras, Paolo Villaluna",
+        "director": "Anna Isabelle Matutina",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "netflix"
+                }
+            }
+    },
+    {
+        "year": 2014,
+        "title": "The Janitor",
+        "poster": "assets/the-janitor.jpg",
+        "description": "Crisanto Espina, a cop on suspension and under investigation, is tasked to eliminate the suspects involved in a bank robbery/massacre that shocked the whole nation.",
+        "cast": "Dennis Trillo, Richard Gomez, Ricky Davao, Dante Rivero, Irma Adlawan, LJ Reyes, Derek Ramsay, Raymond Bagatsing, Alex Medina, Nicco Manalo, Sunshine Garcia, JC Santos, Jerald Napoles",
+        "director": "Michael Tuviera",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "netflix"
+                }
+            }
+    },
+    {
+        "year": 2018,
+        "title": "Pan de Salawal",
+        "poster": "assets/pan-de-salawal.jpg",
+        "description": "A special little homeless girl travels about the Philippines curing the afflicted with her mysterious healing powers, until one day she befriends a sick old man who for some perplexing reason she is unable to cure. The unlikely pair are drawn to each other and their lives are forever changed by their unique friendship and magical journey together.",
+        "cast": "Bodjie Pascua, Miel Espinoza, Madeleine Nicolas, Anna Luna, Felix Roco, Soliman Cruz, Ian Lomongo, Ruby Ruiz, JM Salvado, Lorenzo Aguila",
+        "director": "Che Espiritu",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "netflix"
+                }
+            }
     }
+           
 ]
