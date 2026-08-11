@@ -337,6 +337,12 @@ h1 {
     }
 }
 
+.platform.now-showing {
+    background: #22a447;
+    color: #fff;
+    border-color: #22a447;
+}
+
 @media (max-width: 550px) {
     .container {
         padding: 20px;
