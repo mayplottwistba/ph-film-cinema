@@ -319,5 +319,155 @@
                     "url": "https://www.youtube.com/watch?v=qKThr79Ac4g&rco=1"
                 }
             ]
+    },
+    {
+        "year": 2011,
+        "title": "Amok",
+        "poster": "assets/amok.jpg",
+        "description": "As a raging man’s bullets strays into different directions, the fate of several different characters are sealed and determined.",
+        "cast": "Mark Gil, Dido De La Paz, Gary Lim, Spanky Manikan, Nonie Buencamino, Efren Reyes Jr., Archie Adamos, Lui Manansala, Ermie Concepcion, Nico Antonio, Acey Aguilar, Suzette Ranillo",
+        "director": "Lawrence Fajardo",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=MCOwVWb0CF8"
+                }
+            ]
+    },
+    {
+        "year": 2013,
+        "title": "Purok 7",
+        "poster": "assets/purok.jpg",
+        "description": "The villagers and lively town festival help Diana and her younger brother embrace the joys of rural childhood.",
+        "cast": "Arnold Reyes, Angeli Bayani, Krystle Valentino, Miggs Cuaderno, Julian Trono, Carlon Matobato, Aaron Ching, Sheenly Gener",
+        "director": "Carlo Obispo",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=wBlBUbQdGJU"
+                }
+            ]
+    },
+    {
+        "year": 2014,
+        "title": "Ronda",
+        "poster": "assets/ronda.jpg",
+        "description": "A policewoman roams the city of Manila to fulfill her duties as a police patrol to look for her son.",
+        "cast": "Ai-Ai delas Alas, Perla Bautista, Bernardo Bernardo, Menggie Cobarrubias, Carlo Aquino, Cogie Domingo, Moi Bien, DM Sevilla, Julian Trono, Angeli Bayani, Cesar Montano, Carlos Morales, Mon Confiado, Eshei Mesina, Melanie Libatique, Lao Rodriguez, Mayen Estanero, Jet Aguirre, Karen Leslie Dematera, Kiko Matos, Sancho Delas Alas",
+        "director": "Nick Olanka",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=3dqZTpWBUT4"
+                }
+            ]
+    },
+    {
+        "year": 2014,
+        "title": "#Y",
+        "poster": "assets/y.png",
+        "description": "“#Y” chronicles the adventures of the members of a generation made universal by social media, internet, sex, drugs and alcohol.",
+        "cast": "Elmo Magalona, Coleen Garcia, Sophie Albert, Kit Thompson, Slater Young, Chynna Ortaleza, Apollo Abraham, Joyce Ann Burton, Paco Evangelista, Julz Savard, Twinkle Dy, Rob Rownd, Lilit Reyes, Albie Casiño, Jane Torres, Benjamin Magsino, April Anne Dolot",
+        "director": "Gino M. Santos",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=83CVMtoPCoQ"
+                }
+            ]
+    },
+    {
+        "year": 2010,
+        "title": "Ang Paglilitis ni Andres Bonifacio",
+        "poster": "assets/andres.jpg",
+        "description": "Ang Paglilitis ni Andres Bonifacio is the untold story of the trial of Andres Bonifacio under the Revolutionary Government of Pres. Emilio Aguinaldo. Two leaders, Andres Bonifacio, Supremo of the Katipuneros, and Emilio Aguinaldo, president of the Revolutionary Government, made their way to fight for freedom for the Filipinos against the dominant rule, fought for a cause and for a reason to be one nation.",
+        "cast": "Elmo Magalona, Coleen Garcia, Sophie Albert, Kit Thompson, Slater Young, Chynna Ortaleza, Apollo Abraham, Joyce Ann Burton, Paco Evangelista, Julz Savard, Twinkle Dy, Rob Rownd, Lilit Reyes, Albie Casiño, Jane Torres, Benjamin Magsino, April Anne Dolot",
+        "director": "Mario O’Hara",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?si=g_kVdKy5gv3ak7-O&v=pGbL-zXDqew&feature=youtu.be"
+                }
+            ]
+    },
+    {
+        "year": 2010,
+        "title": "Two Funerals",
+        "poster": "assets/funerals.jpg",
+        "description": "After a horrific collision between a passenger bus and an 18-wheeler truck in Nueva Ecija claimed two dozen casualties, two families await the arrival of their dead.",
+        "cast": "Tessie Tomas, Robert Arevalo, Princess Manzon, Xian Lim, Emmanuel Vonn Santiago, Nina Villaruel, Lina Sta. Maria, Epifania Palad, Estela Abesamis, Bebong Osorio, Benjie Felipe, Carlos Jorge Reyes, Mon Confiado, Fr. Eduardo Pangilinan, Leo Mier, Epy Quizon, Ricky Pascua, Mely Soriano, Francisco Godoy III, Dulce D'Bayan, Tony Marino, Amay Bisaya, Nelson Tan, John Apacible, Tin Tagle, Jovy, Alma, Karen, Alona, Marcy, Autumn, Lucas Leonardo, Jess Evardone, Robert Corea, Robert Corea, Althea Vega, Erika Janta, Ynez Veneracion, Alvin Fortuna, Francis Villacorta",
+        "director": "Gil Portes",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?si=yW722Q_9yqVLcqZz&v=Bpvsx4oRIm0&feature=youtu.be"
+                }
+            ]
+    },
+    {
+        "year": 2011,
+        "title": "Bisperas",
+        "poster": "assets/bisperas.jpg",
+        "description": "The eve of Christmas, the Aguinaldo family’s residence is burglarized, causing its members to identify stolen items and uncover lingering sentiments they have hidden from each other.",
+        "cast": "Tirso Cruz III, Raquel Villavicencio, Jennifer Sevilla, Julia Clarete, Edgar Allan Guzman",
+        "director": "Jeffrey Jeturian",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=iBqjlQtTtTQ"
+                }
+            ]
+    },
+    {
+        "year": 2012,
+        "title": "Posas",
+        "poster": "assets/posas.jpg",
+        "description": "Jess' life collapses after stealing Grace Rosuello’s smartphone. The phone’s embarrassing video lands him in custody, gets him waterboarded, and pulls him into a corrupt system",
+        "cast": "Nico Antonio, Bangs Garcia, Art Acuña, John Lapus, Jake Macapagal, Hector Macaso, Wendy Valdez, CJ Ramos, Nor Domingo, Susan Africa, Jelson Bay, Raul Morit, Andy Bais, Ermie Concepcion, Phillip Nolasco",
+        "director": "Lawrence Fajardo",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=CxVvIISVBsI"
+                }
+            ]
+    },
+    {
+        "year": 2014,
+        "title": "Asintado",
+        "poster": "assets/asintado.jpg",
+        "description": "In the middle of the preparation for the Taong Putik Festival, a young man, penniless and in love, takes on a job that goes terribly wrong. To save him, his mother now makes the most difficult decision of her life.",
+        "cast": "Aiko Melendez, Gabby Eigenmann, Miggs Cuaderno, Rochelle Pangilinan, Jake Vargas, Benjie Felipe, Madz Nicholas, Maila Ejercito, Jak Roberto, Rita Daniela",
+        "director": "Louie Ignacio",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=X_dIp_t9u7Q"
+                }
+            ]
+    },
+    {
+        "year": 2005,
+        "title": "Lasponggols (Last Take, Last Shot)",
+        "poster": "assets/lasponggols.jpg",
+        "description": "A black comedy film, which focuses on two film workers, Raffy, the clapper, and Dido, a utility boy. Both share the same dream: to direct their own films someday. Their lives as mere “small production people” took a different turn when, together with the people in the unit van they were riding,had an encounter with armed men.",
+        "cast": "Epy Quizon, Dwight Gaston, Boboy Garrovillo, Danny Javier, Jim Paredes, Joel Torre, Ronnie Lazaro, Roence Santos, Soliman Cruz, Shamaine Buencamino, Raul Morit, Bombi Plata, Jose F. Lacaba, Marra P.L. Lanot, Randy Punsal, Roxlee, Kris Lanot Lacaba, Sigfreid Barros-Sanchez, Odyssey Flores, Topel Lee, Hector Macaso, Richard Legaspi, Khavn",
+        "director": "Sigfreid Barros-Sanchez",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?si=rudMdi6yyzgxScSC&v=MEUzhQV5UxA&feature=youtu.be"
+                }
+            ]
     }
 ]
