@@ -3,6 +3,7 @@ const platformNames = {
     juanflix: "Juanflix",
     ccp: "CCP",
     youtube: "YouTube",
+    prime: "Prime Video",
     external: "External",
     none: "No known source"
 };
