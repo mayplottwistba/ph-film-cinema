@@ -211,30 +211,55 @@ h1 {
     letter-spacing: -0.5px;
 }
 
+.film-description,
+.film-cast {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 .film-description {
-    margin-bottom: 13px;
+    -webkit-line-clamp: 3;
+    margin-bottom: 4px;
     color: #555;
     font-size: 11px;
     line-height: 1.45;
 }
 
-.film-cast-label {
-    margin-bottom: 3px;
-    color: #888;
-    font-family: monospace;
-    font-size: 8px;
-    font-weight: 900;
-    text-transform: uppercase;
-}
-
 .film-cast {
-    margin-bottom: 15px;
+    -webkit-line-clamp: 3;
+    margin-bottom: 4px;
     color: #111;
     font-size: 10px;
     font-weight: 700;
     line-height: 1.3;
 }
 
+.film-description.expanded,
+.film-cast.expanded {
+    display: block;
+    overflow: visible;
+}
+
+.see-more {
+    display: inline-block;
+    width: fit-content;
+    margin-bottom: 10px;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: #777;
+    font-family: monospace;
+    font-size: 8px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.see-more:hover {
+    color: #111;
+}
 .watch-label {
     margin-top: auto;
     margin-bottom: 6px;
