@@ -229,5 +229,95 @@
                     "url": "https://www.youtube.com/watch?v=OPABTZ3t_Pw"
                 }
             ]
+    },
+    {
+        "year": 2011,
+        "title": "Patikul",
+        "poster": "assets/patikul.jpg",
+        "description": "The long-standing conflict between the military forces and the rebel group Abu Sayaff has severely ravaged the poor town of Patikul in Sulu. Residents have become so accustomed to the armed clashes, that reports of kidnappings and recruitment of young Tausugs to join the rebel groups already became normal news to them. However, Amman, a 33 year old coffee farmer in Sitio Kan-Ague, continues to believe that there is still hope for their town.",
+        "cast": "Marvin Agustin, Allen Dizon, Ciara Sotto, Glaiza de Castro, Dimples Romana, Jim Pebanco, Martin de los Santos, Angellie Nicholle Sanoy, Jeon Macatangay, Marili Fernandez-Ilagan",
+        "director": "Joel Lamangan",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=ew80dXDbNMA&pp=ygUHcGF0aWt1bA%3D%3D"
+                }
+            ]
+    },
+    {
+        "year": 2012,
+        "title": "Diablo",
+        "poster": "assets/diablo.jpg",
+        "description": "Every night, Nana Lusing lies on her bed sleepless because she sees a dark figure looming in her room. Who is this shadow? Is this the devil? Her late husband? A manifestation of her anxieties? Or simply a figment of her imagination?",
+        "cast": "Ama Quiambao, Carlo Aquino, Arnold Reyes, Althea Vega",
+        "director": "Mes de Guzman",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=mIsbp7iSl-A&t=2s"
+                }
+            ]
+    },
+    {
+        "year": 2013,
+        "title": "The Diplomat Hotel",
+        "poster": "assets/hotel.jpg",
+        "description": "Victoria Lansang is a popular news reporter who has been requested to mediate a hostage crisis. And in front of a national television audience, something horribly goes wrong and people are killed while Victoria suffers a mental breakdown.",
+        "cast": "Gretchen Barretto, Art Acuña, Mon Confiado, Joel Torre, Alvin Anson, Nico Antonio, Brooke Chantelle, Sarah Gaugler, Chanel Latorre, Abe Pagtama",
+        "director": "Christopher Ad Castillo",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?si=jGg7vDZTm7p008cd&v=tiqkZvHQMWw&feature=youtu.be"
+                }
+            ]
+    },
+    {
+        "year": 2019,
+        "title": "Children of the River",
+        "poster": "assets/river.jpg",
+        "description": "A young boy and his three friends are trying to live a normal life, battling their own demons and taking care of their respective families while their fathers are away. Until one day, the phone call that they look forward to everyday, finally never came.",
+        "cast": "Noel Comia Jr., Ricky Oriarte, Dave Justin Francis, Junyka Santarin, JR Custodio, Juancho Triviño, Jay Manalo, Rich Asuncion, Kareen Oriarte, Jennifer Acosta, Ma. Luisa Herrera",
+        "director": "Maricel Cariaga",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=3gkJm7TYEjg"
+                }
+            ]
+    },
+    {
+        "year": 2018,
+        "title": "School Service",
+        "poster": "assets/school-service.jpg",
+        "description": "Maya was walking home in her province when the service stops beside her and offers her to hitch. She innocently takes the ride to reach home faster. To Maya’s horror, the service did not stop at her place. She soon realizes she has been taken, along with the other kids who are inside the crammed school service.",
+        "cast": "Ai-Ai delas Alas, Joel Lamangan, Celine Juan, Therese Malvar, Felixia Crysten Dizon, Joe Gruta, Kenken Nuyad, Kevin Sagra, Santino Oquendo, Ace Café",
+        "director": "Luisito Ignacio",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=qcn3WHvmxi8"
+                }
+            ]
+    },
+    {
+        "year": 2007,
+        "title": "Tribu",
+        "poster": "assets/school-service.jpg",
+        "description": "In the darker side of Manila-by-night, tribes of youthful gangsters roam the streets in search of quick fixes and precarious thrills.",
+        "cast": "Karl Eigger Balingit, Charena Escala, Havy Bagatsing, Young Cent, Resty Perez, Reggie Dagondon, OG Sacred, Ghe-Ghe Lozano, Hi C, Jamir Garcia",
+        "director": "Jim Libiran",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=qKThr79Ac4g&rco=1"
+                }
+            ]
     }
 ]
