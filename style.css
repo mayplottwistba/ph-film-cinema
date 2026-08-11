@@ -209,25 +209,48 @@ h1 {
     line-height: 1;
     font-weight: 900;
     letter-spacing: -0.5px;
-}
-
-.film-description,
-.film-cast {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    text-transform: uppercase;
 }
 
 .film-description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
+    overflow: hidden;
     margin-bottom: 4px;
     color: #555;
     font-size: 11px;
     line-height: 1.45;
 }
 
+.film-description.expanded {
+    display: block;
+    overflow: visible;
+}
+
+.film-director-label,
+.film-cast-label {
+    margin-bottom: 3px;
+    color: #888;
+    font-family: monospace;
+    font-size: 8px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.film-director {
+    margin-bottom: 12px;
+    color: #111;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
 .film-cast {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
+    overflow: hidden;
     margin-bottom: 4px;
     color: #111;
     font-size: 10px;
@@ -235,7 +258,6 @@ h1 {
     line-height: 1.3;
 }
 
-.film-description.expanded,
 .film-cast.expanded {
     display: block;
     overflow: visible;
@@ -260,6 +282,7 @@ h1 {
 .see-more:hover {
     color: #111;
 }
+
 .watch-label {
     margin-top: auto;
     margin-bottom: 6px;
@@ -323,6 +346,12 @@ h1 {
     border-style: dashed;
 }
 
+.platform.now-showing {
+    background: #22a447;
+    color: #fff;
+    border-color: #22a447;
+}
+
 .empty-films {
     grid-column: 1 / -1;
     padding: 60px 20px;
@@ -359,12 +388,6 @@ h1 {
     .films-grid {
         grid-template-columns: 1fr;
     }
-}
-
-.platform.now-showing {
-    background: #22a447;
-    color: #fff;
-    border-color: #22a447;
 }
 
 @media (max-width: 550px) {
