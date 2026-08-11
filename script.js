@@ -146,7 +146,7 @@ function createWatchOptions(sources, nowShowing) {
             ) {
                 return `
                     <a
-                        class="platform external"
+                        class="platform ${type}"
                         href="${source.url}"
                         target="_blank"
                         rel="noopener noreferrer"
