@@ -181,6 +181,14 @@ function createFilmCard(film, index) {
             </div>
 
             <div class="film-cast-label">
+                DIRECTOR
+            </div>
+
+            <div class="film-cast">
+                ${film.director || "Director information unavailable"}
+            </div>
+
+            <div class="film-cast-label">
                 CAST
             </div>
 
