@@ -88,7 +88,29 @@ function getFilteredFilms() {
                 .toLowerCase()
                 .includes(searchTerm);
         })
-        .sort((a, b) => b.year - a.year);
+        .sort((a, b) => {
+            if (selectedYear !== "all") {
+                return a.title.localeCompare(
+                    b.title,
+                    undefined,
+                    {
+                        sensitivity: "base"
+                    }
+                );
+            }
+
+            if (a.year !== b.year) {
+                return b.year - a.year;
+            }
+
+            return a.title.localeCompare(
+                b.title,
+                undefined,
+                {
+                    sensitivity: "base"
+                }
+            );
+        });
 }
 
 function createWatchOptions(sources, nowShowing) {
