@@ -881,5 +881,173 @@
                     "type": "juanflix"
                 }
             ]
+    },
+    {
+        "year": 2013,
+        "title": "Rekorder",
+        "poster": "assets/rekorder.jpg",
+        "description": "A former cameraman now works as a movie pirate operating in present day Manila. He routinely smuggles a digital camcorder into movie theaters in order to illegally record ﬁlms. One night he records something else and the footage goes viral.",
+        "cast": "Ronnie Quizon, Mike Lloren, Lowell Conales, Buboy Villar, Earl Ignacio, Suzette Ranillo, Belinda Mariano, Sonny Nicolas, Belle Mariano",
+        "director": "Mikhail Red",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "ccp"
+                }
+            ]
+    },
+    {
+        "year": 2009,
+        "title": "Mangatyanan",
+        "poster": "assets/mangatyanan.jpg",
+        "description": "Estranged photographer Laya ignores her ill father. Her long-absent mother urges reconciliation, but deeper wounds remain. Sent to document a vanishing tribe’s ritual, she confronts her own demons.",
+        "cast": "Che Ramos, Irma Adlawan, Neil Ryan Sese, Pen Medina, Publio Briones III, Bor Ocampo, Mailes Kanapi, Madeleine Nicolas, Ronald Legaspi, Danielle Afuang, Syrel Lopez",
+        "director": "Jerrold Tarog",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "ccp"
+                }
+            ]
+    },
+    {
+        "year": 2005,
+        "title": "Sarong Banggi",
+        "poster": "assets/sarong.jpg",
+        "description": "A man’s friends hire a prostitute on his birthday for him to lose his virginity. But after finding out that she is a middle-aged woman, they decide to ditch her, except for the birthday boy, who likes older women.",
+        "cast": "Jaclyn Jose, Angelo Ilagan, Pierro Rodriguez, Alcris Galura, Miguel Iñigo Guño",
+        "director": "Emmanuel Dela Cruz",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "ccp"
+                }
+            ]
+    },
+    {
+        "year": 2022,
+        "title": "Kargo",
+        "poster": "assets/kargo.jpg",
+        "description": "A woman relieves the heavy burden from her past when she finally exacts revenge on the man who murdered her entire family.",
+        "cast": "Max Eigenmann, Jess Mendoza, Myles Robles, Ronnie Lazaro, Sunshine Teodoro",
+        "director": "TM Malones",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "ccp"
+                }
+            ]
+    },
+    {
+        "year": 2010,
+        "title": "Vox Populi",
+        "poster": "assets/vox.jpg",
+        "description": "San Cristobal mayoral candidate Connie de Gracia attends mass, hoping her piety wins votes—after all, the people’s voice is God’s. But Philippine politics isn’t so divinely blessed.",
+        "cast": "Irma Adlawan, Bobby Andrews, Jim Libiran, Tony Mabesa, Gabe Mercado, LJ Moreno, Suzette Ranillo",
+        "director": "Dennis Marasigan",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "ccp"
+                }
+            ]
+    },
+    {
+        "year": 2010,
+        "title": "Halaw",
+        "poster": "assets/halaw.jpg",
+        "description": "This research-based drama exposes human trafficking from Mindanao to Sabah. Diverse characters risk an illegal boat ride for a better life—despite the dangers and uncertain jobs in the “Promised Land.”",
+        "cast": "John Arcilla, Arnalyn Ismael, Maria Isabel Lopez",
+        "director": "Sheron Dayoc",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "ccp"
+                }
+            ]
+    },
+    {
+        "year": 2006,
+        "title": "Mudraks",
+        "poster": "assets/mudraks.png",
+        "description": "In the silent Rabadon house, Margaret obsesses over order to avoid real problems and snoops on her family—until her daughter’s journal shatters her carefully unstirred life.",
+        "cast": "Rio Locsin, Ricky Davao, Roxanne Barcelo, Mario Magallona, Tess Antonio, Miguel Lorenzo Jose V. Javier, Ming Anacleto, Sarah Medina, Tonee Acejo, Jake Suarez, Burnz Macute",
+        "director": "Margaret Guzman, Arah Jell Badayos",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "ccp"
+                }
+            ]
+    },
+    {
+        "year": 2008,
+        "title": "Baby Angelo",
+        "poster": "assets/angelo.jpg",
+        "description": "When an aborted baby is found in the dumpster of a small apartment complex, the lives of its tenants are turned upside down, and they are forced to confront the ghosts of their own past.",
+        "cast": "Archie Alemania, Dante Balois, Alcris Galura, Mark Gil, Cedrick Lamberte, Jojit Lorenzo, Katherine Luna, Diana Malahay, Ces Quesada, Lara Tarranco",
+        "director": "Joel Ruiz",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "ccp"
+                }
+            ]
+    },
+    {
+        "year": 2010,
+        "title": "Pink Halo-Halo",
+        "poster": "assets/pink-halo.jpg",
+        "description": "A boy's innocence is shattered when a TV news report reveals his father is a badly wounded soldier in Mindanao. As he and his mother wait for late rescue, the tragedy exposes how war's grim shadow impacts Filipino homes.",
+        "cast": "Angeli Bayani, Paolo Constantino, Allen Dizon, Dexter Doria, Mark Fabillar, Sebastian Balde, Jaisene Bosito",
+        "director": "Joselito Altarejos",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "ccp"
+                }
+            ]
+    },
+    {
+        "year": 2022,
+        "title": "Retirada",
+        "poster": "assets/retirada.jpg",
+        "description": "A retired government employee’s new hobby leads to existential desperation and financial complications.",
+        "cast": "Peewee O'Hara, Jerry O'Hara, Donna Cariaga, Dexter Doria, Nanding Josef, Lui Manansala, Johanah Basanta",
+        "director": "Milo Alto Paz and Cynthia Cruz-Paz",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "ccp"
+                }
+            ]
+    },
+    {
+        "year": 2005,
+        "title": "Isnats",
+        "poster": "assets/isnats.jpg",
+        "description": "A cellphone collector a.k.a. snatcher steals a drug dealer’s phone and the delivery that eventually leads into a confrontation with the syndicate’s angry boss who wants his money.",
+        "cast": "Jourdan Sebastian, Joel Olano, Teddy Corpuz, Ida Ramos, Berting Labra, Archie Adamos, Maui Manalo, Ronald Tupas, Oz Mendoza, Vanessa Liwanag, Benjo Mariano, Bombi Plata, Sigfreid Barros-Sanchez, Lawrence Fajardo, Jobin Ballesteros",
+        "director": "Michael Angelo Dagñalan",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "ccp"
+                }
+            ]
+    },
+    {
+        "year": 2025,
+        "title": "Open Endings",
+        "poster": "assets/endings.jpg",
+        "description": "Four queer women in their 30s who are exes-turned-best-friends navigate adulthood, love, friendship, chosen families, and everything in between.",
+        "cast": "Janella Salvador, Jasmine Curtis-Smith, Klea Pineda, Leanne Mamonong, Jackie Lou Blanco, Yesh Anne Burce, Migs Almendras, Rachel Coates, Jhoanna San Juan",
+        "director": "Nigel Santos",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "prime"
+                }
+            ]
     }
 ]
