@@ -158,7 +158,7 @@
     {
         "year": 2013,
         "title": "Instant Mommy",
-        "poster": "assets/instant-mommy.webp",
+        "poster": "assets/instant-mommy.png",
         "description": "Instant Mommy follows the story of Bechayda, a two-months-pregnant wardrobe assistant for TV commercial production. In the fear of losing her Japanese lover and her dreams of a better life, she embarks on a plan that will get herself out of her predicament. Or so she thinks.",
         "cast": "Eugene Domingo, Yuki Matsuzaki, Adrian Alandy, Rico J. Puno, Tuesday Vargas, Shamaine Buencamino, Aaron Ching, Matt Evans, Nicco Manalo, Earl Ignacio, Jojit Lorenzo, Delphine Buencamino, Mitoy Sta. Ana, Dudz Teraña, Nico Antonio, Angel Aquino, Anne Feo, Madeleine Nicolas, Suzette Ranillo, Kiel Rodriguez",
         "director": "Leo Abaya",
@@ -186,17 +186,47 @@
             ]
     },
     {
-        "year": 2014,
-        "title": "1st Ko Si 3rd",
-        "poster": "assets/3rd.webp",
-        "description": "The film is about a 65-year old retiree Cory who gets reunited with her 1st love and finally, the supposed date happens 5 decades after they got separated. ",
-        "cast": "Nova Villa, Dante Rivero, Freddie Webb, Ruby Ruiz, Lara Morena, RJ Agustin, Denise Barbacena, Coleen Borgonia, Ken Chan, Dennis Marasigan",
-        "director": "Real Florido",
+        "year": 2010,
+        "title": "Mayohan",
+        "poster": "assets/mayohan.jpg",
+        "description": "Mayohan is set in Infanta, Quezon where locals turn each of the 31 days of May into a charming celebration of good harvest and a tribute to the virginal virtues of Mary, mother of Christ. Amidst the festivities, Niño, a 15-year-old young outsider becomes involved in the preparation of the Mayohan’s final event, the pasayaw.",
+        "cast": "Lovi Poe, Elijah Castillo, Ping Medina, Lui Manansala, Chiqui del Carmen, Dianne Laserna, Jill Palencia, Girose Lanot, Benedict Jhocson",
+        "director": "Dan Villegas",
         "now_showing": false,
         "watch": [
                 {
                     "type": "youtube",
-                    "url": "https://www.youtube.com/watch?v=oyLZvRZvDvk"
+                    "url": "https://www.youtube.com/watch?v=sQRnTbPER4Q&pp=ygUHbWF5b2hhbg%3D%3D"
+                }
+            ]
+    },
+    {
+        "year": 2012,
+        "title": "Sta. Niña",
+        "poster": "assets/nina.jpg",
+        "description": "When Paulino Mungcal and his co-worker in a lahar-filled quarry unexpectedly dig up the remains of his 2-year daughter Marikit, they discover that she showed no signs of decay.",
+        "cast": "Coco Martin, Alessandra de Rossi, Anita Linda, Irma Adlawan, Angel Aquino, Nanding Josef, Lui Manansala, Joe Gruta, Leo Martinez, Patricia Ysmael, Rie Batingana, Bea García, Dax Alejandro, Allan Guanlao, Jobert Luzares, Ruby Ruiz, Liza Magtoto",
+        "director": "Manny Palo",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=UD4oQklJTlM&pp=ygUIc3RhIG5pbmE%3D"
+                }
+            ]
+    },
+    {
+        "year": 2018,
+        "title": "Kung Paano Hinihintay Ang Dapithapon",
+        "poster": "assets/dapithapon.jpg",
+        "description": "An old unmarried couple broke the monotony of their daily lives when the woman’s estranged husband reached out to them, seeking reconciliation and forgiveness.",
+        "cast": "Dante Rivero, Menggie Cobarrubias, Perla Bautista, Romnick Sarmenta, Che Ramos, Ryan Ronquillo, Jacqueline Cortez, Dunhill Banzon, Stanley Abuloc, Monique Kyle Vasquez",
+        "director": "Carlo Enciso Catu",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=OPABTZ3t_Pw"
                 }
             ]
     }
