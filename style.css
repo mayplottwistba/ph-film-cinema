@@ -15,30 +15,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.platform.youtube {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 55px;
-    height: 22px;
-    padding: 0 8px;
-    background: #ff0000 !important;
-    color: #fff !important;
-    border: 1px solid #ff0000 !important;
-    font-family: monospace;
-    font-size: 8px;
-    font-weight: 900;
-    text-transform: uppercase;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.platform.youtube:hover {
-    background: #cc0000 !important;
-    color: #fff !important;
-    border-color: #cc0000 !important;
-}
-
 .container {
     width: 100%;
     max-width: 1500px;
@@ -361,6 +337,20 @@ h1 {
 .platform.external:hover {
     background: #111;
     color: #fff;
+}
+
+.platform.youtube {
+    background: #ff0000;
+    color: #fff;
+    border-color: #ff0000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.platform.youtube:hover {
+    background: #cc0000;
+    color: #fff;
+    border-color: #cc0000;
 }
 
 .platform.none {
