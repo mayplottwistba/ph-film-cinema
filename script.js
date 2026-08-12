@@ -10,6 +10,7 @@ const platformNames = {
 
 const filmsGrid = document.getElementById("filmsGrid");
 const yearFilter = document.getElementById("yearFilter");
+const watchFilter = document.getElementById("watchFilter");
 const searchInput = document.getElementById("searchInput");
 
 let films = [];
@@ -36,20 +37,37 @@ async function loadFilms() {
 
         films = data;
 
-        films.sort((a, b) => b.year - a.year);
-        
+        films.sort((a, b) => {
+            if (a.year !== b.year) {
+                return b.year - a.year;
+            }
+
+            return a.title.localeCompare(
+                b.title,
+                undefined,
+                {
+                    sensitivity: "base"
+                }
+            );
+        });
+
         populateYears();
         populateWatchFilters();
         renderFilms();
 
     } catch (error) {
-        console.error("FILM DATABASE ERROR:", error);
+        console.error(
+            "FILM DATABASE ERROR:",
+            error
+        );
 
         filmsGrid.innerHTML = `
             <div class="empty-films">
                 UNABLE TO LOAD FILMS
                 <br><br>
-                <small>${error.message}</small>
+                <small>
+                    ${error.message}
+                </small>
             </div>
         `;
     }
@@ -57,13 +75,43 @@ async function loadFilms() {
 
 function populateYears() {
     for (let year = 2026; year >= 2005; year--) {
-        const option = document.createElement("option");
+        const option =
+            document.createElement("option");
 
         option.value = year;
         option.textContent = year;
 
         yearFilter.appendChild(option);
     }
+}
+
+function populateWatchFilters() {
+    const platforms = [
+        ["netflix", "Netflix"],
+        ["juanflix", "Juanflix"],
+        ["ccp", "CCP"],
+        ["youtube", "YouTube"],
+        ["prime", "Prime Video"],
+        ["external", "External"],
+        ["none", "No known source"],
+        ["now_showing", "Now Showing"]
+    ];
+
+    platforms.forEach(
+        ([value, label]) => {
+            const option =
+                document.createElement(
+                    "option"
+                );
+
+            option.value = value;
+            option.textContent = label;
+
+            watchFilter.appendChild(
+                option
+            );
+        }
+    );
 }
 
 function getFilteredFilms() {
@@ -95,7 +143,10 @@ function getFilteredFilms() {
                 return true;
             }
 
-            if (selectedWatch === "now_showing") {
+            if (
+                selectedWatch ===
+                "now_showing"
+            ) {
                 return film.now_showing === true;
             }
 
@@ -103,10 +154,13 @@ function getFilteredFilms() {
                 return false;
             }
 
-            return film.watch.some(source => {
-                return source &&
-                    source.type === selectedWatch;
-            });
+            return film.watch.some(
+                source => {
+                    return source &&
+                        source.type ===
+                        selectedWatch;
+                }
+            );
         })
 
         .filter(film => {
@@ -146,7 +200,10 @@ function getFilteredFilms() {
         });
 }
 
-function createWatchOptions(sources, nowShowing) {
+function createWatchOptions(
+    sources,
+    nowShowing
+) {
     let html = "";
 
     if (nowShowing === true) {
@@ -163,18 +220,27 @@ function createWatchOptions(sources, nowShowing) {
 
     html += sources
         .map(source => {
-            if (!source || !source.type) {
+
+            if (
+                !source ||
+                !source.type
+            ) {
                 return "";
             }
 
-            const type = source.type;
+            const type =
+                source.type;
 
             const name =
                 platformNames[type] ||
                 "No known source";
 
             if (
-                (type === "external" || type === "youtube") &&
+                (
+                    type === "external" ||
+                    type === "youtube" ||
+                    type === "prime"
+                ) &&
                 source.url
             ) {
                 return `
@@ -190,7 +256,9 @@ function createWatchOptions(sources, nowShowing) {
             }
 
             return `
-                <span class="platform ${type}">
+                <span
+                    class="platform ${type}"
+                >
                     ${name}
                 </span>
             `;
@@ -200,15 +268,23 @@ function createWatchOptions(sources, nowShowing) {
     return html;
 }
 
-function createFilmCard(film, index) {
-    const card = document.createElement("article");
+function createFilmCard(
+    film,
+    index
+) {
+    const card =
+        document.createElement(
+            "article"
+        );
 
-    card.className = "film-card";
+    card.className =
+        "film-card";
 
-    const watchOptions = createWatchOptions(
-        film.watch || [],
-        film.now_showing
-    );
+    const watchOptions =
+        createWatchOptions(
+            film.watch || [],
+            film.now_showing
+        );
 
     card.innerHTML = `
         <div class="poster-wrap">
@@ -230,9 +306,6 @@ function createFilmCard(film, index) {
 
             <div
                 class="film-description"
-                data-full-text="${escapeAttribute(
-                    film.description || ""
-                )}"
             >
                 ${film.description || ""}
             </div>
@@ -250,7 +323,10 @@ function createFilmCard(film, index) {
             </div>
 
             <div class="film-director">
-                ${film.director || "Director information unavailable"}
+                ${
+                    film.director ||
+                    "Director information unavailable"
+                }
             </div>
 
             <div class="film-cast-label">
@@ -259,11 +335,11 @@ function createFilmCard(film, index) {
 
             <div
                 class="film-cast"
-                data-full-text="${escapeAttribute(
-                    film.cast || ""
-                )}"
             >
-                ${film.cast || "Cast information unavailable"}
+                ${
+                    film.cast ||
+                    "Cast information unavailable"
+                }
             </div>
 
             <button
@@ -285,17 +361,22 @@ function createFilmCard(film, index) {
         </div>
     `;
 
-    const image = card.querySelector(
-        ".poster-wrap img"
-    );
+    const image =
+        card.querySelector(
+            ".poster-wrap img"
+        );
 
     image.addEventListener(
         "error",
         function () {
-            this.style.display = "none";
+
+            this.style.display =
+                "none";
 
             const placeholder =
-                document.createElement("div");
+                document.createElement(
+                    "div"
+                );
 
             placeholder.className =
                 "poster-missing";
@@ -316,20 +397,30 @@ function createFilmCard(film, index) {
 
 function setupSeeMore(card) {
     const buttons =
-        card.querySelectorAll(".see-more");
+        card.querySelectorAll(
+            ".see-more"
+        );
 
     buttons.forEach(button => {
+
         const targetType =
             button.dataset.target;
 
         let target;
 
-        if (targetType === "description") {
+        if (
+            targetType ===
+            "description"
+        ) {
             target =
                 card.querySelector(
                     ".film-description"
                 );
-        } else if (targetType === "cast") {
+        }
+
+        if (
+            targetType === "cast"
+        ) {
             target =
                 card.querySelector(
                     ".film-cast"
@@ -341,24 +432,29 @@ function setupSeeMore(card) {
             return;
         }
 
-        requestAnimationFrame(() => {
-            if (
-                target.scrollHeight <=
-                target.clientHeight + 1
-            ) {
-                button.remove();
+        requestAnimationFrame(
+            () => {
+
+                if (
+                    target.scrollHeight <=
+                    target.clientHeight + 1
+                ) {
+                    button.remove();
+                }
             }
-        });
+        );
 
         button.addEventListener(
             "click",
             () => {
+
                 const expanded =
                     target.classList.contains(
                         "expanded"
                     );
 
                 if (expanded) {
+
                     target.classList.remove(
                         "expanded"
                     );
@@ -367,6 +463,7 @@ function setupSeeMore(card) {
                         "SEE MORE";
 
                 } else {
+
                     target.classList.add(
                         "expanded"
                     );
@@ -379,21 +476,15 @@ function setupSeeMore(card) {
     });
 }
 
-function escapeAttribute(value) {
-    return String(value)
-        .replace(/&/g, "&amp;")
-        .replace(/"/g, "&quot;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;");
-}
-
 function renderFilms() {
     filmsGrid.innerHTML = "";
 
     const filteredFilms =
         getFilteredFilms();
 
-    if (filteredFilms.length === 0) {
+    if (
+        filteredFilms.length === 0
+    ) {
         filmsGrid.innerHTML = `
             <div class="empty-films">
                 NO FILMS FOUND
@@ -405,23 +496,26 @@ function renderFilms() {
 
     filteredFilms.forEach(
         (film, index) => {
+
             const card =
                 createFilmCard(
                     film,
                     index
                 );
 
-            filmsGrid.appendChild(card);
+            filmsGrid.appendChild(
+                card
+            );
         }
     );
 }
 
-watchFilter.addEventListener(
+yearFilter.addEventListener(
     "change",
     renderFilms
 );
 
-yearFilter.addEventListener(
+watchFilter.addEventListener(
     "change",
     renderFilms
 );
@@ -430,44 +524,5 @@ searchInput.addEventListener(
     "input",
     renderFilms
 );
-
-const watchFilter =
-    document.getElementById("watchFilter");
-
-const developerModal =
-    document.getElementById("developerModal");
-
-const developerClose =
-    document.getElementById("developerClose");
-
-developerClose.addEventListener(
-    "click",
-    () => {
-        developerModal.style.display = "none";
-    }
-);
-
-function populateWatchFilters() {
-    const platforms = [
-        ["netflix", "Netflix"],
-        ["juanflix", "Juanflix"],
-        ["ccp", "CCP"],
-        ["youtube", "YouTube"],
-        ["prime", "Prime Video"],
-        ["external", "External"],
-        ["none", "No known source"],
-        ["now_showing", "Now Showing"]
-    ];
-
-    platforms.forEach(([value, label]) => {
-        const option =
-            document.createElement("option");
-
-        option.value = value;
-        option.textContent = label;
-
-        watchFilter.appendChild(option);
-    });
-}
 
 loadFilms();
