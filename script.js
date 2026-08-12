@@ -525,4 +525,28 @@ searchInput.addEventListener(
     renderFilms
 );
 
+const developerModal =
+    document.getElementById("developerModal");
+
+const developerClose =
+    document.getElementById("developerClose");
+
+if (developerModal && developerClose) {
+    developerClose.addEventListener(
+        "click",
+        () => {
+            developerModal.style.display = "none";
+        }
+    );
+
+    developerModal.addEventListener(
+        "click",
+        event => {
+            if (event.target === developerModal) {
+                developerModal.style.display = "none";
+            }
+        }
+    );
+}
+
 loadFilms();
