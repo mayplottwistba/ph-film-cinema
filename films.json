@@ -1717,5 +1717,19 @@
                     "type": "none"
                 }
             ]
+    },
+    {
+        "year": 2023,
+        "title": "Rookie",
+        "poster": "assets/rookie.jpg",
+        "description": "Everything changes when an awkward teenager joins the volleyball team and falls for the volleyball team captain.",
+        "cast": "Pat Tingjuy, Aya Fernandez, Agot Isidro",
+        "director": "Samantha Lee",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "prime"
+                }
+            ]
     }
 ]
