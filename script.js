@@ -37,8 +37,9 @@ async function loadFilms() {
         films = data;
 
         films.sort((a, b) => b.year - a.year);
-
+        
         populateYears();
+        populateWatchFilters();
         renderFilms();
 
     } catch (error) {
@@ -66,21 +67,50 @@ function populateYears() {
 }
 
 function getFilteredFilms() {
-    const selectedYear = yearFilter.value;
+    const selectedYear =
+        yearFilter.value;
 
-    const searchTerm = searchInput.value
-        .trim()
-        .toLowerCase();
+    const selectedWatch =
+        watchFilter.value;
+
+    const searchTerm =
+        searchInput.value
+            .trim()
+            .toLowerCase();
 
     return films
         .filter(film => {
+
             if (selectedYear === "all") {
                 return true;
             }
 
-            return String(film.year) === String(selectedYear);
+            return String(film.year) ===
+                String(selectedYear);
         })
+
         .filter(film => {
+
+            if (selectedWatch === "all") {
+                return true;
+            }
+
+            if (selectedWatch === "now_showing") {
+                return film.now_showing === true;
+            }
+
+            if (!Array.isArray(film.watch)) {
+                return false;
+            }
+
+            return film.watch.some(source => {
+                return source &&
+                    source.type === selectedWatch;
+            });
+        })
+
+        .filter(film => {
+
             if (searchTerm === "") {
                 return true;
             }
@@ -89,7 +119,9 @@ function getFilteredFilms() {
                 .toLowerCase()
                 .includes(searchTerm);
         })
+
         .sort((a, b) => {
+
             if (selectedYear !== "all") {
                 return a.title.localeCompare(
                     b.title,
@@ -384,6 +416,11 @@ function renderFilms() {
     );
 }
 
+watchFilter.addEventListener(
+    "change",
+    renderFilms
+);
+
 yearFilter.addEventListener(
     "change",
     renderFilms
@@ -393,6 +430,9 @@ searchInput.addEventListener(
     "input",
     renderFilms
 );
+
+const watchFilter =
+    document.getElementById("watchFilter");
 
 const developerModal =
     document.getElementById("developerModal");
@@ -406,5 +446,28 @@ developerClose.addEventListener(
         developerModal.style.display = "none";
     }
 );
+
+function populateWatchFilters() {
+    const platforms = [
+        ["netflix", "Netflix"],
+        ["juanflix", "Juanflix"],
+        ["ccp", "CCP"],
+        ["youtube", "YouTube"],
+        ["prime", "Prime Video"],
+        ["external", "External"],
+        ["none", "No known source"],
+        ["now_showing", "Now Showing"]
+    ];
+
+    platforms.forEach(([value, label]) => {
+        const option =
+            document.createElement("option");
+
+        option.value = value;
+        option.textContent = label;
+
+        watchFilter.appendChild(option);
+    });
+}
 
 loadFilms();
