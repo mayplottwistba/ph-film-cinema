@@ -258,13 +258,13 @@ h1 {
     flex-wrap: wrap;
     align-content: flex-start;
     gap: 5px;
-    max-height: 66px;
+    height: 49px;
     overflow: hidden;
     margin-bottom: 4px;
 }
 
 .film-cast.expanded {
-    max-height: none;
+    height: auto;
     overflow: visible;
 }
 
