@@ -8,18 +8,39 @@ const platformNames = {
     none: "No known source"
 };
 
-const filmsGrid = document.getElementById("filmsGrid");
-const yearFilter = document.getElementById("yearFilter");
-const watchFilter = document.getElementById("watchFilter");
-const searchInput = document.getElementById("searchInput");
+const filmsGrid =
+    document.getElementById("filmsGrid");
+
+const pagination =
+    document.getElementById("pagination");
+
+const yearFilter =
+    document.getElementById("yearFilter");
+
+const watchFilter =
+    document.getElementById("watchFilter");
+
+const searchInput =
+    document.getElementById("searchInput");
+
+const developerModal =
+    document.getElementById("developerModal");
+
+const developerClose =
+    document.getElementById("developerClose");
 
 let films = [];
 
+let currentPage = 1;
+
+const filmsPerPage = 15;
+
 async function loadFilms() {
     try {
-        const response = await fetch("./films.json", {
-            cache: "no-store"
-        });
+        const response =
+            await fetch("./films.json", {
+                cache: "no-store"
+            });
 
         if (!response.ok) {
             throw new Error(
@@ -27,7 +48,8 @@ async function loadFilms() {
             );
         }
 
-        const data = await response.json();
+        const data =
+            await response.json();
 
         if (!Array.isArray(data)) {
             throw new Error(
@@ -53,6 +75,9 @@ async function loadFilms() {
 
         populateYears();
         populateWatchFilters();
+
+        currentPage = 1;
+
         renderFilms();
 
     } catch (error) {
@@ -74,7 +99,11 @@ async function loadFilms() {
 }
 
 function populateYears() {
-    for (let year = 2026; year >= 2005; year--) {
+    for (
+        let year = 2026;
+        year >= 2005;
+        year--
+    ) {
         const option =
             document.createElement("option");
 
@@ -128,7 +157,6 @@ function getFilteredFilms() {
 
     return films
         .filter(film => {
-
             if (selectedYear === "all") {
                 return true;
             }
@@ -138,7 +166,6 @@ function getFilteredFilms() {
         })
 
         .filter(film => {
-
             if (selectedWatch === "all") {
                 return true;
             }
@@ -164,7 +191,6 @@ function getFilteredFilms() {
         })
 
         .filter(film => {
-
             if (searchTerm === "") {
                 return true;
             }
@@ -175,7 +201,6 @@ function getFilteredFilms() {
         })
 
         .sort((a, b) => {
-
             if (selectedYear !== "all") {
                 return a.title.localeCompare(
                     b.title,
@@ -220,7 +245,6 @@ function createWatchOptions(
 
     html += sources
         .map(source => {
-
             if (
                 !source ||
                 !source.type
@@ -268,10 +292,7 @@ function createWatchOptions(
     return html;
 }
 
-function createFilmCard(
-    film,
-    index
-) {
+function createFilmCard(film, index) {
     const card =
         document.createElement(
             "article"
@@ -304,9 +325,7 @@ function createFilmCard(
                 ${film.title}
             </div>
 
-            <div
-                class="film-description"
-            >
+            <div class="film-description">
                 ${film.description || ""}
             </div>
 
@@ -333,9 +352,7 @@ function createFilmCard(
                 CAST
             </div>
 
-            <div
-                class="film-cast"
-            >
+            <div class="film-cast">
                 ${
                     film.cast ||
                     "Cast information unavailable"
@@ -351,7 +368,7 @@ function createFilmCard(
             </button>
 
             <div class="watch-label">
-                Where to watch:
+                WHERE TO WATCH:
             </div>
 
             <div class="watch-options">
@@ -369,7 +386,6 @@ function createFilmCard(
     image.addEventListener(
         "error",
         function () {
-
             this.style.display =
                 "none";
 
@@ -402,7 +418,6 @@ function setupSeeMore(card) {
         );
 
     buttons.forEach(button => {
-
         const targetType =
             button.dataset.target;
 
@@ -432,38 +447,31 @@ function setupSeeMore(card) {
             return;
         }
 
-        requestAnimationFrame(
-            () => {
-
-                if (
-                    target.scrollHeight <=
-                    target.clientHeight + 1
-                ) {
-                    button.remove();
-                }
+        requestAnimationFrame(() => {
+            if (
+                target.scrollHeight <=
+                target.clientHeight + 1
+            ) {
+                button.remove();
             }
-        );
+        });
 
         button.addEventListener(
             "click",
             () => {
-
                 const expanded =
                     target.classList.contains(
                         "expanded"
                     );
 
                 if (expanded) {
-
                     target.classList.remove(
                         "expanded"
                     );
 
                     button.textContent =
                         "SEE MORE";
-
                 } else {
-
                     target.classList.add(
                         "expanded"
                     );
@@ -482,8 +490,17 @@ function renderFilms() {
     const filteredFilms =
         getFilteredFilms();
 
+    const totalFilms =
+        filteredFilms.length;
+
+    const totalPages =
+        Math.ceil(
+            totalFilms /
+            filmsPerPage
+        );
+
     if (
-        filteredFilms.length === 0
+        totalFilms === 0
     ) {
         filmsGrid.innerHTML = `
             <div class="empty-films">
@@ -491,16 +508,38 @@ function renderFilms() {
             </div>
         `;
 
+        pagination.innerHTML = "";
+
         return;
     }
 
-    filteredFilms.forEach(
-        (film, index) => {
+    if (
+        currentPage > totalPages
+    ) {
+        currentPage =
+            totalPages;
+    }
 
+    const startIndex =
+        (currentPage - 1) *
+        filmsPerPage;
+
+    const endIndex =
+        startIndex +
+        filmsPerPage;
+
+    const pageFilms =
+        filteredFilms.slice(
+            startIndex,
+            endIndex
+        );
+
+    pageFilms.forEach(
+        (film, index) => {
             const card =
                 createFilmCard(
                     film,
-                    index
+                    startIndex + index
                 );
 
             filmsGrid.appendChild(
@@ -508,42 +547,173 @@ function renderFilms() {
             );
         }
     );
+
+    renderPagination(
+        totalPages,
+        totalFilms
+    );
+}
+
+function renderPagination(
+    totalPages,
+    totalFilms
+) {
+    pagination.innerHTML = "";
+
+    if (totalPages <= 1) {
+        return;
+    }
+
+    const previous =
+        document.createElement(
+            "button"
+        );
+
+    previous.textContent =
+        "‹";
+
+    previous.disabled =
+        currentPage === 1;
+
+    previous.addEventListener(
+        "click",
+        () => {
+            if (currentPage > 1) {
+                currentPage--;
+                renderFilms();
+
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            }
+        }
+    );
+
+    pagination.appendChild(
+        previous
+    );
+
+    for (
+        let page = 1;
+        page <= totalPages;
+        page++
+    ) {
+        const button =
+            document.createElement(
+                "button"
+            );
+
+        button.textContent =
+            page;
+
+        if (
+            page === currentPage
+        ) {
+            button.classList.add(
+                "active"
+            );
+        }
+
+        button.addEventListener(
+            "click",
+            () => {
+                currentPage = page;
+
+                renderFilms();
+
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            }
+        );
+
+        pagination.appendChild(
+            button
+        );
+    }
+
+    const next =
+        document.createElement(
+            "button"
+        );
+
+    next.textContent =
+        "›";
+
+    next.disabled =
+        currentPage === totalPages;
+
+    next.addEventListener(
+        "click",
+        () => {
+            if (
+                currentPage <
+                totalPages
+            ) {
+                currentPage++;
+
+                renderFilms();
+
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            }
+        }
+    );
+
+    pagination.appendChild(
+        next
+    );
 }
 
 yearFilter.addEventListener(
     "change",
-    renderFilms
+    () => {
+        currentPage = 1;
+        renderFilms();
+    }
 );
 
 watchFilter.addEventListener(
     "change",
-    renderFilms
+    () => {
+        currentPage = 1;
+        renderFilms();
+    }
 );
 
 searchInput.addEventListener(
     "input",
-    renderFilms
+    () => {
+        currentPage = 1;
+        renderFilms();
+    }
 );
 
-const developerModal =
-    document.getElementById("developerModal");
-
-const developerClose =
-    document.getElementById("developerClose");
-
-if (developerModal && developerClose) {
+if (
+    developerModal &&
+    developerClose
+) {
     developerClose.addEventListener(
         "click",
         () => {
-            developerModal.style.display = "none";
+            developerModal.style.display =
+                "none";
         }
     );
 
     developerModal.addEventListener(
         "click",
         event => {
-            if (event.target === developerModal) {
-                developerModal.style.display = "none";
+            if (
+                event.target ===
+                developerModal
+            ) {
+                developerModal.style.display =
+                    "none";
             }
         }
     );
