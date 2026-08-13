@@ -299,11 +299,30 @@ function createDirectorTag(director) {
         `;
     }
 
-    return `
-        <span class="director-tag">
-            ${escapeHTML(director)}
-        </span>
-    `;
+    const names = Array.isArray(director)
+        ? director
+        : String(director)
+            .split(/,|&/)
+            .map(name => name.trim());
+
+    const validNames =
+        names.filter(name => name);
+
+    if (validNames.length === 0) {
+        return `
+            <span class="director-unavailable">
+                Director information unavailable
+            </span>
+        `;
+    }
+
+    return validNames
+        .map(name => `
+            <span class="director-tag">
+                ${escapeHTML(name)}
+            </span>
+        `)
+        .join("");
 }
 
 function createWatchOptions(
