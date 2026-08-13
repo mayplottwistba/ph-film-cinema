@@ -353,10 +353,7 @@ function createFilmCard(film, index) {
             </div>
 
             <div class="film-cast">
-                ${
-                    film.cast ||
-                    "Cast information unavailable"
-                }
+                ${createCastTags(film.cast)}
             </div>
 
             <button
@@ -717,6 +714,29 @@ if (
             }
         }
     );
+}
+
+function createCastTags(cast) {
+    if (!cast) {
+        return `
+            <span class="cast-unavailable">
+                Cast information unavailable
+            </span>
+        `;
+    }
+
+    const names = Array.isArray(cast)
+        ? cast
+        : cast.split(",").map(name => name.trim());
+
+    return names
+        .filter(name => name)
+        .map(name => `
+            <span class="cast-tag">
+                ${name}
+            </span>
+        `)
+        .join("");
 }
 
 loadFilms();
