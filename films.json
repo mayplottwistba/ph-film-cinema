@@ -1116,7 +1116,8 @@
         "now_showing": false,
         "watch": [
                 {
-                    "type": "none"
+                    "type": "external",
+                    "url": "https://drive.google.com/file/d/1pMP6XfUQ8gNicTr-_9JGB38fHd8ao9Xc/view?usp=sharing"
                 }
             ]
     },
