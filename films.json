@@ -1731,5 +1731,221 @@
                     "type": "prime"
                 }
             ]
+    },
+    {
+        "year": 2012,
+        "title": "Kalayaan (Wildlife)",
+        "poster": "assets/kalayaan.jpg",
+        "description": "Julian, a soldier stationed on a remote Philippine island, is forced to extend his stay after news of a coup d’état in Manila reaches his base. When he loses contact with the main base and begins sensing someone watching him, two soldiers arrive to investigate and recount the strange story of a former soldier who claimed to have encountered a mermaid.",
+        "cast": "Ananda Everingham, Zanjoe Marudo, Luis Alandy, Rocky Salumbides, Kiki Sugino, Angeli Bayani",
+        "director": "Adolfo Borinaga Alix, Jr.",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2012,
+        "title": "Kamera Obskura",
+        "poster": "assets/kamera.jpg",
+        "description": "The narrative plays with the idea of a retro-futurist world where a prisoner locked away in a dark chamber for over two decades only sees the reality of the world outside through the small hole in his cell, which projects an image of the city on his wall.",
+        "cast": "Pen Medina, Joel Torre, Nanding Josef, Abe Pagtama, Irene Gabriel, Ping Medina, Suzette Ranillo, Lou Veloso, Archie Adamos, Madeleine Nicolas, Sue Prado, Ces Aldaba, Teddy Co",
+        "director": "Raymond Red",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2012,
+        "title": "The Animals",
+        "poster": "assets/animals.jpg",
+        "description": "Set in an affluent, upper middle class village in the suburbs, “The Animals” chronicles a day in the life of Jake, Trina, and Alex, who go through the musings that every kid in high school has to deal with.",
+        "cast": "Albie Casiño, Dawn Jimenez, Patrick Sugui, John Wayne Sace, Bryan Homecillo, Vangie Martelle, Micah Cabral, Issa Litton, Raul Morit, Evangeline Torcino, Giovanni Baldisseri, Carlo Cruz, Andrew Felix",
+        "director": "Gino M. Santos",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2012,
+        "title": "Mga Dayo",
+        "poster": "assets/dayo.jpg",
+        "description": "Set in Guam on Thanksgiving Day, the film follows three Filipina immigrants whose lives intersect as they struggle with marriage, relationships, family, and belonging. Alex, Miriam, and Ella each face difficult choices that force them to question where they truly consider home.",
+        "cast": "Sue Prado, Janela Buhain, Olga Natividad, Brandon Muna, Brian Muna, Charlene Baes Leffler, Louella Camaganacan, Aaron Agsalud, Vicky Flor, Vicky Dizon, Ron Pangan",
+        "director": "Julius Sotomayor Cena",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2012,
+        "title": "Intoy Syokoy ng Kalye Marino",
+        "poster": "assets/syokoy.jpg",
+        "description": "Intoy Syokoy ng Kalye Marino follows Intoy, a mussel caretaker in Cavite City who dreams of building a stable life with Doray, a sex worker he has loved since childhood. As both struggle with poverty and the lasting effects of the former American naval base, Intoy’s hopes for love and livelihood are threatened by an unexpected turn of nature.",
+        "cast": "JM de Guzman, LJ Reyes, Joross Gamboa",
+        "director": "Lemuel C. Lorca",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2012,
+        "title": "Ang Katiwala (The Caretaker)",
+        "poster": "assets/katiwala.jpg",
+        "description": "Ruben, a carpenter who loses his job in Zambales, moves to Quezon City to work as a caretaker of an abandoned house. After discovering that the former owner was an important historical figure, Ruben becomes fascinated by his life and begins to idolize him.",
+        "cast": "Dennis Trillo, Ronnie Lazaro, Angelina Canapi, Althea Vega, Miggs Cuaderno, Neri Naig, Ernie Zarate, Shyr Valdez, Richard Manabat, Louella de Cordova, Aileen Lota, Dado Jose",
+        "director": "Aloy L. Adlawan",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=yZo9UMGi2Jc&msockid=2112ed8896ed11f18fa73d0e46f5af91"
+                },
+                {
+                    "type": "external",
+                    "url": "https://www.bilibili.tv/en/video/2043354417"
+                }
+            ]
+    },
+    {
+        "year": 2012,
+        "title": "Ang Nawawala (What Isn't There)",
+        "poster": "assets/nawawala.jpg",
+        "description": "Gibson Bonifacio, a 20-year-old who stopped speaking as a child, returns to Manila after three years abroad and finds his family still struggling with a painful loss. As he reconnects with his childhood best friend and discovers a possible first romance, Gibson begins to confront his past and redefine his relationships with his family, friends, and himself.",
+        "cast": "Dominic Roco, Annicka Dolonius, Dawn Zulueta, Felix Roco, Boboy Garrovillo, Alcris Galura, Mercedes Cabral, Kelvin Yu, Jenny Jamora, Marc Abaya, Sabrina Man",
+        "director": "Marie Jamora",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "external",
+                    "url": "https://www.bilibili.tv/en/video/4799122820700672"
+                }
+            ]
+    },
+    {
+        "year": 2012,
+        "title": "Oros",
+        "poster": "assets/oros.jpg",
+        "description": "A funeral parlor owner sells an unidentified body to Makoy, who stages a three-week wake with his reluctant brother Abet to run an illegal gambling den. As they create a fictional story to legitimize the wake, they become entangled with the desperate people who depend on its profits.",
+        "cast": "Kristoffer King, Kristoffer Martin, Tanya Gomez, Kim Komatsu, Diva Montelaba, Angelita Raymundo",
+        "director": "Paul Sta. Ana",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2012,
+        "title": "REquieme!",
+        "poster": "assets/requieme.jpg",
+        "description": "The film follows Swanie, a barangay chair who stages a wake for her infamous relative to gain political favor, while her estranged transgender son Joanna struggles in Manila to give a neighbor a proper burial. As mother and son deal with separate deaths, they are forced to confront the grief and wounds they have long kept buried.",
+        "cast": "Kristoffer King, Shamaine Buencamino, Rez Cortez, Anthony Falcon, Paul Jake Paule, Endong, Antonette Garcia, Rolie Inocencio, Gary Lim, Jelson Bay, Angelita Raymundo, Skyzx Labastilla, Ces Aldaba, Lou Veloso, Lilia Cuntapay",
+        "director": "Loy Arcenas",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2013,
+        "title": "Amor y Muerte",
+        "poster": "assets/amor.jpg",
+        "description": "An erotic 16th Century period drama, the film examines the initial encounter between the Indios (natives) and their colonizers (Spaniards) and their conflicting views on love, passion, religion and sexuality.",
+        "cast": "Markki Stroem, Adrian Sebastian, Kuya Manzano, Amable Quiambao, Althea Vega, Mico Palanca, RS Francisco, Moises Magisa, Lotlot Bustamante, Chndy Rogel",
+        "director": "Ces Evangelista",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2013,
+        "title": "Porno",
+        "poster": "assets/porno.jpg",
+        "description": "An assassin, a porn dubber and a transgender. Three souls. One explicit illusion. To ﬁnd the ultimate joy in their empty lives. A safe haven, where passion and love mean humanity, ecstasy means enlightenment; and the soul is the ultimate arbiter of the truth.",
+        "cast": "Angel Aquino, Carlo Aquino, Rosanna Roces, Yul Servo, Ricky Davao, Allan Paule, Anita Linda, Bembol Roco, Janvier Daily, Jeremy Ian",
+        "director": "Adolfo Alix Jr.",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2013,
+        "title": "Liars",
+        "poster": "assets/liars.jpg",
+        "description": "Liars tells the story of a journalist (Eloisa) whose exposé of the truth results in life-changing consequences to a baseball team of poor boys. The film was inspired by a true story.",
+        "cast": "Vilma Santos, Alessandra de Rossi, Jan Harley Hicana, John Michael Bonapos, Cris Villanueva, Richard Quan, Jim Rocky Tangco, Sue Prado, Dax Alejandro, Arnold Reyes",
+        "director": "Gil M. Portes",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2013,
+        "title": "Nuwebe",
+        "poster": "assets/nuwebe.jpg",
+        "description": "Nuwebe follows nine-year-old Krista, who becomes pregnant after being sexually abused by her own father. Rather than allowing herself to be defined by her trauma, Krista shows remarkable resilience as she struggles to rebuild her life, while her mother is torn between protecting her daughter and remaining loyal to her husband.",
+        "cast": "Eugene Domingo, Barbara Miguel, Jake Cuenca, Nadine Samonte, Anita Linda, Manny Castañeda, Archie Adamos, Renaissance Tuason, Mikael Liwag, Isadora Villasquez, Renerich Ocon, Mariah Fernandez, Blair Arellano, Derick Cabrido",
+        "director": "Joseph Israel Laban",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2013,
+        "title": "Quick Change",
+        "poster": "assets/quick.jpg",
+        "description": "Dorina, a transgender woman who runs an illegal cosmetic surgery business, finds fulfillment as a career woman, wife, and mother figure to her young nephew. Her seemingly happy life is shaken when her husband Uno falls in love with another trans woman, forcing Dorina to confront love, identity, and betrayal.",
+        "cast": "Mimi Juareza, Jun-Jun Quitana, Miggs Cuaderno, Francine Garcia, Natashia Yumi, Filipe Martinez, Rolando Inocencio, Sashi Giggle",
+        "director": "Eduardo Roy Jr.",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2013,
+        "title": "David F.",
+        "poster": "assets/david.jpg",
+        "description": "David F. weaves together three stories exploring the history and experiences of African Americans in the Philippines, from the Philippine-American War to the former Clark Air Base. Through the lives of a Black American soldier, a Filipina mother whose child is born Black during the Japanese Occupation, and a gay impersonator searching for his absent father, the film examines racism, discrimination, identity, and Filipino prejudice.",
+        "cast": "Alex Vincent Medina, Eula Valdes, Sid Lucero, Art Acuña, Quester Hannah, Shamaine Buencamino, Anita Linda, Rocky Salumbides, Jess Mendoza, Mariella Castillo, Dax Martin, Will Devaughn, Mitch Valdez",
+        "director": "Emmanuel Q. Palo",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
     }
 ]
