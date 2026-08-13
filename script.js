@@ -95,10 +95,18 @@ async function loadFilms() {
                 </small>
             </div>
         `;
+
+        if (pagination) {
+            pagination.innerHTML = "";
+        }
     }
 }
 
 function populateYears() {
+    if (!yearFilter) {
+        return;
+    }
+
     for (
         let year = 2026;
         year >= 2005;
@@ -115,6 +123,10 @@ function populateYears() {
 }
 
 function populateWatchFilters() {
+    if (!watchFilter) {
+        return;
+    }
+
     const platforms = [
         ["netflix", "Netflix"],
         ["juanflix", "Juanflix"],
@@ -145,15 +157,21 @@ function populateWatchFilters() {
 
 function getFilteredFilms() {
     const selectedYear =
-        yearFilter.value;
+        yearFilter
+            ? yearFilter.value
+            : "all";
 
     const selectedWatch =
-        watchFilter.value;
+        watchFilter
+            ? watchFilter.value
+            : "all";
 
     const searchTerm =
-        searchInput.value
-            .trim()
-            .toLowerCase();
+        searchInput
+            ? searchInput.value
+                .trim()
+                .toLowerCase()
+            : "";
 
     return films
         .filter(film => {
@@ -195,34 +213,80 @@ function getFilteredFilms() {
                 return true;
             }
 
-            return film.title
+            return String(film.title || "")
                 .toLowerCase()
                 .includes(searchTerm);
         })
 
         .sort((a, b) => {
             if (selectedYear !== "all") {
-                return a.title.localeCompare(
-                    b.title,
-                    undefined,
-                    {
-                        sensitivity: "base"
-                    }
-                );
+                return String(a.title || "")
+                    .localeCompare(
+                        String(b.title || ""),
+                        undefined,
+                        {
+                            sensitivity: "base"
+                        }
+                    );
             }
 
             if (a.year !== b.year) {
                 return b.year - a.year;
             }
 
-            return a.title.localeCompare(
-                b.title,
-                undefined,
-                {
-                    sensitivity: "base"
-                }
-            );
+            return String(a.title || "")
+                .localeCompare(
+                    String(b.title || ""),
+                    undefined,
+                    {
+                        sensitivity: "base"
+                    }
+                );
         });
+}
+
+function escapeHTML(value) {
+    return String(value)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+}
+
+function createCastTags(cast) {
+    if (!cast) {
+        return `
+            <span class="cast-unavailable">
+                Cast information unavailable
+            </span>
+        `;
+    }
+
+    const names = Array.isArray(cast)
+        ? cast
+        : String(cast)
+            .split(",")
+            .map(name => name.trim());
+
+    const validNames =
+        names.filter(name => name);
+
+    if (validNames.length === 0) {
+        return `
+            <span class="cast-unavailable">
+                Cast information unavailable
+            </span>
+        `;
+    }
+
+    return validNames
+        .map(name => `
+            <span class="cast-tag">
+                ${escapeHTML(name)}
+            </span>
+        `)
+        .join("");
 }
 
 function createWatchOptions(
@@ -270,7 +334,7 @@ function createWatchOptions(
                 return `
                     <a
                         class="platform ${type}"
-                        href="${source.url}"
+                        href="${escapeHTML(source.url)}"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -292,7 +356,10 @@ function createWatchOptions(
     return html;
 }
 
-function createFilmCard(film, index) {
+function createFilmCard(
+    film,
+    index
+) {
     const card =
         document.createElement(
             "article"
@@ -307,26 +374,41 @@ function createFilmCard(film, index) {
             film.now_showing
         );
 
+    const castTags =
+        createCastTags(
+            film.cast
+        );
+
     card.innerHTML = `
         <div class="poster-wrap">
             <img
-                src="${film.poster}"
-                alt="${film.title}"
+                src="${escapeHTML(
+                    film.poster || ""
+                )}"
+                alt="${escapeHTML(
+                    film.title || ""
+                )}"
             >
         </div>
 
         <div class="film-info">
 
             <div class="film-year">
-                ${film.year}
+                ${escapeHTML(
+                    film.year || ""
+                )}
             </div>
 
             <div class="film-title">
-                ${film.title}
+                ${escapeHTML(
+                    film.title || ""
+                )}
             </div>
 
             <div class="film-description">
-                ${film.description || ""}
+                ${escapeHTML(
+                    film.description || ""
+                )}
             </div>
 
             <button
@@ -343,8 +425,11 @@ function createFilmCard(film, index) {
 
             <div class="film-director">
                 ${
-                    film.director ||
-                    "Director information unavailable"
+                    film.director
+                        ? escapeHTML(
+                            film.director
+                        )
+                        : "Director information unavailable"
                 }
             </div>
 
@@ -353,7 +438,7 @@ function createFilmCard(film, index) {
             </div>
 
             <div class="film-cast">
-                ${createCastTags(film.cast)}
+                ${castTags}
             </div>
 
             <button
@@ -380,28 +465,30 @@ function createFilmCard(film, index) {
             ".poster-wrap img"
         );
 
-    image.addEventListener(
-        "error",
-        function () {
-            this.style.display =
-                "none";
+    if (image) {
+        image.addEventListener(
+            "error",
+            function () {
+                this.style.display =
+                    "none";
 
-            const placeholder =
-                document.createElement(
-                    "div"
+                const placeholder =
+                    document.createElement(
+                        "div"
+                    );
+
+                placeholder.className =
+                    "poster-missing";
+
+                placeholder.textContent =
+                    "POSTER NOT AVAILABLE";
+
+                this.parentElement.appendChild(
+                    placeholder
                 );
-
-            placeholder.className =
-                "poster-missing";
-
-            placeholder.textContent =
-                "POSTER NOT AVAILABLE";
-
-            this.parentElement.appendChild(
-                placeholder
-            );
-        }
-    );
+            }
+        );
+    }
 
     setupSeeMore(card);
 
@@ -482,6 +569,10 @@ function setupSeeMore(card) {
 }
 
 function renderFilms() {
+    if (!filmsGrid) {
+        return;
+    }
+
     filmsGrid.innerHTML = "";
 
     const filteredFilms =
@@ -496,16 +587,16 @@ function renderFilms() {
             filmsPerPage
         );
 
-    if (
-        totalFilms === 0
-    ) {
+    if (totalFilms === 0) {
         filmsGrid.innerHTML = `
             <div class="empty-films">
                 NO FILMS FOUND
             </div>
         `;
 
-        pagination.innerHTML = "";
+        if (pagination) {
+            pagination.innerHTML = "";
+        }
 
         return;
     }
@@ -546,15 +637,17 @@ function renderFilms() {
     );
 
     renderPagination(
-        totalPages,
-        totalFilms
+        totalPages
     );
 }
 
 function renderPagination(
-    totalPages,
-    totalFilms
+    totalPages
 ) {
+    if (!pagination) {
+        return;
+    }
+
     pagination.innerHTML = "";
 
     if (totalPages <= 1) {
@@ -566,23 +659,28 @@ function renderPagination(
             "button"
         );
 
+    previous.type = "button";
+
     previous.textContent =
         "‹";
 
     previous.disabled =
         currentPage === 1;
 
+    previous.setAttribute(
+        "aria-label",
+        "Previous page"
+    );
+
     previous.addEventListener(
         "click",
         () => {
             if (currentPage > 1) {
                 currentPage--;
+
                 renderFilms();
 
-                window.scrollTo({
-                    top: 0,
-                    behavior: "smooth"
-                });
+                scrollToFilms();
             }
         }
     );
@@ -601,6 +699,8 @@ function renderPagination(
                 "button"
             );
 
+        button.type = "button";
+
         button.textContent =
             page;
 
@@ -612,17 +712,20 @@ function renderPagination(
             );
         }
 
+        button.setAttribute(
+            "aria-label",
+            `Page ${page}`
+        );
+
         button.addEventListener(
             "click",
             () => {
-                currentPage = page;
+                currentPage =
+                    page;
 
                 renderFilms();
 
-                window.scrollTo({
-                    top: 0,
-                    behavior: "smooth"
-                });
+                scrollToFilms();
             }
         );
 
@@ -636,11 +739,18 @@ function renderPagination(
             "button"
         );
 
+    next.type = "button";
+
     next.textContent =
         "›";
 
     next.disabled =
         currentPage === totalPages;
+
+    next.setAttribute(
+        "aria-label",
+        "Next page"
+    );
 
     next.addEventListener(
         "click",
@@ -653,10 +763,7 @@ function renderPagination(
 
                 renderFilms();
 
-                window.scrollTo({
-                    top: 0,
-                    behavior: "smooth"
-                });
+                scrollToFilms();
             }
         }
     );
@@ -666,29 +773,52 @@ function renderPagination(
     );
 }
 
-yearFilter.addEventListener(
-    "change",
-    () => {
-        currentPage = 1;
-        renderFilms();
+function scrollToFilms() {
+    if (!filmsGrid) {
+        return;
     }
-);
 
-watchFilter.addEventListener(
-    "change",
-    () => {
-        currentPage = 1;
-        renderFilms();
-    }
-);
+    const top =
+        filmsGrid.getBoundingClientRect()
+            .top +
+        window.scrollY -
+        30;
 
-searchInput.addEventListener(
-    "input",
-    () => {
-        currentPage = 1;
-        renderFilms();
-    }
-);
+    window.scrollTo({
+        top,
+        behavior: "smooth"
+    });
+}
+
+if (yearFilter) {
+    yearFilter.addEventListener(
+        "change",
+        () => {
+            currentPage = 1;
+            renderFilms();
+        }
+    );
+}
+
+if (watchFilter) {
+    watchFilter.addEventListener(
+        "change",
+        () => {
+            currentPage = 1;
+            renderFilms();
+        }
+    );
+}
+
+if (searchInput) {
+    searchInput.addEventListener(
+        "input",
+        () => {
+            currentPage = 1;
+            renderFilms();
+        }
+    );
+}
 
 if (
     developerModal &&
@@ -714,29 +844,6 @@ if (
             }
         }
     );
-}
-
-function createCastTags(cast) {
-    if (!cast) {
-        return `
-            <span class="cast-unavailable">
-                Cast information unavailable
-            </span>
-        `;
-    }
-
-    const names = Array.isArray(cast)
-        ? cast
-        : cast.split(",").map(name => name.trim());
-
-    return names
-        .filter(name => name)
-        .map(name => `
-            <span class="cast-tag">
-                ${name}
-            </span>
-        `)
-        .join("");
 }
 
 loadFilms();
