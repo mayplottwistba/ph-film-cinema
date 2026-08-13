@@ -64,13 +64,14 @@ async function loadFilms() {
                 return b.year - a.year;
             }
 
-            return a.title.localeCompare(
-                b.title,
-                undefined,
-                {
-                    sensitivity: "base"
-                }
-            );
+            return String(a.title || "")
+                .localeCompare(
+                    String(b.title || ""),
+                    undefined,
+                    {
+                        sensitivity: "base"
+                    }
+                );
         });
 
         populateYears();
@@ -289,6 +290,22 @@ function createCastTags(cast) {
         .join("");
 }
 
+function createDirectorTag(director) {
+    if (!director) {
+        return `
+            <span class="director-unavailable">
+                Director information unavailable
+            </span>
+        `;
+    }
+
+    return `
+        <span class="director-tag">
+            ${escapeHTML(director)}
+        </span>
+    `;
+}
+
 function createWatchOptions(
     sources,
     nowShowing
@@ -379,6 +396,11 @@ function createFilmCard(
             film.cast
         );
 
+    const directorTag =
+        createDirectorTag(
+            film.director
+        );
+
     card.innerHTML = `
         <div class="poster-wrap">
             <img
@@ -424,13 +446,7 @@ function createFilmCard(
             </div>
 
             <div class="film-director">
-                ${
-                    film.director
-                        ? escapeHTML(
-                            film.director
-                        )
-                        : "Director information unavailable"
-                }
+                ${directorTag}
             </div>
 
             <div class="film-cast-label">
@@ -660,10 +676,7 @@ function renderPagination(
         );
 
     previous.type = "button";
-
-    previous.textContent =
-        "‹";
-
+    previous.textContent = "‹";
     previous.disabled =
         currentPage === 1;
 
@@ -700,9 +713,7 @@ function renderPagination(
             );
 
         button.type = "button";
-
-        button.textContent =
-            page;
+        button.textContent = page;
 
         if (
             page === currentPage
@@ -720,8 +731,7 @@ function renderPagination(
         button.addEventListener(
             "click",
             () => {
-                currentPage =
-                    page;
+                currentPage = page;
 
                 renderFilms();
 
@@ -740,10 +750,7 @@ function renderPagination(
         );
 
     next.type = "button";
-
-    next.textContent =
-        "›";
-
+    next.textContent = "›";
     next.disabled =
         currentPage === totalPages;
 
