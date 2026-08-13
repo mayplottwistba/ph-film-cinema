@@ -254,21 +254,45 @@ h1 {
 }
 
 .film-cast {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 5px;
+    max-height: 66px;
     overflow: hidden;
     margin-bottom: 4px;
-    color: #222;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    font-weight: 700;
-    line-height: 1.4;
 }
 
 .film-cast.expanded {
-    display: block;
+    max-height: none;
     overflow: visible;
+}
+
+.cast-tag {
+    display: inline-flex;
+    align-items: center;
+    min-height: 22px;
+    padding: 4px 9px;
+    border: 1px solid #8bcce8;
+    border-radius: 999px;
+    background: #dff4fc;
+    color: #24566a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.cast-tag:hover {
+    background: #c8ecf8;
+    border-color: #6dbbd9;
+}
+
+.cast-unavailable {
+    color: #777;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
 }
 
 .see-more {
@@ -611,7 +635,12 @@ h1 {
     }
 
     .film-cast {
-        font-size: 10px;
+        max-height: 66px;
+    }
+
+    .cast-tag {
+        padding: 4px 8px;
+        font-size: 9px;
     }
 
     .developer-message {
