@@ -470,6 +470,34 @@ h1 {
     cursor: pointer;
 }
 
+.platform.appletv {
+    background: #c0c0c0;
+    color: #111;
+    border-color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.platform.appletv:hover {
+    background: #aaa;
+    color: #111;
+    border-color: #888;
+}
+
+.platform.iwant {
+    background: #7b2cbf;
+    color: #fff;
+    border-color: #7b2cbf;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.platform.iwant:hover {
+    background: #60209a;
+    color: #fff;
+    border-color: #60209a;
+}
+
 .pagination button:hover {
     background: #111;
     color: #fff;
