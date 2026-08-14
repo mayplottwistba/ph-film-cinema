@@ -4,6 +4,8 @@ const platformNames = {
     ccp: "CCP",
     youtube: "YouTube",
     prime: "Prime Video",
+    appletv: "Apple TV",
+    iwant: "iWant",
     external: "External",
     none: "No known source"
 };
@@ -129,15 +131,17 @@ function populateWatchFilters() {
     }
 
     const platforms = [
-        ["netflix", "Netflix"],
-        ["juanflix", "Juanflix"],
-        ["ccp", "CCP"],
-        ["youtube", "YouTube"],
-        ["prime", "Prime Video"],
-        ["external", "External"],
-        ["none", "No known source"],
-        ["now_showing", "Now Showing"]
-    ];
+    ["netflix", "Netflix"],
+    ["juanflix", "Juanflix"],
+    ["ccp", "CCP"],
+    ["youtube", "YouTube"],
+    ["prime", "Prime Video"],
+    ["appletv", "Apple TV"],
+    ["iwant", "iWant"],
+    ["external", "External"],
+    ["none", "No known source"],
+    ["now_showing", "Now Showing"]
+];
 
     platforms.forEach(
         ([value, label]) => {
