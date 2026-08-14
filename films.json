@@ -2409,7 +2409,7 @@
         "now_showing": false,
         "watch": [
                 {
-                    "type": "appletv",
+                    "type": "appletv"
                 }
             ]
     },
