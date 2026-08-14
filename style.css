@@ -130,6 +130,24 @@ h1 {
     pointer-events: none;
 }
 
+.find-button {
+    height: 40px;
+    padding: 0 14px;
+    border: 2px solid #111;
+    background: #111;
+    color: #fff;
+    font-family: monospace;
+    font-size: 9px;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.find-button:hover {
+    background: #fff;
+    color: #111;
+}
+
 .films-grid {
     display: grid;
     grid-template-columns: repeat(
@@ -249,6 +267,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    gap: 5px;
     margin-bottom: 12px;
 }
 
@@ -411,6 +430,34 @@ h1 {
     border-color: #5bb8df;
 }
 
+.platform.appletv {
+    background: #c0c0c0;
+    color: #111;
+    border-color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.platform.appletv:hover {
+    background: #aaa;
+    color: #111;
+    border-color: #888;
+}
+
+.platform.iwant {
+    background: #7b2cbf;
+    color: #fff;
+    border-color: #7b2cbf;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.platform.iwant:hover {
+    background: #60209a;
+    color: #fff;
+    border-color: #60209a;
+}
+
 .platform.external {
     background: #fff;
     color: #111;
@@ -470,34 +517,6 @@ h1 {
     cursor: pointer;
 }
 
-.platform.appletv {
-    background: #c0c0c0;
-    color: #111;
-    border-color: #999;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.platform.appletv:hover {
-    background: #aaa;
-    color: #111;
-    border-color: #888;
-}
-
-.platform.iwant {
-    background: #7b2cbf;
-    color: #fff;
-    border-color: #7b2cbf;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.platform.iwant:hover {
-    background: #60209a;
-    color: #fff;
-    border-color: #60209a;
-}
-
 .pagination button:hover {
     background: #111;
     color: #fff;
@@ -517,6 +536,9 @@ h1 {
     background: #fff;
     color: #111;
 }
+
+
+/* Developer Popup */
 
 .developer-modal {
     position: fixed;
@@ -599,7 +621,214 @@ h1 {
     font-weight: 900;
 }
 
+
+/* Common Films Popup */
+
+.common-films-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.common-films-modal.active {
+    display: flex;
+}
+
+.common-films-message {
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 30px;
+    background: #fff;
+    border: 2px solid #111;
+    box-shadow: 7px 7px 0 #111;
+}
+
+.common-films-message h2 {
+    margin: 5px 0 20px;
+    font-size: 26px;
+    line-height: 1;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+.people-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.person-input-wrap {
+    position: relative;
+}
+
+.people-inputs input {
+    width: 100%;
+    height: 40px;
+    padding: 0 12px;
+    border: 2px solid #111;
+    outline: none;
+    background: #fff;
+    color: #111;
+    font-family: monospace;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.people-inputs input:focus {
+    border-width: 3px;
+}
+
+.people-inputs input::placeholder {
+    color: #888;
+}
+
+.person-suggestions {
+    position: absolute;
+    top: 42px;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    display: none;
+    max-height: 180px;
+    overflow-y: auto;
+    background: #fff;
+    border: 2px solid #111;
+    box-shadow: 4px 4px 0 #111;
+}
+
+.person-suggestions.active {
+    display: block;
+}
+
+.person-suggestion {
+    display: block;
+    width: 100%;
+    padding: 9px 10px;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+    color: #111;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+}
+
+.person-suggestion:last-child {
+    border-bottom: 0;
+}
+
+.person-suggestion:hover {
+    background: #dff4fc;
+    color: #24566a;
+}
+
+.common-films-submit {
+    width: 100%;
+    height: 38px;
+    margin-top: 8px;
+    border: 2px solid #111;
+    background: #111;
+    color: #fff;
+    font-family: monospace;
+    font-size: 9px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.common-films-submit:hover {
+    background: #fff;
+    color: #111;
+}
+
+.common-films-results {
+    margin-top: 20px;
+}
+
+.common-films-empty {
+    padding: 25px;
+    border: 1px solid #ccc;
+    color: #777;
+    font-family: monospace;
+    font-size: 9px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.common-film-result {
+    display: grid;
+    grid-template-columns: 65px minmax(0, 1fr);
+    gap: 12px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #111;
+    background: #fafafa;
+}
+
+.common-film-poster {
+    width: 65px;
+    height: 90px;
+    background: #ddd;
+    border: 1px solid #111;
+    overflow: hidden;
+}
+
+.common-film-poster img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.common-film-info {
+    min-width: 0;
+}
+
+.common-film-year {
+    color: #777;
+    font-family: monospace;
+    font-size: 8px;
+    font-weight: 900;
+}
+
+.common-film-title {
+    margin: 4px 0 8px;
+    font-size: 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.common-film-people {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.common-film-person {
+    padding: 4px 7px;
+    border: 1px solid #8bcce8;
+    border-radius: 999px;
+    background: #dff4fc;
+    color: #24566a;
+    font-size: 9px;
+    font-weight: 600;
+}
+
+
+/* Responsive */
+
 @media (max-width: 1100px) {
+
     .films-header {
         align-items: flex-start;
         flex-direction: column;
@@ -621,15 +850,19 @@ h1 {
     .search-input {
         width: 100%;
     }
+
 }
 
 @media (max-width: 850px) {
+
     .films-grid {
         grid-template-columns: 1fr;
     }
+
 }
 
 @media (max-width: 650px) {
+
     .film-filters {
         flex-wrap: wrap;
     }
@@ -642,9 +875,23 @@ h1 {
     .search-wrap {
         flex: 1 1 100%;
     }
+
+    .find-button {
+        flex: 0 0 auto;
+    }
+
+    .people-inputs {
+        grid-template-columns: 1fr;
+    }
+
+    .common-films-message {
+        padding: 25px 20px;
+    }
+
 }
 
 @media (max-width: 550px) {
+
     .container {
         padding: 20px;
     }
@@ -656,7 +903,8 @@ h1 {
 
     .year-filter,
     .watch-filter,
-    .search-wrap {
+    .search-wrap,
+    .find-button {
         width: 100%;
     }
 
@@ -715,4 +963,5 @@ h1 {
         min-width: 30px;
         height: 30px;
     }
+
 }
