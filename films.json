@@ -2179,5 +2179,19 @@
                     "url": "https://www.bilibili.tv/en/video/2048794844"
                 }
             ]
+    },
+    {
+        "year": 2008,
+        "title": "Huling Pasada",
+        "poster": "assets/pasada.jpg",
+        "description": "The story follows the creative process of Ruby, a prolific writer, abandoned wife and protective mother. She writes about Mario, a taxi driver who becomes a father figure to a street child in the hustle and bustle of the metropolis. As Ruby tries to resolve the story of Mario and the child, she seeks refuge in her own creative output: the line between reality and fiction is blurred, and her character’s past is entangled with her own inevitable future.",
+        "cast": "Agot Isidro, Neil Ryan Sese, Dimples Romana, John Manalo, Gian Sotto, Sabrina Man, Adrei Alfonso, Jao Mapa, Shamaine Buencamino, Irma Adlawan, Dianne Laserna",
+        "director": "Alvin B. Yapan, Paul Sta. Ana",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
     }
 ]
