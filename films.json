@@ -2392,10 +2392,10 @@
         "now_showing": false,
         "watch": [
                 {
-                    "type": "iwant",
+                    "type": "iwant"
                 },
                 {
-                    "type": "appletv",
+                    "type": "appletv"
                 }
             ]
     },
