@@ -2309,5 +2309,180 @@
                     "type": "none"
                 }
             ]
+    },
+    {
+        "year": 2018,
+        "title": "Distance",
+        "poster": "assets/distance.jpg",
+        "description": "Liza is still drowning in grief from losing the love of her life when she receives a visit from the most unlikely person- her husband, who she left five years ago. With no questions asked and no conditions made, Anton invites her back to his and their two children’s lives.",
+        "cast": "Iza Calzado, Nonie Buencamino, Therese Malvar, Alessandra Malonzo, Adrianna So, Max Eigenmann, Lhian Khey, Gimeno Elia, Maria Norelle Ilano, Erlinda Villalobos, Billy Seño, Tanya Gomez, Cherry Malvar, Myla Monido, Mailes Kanapi, Matt Daclan, Timothy Castillo",
+        "director": "Percival Intalan",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "external",
+                    "url": "https://www.bilibili.tv/en/video/2046421743"
+                }
+            ]
+    },
+    {
+        "year": 2018,
+        "title": "Kuya Wes",
+        "poster": "assets/wes.jpg",
+        "description": "Wes is a timid and earnest remittance clerk who feels non-existent and mostly ignored by his younger brother Raf and his family. His days are only brightened when his customer Erika, comes in every month. One day, his life changes as Erika’s overseas husband leaves her. Distraught and in need, Wes decides to help her out.",
+        "cast": "Iza Calzado, Nonie Buencamino, Therese Malvar, Alessandra Malonzo, Adrianna So, Max Eigenmann, Lhian Khey, Gimeno Elia, Maria Norelle Ilano, Erlinda Villalobos, Billy Seño, Tanya Gomez, Cherry Malvar, Myla Monido, Mailes Kanapi, Matt Daclan, Timothy Castillo",
+        "director": "James Robin Mayo",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "external",
+                    "url": "https://www.bilibili.tv/en/video/2043121792"
+                }
+            ]
+    },
+    {
+        "year": 2018,
+        "title": "The Lookout",
+        "poster": "assets/lookout.jpg",
+        "description": "The Lookout tells the story of Lester Quiambao, a gay hired killer, whose abusive relationships in childhood propels him into a life of crime and depravity.",
+        "cast": "Yayo Aguila, Jay Garcia, Elle Ramirez, Andres Vazquez, Rez Cortez, Efren Reyes, Alvin Fortuna, Jeffrey Santos, Benedict Campos, Aries Go, Lharby Policarpio, Jemina Sy, Nourish Icon Lapuz, Xenia Barrameda, Dennis Coronel Macalintal, Ahwel Paz, Mon Gualvez",
+        "director": "Afi Africa",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2018,
+        "title": "Mamang",
+        "poster": "assets/mamang.jpg",
+        "description": "At the twilight of her life, Mamang struggles against the senility and dementia of old age to be with her son Ferdie, who she suspects will leave to teach in another province. But as she grapples further, the more her condition worsens. As she battles to drive away the ghosts of her past, she starts reliving her bygone years.",
+        "cast": "Celeste Legaspi, Ketchup Eusebio, Peewee O’Hara, Alex Medina, Gio Gahol, Elora Españo, Paolo O’Hara",
+        "director": "Denise O’Hara",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2018,
+        "title": "Musmos na Sumibol sa Gubat ng Digma",
+        "poster": "assets/musmos.jpg",
+        "description": "A coming-of-age tale about a twelve-year-old Muslim girl named Eshal in Marawi is set amid an age-old culture of inter-familial dispute.",
+        "cast": "Junyka Santarin, JM Salvado, Star Orjaliza, Jun Salvado Jr., Romerico Jangad, Darril Ampongan, Haide Movero",
+        "director": "Iar Lionel, Benjamin Arondaing",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2019,
+        "title": "Ani (The Harvest)",
+        "poster": "assets/musmos.jpg",
+        "description": "Set in the year 2050 at the State of Bicol, Philippines, Mithi,an orphaned boy moves to a farm to live with his estranged grandfather, Mauricio. When the old man falls ill, and as thecrops in their farm seem to fall ill with him, the boy embarkson a quest with his malfunctioning robot to search for magicalgrains that he believes can save the man’s life.",
+        "cast": "Zyrendela Cruz, Ricky Davao, Miguel Valdes, Marc Felix, Anna Luna, JM Canlas, Rolando Inocencio, Raphael Robes, Victor Medina, Mio Maranan, Chryssta Cordoves, Jermaine Choa Peck",
+        "director": "Kim Zuñiga, Sandro Del Rosario",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "iwant",
+                },
+                {
+                    "type": "appletv",
+                }
+            ]
+    },
+    {
+        "year": 2019,
+        "title": "Belle Douleur (A Beautiful Pain)",
+        "poster": "assets/belle.jpg",
+        "description": "Liz, a 45-year-old, single clinical psychologist finds herself alone and resigned to a solitary life after her parents passed away. Advised by her friends, Liz begins downsizing her home and meets Josh, a young antique dealer, who has been living on his own for years after losing his father and grandfather, and without much memory of his mother. ",
+        "cast": "Kit Thompson, Mylene Dizon, Marlon Rivera, Jenny Jamora, Hannah Ledesma",
+        "director": "Joji V. Alonso",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "appletv",
+                }
+            ]
+    },
+    {
+        "year": 2019,
+        "title": "Edward",
+        "poster": "assets/edward.jpg",
+        "description": "Edward is stuck in a public hospital taking care of his ailing father. Estranged from his father Mario and his half-brother Renato, Edward makes the hospital ward his own playground, unmindful of the hopelessness that surrounds him. ",
+        "cast": "Louise Abuel, Ella Cruz, Dido dela Paz, Elijah Canlas, Manuel Chua",
+        "director": "Thop Nazareno",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2019,
+        "title": "Iska",
+        "poster": "assets/iska.jpg",
+        "description": "Iska, a grandmother of a 10-year-old child with autism,is deemed an unfit guardian when she tries to take her grandson to an orphanage. Despite dealing with life’s blows one after the other, she never loses her tenacity to survive. ",
+        "cast": "Ruby Ruiz, Soliman Cruz, Angie Castrence, Ricky Rivero, Jonic Magno, Jomari Angeles, RK Bagatsing, Pryle Gura, Ana Abad Santos, Jade Lopez, Elora Españo, Cherry Malvar, Sunshine Teodoro, Divine Acuna, Beauty Gonzales",
+        "director": "Theodore Boborol",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "external",
+                    "url": "https://drive.google.com/file/d/1uwO3ltpuDG0ZjuYVbCgBw4nVkXyqAkw7/view?usp=sharing"
+                }
+            ]
+    },
+    {
+        "year": 2019,
+        "title": "Iska",
+        "poster": "assets/iska.jpg",
+        "description": "Iska, a grandmother of a 10-year-old child with autism,is deemed an unfit guardian when she tries to take her grandson to an orphanage. Despite dealing with life’s blows one after the other, she never loses her tenacity to survive. ",
+        "cast": "Ruby Ruiz, Soliman Cruz, Angie Castrence, Ricky Rivero, Jonic Magno, Jomari Angeles, RK Bagatsing, Pryle Gura, Ana Abad Santos, Jade Lopez, Elora Españo, Cherry Malvar, Sunshine Teodoro, Divine Acuna, Beauty Gonzales",
+        "director": "Theodore Boborol",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "external",
+                    "url": "https://drive.google.com/file/d/1uwO3ltpuDG0ZjuYVbCgBw4nVkXyqAkw7/view?usp=sharing"
+                }
+            ]
+    },
+    {
+        "year": 2019,
+        "title": "Pandanggo sa Hukay",
+        "poster": "assets/hukay.jpg",
+        "description": "Elena, a midwife and breadwinner, aims for a better future for her family. On the eve of her application process and interview for an overseas job, Elena finds herself in a nun familiar territory and dances her way out: the pandanggo way. ",
+        "cast": "Iza Calzado, Charlie Dizon, Ybes Bagadiong, Acey Aguilar, Diva Montelaba, Star Orjaliza, Mercedes Cabral, Sarah Pagcaliwagan-Brakensiek",
+        "director": "Sheryl Rose M. Andes",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "iwant"
+                }
+            ]
+    },
+    {
+        "year": 2019,
+        "title": "Tabon",
+        "poster": "assets/tabon.jpg",
+        "description": "The death of Amang Zaldy propels his only son lan to journey back to his hometown with his wife Erika and step daughter Joy and discover the mystery that lurks behind his father’s murder.",
+        "cast": "Christopher Roxas, Ynna Asistio, Menggie Cobarrubias, Dexter Doria, Leon Miguel, Benjie Felipe, Lao Rodriguez, Richard Manabat, Bapbap Reyes",
+        "director": "Xian Lim",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "iwant"
+                }
+            ]
     }
 ]
