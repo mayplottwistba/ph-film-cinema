@@ -31,11 +31,41 @@ const developerModal =
 const developerClose =
     document.getElementById("developerClose");
 
+const findPeopleButton =
+    document.getElementById("findPeopleButton");
+
+const commonFilmsModal =
+    document.getElementById("commonFilmsModal");
+
+const commonFilmsClose =
+    document.getElementById("commonFilmsClose");
+
+const findCommonFilmsButton =
+    document.getElementById("findCommonFilms");
+
+const personOne =
+    document.getElementById("personOne");
+
+const personTwo =
+    document.getElementById("personTwo");
+
+const personOneSuggestions =
+    document.getElementById("personOneSuggestions");
+
+const personTwoSuggestions =
+    document.getElementById("personTwoSuggestions");
+
+const commonFilmsResults =
+    document.getElementById("commonFilmsResults");
+
 let films = [];
 
 let currentPage = 1;
 
 const filmsPerPage = 15;
+
+
+/* LOAD FILMS */
 
 async function loadFilms() {
     try {
@@ -94,7 +124,7 @@ async function loadFilms() {
                 UNABLE TO LOAD FILMS
                 <br><br>
                 <small>
-                    ${error.message}
+                    ${escapeHTML(error.message)}
                 </small>
             </div>
         `;
@@ -104,6 +134,9 @@ async function loadFilms() {
         }
     }
 }
+
+
+/* YEARS */
 
 function populateYears() {
     if (!yearFilter) {
@@ -125,40 +158,42 @@ function populateYears() {
     }
 }
 
+
+/* WATCH FILTER */
+
 function populateWatchFilters() {
     if (!watchFilter) {
         return;
     }
 
     const platforms = [
-    ["netflix", "Netflix"],
-    ["juanflix", "Juanflix"],
-    ["ccp", "CCP"],
-    ["youtube", "YouTube"],
-    ["prime", "Prime Video"],
-    ["appletv", "Apple TV"],
-    ["iwant", "iWant"],
-    ["external", "External"],
-    ["none", "No known source"],
-    ["now_showing", "Now Showing"]
-];
+        ["netflix", "Netflix"],
+        ["juanflix", "Juanflix"],
+        ["ccp", "CCP"],
+        ["youtube", "YouTube"],
+        ["prime", "Prime Video"],
+        ["appletv", "Apple TV"],
+        ["iwant", "iWant"],
+        ["external", "External"],
+        ["none", "No known source"],
+        ["now_showing", "Now Showing"]
+    ];
 
     platforms.forEach(
         ([value, label]) => {
             const option =
-                document.createElement(
-                    "option"
-                );
+                document.createElement("option");
 
             option.value = value;
             option.textContent = label;
 
-            watchFilter.appendChild(
-                option
-            );
+            watchFilter.appendChild(option);
         }
     );
 }
+
+
+/* FILTER FILMS */
 
 function getFilteredFilms() {
     const selectedYear =
@@ -214,7 +249,7 @@ function getFilteredFilms() {
         })
 
         .filter(film => {
-            if (searchTerm === "") {
+            if (!searchTerm) {
                 return true;
             }
 
@@ -250,6 +285,9 @@ function getFilteredFilms() {
         });
 }
 
+
+/* SECURITY */
+
 function escapeHTML(value) {
     return String(value)
         .replace(/&/g, "&amp;")
@@ -259,8 +297,64 @@ function escapeHTML(value) {
         .replace(/'/g, "&#039;");
 }
 
-function createCastTags(cast) {
+
+/* NORMALIZE NAME */
+
+function normalizeName(name) {
+    return String(name || "")
+        .trim()
+        .toLowerCase()
+        .replace(/\s+/g, " ");
+}
+
+
+/* CAST NAMES */
+
+function getCastNames(cast) {
     if (!cast) {
+        return [];
+    }
+
+    if (Array.isArray(cast)) {
+        return cast
+            .map(name => String(name).trim())
+            .filter(Boolean);
+    }
+
+    return String(cast)
+        .split(/,|&/)
+        .map(name => name.trim())
+        .filter(Boolean);
+}
+
+
+/* DIRECTOR NAMES */
+
+function getDirectorNames(director) {
+    if (!director) {
+        return [];
+    }
+
+    if (Array.isArray(director)) {
+        return director
+            .map(name => String(name).trim())
+            .filter(Boolean);
+    }
+
+    return String(director)
+        .split(/,|&/)
+        .map(name => name.trim())
+        .filter(Boolean);
+}
+
+
+/* CAST TAGS */
+
+function createCastTags(cast) {
+    const names =
+        getCastNames(cast);
+
+    if (names.length === 0) {
         return `
             <span class="cast-unavailable">
                 Cast information unavailable
@@ -268,24 +362,7 @@ function createCastTags(cast) {
         `;
     }
 
-    const names = Array.isArray(cast)
-        ? cast
-        : String(cast)
-            .split(",")
-            .map(name => name.trim());
-
-    const validNames =
-        names.filter(name => name);
-
-    if (validNames.length === 0) {
-        return `
-            <span class="cast-unavailable">
-                Cast information unavailable
-            </span>
-        `;
-    }
-
-    return validNames
+    return names
         .map(name => `
             <span class="cast-tag">
                 ${escapeHTML(name)}
@@ -294,8 +371,14 @@ function createCastTags(cast) {
         .join("");
 }
 
+
+/* DIRECTOR TAGS */
+
 function createDirectorTag(director) {
-    if (!director) {
+    const names =
+        getDirectorNames(director);
+
+    if (names.length === 0) {
         return `
             <span class="director-unavailable">
                 Director information unavailable
@@ -303,24 +386,7 @@ function createDirectorTag(director) {
         `;
     }
 
-    const names = Array.isArray(director)
-        ? director
-        : String(director)
-            .split(/,|&/)
-            .map(name => name.trim());
-
-    const validNames =
-        names.filter(name => name);
-
-    if (validNames.length === 0) {
-        return `
-            <span class="director-unavailable">
-                Director information unavailable
-            </span>
-        `;
-    }
-
-    return validNames
+    return names
         .map(name => `
             <span class="director-tag">
                 ${escapeHTML(name)}
@@ -328,6 +394,9 @@ function createDirectorTag(director) {
         `)
         .join("");
 }
+
+
+/* WATCH OPTIONS */
 
 function createWatchOptions(
     sources,
@@ -367,7 +436,9 @@ function createWatchOptions(
                 (
                     type === "external" ||
                     type === "youtube" ||
-                    type === "prime"
+                    type === "prime" ||
+                    type === "appletv" ||
+                    type === "iwant"
                 ) &&
                 source.url
             ) {
@@ -396,14 +467,12 @@ function createWatchOptions(
     return html;
 }
 
-function createFilmCard(
-    film,
-    index
-) {
+
+/* FILM CARD */
+
+function createFilmCard(film) {
     const card =
-        document.createElement(
-            "article"
-        );
+        document.createElement("article");
 
     card.className =
         "film-card";
@@ -419,7 +488,7 @@ function createFilmCard(
             film.cast
         );
 
-    const directorTag =
+    const directorTags =
         createDirectorTag(
             film.director
         );
@@ -469,7 +538,7 @@ function createFilmCard(
             </div>
 
             <div class="film-director">
-                ${directorTag}
+                ${directorTags}
             </div>
 
             <div class="film-cast-label">
@@ -534,6 +603,9 @@ function createFilmCard(
     return card;
 }
 
+
+/* SEE MORE */
+
 function setupSeeMore(card) {
     const buttons =
         card.querySelectorAll(
@@ -557,7 +629,8 @@ function setupSeeMore(card) {
         }
 
         if (
-            targetType === "cast"
+            targetType ===
+            "cast"
         ) {
             target =
                 card.querySelector(
@@ -606,6 +679,9 @@ function setupSeeMore(card) {
         );
     });
 }
+
+
+/* RENDER FILMS */
 
 function renderFilms() {
     if (!filmsGrid) {
@@ -661,24 +737,19 @@ function renderFilms() {
             endIndex
         );
 
-    pageFilms.forEach(
-        (film, index) => {
-            const card =
-                createFilmCard(
-                    film,
-                    startIndex + index
-                );
-
-            filmsGrid.appendChild(
-                card
-            );
-        }
-    );
+    pageFilms.forEach(film => {
+        filmsGrid.appendChild(
+            createFilmCard(film)
+        );
+    });
 
     renderPagination(
         totalPages
     );
 }
+
+
+/* PAGINATION */
 
 function renderPagination(
     totalPages
@@ -702,11 +773,6 @@ function renderPagination(
     previous.textContent = "‹";
     previous.disabled =
         currentPage === 1;
-
-    previous.setAttribute(
-        "aria-label",
-        "Previous page"
-    );
 
     previous.addEventListener(
         "click",
@@ -746,15 +812,11 @@ function renderPagination(
             );
         }
 
-        button.setAttribute(
-            "aria-label",
-            `Page ${page}`
-        );
-
         button.addEventListener(
             "click",
             () => {
-                currentPage = page;
+                currentPage =
+                    page;
 
                 renderFilms();
 
@@ -777,11 +839,6 @@ function renderPagination(
     next.disabled =
         currentPage === totalPages;
 
-    next.setAttribute(
-        "aria-label",
-        "Next page"
-    );
-
     next.addEventListener(
         "click",
         () => {
@@ -803,6 +860,9 @@ function renderPagination(
     );
 }
 
+
+/* SCROLL */
+
 function scrollToFilms() {
     if (!filmsGrid) {
         return;
@@ -819,6 +879,277 @@ function scrollToFilms() {
         behavior: "smooth"
     });
 }
+
+
+/* CAST AUTOCOMPLETE */
+
+function getAllCastNames() {
+    const names = [];
+
+    films.forEach(film => {
+        const castNames =
+            getCastNames(
+                film.cast
+            );
+
+        castNames.forEach(name => {
+            const exists =
+                names.some(
+                    existing =>
+                        normalizeName(
+                            existing
+                        ) ===
+                        normalizeName(name)
+                );
+
+            if (!exists) {
+                names.push(name);
+            }
+        });
+    });
+
+    return names.sort(
+        (a, b) =>
+            a.localeCompare(
+                b,
+                undefined,
+                {
+                    sensitivity: "base"
+                }
+            )
+    );
+}
+
+
+/* SUGGESTIONS */
+
+function showPersonSuggestions(
+    input,
+    suggestionBox
+) {
+    const query =
+        normalizeName(
+            input.value
+        );
+
+    suggestionBox.innerHTML = "";
+
+    if (!query) {
+        suggestionBox.classList.remove(
+            "active"
+        );
+
+        return;
+    }
+
+    const names =
+        getAllCastNames()
+            .filter(name =>
+                normalizeName(name)
+                    .includes(query)
+            )
+            .slice(0, 10);
+
+    if (names.length === 0) {
+        suggestionBox.classList.remove(
+            "active"
+        );
+
+        return;
+    }
+
+    names.forEach(name => {
+        const button =
+            document.createElement(
+                "button"
+            );
+
+        button.type = "button";
+        button.className =
+            "person-suggestion";
+
+        button.textContent =
+            name;
+
+        button.addEventListener(
+            "click",
+            () => {
+                input.value = name;
+
+                suggestionBox.innerHTML =
+                    "";
+
+                suggestionBox.classList.remove(
+                    "active"
+                );
+            }
+        );
+
+        suggestionBox.appendChild(
+            button
+        );
+    });
+
+    suggestionBox.classList.add(
+        "active"
+    );
+}
+
+
+/* FIND PERSON IN CAST */
+
+function findPersonInCast(
+    film,
+    searchName
+) {
+    const search =
+        normalizeName(
+            searchName
+        );
+
+    if (!search) {
+        return false;
+    }
+
+    const castNames =
+        getCastNames(
+            film.cast
+        );
+
+    return castNames.some(name => {
+        const normalizedName =
+            normalizeName(name);
+
+        return (
+            normalizedName === search ||
+            normalizedName.includes(search) ||
+            search.includes(normalizedName)
+        );
+    });
+}
+
+
+/* FIND COMMON FILMS */
+
+function findCommonFilms() {
+    const nameOne =
+        personOne.value.trim();
+
+    const nameTwo =
+        personTwo.value.trim();
+
+    commonFilmsResults.innerHTML =
+        "";
+
+    if (
+        !nameOne ||
+        !nameTwo
+    ) {
+        commonFilmsResults.innerHTML = `
+            <div class="common-films-empty">
+                ENTER TWO NAMES
+            </div>
+        `;
+
+        return;
+    }
+
+    const commonFilms =
+        films.filter(film => {
+            return (
+                findPersonInCast(
+                    film,
+                    nameOne
+                ) &&
+                findPersonInCast(
+                    film,
+                    nameTwo
+                )
+            );
+        });
+
+    if (
+        commonFilms.length === 0
+    ) {
+        commonFilmsResults.innerHTML = `
+            <div class="common-films-empty">
+                NO COMMON FILMS FOUND
+            </div>
+        `;
+
+        return;
+    }
+
+    commonFilms.sort((a, b) => {
+        if (a.year !== b.year) {
+            return b.year - a.year;
+        }
+
+        return String(a.title || "")
+            .localeCompare(
+                String(b.title || ""),
+                undefined,
+                {
+                    sensitivity: "base"
+                }
+            );
+    });
+
+    commonFilmsResults.innerHTML =
+        commonFilms
+            .map(film => `
+                <div class="common-film-result">
+
+                    <div class="common-film-poster">
+                        <img
+                            src="${escapeHTML(
+                                film.poster || ""
+                            )}"
+                            alt="${escapeHTML(
+                                film.title || ""
+                            )}"
+                        >
+                    </div>
+
+                    <div class="common-film-info">
+
+                        <div class="common-film-year">
+                            ${escapeHTML(
+                                film.year || ""
+                            )}
+                        </div>
+
+                        <div class="common-film-title">
+                            ${escapeHTML(
+                                film.title || ""
+                            )}
+                        </div>
+
+                        <div class="common-film-people">
+
+                            <span class="common-film-person">
+                                ${escapeHTML(
+                                    nameOne
+                                )}
+                            </span>
+
+                            <span class="common-film-person">
+                                ${escapeHTML(
+                                    nameTwo
+                                )}
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            `)
+            .join("");
+}
+
+
+/* EVENTS */
 
 if (yearFilter) {
     yearFilter.addEventListener(
@@ -850,6 +1181,9 @@ if (searchInput) {
     );
 }
 
+
+/* DEVELOPER POPUP */
+
 if (
     developerModal &&
     developerClose
@@ -875,5 +1209,163 @@ if (
         }
     );
 }
+
+
+/* COMMON FILMS POPUP */
+
+if (
+    findPeopleButton &&
+    commonFilmsModal
+) {
+    findPeopleButton.addEventListener(
+        "click",
+        () => {
+            commonFilmsModal.classList.add(
+                "active"
+            );
+
+            commonFilmsResults.innerHTML =
+                "";
+
+            personOne.focus();
+        }
+    );
+}
+
+if (commonFilmsClose) {
+    commonFilmsClose.addEventListener(
+        "click",
+        () => {
+            commonFilmsModal.classList.remove(
+                "active"
+            );
+        }
+    );
+}
+
+if (commonFilmsModal) {
+    commonFilmsModal.addEventListener(
+        "click",
+        event => {
+            if (
+                event.target ===
+                commonFilmsModal
+            ) {
+                commonFilmsModal.classList.remove(
+                    "active"
+                );
+            }
+        }
+    );
+}
+
+
+/* AUTOCOMPLETE EVENTS */
+
+if (
+    personOne &&
+    personOneSuggestions
+) {
+    personOne.addEventListener(
+        "input",
+        () => {
+            showPersonSuggestions(
+                personOne,
+                personOneSuggestions
+            );
+        }
+    );
+}
+
+if (
+    personTwo &&
+    personTwoSuggestions
+) {
+    personTwo.addEventListener(
+        "input",
+        () => {
+            showPersonSuggestions(
+                personTwo,
+                personTwoSuggestions
+            );
+        }
+    );
+}
+
+
+/* COMMON FILMS BUTTON */
+
+if (findCommonFilmsButton) {
+    findCommonFilmsButton.addEventListener(
+        "click",
+        findCommonFilms
+    );
+}
+
+
+/* ENTER TO SEARCH */
+
+if (personOne) {
+    personOne.addEventListener(
+        "keydown",
+        event => {
+            if (
+                event.key === "Enter"
+            ) {
+                findCommonFilms();
+            }
+        }
+    );
+}
+
+if (personTwo) {
+    personTwo.addEventListener(
+        "keydown",
+        event => {
+            if (
+                event.key === "Enter"
+            ) {
+                findCommonFilms();
+            }
+        }
+    );
+}
+
+
+/* CLOSE SUGGESTIONS */
+
+document.addEventListener(
+    "click",
+    event => {
+        if (
+            personOne &&
+            personOneSuggestions &&
+            !personOne.contains(event.target) &&
+            !personOneSuggestions.contains(
+                event.target
+            )
+        ) {
+            personOneSuggestions.classList.remove(
+                "active"
+            );
+        }
+
+        if (
+            personTwo &&
+            personTwoSuggestions &&
+            !personTwo.contains(event.target) &&
+            !personTwoSuggestions.contains(
+                event.target
+            )
+        ) {
+            personTwoSuggestions.classList.remove(
+                "active"
+            );
+        }
+    }
+);
+
+
+/* START */
 
 loadFilms();
