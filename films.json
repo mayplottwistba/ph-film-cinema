@@ -2207,5 +2207,107 @@
                     "type": "none"
                 }
             ]
+    },
+    {
+        "year": 2017,
+        "title": "Baconaua",
+        "poster": "assets/baconaua.jpg",
+        "description": "After a powerful squall, a remote fishing village wakes to find its sea mysteriously turned red and covered with thousands of floating apples. While the villagers debate whether the phenomenon is an omen, miracle, or something sinister, Divina struggles with the disappearance of her father and the harsh realities facing her family. Set in the mystic yet impoverished Verde Passage, the film explores grief, superstition, family, and survival.",
+        "cast": "Elora Españo, Therese Malvar, JM Salvado, Jess Mendoza, Ron Lord, Isaac Cain Aguire, Anna J. Luna, Erlinda Villalobos, Bon Andrew Lentejas, Bembol Roco, Jeric Raval, Suzette Ranillo",
+        "director": "Joseph Israel Laban",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2017,
+        "title": "Bagahe",
+        "poster": "assets/bagahe.jpg",
+        "description": "Bagahe follows Mercy Agbunag, an Overseas Filipino Worker whose homecoming is interrupted when she is questioned about a newborn baby found in an airplane toilet. As she is passed between the police, hospital, shelter, media, church, and government agencies, the investigation uncovers the truth about her abuse and the way she is treated by the society she returns to.",
+        "cast": "Angeli Bayani, Shamaine Buencamino, Boots-Anson Roa, Racquel Villavicencio, Bing Pimentel, Menggie Cobarrubias, Arnold Reyes, Madeleine Nicolas, Yayo Aguila, Sue Prado, Rollie Inocencio, Matt Daclan, Micko Laurente, Chanel Latorre, Erlinda Villalobos, Alvin Nakassi, Natileigh Sitoy, Jill Palencia, Cataleya Surio, Janet Queblatin",
+        "director": "Zig Madamba Dulay",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2017,
+        "title": "Ang Guro Kong 'Di Marunong Magbasa",
+        "poster": "assets/guro.jpg",
+        "description": "Set in war-torn southwestern Mindanao, the film follows Aaquil, a young farmer who becomes a teacher when volunteers from the city are too afraid to enter remote communities. When Aaquil disappears, his orphaned students turn to a rebel group and learn to fight, blaming others for the loss of their dreams.",
+        "cast": "Alfred Vargas, Miggs Cuaderno, Marc Justine Alvarez, Micko Laurente, Lou Veloso, Mon Confiado, Loren Burgos, Kiko Matos, Marife Necesito, Ernie Garcia, Bon Andrew Lentejas, Paul Sy, Alvin Barcelona, Gabrielle Concepcion, Lianne Valentino, Richard Manabat, Joane Marie Tan",
+        "director": "Perry Escaño",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "external",
+                    "url": "https://www.bilibili.tv/en/video/2044185208"
+                }
+            ]
+    },
+    {
+        "year": 2017,
+        "title": "Ang Pamilyang Hindi Lumuluha",
+        "poster": "assets/lumuluha.jpg",
+        "description": "Cora, a wealthy landowner and media personality, searches for the mysterious “Family That Doesn’t Weep,” believed to have the power to bring lost loved ones back to their families. Hoping to reunite with her estranged husband and children, she relentlessly tracks down the elusive family in search of a miracle.",
+        "cast": "Sharon Cuneta, Niño Muhlach, Moi Bien, Kiko Matos, Flor Salanga, Joe Cris Villanueva, Richard Quan, Michelle Vito, Philip Olayvar, Alonzo Muhlach",
+        "director": "Mes De Guzman",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "external",
+                    "url": "https://www.bilibili.tv/en/video/4790035590414848"
+                }
+            ]
+    },
+    {
+        "year": 2017,
+        "title": "Requited",
+        "poster": "assets/requited.jpg",
+        "description": "Matt, a man battling Parkinson’s disease and a crisis of faith, sets out to bike from Manila to Mt. Pinatubo Lake to reclaim control over his life. Along the journey, he is joined by Sandy, the person he has tried to escape but still deeply wants to be with, forcing them to confront their complicated relationship.",
+        "cast": "Jake Cuenca, Anna Luna, Richard Quan, Rommel Luna, Anne Marzan, Albert Chan Paran, Miguel Malonzo, Noubikko Ray",
+        "director": "Nerissa Picadizo",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "external",
+                    "url": "https://www.bilibili.tv/en/video/4790159258158080"
+                }
+            ]
+    },
+    {
+        "year": 2017,
+        "title": "Respeto",
+        "poster": "assets/respeto.jpg",
+        "description": "Respeto follows Hendrix, an aspiring hip-hop artist struggling with crime and poverty, who forms an unlikely friendship with Doc, an aging poet haunted by his experiences during Martial Law. As they influence each other’s lives, the film explores art, identity, and survival within the underground Filipino hip-hop scene.",
+        "cast": "Abra, Dido de la Paz, Loonie, Kate Alejandrino, Chai Fonacier, Ybes Bagadiong, Brian Arda, Thea Yrastorza, Nor Domingo",
+        "director": "Alberto Monteras Il",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "external",
+                    "url": "https://www.bilibili.tv/en/video/4795445324158977"
+                }
+            ]
+    },
+    {
+        "year": 2017,
+        "title": "Sa Gabing Nanahimik ang mga Kuliglig",
+        "poster": "assets/kuliglig.jpg",
+        "description": "On Good Friday, Father Romi is confronted with a moral dilemma when Magda confesses to murdering her friend Dolores after discovering her affair with Victor. With only the altar boy Nonoy overhearing the confession, the two must wrestle with the burden of knowing the truth while honoring the sacred Seal of the Confessional.",
+        "cast": "Angel Aquino, Jake Macapagal, Jess Mendoza, Anthony Falcon, Ricky Davao, Sam Quintana, Mercedes Cabral, Mark Dionisio",
+        "director": "lar Lionel B. Arondaing",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
     }
 ]
