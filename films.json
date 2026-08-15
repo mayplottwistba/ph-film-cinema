@@ -2429,16 +2429,15 @@
     },
     {
         "year": 2019,
-        "title": "Iska",
-        "poster": "assets/iska.jpg",
-        "description": "Iska, a grandmother of a 10-year-old child with autism,is deemed an unfit guardian when she tries to take her grandson to an orphanage. Despite dealing with life’s blows one after the other, she never loses her tenacity to survive. ",
-        "cast": "Ruby Ruiz, Soliman Cruz, Angie Castrence, Ricky Rivero, Jonic Magno, Jomari Angeles, RK Bagatsing, Pryle Gura, Ana Abad Santos, Jade Lopez, Elora Españo, Cherry Malvar, Sunshine Teodoro, Divine Acuna, Beauty Gonzales",
-        "director": "Theodore Boborol",
+        "title": "Malamaya (The Color of Ash)",
+        "poster": "assets/malamaya.jpg",
+        "description": "Nora Simeon, a 50-year old, single visual artist, feels passe. As she tries to recapture her prime, she finds spark with Migs, an aspiring photographer who helps re-ignite her forgotten passions. As she embarks on a May-December love affair, Nora fails to notice how Migs invades her space and senses, and eventually, her art and body.",
+        "cast": "Sunshine Cruz, Enzo Pineda, Raymond Bagatsing, Bernadette Allyson",
+        "director": "Leilani Chavez, Danica Sta. Lucia",
         "now_showing": false,
         "watch": [
                 {
-                    "type": "external",
-                    "url": "https://drive.google.com/file/d/1uwO3ltpuDG0ZjuYVbCgBw4nVkXyqAkw7/view?usp=sharing"
+                    "type": "none"
                 }
             ]
     },
