@@ -444,6 +444,20 @@ h1 {
     border-color: #888;
 }
 
+.platform.viva {
+    background: #f47b20;
+    color: #fff;
+    border-color: #f47b20;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.platform.viva:hover {
+    background: #d96312;
+    color: #fff;
+    border-color: #d96312;
+}
+
 .platform.iwant {
     background: #7b2cbf;
     color: #fff;
