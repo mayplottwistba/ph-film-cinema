@@ -2484,5 +2484,427 @@
                     "type": "iwant"
                 }
             ]
+    },
+    {
+        "year": 2022,
+        "title": "Angkas",
+        "poster": "assets/angkas.jpg",
+        "description": "Leo is not just an ordinary habal-habal driver. He is the resident ambulance and delivery man in a remote village in Compostela Valley who is hired to transport the dead down the mountain. One day, his estranged friend Miguel appeared on his doorstep and insisted to join Leo in fetching the corpse of Ditas, their childhood friend who is a rebel pursued by the military.",
+        "cast": "Joem Bascon, Benjamin Alves, Meryll Soriano, Jolo Estrada",
+        "director": "Rainerio C. Yamson II",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2022,
+        "title": "Bakit 'Di Mo Sabihin? (Tell Her)",
+        "poster": "assets/sabihin.jpg",
+        "description": "Deaf couple Miguel and Nat have been struggling to keep their marriage. After a huge fight, Miguel leaves his wife alone in Manila and decides to live in Baler with their kids. ",
+        "cast": "JC De Vera, Janine Gutierrez, Divine Aucina, Sheenly Gener, RJ Agustin, Sunshine Teodoro, Althea Ruedas, Luke Simon Cornel, Dess Verzosa, Disney Aguila, Jamil Carvajal",
+        "director": "Real S. Florido",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "external",
+                    "url": "https://www.bilibili.tv/en/video/4788939789179392"
+                }
+            ]
+    },
+    {
+        "year": 2022,
+        "title": "Batsoy",
+        "poster": "assets/batsoy.jpg",
+        "description": "Two young siblings go on a fantastical adventure to satiate their much-coveted and delectable craving for batsoy.",
+        "cast": "Sean Ethan Sotto, Markko Cambas, Karen Laurrie Mendoza, Nathan J. Sotto, Jonalie Asdolo, Annalyn Biona Hipolito",
+        "director": "Ronald Espinosa Batallones",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2022,
+        "title": "Bula sa Langit (Trigger)",
+        "poster": "assets/bula.jpg",
+        "description": "Acting as if coming home from a vacation, young Marawi war veteran Wesley is excited to bring his girlfriend Ritz home to meet his family. Showered with unsolicited hero worship upon his homecoming, Wesley struggles to reconnect his present relationships with his family and lover all while celebrating the town fiesta.",
+        "cast": "Gio Gahol, Kate Alejandrino, AIR",
+        "director": "Sheenly Gene",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2022,
+        "title": "Ginhawa",
+        "poster": "assets/ginhawa.jpg",
+        "description": "Anton is an aspiring boxer. He hopes to continue the legacy of his older brother Saul who was given a chance to escape poverty by joining a competition in the city but later faced tragedy. Against his mother’s wishes, Anton leaves their small fishing town to pursue boxing in Manila where he unravels the ugly truth of the brutal sport.",
+        "cast": "Andrew Ramsay, Duane Lucas Pascua, Ruby Ruiz, Rolando Inocencio, Dido de la Paz, Ruth Lopez-Dee, Elan Villafuerte, Shun Andrei Bacalla, Roel Abao, Kiko Matos, Jun Nayra, Jan Rebong, Chanel Latorre",
+        "director": "Christian Paolo Lat",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2022,
+        "title": "Kaluskos",
+        "poster": "assets/kaluskos.jpg",
+        "description": "Rebekah files for sole custody for her young daughter Amaya. But this doesn’t sit well with her estranged husband Jay. Amid the custody battle, Rebekah finds another “Amaya” under the bed.",
+        "cast": "Coleen Garcia, Queenzy Calma, Karl Medina, Cara Gonzales, Elora Españo",
+        "director": "Roman S. Perez Jr.",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "external",
+                    "url": "https://www.bilibili.tv/en/video/4796948850939392"
+                }
+            ]
+    },
+    {
+        "year": 2022,
+        "title": "The Baseball Player",
+        "poster": "assets/baseball.jpg",
+        "description": "Amir, a 17-year-old Moro child soldier whose father was killed in an all-out war in 2000, dreams to live a different life – he wants to become a baseball player. Training extensively with his coach, he makes it to the final tryout of a local university.",
+        "cast": "Tommy Alejandrino, JM San Jose, Tess Antonio, Don Melvin Boongaling, Sue Prado, Pongs Leonardo, Joel Saracho, Bon Lentejas, Ely Cellan, Arnold Reyes",
+        "director": "Carlo Obispo",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2023,
+        "title": "Ang Duyan ng Magiting (The Cradle of the Brave)",
+        "poster": "assets/duyan.jpg",
+        "description": "Jose, a student, leaves his mother a letter to inform her that he’s leaving home to learn why people decide to join the underground movement. His decision reaches Michael, the chancellor of the university where he studies.",
+        "cast": "Dolly de Leon, Bituin Escalante, Agot Isidro, Miggy Jimenez, Jojit Lorenzo, Frances Makil-Ignacio, Paolo O’Hara, Joel Saracho, Dylan Ray Talon",
+        "director": "Dustin Celestino",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2023,
+        "title": "As If It's True",
+        "poster": "assets/true.jpg",
+        "description": "A fading social media influencer and a struggling musician exploit each other in a not-so- fake relationship.",
+        "cast": "Khalil Ramos, Ashley Ortega, Adrianna So, John Silverio, Angellie Sanoy, Rachel Coates, Marnie Lapus",
+        "director": "John Rogers",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "netflix"
+                }
+            ]
+    },
+    {
+        "year": 2023,
+        "title": "Bulawan Nga Usa (Golden Deer)",
+        "poster": "assets/bulawan.jpg",
+        "description": "A man embarks on a soul-stirring expedition on a mystical mountain to look for the golden deer, and finds solace in an unlikely friendship with a spirited mountain boy.",
+        "cast": "Ron Matthews Espinosa, John NIel Pagntalan",
+        "director": "Kenneth De la Cruz",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2017,
+        "title": "Maria",
+        "poster": "assets/maria.jpg",
+        "description": "When the whole family confronts her 14-year-old daughter of a suspected pregnancy, a 50-year-old woman gives birth to her 20th child.",
+        "cast": "Upeng Femandez, Sue Prado, Zini Narciso, Jayvhot Galang (Maxie Andreison)",
+        "director": "JP Habac",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2023,
+        "title": "Maria",
+        "poster": "assets/maria-2.jpg",
+        "description": "Cinemalaya’s first documentary in the full-length competition follows three women named Maria on a journey to seek truth and fight for justice as the Philippines becomes a shrinking civic and democratic space that fosters a culture of impunity.",
+        "cast": "Maria Leonor Robredo
+Maria
+Mary Ann",
+        "director": "JP Habac",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2023,
+        "title": "Tether",
+        "poster": "assets/tether.jpg",
+        "description": "After having a one-night stand, an arrogant playboy and a timid young woman discover that any kind of pleasure or pain they inflict on themselves can be felt simultaneously by the other person.",
+        "cast": "Mikoy Morales, Jorrybell Agoto, Breech Mae Valencia, Olivia Banela, Albert Briones",
+        "director": "Gian Arre",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2023,
+        "title": "When This Is All Over",
+        "poster": "assets/over.jpg",
+        "description": "A disconnected desperate guy forges a deal with a group of privileged misfits to plan a secret party at the height of a global pandemic, for a chance to escape his reality.",
+        "cast": "Juan Karlos Labajo, Jorrybell Agoto, Ana Abad Santos, Chaye Mogg, Nour Hooshmand, Jico Umali, Aaron Maniego, Renee Dominique, Lottie Bie, Zara Loayan",
+        "director": "Kevin Mayuga",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2024,
+        "title": "Alipato at Muog",
+        "poster": "assets/alipato.jpg",
+        "description": "A filmmaker uncovers the hard truths surrounding the enforced disappearance of his older brother.",
+        "director": "JL Burgos",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2024,
+        "title": "An Errand",
+        "poster": "assets/errand.jpg",
+        "description": "As a driver travels from Baguio to Manila on an absurd errand from his boss, his car transforms into an echo chamber of memories, spanning the chasms of time, class, and character.",
+        "cast": "Sid Lucero, Art Acuña, Nanding Josef, Elora Españo, Elora Españo, Eric Kelly, Thea Marabut",
+        "director": "Dominic Bekaert",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2024,
+        "title": "Gulay Lang, Manong",
+        "poster": "assets/gulay.jpg",
+        "description": "A struggling farmer joins forces with a local policeman to rescue his grandson and take down a marijuana cartel, triggering a deeply personal journey that tests their beliefs and integrity.",
+        "cast": "Cedrick Juan, Perry Dizon, BJ Tolits Forbes, Ranzel, Dong Abay and Lui Manansala",
+        "director": "BC Amparado",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2024,
+        "title": "The Hearing",
+        "poster": "assets/hearing.jpg",
+        "description": "Embroiled in a legal battle against a powerful figure, a deaf boy, with the support of his parents, cross paths with a court sign language interpreter who can speak but is voiceless in her own home.",
+        "cast": "Mylene Dizon, Nor Domingo, Ina Feleo, Ruby Ruiz, Enzo Osorio, Angie Castrence, Marvin Yap, Rom Factolerin, Rome Mallari, Ruslan Jacob Asumbrado",
+        "director": "Lawrence Fajardo",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2024,
+        "title": "Kantil (Trench)",
+        "poster": "assets/kantil.jpg",
+        "description": "The discovery of a mysterious alien shell in a trench transforms the lives of two star crossed lovers – Paleng and Eliong – and their threatened coastal village in Davao City, unearthing secrets deeper than the surrounding perilous waters.",
+        "cast": "Edmund Telmo, Andre Miguel, Sue Prado, Raul Arellano, Ram Botero, Perry Dizon, Fe Gingging Hyde, Tads Obach, Alyssa Makiling, Ryle Equia",
+        "director": "Joshua Caesar Medroso",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2024,
+        "title": "Kono Basho (This Place)",
+        "poster": "assets/kono.jpg",
+        "description": "As two estranged half-sisters reunite at their father’s funeral, they mend their differences, find solace in shared grief, and become instrumental in the city’s ongoing recovery.",
+        "cast": "Gabby Padilla, Arisa Nakano",
+        "director": "Jaime Pacena II",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2024,
+        "title": "The Wedding Dance",
+        "poster": "assets/wedding.jpg",
+        "description": "The love between a Kalinga couple is torn asunder by their patriarchal warrior community, whose harsh judgment falls on a woman’s infertility.",
+        "cast": "Mai Fanglayan, Arvin Balageo",
+        "director": "Julius Lumiqued",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2025,
+        "title": "Bloom Where You Are Planted",
+        "poster": "assets/bloom.png",
+        "description": "Three land rights activists contend with their volatile notions of home amid terror and red-tagging in Cagayan Valley.",
+        "director": "Noni Abao",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2025,
+        "title": "Child No. 82 (Son of Boy Kana)",
+        "poster": "assets/child.jpg",
+        "description": "At a wake, a persevering high school student must prove that he is the 82nd child of the Philippines’ biggest action-fantasy movie star in the hopes of seeing his late father one last time.",
+        "cast": "JM Ibarra, Rochelle Pangilinan-Solinap, Vhong Navarro, Irma Adlawan, Inah Evans, Zairene Fernandez, Dexter Doria, Kai Montinola",
+        "director": "Tim Rone Villanueva",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2025,
+        "title": "Cinemartyrs",
+        "poster": "assets/cinemartyrs.jpg",
+        "description": "Recreating forgotten massacres from Philippine history, a young filmmaker begins shooting at a site where 1,000 men, women, and children were slaughtered. But the angry spirits are awakened and the lives of her team and the local villagers are put in peril.",
+        "cast": "Nour Hooshmand, Paul Cedric Juan, Raquel Villavicencio, Angel Aquino, Lav Diaz, Kidlat Tahimik, Ligaya Amilbangsa, Soliman Cruz, Bong Cabrera, Laila Ulao, Giancarlo Abrahan, Iana Bernardez, Nor Domingo, Danny Palisa, Andre Miguel, Victor Medina, Yian Gabriel, Kobe Sanchez, Shane Bernabe, Roven Alejandro, Nelson Dino, Rob Rownd, Dax Alejandro, Air Salazar, Dexter Macaraeg, Emmanuel Dela Cruz, Rolando Inocencio",
+        "director": "Sari Dalena",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2025,
+        "title": "Habang Nilalamon ng Hydra ang Kasaysayan",
+        "poster": "assets/hydra.jpg",
+        "description": "Four Filipinos confront the slow erasure of memory and truth in a country devoured by disinformation.",
+        "cast": "Dolly de Leon, Jojit Lorenzo, Zanjoe Marudo, Mylene Dizon",
+        "director": "Dustin Celestino",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2025,
+        "title": "Padamlágan (Nightlight)",
+        "poster": "assets/padamlagan.jpg",
+        "description": "Five days before the proclamation of Martial Law, the Colgante Bridge collapsed in Naga, forcing a father into a desperate search for his missing son.",
+        "cast": "Ely Buendia, Esteban Mara, Sue Prado, Floyd Tena, Mildren Anne Estela, Frank Peñones",
+        "director": "Dustin Celestino",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2025,
+        "title": "Paglilitis",
+        "poster": "assets/paglilitis-2.png",
+        "description": "Years after experiencing sexual harassment at her workplace, a former executive assistant is persuaded by a passionate lawyer to file a case against her rich and highly respected boss.",
+        "cast": "Rissey Reyes-Robinson, Eula Valdez, Leo Martinez, Jackie Lou Blanco, Sid Lucero, Bombi Plata, Rolando Inocencio, Cherry Malvar, Barbara Miguel",
+        "director": "Cheska Marfori",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2025,
+        "title": "Raging",
+        "poster": "assets/raging.png",
+        "description": "A young man’s quest for truth and justice intertwines with a plane crash mystery, uncovering a sinister plot that propels his desire to be heard but also threatens his community.",
+        "cast": "Elijah Canlas, Ron Angeles, Reynald Raisel Santos, Glenn Sevilla Mas",
+        "director": "Ryan Machado",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2025,
+        "title": "Republika ng Pipolipinas",
+        "poster": "assets/republika.jpg",
+        "description": "When the local government threatens to evict her from her own land, a farmer renounces her Filipino citizenship and builds her own micronation.",
+        "cast": "Geraldine Villamil, Alessandra de Rossi, Kakki Teodoro, Natalie Maligalig, JM Salvado, Bon Lentejas, Lian Silverio, Shun Mark Gomez, Mitzi Comia, Yian Gabriel, Brylle Parzuelo, Sigrid Polon, Sisa Bernardo, Antonio Vasquez, Xiao Chua, Chad Kinis",
+        "director": "Renei Dimla",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
+    },
+    {
+        "year": 2025,
+        "title": "Warla",
+        "poster": "assets/warla.png",
+        "description": "Kitkat, a 19-year-old transgender woman, finds the family she’s been longing for in a gang of sisters who kidnap foreign men to fund their gender-affirming surgeries, until their crimes force her to question the true cost of belonging.",
+        "cast": "Jervi Wrightson, Lance Reblando, Serena Magiliw, Valeria Ortega, Jacky Woo, Dimples Romana",
+        "director": "Kevin Alambra",
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
     }
 ]
