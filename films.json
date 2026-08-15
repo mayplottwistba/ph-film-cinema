@@ -1117,7 +1117,7 @@
         "watch": [
                 {
                     "type": "external",
-                    "url": "https://drive.google.com/file/d/1pMP6XfUQ8gNicTr-_9JGB38fHd8ao9Xc/view?usp=sharing"
+                    "url": "https://ok.ru/video/18014676388402"
                 }
             ]
     },
@@ -1259,7 +1259,8 @@
         "now_showing": false,
         "watch": [
                 {
-                    "type": "none"
+                    "type": "external",
+                    "url": "https://ok.ru/video/3306345466622"
                 }
             ]
     },
@@ -2161,7 +2162,7 @@
         "watch": [
                 {
                     "type": "external",
-                    "url": "https://www.bilibili.tv/en/video/2048794844"
+                    "url": "https://ok.ru/video/18014678026802"
                 }
             ]
     },
