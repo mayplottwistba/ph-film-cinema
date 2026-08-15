@@ -2424,7 +2424,7 @@
         "now_showing": false,
         "watch": [
                 {
-                    "type": "none"
+                    "type": "viva"
                 }
             ]
     },
