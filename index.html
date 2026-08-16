@@ -23,8 +23,6 @@
 
 <body>
 
-    <!-- Developer Message -->
-
     <div
         id="developerModal"
         class="developer-modal"
@@ -75,18 +73,21 @@
                 <strong>Update:</strong>
                 Listed are films that can be streamed
                 from YouTube, Netflix, JuanFlix, CCP
-                site, and Prime Video.
+                site, Prime Video, Apple TV, iWant,
+                and VivaOne.
             </p>
 
             <p>
-                Please stream
-                these movies legally if there are legal
+                For external links, migrated films are
+                up to those released in the year 2011.
+                But as much as possible, please stream
+                these movies legally if there are
                 sources available. Mabuhay ang
                 pelikulang Pilipino.
             </p>
 
             <p class="copyright-disclaimer">
-                This site is made possible by various contributors. No copyright infringement is intended.
+                No copyright infringement is intended.
                 All film titles, posters, descriptions,
                 names, trademarks, and other copyrighted
                 materials belong to their respective
@@ -101,8 +102,6 @@
         </div>
     </div>
 
-
-    <!-- Main Content -->
 
     <main class="container">
 
@@ -121,8 +120,6 @@
             </div>
 
 
-            <!-- Filters -->
-
             <div class="film-filters">
 
                 <select
@@ -134,7 +131,6 @@
                     </option>
                 </select>
 
-
                 <select
                     id="watchFilter"
                     class="watch-filter"
@@ -143,9 +139,6 @@
                         WHERE TO WATCH
                     </option>
                 </select>
-
-
-                <!-- Search -->
 
                 <div class="search-wrap">
 
@@ -163,23 +156,26 @@
 
                 </div>
 
-
-                <!-- Find Common Films -->
-
                 <button
                     type="button"
                     id="findPeopleButton"
                     class="find-button"
                 >
-                    COMMON FILM SEARCH
+                    FIND
+                </button>
+
+                <button
+                    type="button"
+                    id="filmographyButton"
+                    class="find-button"
+                >
+                    FILMOGRAPHY
                 </button>
 
             </div>
 
         </header>
 
-
-        <!-- Films -->
 
         <section>
 
@@ -198,7 +194,7 @@
     </main>
 
 
-    <!-- Common Films Modal -->
+    <!-- COMMON FILMS -->
 
     <div
         id="commonFilmsModal"
@@ -216,7 +212,6 @@
                 ×
             </button>
 
-
             <div class="section-label">
                 FILM CONNECTION
             </div>
@@ -225,13 +220,7 @@
                 FIND COMMON FILMS
             </h2>
 
-
-            <!-- Person Inputs -->
-
             <div class="people-inputs">
-
-
-                <!-- Person One -->
 
                 <div class="person-input-wrap">
 
@@ -248,9 +237,6 @@
                     ></div>
 
                 </div>
-
-
-                <!-- Person Two -->
 
                 <div class="person-input-wrap">
 
@@ -270,9 +256,6 @@
 
             </div>
 
-
-            <!-- Search Button -->
-
             <button
                 type="button"
                 id="findCommonFilms"
@@ -281,11 +264,69 @@
                 FIND COMMON FILMS
             </button>
 
-
-            <!-- Results -->
-
             <div
                 id="commonFilmsResults"
+                class="common-films-results"
+            ></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FILMOGRAPHY -->
+
+    <div
+        id="filmographyModal"
+        class="common-films-modal"
+    >
+
+        <div class="common-films-message">
+
+            <button
+                type="button"
+                id="filmographyClose"
+                class="developer-close"
+                aria-label="Close"
+            >
+                ×
+            </button>
+
+            <div class="section-label">
+                ACTOR / CAST DATABASE
+            </div>
+
+            <h2>
+                FILMOGRAPHY
+            </h2>
+
+            <div class="person-input-wrap">
+
+                <input
+                    type="text"
+                    id="filmographyPerson"
+                    class="filmography-input"
+                    placeholder="SEARCH CAST MEMBER..."
+                    autocomplete="off"
+                >
+
+                <div
+                    id="filmographySuggestions"
+                    class="person-suggestions"
+                ></div>
+
+            </div>
+
+            <button
+                type="button"
+                id="findFilmography"
+                class="common-films-submit"
+            >
+                FIND FILMOGRAPHY
+            </button>
+
+            <div
+                id="filmographyResults"
                 class="common-films-results"
             ></div>
 
