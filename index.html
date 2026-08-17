@@ -34,10 +34,7 @@
     <div id="developerModal" class="developer-modal">
 
         <div class="developer-message">
-            <button type        = "button"
-                    class       = "developer-close"
-                    id          = "developerClose"
-                    aria-label  = "Close">
+            <button type="button" class="developer-close" id="developerClose" aria-label="Close">
                 ×
             </button>
 
@@ -74,9 +71,9 @@
             </p>
 
             <p>
-                In this catalog are Cinemalaya films 
-                that can be streamed from YouTube, 
-                Netflix, JuanFlix, CCP site, Prime Video, 
+                In this catalog are Cinemalaya films
+                that can be streamed from YouTube,
+                Netflix, JuanFlix, CCP site, Prime Video,
                 Apple TV, iWant, and VivaOne.
             </p>
 
@@ -121,51 +118,37 @@
 
             <!-- navigation bar & tools -->
             <div class="archive-actions">
-                <button type        = "button"
-                        id          = "homeButton"
-                        class       = "archive-button active">
+                <button type="button" id="homeButton" class="archive-button active">
                     HOME
                 </button>
 
 
-                <button type        = "button"
-                        id          = "castButton"
-                        class       = "archive-button">
+                <button type="button" id="castButton" class="archive-button">
                     CAST
                 </button>
 
 
-                <button type        = "button"
-                        id          = "directorsButton"
-                        class       = "archive-button">
+                <button type="button" id="directorsButton" class="archive-button">
                     DIRECTORS
                 </button>
 
-                <button type        = "button"
-                        id          = "findPeopleButton"
-                        class       = "archive-button">
+                <button type="button" id="findPeopleButton" class="archive-button">
                     ADVANCED SEARCH
                 </button>
 
-                <button type        = "button"
-                        id          = "filmographyButton"
-                        class       = "archive-button">
+                <button type="button" id="filmographyButton" class="archive-button">
                     FILMOGRAPHY
                 </button>
 
 
                 <!-- dark mode switch | 8/17 -->
-                <button type        = "button"
-                        id          = "themeToggle"
-                        class       = "theme-toggle"
-                        aria-label  ="toggle dark mode">
+                <button type="button" id="themeToggle" class="theme-toggle" aria-label="toggle dark mode">
 
                     <span class="theme-toggle-track">
                         <span class="theme-toggle-thumb"></span>
                     </span>
 
-                    <span id="themeLabel"
-                          class="theme-label">
+                    <span id="themeLabel" class="theme-label">
                         LIGHT
                     </span>
                 </button>
@@ -174,13 +157,11 @@
 
 
         <!-- start of filters -->
-        <div id="filmControls"
-             class="film-controls">
+        <div id="filmControls" class="film-controls">
             <div class="film-filters">
 
                 <!-- year filter -->
-                <select id          = "yearFilter"
-                        class       = "year-filter">
+                <select id="yearFilter" class="year-filter">
 
                     <option value="all">
                         ALL YEARS
@@ -189,8 +170,7 @@
 
 
                 <!-- stream filter -->
-                <select id          = "watchFilter"
-                        class       = "watch-filter">
+                <select id="watchFilter" class="watch-filter">
 
                     <option value="all">
                         WHERE TO WATCH
@@ -200,11 +180,8 @@
 
                 <!-- title search -->
                 <div class="search-wrap">
-                    <input type         =   "text"
-                           id           =   "searchInput"
-                           class        =   "search-input"
-                           placeholder  =   "Search film title..."
-                           autocomplete =   "off">
+                    <input type="text" id="searchInput" class="search-input" placeholder="Search film title..."
+                        autocomplete="off">
 
                     <span class="search-icon">
                         /
@@ -218,118 +195,73 @@
         </div>
 
 
-        <!-- films deisplay -->
-        <section id     = "filmsSection"
-                class   = "films-section">
+        <!-- films display -->
+        <section id="filmsSection" class="films-section">
 
-            <div id     = "filmsGrid"
-                 class  = "films-grid"></div>
+            <div id="filmsGrid" class="films-grid"></div>
 
 
-            <div id="pagination"
-                 class="pagination"></div>
+            <div id="pagination" class="pagination"></div>
         </section>
 
 
         <!-- cast display -->
 
-        <section
-            id="castSection"
-            class="cast-section"
-        >
+        <section id="castSection" class="cast-section">
 
             <div class="cast-section-header">
 
-
                 <div class="section-label">
-                    CINEMALAYA CAST
+                    CINEMALAYA ACTORS
                 </div>
-
 
                 <h2>
                     MOST FEATURED CINEMALAYA ACTORS AND ACTRESSES
                 </h2>
 
-
                 <p>
                     Cast members with the most
                     Cinemalaya film appearances.
                 </p>
-
-
             </div>
 
-
-            <div
-                id="castRanking"
-                class="cast-ranking"
-            ></div>
-
-
+            <div id="castRanking" class="cast-ranking"></div>
         </section>
 
 
-        <!-- =========================
-             DIRECTORS
-             ========================= -->
+        <!-- directors display -->
 
-        <section
-            id="directorsSection"
-            class="cast-section"
-        >
+        <section id="directorsSection" class="cast-section">
 
             <div class="cast-section-header">
-
 
                 <div class="section-label">
                     CINEMALAYA DIRECTORS
                 </div>
 
-
                 <h2>
                     MOST FEATURED DIRECTORS
                 </h2>
-
 
                 <p>
                     Directors with more than one
                     film in the Cinemalaya catalog.
                 </p>
 
-
             </div>
 
-
-            <div
-                id="directorsRanking"
-                class="cast-ranking"
-            ></div>
-
-
+            <div id="directorsRanking" class="cast-ranking"></div>
         </section>
-
-
     </main>
 
 
-    <!-- =========================
-         COMMON FILMS POPUP
-         ========================= -->
+    <!-- find common films function -->
 
-    <div
-        id="commonFilmsModal"
-        class="common-films-modal"
-    >
+    <div id="commonFilmsModal" class="common-films-modal">
 
         <div class="common-films-message">
 
-
-            <button
-                type="button"
-                id="commonFilmsClose"
-                class="developer-close"
-                aria-label="Close"
-            >
+            <button type="button" id="commonFilmsClose" class="developer-close" aria-label="Close">
                 ×
             </button>
 
@@ -338,167 +270,80 @@
                 FILM CONNECTION
             </div>
 
-
             <h2>
                 FIND COMMON FILMS
             </h2>
 
-
             <div class="people-inputs">
-
-
-                <!-- NAME 1 -->
-
+                <!-- Actor 1 -->
                 <div class="person-input-wrap">
-
-                    <input
-                        type="text"
-                        id="personOne"
-                        placeholder="NAME 1"
-                        autocomplete="off"
-                    >
+                    <input type="text" id="personOne" placeholder="ACTOR 1" autocomplete="off">
 
 
-                    <div
-                        id="personOneSuggestions"
-                        class="person-suggestions"
-                    ></div>
+                    <div id="personOneSuggestions" class="person-suggestions">
+                    </div>
 
                 </div>
 
 
-                <!-- NAME 2 -->
-
+                <!-- Actor 2 -->
                 <div class="person-input-wrap">
+                    <input type="text" id="personTwo" placeholder="ACTOR 2" autocomplete="off">
 
-                    <input
-                        type="text"
-                        id="personTwo"
-                        placeholder="NAME 2"
-                        autocomplete="off"
-                    >
-
-
-                    <div
-                        id="personTwoSuggestions"
-                        class="person-suggestions"
-                    ></div>
-
+                    <div id="personTwoSuggestions" class="person-suggestions">
+                    </div>
                 </div>
-
-
             </div>
 
-
-            <button
-                type="button"
-                id="findCommonFilms"
-                class="common-films-submit"
-            >
+            <button type="button" id="findCommonFilms" class="common-films-submit">
                 FIND COMMON FILMS
             </button>
 
-
-            <div
-                id="commonFilmsResults"
-                class="common-films-results"
-            ></div>
-
-
+            <div id="commonFilmsResults" class="common-films-results">
+            </div>
         </div>
-
     </div>
 
 
-    <!-- =========================
-         FILMOGRAPHY POPUP
-         ========================= -->
+    <!-- search filmography pop up -->
 
-    <div
-        id="filmographyModal"
-        class="common-films-modal"
-    >
+    <div id="filmographyModal" class="common-films-modal">
 
         <div class="common-films-message">
-
-
-            <button
-                type="button"
-                id="filmographyClose"
-                class="developer-close"
-                aria-label="Close"
-            >
+            <button type="button" id="filmographyClose" class="developer-close" aria-label="Close">
                 ×
             </button>
 
-
-            <!-- JS CHANGES THIS FOR
-                 CAST / DIRECTOR MODE -->
-
-            <div
-                id="filmographyLabel"
-                class="section-label"
-            >
-                ACTOR / CAST DATABASE
+            <div id="filmographyLabel" class="section-label">
+                ACTOR / CAST CATALOG
             </div>
 
-
-            <h2
-                id="filmographyTitle"
-            >
+            <h2 id="filmographyTitle">
                 FILMOGRAPHY
             </h2>
 
 
             <div class="person-input-wrap">
+                <input type="text" id="filmographyPerson" class="filmography-input" placeholder="SEARCH CAST MEMBER..."
+                    autocomplete="off">
 
-
-                <input
-                    type="text"
-                    id="filmographyPerson"
-                    class="filmography-input"
-                    placeholder="SEARCH CAST MEMBER..."
-                    autocomplete="off"
-                >
-
-
-                <div
-                    id="filmographySuggestions"
-                    class="person-suggestions"
-                ></div>
-
-
+                <div id="filmographySuggestions" class="person-suggestions">
+                </div>
             </div>
 
-
-            <button
-                type="button"
-                id="findFilmography"
-                class="common-films-submit"
-            >
+            <button type="button" id="findFilmography" class="common-films-submit">
                 FIND FILMOGRAPHY
             </button>
 
 
-            <div
-                id="filmographyResults"
-                class="common-films-results"
-            ></div>
+            <div id="filmographyResults" class="common-films-results"></div>
 
 
         </div>
 
     </div>
 
-
-    <!-- =========================
-         SCRIPT
-         ========================= -->
-
-    <script
-        src="script.js"
-        defer
-    ></script>
+    <script src="script.js" defer></script>
 
 
 </body>
