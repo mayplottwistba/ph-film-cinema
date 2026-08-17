@@ -645,13 +645,14 @@
         "description": "Four queer women in their 30s who are exes-turned-best-friends navigate adulthood, love, friendship, chosen families, and everything in between.",
         "director": "Nigel Santos",
         "cast": "Janella Salvador, Jasmine Curtis-Smith, Klea Pineda, Leanne Mamonong, Jackie Lou Blanco, Yesh Anne Burce, Migs Almendras, Rachel Coates, Jhoanna San Juan",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "producers": "Tin Velasco",
+        "screenplay": "Keavy Eunice Vicente",
+        "production_designer": "Sam Manacsa",
+        "cinematographer": "Martika Ramirez Escobar",
+        "editor": "Maria Estela Paiso",
+        "sound": "Jannina Mikaela Minglanilla, Michaela Docena",
+        "music": "April Hernandez",
+        "genre": "Comedy, Drama",
         "now_showing": false,
         "watch": [
             {
@@ -714,14 +715,15 @@
         "description": "Three land rights activists contend with their volatile notions of home amid terror and red-tagging in Cagayan Valley.",
         "director": "Noni Abao",
         "cast": "",
-        "producers": "",
-        "screenplay": "",
+        "producers": "Noni Abao, Alex Poblete",
+        "screenplay": "Noni Abao",
         "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
+        "cinematographer": "Steven Evangelio, Mike Olea",
+        "editor": "Che Tagyamon",
+        "sound": "Mikko Quizon, Wapak Studios",
         "music": "",
         "now_showing": false,
+        "genre": "Documentary"
         "watch": [
             {
                 "type": "none"
@@ -729,7 +731,7 @@
         ],
         "awards": [
             {
-                "film": false
+                "film": true
             },
             {
                 "special_jury": false
@@ -763,7 +765,7 @@
                 "cinematography": false
             },
             {
-                "editing": false
+                "editing": true
             },
             {
                 "sound": false
@@ -783,13 +785,14 @@
         "description": "At a wake, a persevering high school student must prove that he is the 82nd child of the Philippines’ biggest action-fantasy movie star in the hopes of seeing his late father one last time.",
         "director": "Tim Rone Villanueva",
         "cast": "JM Ibarra, Rochelle Pangilinan, Vhong Navarro, Irma Adlawan, Inah Evans, Zairene Fernandez, Dexter Doria, Kai Montinola",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "producers": "Mavi Cercado, Camille Tan, Reniel Riñon, Arvin Belarmino, Johndel Tiri Tacata",
+        "screenplay": "Tim Rone Villanueva, Herlyn Alegre",
+        "production_designer": "Nestor Abrogena Jr., Leojmhella An-Zyofhea Abalus",
+        "cinematographer": "Rap Ramirez",
+        "editor": "Vanessa U. De Leon",
+        "sound": "Alex Tomboc",
+        "music": "Pepe Manikan",
+        "genre": "Comedy, Drama, Fantasy",
         "now_showing": false,
         "watch": [
             {
@@ -804,7 +807,7 @@
                 "special_jury": false
             },
             {
-                "audience": false
+                "audience": true
             },
             {
                 "direction": false
@@ -822,11 +825,11 @@
                 "name": ""
             },
             {
-                "supporting_actress": false,
-                "name": ""
+                "supporting_actress": true,
+                "name": "Rochelle Pangilinan"
             },
             {
-                "screenplay": false
+                "screenplay": true
             },
             {
                 "cinematography": false
@@ -852,13 +855,14 @@
         "description": "Recreating forgotten massacres from Philippine history, a young filmmaker begins shooting at a site where 1,000 men, women, and children were slaughtered. But the angry spirits are awakened and the lives of her team and the local villagers are put in peril.",
         "director": "Sari Dalena",
         "cast": "Nour Hooshmand, Paul Cedric Juan, Raquel Villavicencio, Angel Aquino, Lav Diaz, Kidlat Tahimik, Ligaya Amilbangsa, Soliman Cruz, Bong Cabrera, Laila Ulao, Giancarlo Abrahan, Iana Bernardez, Nor Domingo, Danny Palisa, Andre Miguel, Victor Medina, Yian Gabriel, Kobe Sanchez, Shane Bernabe, Roven Alejandro, Nelson Dino, Rob Rownd, Dax Alejandro, Air Salazar, Dexter Macaraeg, Emmanuel Dela Cruz, Rolando Inocencio",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "producers": "Carl Joseph E. Papa, Keith Sicat, Kiri Dalena, Kristine Kintana",
+        "screenplay": "Sari Dalena, Keith Sicat",
+        "production_designer": "Toym Imao",
+        "cinematographer": "Neil Daza, Sari Dalena, Kiri Dalena",
+        "editor": "Keith Sicat",
+        "sound": "Emilio Bien A. Sparks",
+        "music": "Teresa Barrozo",
+        "genre": "Drama",
         "now_showing": false,
         "watch": [
             {
@@ -870,13 +874,13 @@
                 "film": false
             },
             {
-                "special_jury": false
+                "special_jury": true
             },
             {
                 "audience": false
             },
             {
-                "direction": false
+                "direction": true
             },
             {
                 "actor": false,
@@ -907,7 +911,7 @@
                 "sound": false
             },
             {
-                "music": false
+                "music": true
             },
             {
                 "production": false
@@ -921,13 +925,14 @@
         "description": "Four Filipinos confront the slow erasure of memory and truth in a country devoured by disinformation.",
         "director": "Dustin Celestino",
         "cast": "Dolly de Leon, Jojit Lorenzo, Zanjoe Marudo, Mylene Dizon",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "producers": "Janel Gutierrez Celestino, Karen Toyoshima, Zyu Maria Chio",
+        "screenplay": "Dustin Celestino",
+        "production_designer": "Benjamin Padero, Carlo Tabije",
+        "cinematographer": "Kara Moreno",
+        "editor": "John Rogers",
+        "sound": "Nicole Rosacay, Michaela Docena",
+        "music": "Paulo Protacio",
+        "genre": "Drama",
         "now_showing": false,
         "watch": [
             {
@@ -948,16 +953,16 @@
                 "direction": false
             },
             {
-                "actor": false,
-                "name": ""
+                "actor": true,
+                "name": "Jojit Lorenzo"
             },
             {
-                "actress": false,
-                "name": ""
+                "actress": true,
+                "name": "Mylene Dizon"
             },
             {
-                "supporting_actor": false,
-                "name": ""
+                "supporting_actor": true,
+                "name": "Nanding Josef"
             },
             {
                 "supporting_actress": false,
@@ -990,13 +995,14 @@
         "description": "Five days before the proclamation of Martial Law, the Colgante Bridge collapsed in Naga, forcing a father into a desperate search for his missing son.",
         "director": "Jenn Romano",
         "cast": "Ely Buendia, Esteban Mara, Sue Prado, Floyd Tena, Mildren Anne Estela, Frank Peñones",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
+        "producers": "Maxine Rae Joaquin, Kristine de Leon, Jon Galvez, Leo Liban, Carlos Ortiz, Yssa Valdes",
+        "screenplay": "Jenn Romano, Ivan Villacorta Gentolizo",
+        "production_designer": "Jeric Delos Angeles",
+        "cinematographer": "Steven Evangelio",
+        "editor": "Fea Fortuna",
+        "sound": "Lamberto Casas Jr.",
         "music": "",
+        "genre": "Drama",
         "now_showing": false,
         "watch": [
             {
@@ -1048,7 +1054,7 @@
                 "music": false
             },
             {
-                "production": false
+                "production": true
             }
         ]
     },
@@ -1059,13 +1065,14 @@
         "description": "Years after experiencing sexual harassment at her workplace, a former executive assistant is persuaded by a passionate lawyer to file a case against her rich and highly respected boss.",
         "director": "Cheska Marfori",
         "cast": "Rissey Reyes-Robinson, Eula Valdez, Leo Martinez, Jackie Lou Blanco, Sid Lucero, Bombi Plata, Rolando Inocencio, Cherry Malvar, Barbara Miguel",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
+        "producers": "Raymund Barcelon, Edwin Mores, Cheska Marfori",
+        "screenplay": "Raymund Barcelon",
+        "production_designer": "Lars Magbanua",
+        "cinematographer": "Sol Garcia",
         "editor": "",
         "sound": "",
         "music": "",
+        "genre": "Drama",
         "now_showing": false,
         "watch": [
             {
@@ -1128,13 +1135,14 @@
         "description": "A young man’s quest for truth and justice intertwines with a plane crash mystery, uncovering a sinister plot that propels his desire to be heard but also threatens his community.",
         "director": "Ryan Machado",
         "cast": "Elijah Canlas, Ron Angeles, Reynald Raisel Santos, Glenn Sevilla Mas",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "producers": "Wesley Yap, Catsi Catalan, Alemberg Ang, Sarah Pagcaliwanagan Brakensiek, Joy Jamora, Ryan Machado, Dessa Jimenez",
+        "screenplay": "Ryan Machado",
+        "production_designer": "David Esguerra",
+        "cinematographer": "Theo Lozada",
+        "editor": "John Rogers",
+        "sound": "Lamberto Casas Jr.",
+        "music": "Erwin Fajardo",
+        "genre": "Drama",
         "now_showing": false,
         "watch": [
             {
@@ -1174,7 +1182,7 @@
                 "screenplay": false
             },
             {
-                "cinematography": false
+                "cinematography": true
             },
             {
                 "editing": false
@@ -1188,6 +1196,7 @@
             {
                 "production": false
             }
+            
         ]
     },
     {
@@ -1197,13 +1206,14 @@
         "description": "When the local government threatens to evict her from her own land, a farmer renounces her Filipino citizenship and builds her own micronation.",
         "director": "Renei Dimla",
         "cast": "Geraldine Villamil, Alessandra de Rossi, Kakki Teodoro, Natalie Maligalig, JM Salvado, Bon Lentejas, Lian Silverio, Shun Mark Gomez, Mitzi Comia, Yian Gabriel, Brylle Parzuelo, Sigrid Polon, Sisa Bernardo, Antonio Vasquez, Xiao Chua, Chad Kinis",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "producers": "Wilma Hollis, Ferdy Lapuz",
+        "screenplay": "Renei Dimla",
+        "production_designer": "Donald Camon, James Arvin Rosendal",
+        "cinematographer": "Pabelle Manikan",
+        "editor": "Cha Escala",
+        "sound": "Lamberto Casas Jr., Alex Tomboc",
+        "music": "Gian Gianan",
+        "genre":"Comedy, Drama",
         "now_showing": false,
         "watch": [
             {
@@ -1256,6 +1266,9 @@
             },
             {
                 "production": false
+            },
+            {
+                "netpac": true
             }
         ]
     },
@@ -1266,13 +1279,14 @@
         "description": "Kitkat, a 19-year-old transgender woman, finds the family she’s been longing for in a gang of sisters who kidnap foreign men to fund their gender-affirming surgeries, until their crimes force her to question the true cost of belonging.",
         "director": "Kevin Alambra",
         "cast": "Jervi Wrightson, Lance Reblando, Serena Magiliw, Valeria Ortega, Jacky Woo, Dimples Romana",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
+        "producers": "Sheron R. Dayoc, Iana Bernardez",
+        "screenplay": "Arah Jell Badayos",
+        "production_designer": "Marxie Maolen Fadul",
+        "cinematographer": "Neil Daza",
         "editor": "",
         "sound": "",
         "music": "",
+        "genre":"Drama",
         "now_showing": false,
         "watch": [
             {
