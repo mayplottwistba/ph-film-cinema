@@ -2938,7 +2938,7 @@ html.dark-mode .theme-toggle-thumb {
     border-radius: 0;
 }
 
-body.dark-mode .production-credit-value {
+html.dark-mode .production-credit-value {
     display: inline-flex;
     align-items: center;
     width: fit-content;
@@ -2982,7 +2982,7 @@ body.dark-mode .production-credit-value {
     line-height: 1.2;
 }
 
-body.dark .production-credit-value {
+html.dark-mode .production-credit-value {
     display: inline-flex;
     align-items: center;
     width: fit-content;
