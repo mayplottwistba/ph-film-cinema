@@ -13,6 +13,7 @@
         "editor": "Vanessa Ubas-De Leon",
         "sound": "Jannina Mikaela Minglanilla",
         "music": "Mikey Amistoso, Jazz Nicolas",
+        "genre": "Drama",
         "now_showing": false,
         "watch": [
             {
@@ -85,6 +86,7 @@
         "editor": "John Rogers",
         "sound": "Nicole Rosacay",
         "music": "Paulo Protacio",
+        "genre": "Comedy",
         "now_showing": false,
         "watch": [
             {
@@ -154,6 +156,7 @@
         "editor": "Mona Nieva",
         "sound": "Drew Milallos, Anna de Dios",
         "music": "RJ Mabilin",
+        "genre": "Drama",
         "now_showing": false,
         "watch": [
             {
@@ -223,6 +226,7 @@
         "editor": "Jaime Dumancas",
         "sound": "Emilio Bien A. Sparks",
         "music": "Emerzon Texon",
+        "genre": "Drama",
         "now_showing": false,
         "watch": [
             {
@@ -292,6 +296,7 @@
         "editor": "Benjamin Gonzales Tolentino",
         "sound": "Mikko Quizon",
         "music": "David Yuhico",
+        "genre": "Horror, Drama",
         "now_showing": false,
         "watch": [
             {
@@ -361,6 +366,7 @@
         "editor": "Joris Fernandez",
         "sound": "Mikko Quizon",
         "music": "Arbi Barbarona",
+        "genre": "Drama",
         "now_showing": false,
         "watch": [
             {
@@ -430,6 +436,7 @@
         "editor": "Che Tagyamon",
         "sound": "Immanuel Verona",
         "music": "Hans Rivera",
+        "genre": "Comedy, Drama",
         "now_showing": false,
         "watch": [
             {
@@ -502,6 +509,7 @@
         "editor": "Joris Fernandez",
         "sound": "Elian Idioma",
         "music": "Glenn Barit",
+        "genre": "Drama",
         "now_showing": false,
         "watch": [
             {
@@ -574,6 +582,7 @@
         "editor": "May-i Guia Padilla",
         "sound": "Elian Idioma",
         "music": "Rob Ibay",
+        "genre": "Thriller, Drama",
         "now_showing": false,
         "watch": [
             {
