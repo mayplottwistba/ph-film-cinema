@@ -2802,3 +2802,13 @@ html.dark-mode .theme-toggle-thumb {
     }
 
 }
+
+/* Hide scrollbar but keep scrolling */
+.film-details-message {
+    scrollbar-width: none;        /* Firefox */
+    -ms-overflow-style: none;     /* IE / old Edge */
+}
+
+.film-details-message::-webkit-scrollbar {
+    display: none;                /* Chrome / Edge / Safari */
+}
