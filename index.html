@@ -9,22 +9,6 @@
     <title>Cinemalaya Catalog</title>
     <link rel="stylesheet" href="style.css">
 
-    <!-- defaults light mode / saved mode -->
-    <script>
-        (function () {
-            const savedTheme =
-                localStorage.getItem(
-                    "cinemalaya-theme"
-                );
-
-            if (savedTheme === "dark") {
-                document.documentElement.classList.add(
-                    "dark-mode"
-                );
-            }
-        })();
-    </script>
-
 </head>
 
 <body>
@@ -33,6 +17,7 @@
             <button type="button" class="developer-close" id="developerClose" aria-label="Close">
                 ×
             </button>
+
             <h2>
                 Hello!
             </h2>
@@ -65,7 +50,6 @@
             </p>
 
             <p>
-                <strong>Update:</strong>
                 Listed are films that can be streamed
                 from YouTube, Netflix, JuanFlix, CCP
                 site, Prime Video, Apple TV, iWant,
@@ -92,10 +76,11 @@
             </p>
 
             <div class="developer-footer">
-                CINEMALAYA CATALOG
+                CINEMALAYA FILM CATALOG
             </div>
         </div>
     </div>
+
 
     <main class="container">
         <header class="films-header">
@@ -103,34 +88,28 @@
                 <div class="section-label">
                     CINEMALAYA FILMS
                 </div>
-
                 <h1>
                     CATALOG
                 </h1>
-            </div>
 
+            </div>
 
             <div class="archive-actions">
                 <button type="button" id="homeButton" class="archive-button active">
                     HOME
                 </button>
-
                 <button type="button" id="castButton" class="archive-button">
                     CAST
                 </button>
-
                 <button type="button" id="directorsButton" class="archive-button">
                     DIRECTORS
                 </button>
-
                 <button type="button" id="findPeopleButton" class="archive-button">
                     ADVANCED SEARCH
                 </button>
-
                 <button type="button" id="filmographyButton" class="archive-button">
                     FILMOGRAPHY
                 </button>
-
 
                 <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light and dark mode">
                     <span class="theme-toggle-track">
@@ -147,33 +126,25 @@
 
         <div id="filmControls" class="film-controls">
             <div class="film-filters">
-                <!-- YEAR -->
                 <select id="yearFilter" class="year-filter">
-
                     <option value="all">
                         ALL YEARS
                     </option>
                 </select>
-
                 <select id="watchFilter" class="watch-filter">
-
                     <option value="all">
                         WHERE TO WATCH
                     </option>
                 </select>
-
                 <div class="search-wrap">
-                    <input type="text" id="searchInput" class="search-input" placeholder="SEARCH FILM TITLE..."
+                    <input type="text" id="searchInput" class="search-input" placeholder="Search film title..."
                         autocomplete="off">
 
                     <span class="search-icon">
                         /
                     </span>
-
                 </div>
-
             </div>
-
         </div>
 
 
@@ -196,13 +167,11 @@
                     Cast members with the most
                     Cinemalaya film appearances.
                 </p>
-
             </div>
             <div id="castRanking" class="cast-ranking"></div>
         </section>
 
         <section id="directorsSection" class="cast-section">
-
             <div class="cast-section-header">
                 <div class="section-label">
                     CINEMALAYA DIRECTORS
@@ -216,144 +185,114 @@
                     Directors with the most films
                     in the Cinemalaya catalog.
                 </p>
-
             </div>
-
             <div id="directorsRanking" class="cast-ranking"></div>
         </section>
     </main>
 
-    <div id="filmDetailsModal" class="film-details-modal">
-        <div class="film-details-message">
-            <button type="button" id="filmDetailsClose" class="developer-close" aria-label="Close film details">
-                ×
-            </button>
-            <div id="filmDetailsHeader" class="film-details-header"></div>
-            <div id="filmDetailsSynopsis" class="film-details-block"></div>
-            <div id="filmDetailsPeople" class="film-details-block"></div>
-
-            <div id="filmDetailsProduction" class="film-details-block"></div>
-
-            <div id="filmDetailsWatch" class="film-details-block"></div>
-
-            <div id="filmDetailsAwards" class="film-details-block"></div>
-
-
-        </div>
-
-    </div>
-
-
 
     <div id="commonFilmsModal" class="common-films-modal">
-
         <div class="common-films-message">
-
-
             <button type="button" id="commonFilmsClose" class="developer-close" aria-label="Close">
                 ×
             </button>
-
 
             <div class="section-label">
                 FILM CONNECTION
             </div>
 
-
             <h2>
                 FIND COMMON FILMS
             </h2>
 
-
-
             <div class="people-inputs">
-
-
                 <div class="person-input-wrap">
+                    <input type="text" id="personOne" placeholder="ACTOR 1" autocomplete="off">
+                    <div id="personOneSuggestions" class="person-suggestions">
 
-                    <input type="text" id="personOne" placeholder="NAME 1" autocomplete="off">
-
-
-                    <div id="personOneSuggestions" class="person-suggestions"></div>
-
+                    </div>
                 </div>
-
-
-
                 <div class="person-input-wrap">
+                    <input type="text" id="personTwo" placeholder="ACTOR 2" autocomplete="off">
+                    <div id="personTwoSuggestions" class="person-suggestions">
 
-                    <input type="text" id="personTwo" placeholder="NAME 2" autocomplete="off">
-
-
-                    <div id="personTwoSuggestions" class="person-suggestions"></div>
-
+                    </div>
                 </div>
-
             </div>
-
-
 
             <button type="button" id="findCommonFilms" class="common-films-submit">
                 FIND COMMON FILMS
             </button>
-
-
-
             <div id="commonFilmsResults" class="common-films-results"></div>
 
-
         </div>
+
     </div>
+
 
     <div id="filmographyModal" class="common-films-modal">
 
         <div class="common-films-message">
 
-
             <button type="button" id="filmographyClose" class="developer-close" aria-label="Close">
                 ×
             </button>
-
 
             <div class="section-label">
                 ACTOR / CAST DATABASE
             </div>
 
-
             <h2>
                 FILMOGRAPHY
             </h2>
 
-
-
             <div class="person-input-wrap">
-
                 <input type="text" id="filmographyPerson" class="filmography-input" placeholder="SEARCH CAST MEMBER..."
                     autocomplete="off">
-
 
                 <div id="filmographySuggestions" class="person-suggestions"></div>
 
             </div>
 
-
-
             <button type="button" id="findFilmography" class="common-films-submit">
                 FIND FILMOGRAPHY
             </button>
 
-
-
             <div id="filmographyResults" class="common-films-results"></div>
-
 
         </div>
 
     </div>
 
+
+    <div id="filmDetailsModal" class="film-details-modal">
+
+        <div class="film-details-message">
+
+            <button type="button" id="filmDetailsClose" class="developer-close" aria-label="Close film details">
+                ×
+            </button>
+            <div id="filmDetailsHeader" class="film-details-header">
+
+            </div>
+            <div id="filmDetailsSynopsis" class="film-details-block film-details-synopsis-section">
+
+            </div>
+            <div id="filmDetailsPeople" class="film-details-block film-details-people-section">
+
+            </div>
+            <div id="filmDetailsProduction" class="film-details-block film-details-production-section">
+
+            </div>
+            <div id="filmDetailsWatch" class="film-details-block film-details-watch-section">
+
+            </div>
+            <div id="filmDetailsAwards" class="film-details-block film-details-awards-section">
+
+            </div>
+        </div>
+    </div>
     <script src="script.js" defer></script>
-
-
 </body>
 
 </html>
