@@ -166,8 +166,8 @@ h1 {
 
 .search-icon {
     position: absolute;
-    top: 50%;
     right: 12px;
+    top: 50%;
     transform: translateY(-50%);
     color: #777;
     font-family: monospace;
@@ -720,7 +720,10 @@ h1 {
 .people-inputs {
     display: grid;
     grid-template-columns:
-        repeat(2, minmax(0, 1fr));
+        repeat(
+            2,
+            minmax(0, 1fr)
+        );
     gap: 8px;
 }
 
@@ -1051,6 +1054,7 @@ h1 {
     .search-wrap {
         flex: 1 1 200px;
     }
+
 }
 
 @media (max-width: 850px) {
@@ -1075,6 +1079,7 @@ h1 {
     .cast-ranking {
         grid-template-columns: 1fr;
     }
+
 }
 
 @media (max-width: 650px) {
@@ -1163,4 +1168,5 @@ h1 {
     .cast-name {
         font-size: 11px;
     }
+
 }
