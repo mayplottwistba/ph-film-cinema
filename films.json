@@ -447,7 +447,7 @@
                 "special_jury": false
             },
             {
-                "audience": false
+                "audience": true
             },
             {
                 "direction": false
