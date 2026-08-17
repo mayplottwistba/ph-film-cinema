@@ -2659,7 +2659,7 @@ function createFilmDetailsAwards(
                                 <div
                                     class="film-award-icon"
                                 >
-                                    ★
+                                    🏆
                                 </div>
 
 
@@ -2667,15 +2667,16 @@ function createFilmDetailsAwards(
                                     class="film-award-content"
                                 >
 
-                                    <div
-                                        class="film-award-name"
-                                    >
-                                        ${escapeHTML(
+                                    <div class="film-award-name">
+    ${escapeHTML(
                     getAwardDisplayName(
                         award.key
                     )
                 )}
-                                    </div>
+    (${escapeHTML(
+                    film.year || ""
+                )})
+</div>
 
 
                                     ${award.name
