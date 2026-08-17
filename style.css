@@ -58,11 +58,15 @@ body {
     min-height: 100vh;
     background: var(--bg);
     color: var(--text);
-    cursor: url("assets/cursor.png") 0 0, auto !important;
+    
     font-family: Arial, Helvetica, sans-serif;
     transition:
         background-color 0.25s ease,
         color 0.25s ease;
+}
+
+* {
+    cursor: url("assets/cursor.png") 0 0, auto !important;
 }
 
 /* =========================
