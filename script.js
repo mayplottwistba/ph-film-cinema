@@ -1488,23 +1488,23 @@ function buildCastRanking() {
     });
 
     const rankings =
-        Array.from(
-            castCounts.values()
-        )
-        .sort((a, b) => {
-            if (a.count !== b.count) {
-                return b.count - a.count;
-            }
+    Array.from(
+        directorCounts.values()
+    )
+    .filter(person => person.count > 1)
+    .sort((a, b) => {
+        if (a.count !== b.count) {
+            return b.count - a.count;
+        }
 
-            return a.name.localeCompare(
-                b.name,
-                undefined,
-                {
-                    sensitivity: "base"
-                }
-            );
-        })
-        .slice(0, 15);
+        return a.name.localeCompare(
+            b.name,
+            undefined,
+            {
+                sensitivity: "base"
+            }
+        );
+    });
 
     if (rankings.length === 0) {
         castRanking.innerHTML = `
