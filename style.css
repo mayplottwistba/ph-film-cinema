@@ -1647,8 +1647,8 @@ html.dark-mode .theme-toggle-thumb {
 
     font-family: monospace;
 
-    font-size: 12px;
-    font-weight: 900;
+    font-size: 10px;
+    font-weight: 600;
 
     text-transform: uppercase;
 }
@@ -1657,9 +1657,10 @@ html.dark-mode .theme-toggle-thumb {
 .production-credit-value {
     color: var(--text);
 
-    font-size: 10px;
+    font-size: 11.5px;
 
     font-weight: normal;
+    font-weight: 700;
 
     line-height: 1.4;
 }
