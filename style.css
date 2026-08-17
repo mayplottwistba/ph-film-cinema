@@ -15,18 +15,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-/* MAIN CONTAINER */
-
 .container {
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
     padding: 35px;
 }
-
-
-/* HEADER */
 
 .films-header {
     display: flex;
@@ -58,9 +52,6 @@ h1 {
     font-weight: 900;
     letter-spacing: -2px;
 }
-
-
-/* ARCHIVE NAVIGATION */
 
 .archive-actions {
     display: flex;
@@ -99,9 +90,6 @@ h1 {
     background: #111;
     color: #fff;
 }
-
-
-/* FILM CONTROLS */
 
 .film-controls {
     width: 100%;
@@ -148,9 +136,6 @@ h1 {
     color: #111;
 }
 
-
-/* SEARCH */
-
 .search-wrap {
     position: relative;
     flex: 1;
@@ -191,9 +176,6 @@ h1 {
     pointer-events: none;
 }
 
-
-/* FILM GRID */
-
 .films-grid {
     display: grid;
     grid-template-columns:
@@ -225,9 +207,6 @@ h1 {
     box-shadow: 7px 7px 0 #111;
 }
 
-
-/* POSTER */
-
 .poster-wrap {
     width: 135px;
     height: 195px;
@@ -256,9 +235,6 @@ h1 {
     font-weight: 900;
     text-align: center;
 }
-
-
-/* FILM INFORMATION */
 
 .film-info {
     display: flex;
@@ -289,9 +265,6 @@ h1 {
     text-transform: uppercase;
 }
 
-
-/* DESCRIPTION */
-
 .film-description {
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -307,9 +280,6 @@ h1 {
     display: block;
     overflow: visible;
 }
-
-
-/* DIRECTOR */
 
 .film-director-label,
 .film-cast-label {
@@ -352,9 +322,6 @@ h1 {
     font-weight: 600;
 }
 
-
-/* CAST */
-
 .film-cast {
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -395,9 +362,6 @@ h1 {
     font-weight: 600;
 }
 
-
-/* SEE MORE */
-
 .see-more {
     display: inline-block;
     width: fit-content;
@@ -421,9 +385,6 @@ h1 {
 .see-more:focus {
     outline: none;
 }
-
-
-/* WHERE TO WATCH */
 
 .watch-label {
     margin-top: auto;
@@ -456,9 +417,6 @@ h1 {
     text-decoration: none;
     text-transform: uppercase;
 }
-
-
-/* PLATFORMS */
 
 .platform.netflix {
     background: #e50914;
@@ -555,9 +513,6 @@ h1 {
     border-color: #22a447;
 }
 
-
-/* EMPTY */
-
 .empty-films {
     grid-column: 1 / -1;
     padding: 60px 20px;
@@ -568,9 +523,6 @@ h1 {
     font-size: 11px;
     font-weight: 900;
 }
-
-
-/* PAGINATION */
 
 .pagination {
     display: flex;
@@ -609,7 +561,7 @@ h1 {
 }
 
 
-/* CAST SECTION */
+/* CAST + DIRECTORS */
 
 .cast-section {
     display: none;
@@ -705,7 +657,7 @@ h1 {
 }
 
 
-/* COMMON FILMS / FILMOGRAPHY MODALS */
+/* COMMON FILMS / FILMOGRAPHY */
 
 .common-films-modal {
     position: fixed;
@@ -743,9 +695,6 @@ h1 {
     letter-spacing: -1px;
 }
 
-
-/* CLOSE BUTTON */
-
 .developer-close {
     position: absolute;
     top: 10px;
@@ -767,9 +716,6 @@ h1 {
     background: #111;
     color: #fff;
 }
-
-
-/* PEOPLE INPUTS */
 
 .people-inputs {
     display: grid;
@@ -807,9 +753,6 @@ h1 {
 .filmography-input:focus {
     border-width: 3px;
 }
-
-
-/* SUGGESTIONS */
 
 .person-suggestions {
     position: absolute;
@@ -853,9 +796,6 @@ h1 {
     color: #fff;
 }
 
-
-/* FIND BUTTON */
-
 .common-films-submit {
     width: 100%;
     height: 40px;
@@ -874,9 +814,6 @@ h1 {
     background: #fff;
     color: #111;
 }
-
-
-/* COMMON RESULTS */
 
 .common-films-results {
     margin-top: 18px;
@@ -956,9 +893,6 @@ h1 {
     font-size: 9px;
     font-weight: 600;
 }
-
-
-/* FILMOGRAPHY */
 
 .filmography-input {
     display: block;
@@ -1097,7 +1031,7 @@ h1 {
 }
 
 
-/* MOBILE */
+/* RESPONSIVE */
 
 @media (max-width: 1100px) {
 
@@ -1118,7 +1052,6 @@ h1 {
         flex: 1 1 200px;
     }
 }
-
 
 @media (max-width: 850px) {
 
@@ -1143,7 +1076,6 @@ h1 {
         grid-template-columns: 1fr;
     }
 }
-
 
 @media (max-width: 650px) {
 
