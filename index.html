@@ -2,28 +2,16 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <link rel="icon" type="image/png" href="assets/alessandra.jpg">
 
-    <link
-        rel="icon"
-        type="image/png"
-        href="assets/alessandra.jpg"
-    >
+    <title>Cinemalaya Catalog</title>
 
-    <title>Cinemalaya Films</title>
+    <link rel="stylesheet" href="style.css">
 
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
-
-    <!-- APPLY SAVED THEME BEFORE PAGE LOAD -->
+    <!-- defaults light mode / saved mode -->
     <script>
         (function () {
             const savedTheme =
@@ -38,29 +26,18 @@
             }
         })();
     </script>
-
 </head>
 
 <body>
 
-
-    <!-- =========================
-         DEVELOPER POPUP
-         ========================= -->
-
-    <div
-        id="developerModal"
-        class="developer-modal"
-    >
+    <!-- pop-up developer message -->
+    <div id="developerModal" class="developer-modal">
 
         <div class="developer-message">
-
-            <button
-                type="button"
-                class="developer-close"
-                id="developerClose"
-                aria-label="Close"
-            >
+            <button type        = "button"
+                    class       = "developer-close"
+                    id          = "developerClose"
+                    aria-label  = "Close">
                 ×
             </button>
 
@@ -69,14 +46,12 @@
                 Hello!
             </h2>
 
-
             <p>
                 This site aims to archive all
                 Cinemalaya films from 2005 to the
                 present, along with details on where
                 they can be watched.
             </p>
-
 
             <p>
                 This project would like to thank all
@@ -88,7 +63,6 @@
                 the moment.
             </p>
 
-
             <p>
                 Please also understand that this site
                 is still under development, and some
@@ -99,23 +73,19 @@
                 <strong>@mayplottwistba</strong>
             </p>
 
-
             <p>
-                <strong>Update:</strong>
-                Listed are films that can be streamed
-                from YouTube, Netflix, JuanFlix, CCP
-                site, Prime Video, Apple TV, iWant,
-                and VivaOne.
+                In this catalog are Cinemalaya films 
+                that can be streamed from YouTube, 
+                Netflix, JuanFlix, CCP site, Prime Video, 
+                Apple TV, iWant, and VivaOne.
             </p>
 
-
             <p>
-                For external links, migrated films are
-                up to those released in the year 2011.
-                But as much as possible, please stream
-                these movies legally if there are
-                sources available. Mabuhay ang
-                pelikulang Pilipino.
+                External links are also available for those
+                that does not have any known source as of the
+                moment. These external sources are <strong>not</strong> official
+                and will be de-linked once there is a source available.
+                Mabuhay ang pelikulang Pilipino.
             </p>
 
 
@@ -129,174 +99,114 @@
                 an archival and informational project.
             </p>
 
-
             <div class="developer-footer">
-                CINEMALAYA FILM DATABASE
+                CINEMALAYA FILM CATALOG
             </div>
-
         </div>
-
     </div>
-
-
-    <!-- =========================
-         MAIN
-         ========================= -->
 
     <main class="container">
 
-
-        <!-- =========================
-             HEADER
-             ========================= -->
-
         <header class="films-header">
-
-
             <div class="header-title">
-
                 <div class="section-label">
                     CINEMALAYA FILMS
                 </div>
 
                 <h1>
-                    ARCHIVES
+                    CATALOG
                 </h1>
-
             </div>
 
 
-            <!-- NAVIGATION + THEME -->
-
+            <!-- navigation bar & tools -->
             <div class="archive-actions">
-
-
-                <button
-                    type="button"
-                    id="homeButton"
-                    class="archive-button active"
-                >
+                <button type        = "button"
+                        id          = "homeButton"
+                        class       = "archive-button active">
                     HOME
                 </button>
 
 
-                <button
-                    type="button"
-                    id="castButton"
-                    class="archive-button"
-                >
+                <button type        = "button"
+                        id          = "castButton"
+                        class       = "archive-button">
                     CAST
                 </button>
 
 
-                <button
-                    type="button"
-                    id="directorsButton"
-                    class="archive-button"
-                >
+                <button type        = "button"
+                        id          = "directorsButton"
+                        class       = "archive-button">
                     DIRECTORS
                 </button>
 
-
-                <button
-                    type="button"
-                    id="findPeopleButton"
-                    class="archive-button"
-                >
+                <button type        = "button"
+                        id          = "findPeopleButton"
+                        class       = "archive-button">
                     ADVANCED SEARCH
                 </button>
 
-
-                <button
-                    type="button"
-                    id="filmographyButton"
-                    class="archive-button"
-                >
+                <button type        = "button"
+                        id          = "filmographyButton"
+                        class       = "archive-button">
                     FILMOGRAPHY
                 </button>
 
 
-                <!-- LIGHT / DARK SWITCH -->
-
-                <button
-                    type="button"
-                    id="themeToggle"
-                    class="theme-toggle"
-                    aria-label="Toggle dark mode"
-                >
+                <!-- dark mode switch | 8/17 -->
+                <button type        = "button"
+                        id          = "themeToggle"
+                        class       = "theme-toggle"
+                        aria-label  ="toggle dark mode">
 
                     <span class="theme-toggle-track">
-
                         <span class="theme-toggle-thumb"></span>
-
                     </span>
 
-                    <span
-                        id="themeLabel"
-                        class="theme-label"
-                    >
+                    // this changes depending on the mode selected
+                    // label is pre-filled in javascript
+                    <span id="themeLabel"
+                          class="theme-label">
                         LIGHT
                     </span>
-
                 </button>
-
-
             </div>
-
         </header>
 
 
-        <!-- =========================
-             FILM FILTERS
-             ========================= -->
-
-        <div
-            id="filmControls"
-            class="film-controls"
-        >
-
+        <!-- start of filters -->
+        <div id="filmControls"
+             class="film-controls">
             <div class="film-filters">
 
-
-                <!-- YEAR -->
-
-                <select
-                    id="yearFilter"
-                    class="year-filter"
-                >
+                <!-- year filter -->
+                <select id          = "yearFilter"
+                        class       = "year-filter">
 
                     <option value="all">
                         ALL YEARS
                     </option>
-
                 </select>
 
 
-                <!-- WHERE TO WATCH -->
-
-                <select
-                    id="watchFilter"
-                    class="watch-filter"
-                >
+                <!-- stream filter -->
+                <select id          = "watchFilter"
+                        class       = "watch-filter">
 
                     <option value="all">
                         WHERE TO WATCH
                     </option>
-
                 </select>
 
 
-                <!-- SEARCH -->
-
+                <!-- title search -->
                 <div class="search-wrap">
-
-                    <input
-                        type="text"
-                        id="searchInput"
-                        class="search-input"
-                        placeholder="SEARCH FILM TITLE..."
-                        autocomplete="off"
-                    >
+                    <input type         =   "text"
+                           id           =   "searchInput"
+                           class        =   "search-input"
+                           placeholder  =   "Search film title..."
+                           autocomplete =   "off">
 
                     <span class="search-icon">
                         /
@@ -310,32 +220,20 @@
         </div>
 
 
-        <!-- =========================
-             FILMS
-             ========================= -->
+        <!-- films deisplay -->
+        <section id     = "filmsSection"
+                class   = "films-section">
 
-        <section
-            id="filmsSection"
-            class="films-section"
-        >
-
-            <div
-                id="filmsGrid"
-                class="films-grid"
-            ></div>
+            <div id     = "filmsGrid"
+                 class  = "films-grid"></div>
 
 
-            <div
-                id="pagination"
-                class="pagination"
-            ></div>
-
+            <div id="pagination"
+                 class="pagination"></div>
         </section>
 
 
-        <!-- =========================
-             CAST
-             ========================= -->
+        <!-- cast display -->
 
         <section
             id="castSection"
