@@ -2895,3 +2895,80 @@ html.dark-mode .theme-toggle-thumb {
     }
 
 }
+
+/* =========================================================
+   PRODUCTION CREDIT TAGS
+   ========================================================= */
+
+.production-credit-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+
+    margin-top: 8px;
+}
+
+
+.production-credit-value {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 5px 10px;
+
+    background: #777;
+    color: #fff;
+
+    border: 1px solid #777;
+    border-radius: 999px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+
+.production-credit-empty {
+    background: transparent;
+    color: var(--text-muted);
+
+    border: 0;
+
+    padding: 0;
+    border-radius: 0;
+}
+
+body.dark .production-credit-value {
+    background: #fff;
+    color: #111;
+
+    border-color: #fff;
+}
+
+.film-details-genre-label {
+    margin-top: 14px;
+}
+
+
+.film-details-genre-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+
+.film-details-genre-tag {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 5px 10px;
+
+    background: #f2c94c;
+    color: #111;
+
+    border: 1px solid #f2c94c;
+    border-radius: 999px;
+
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.2;
+}
