@@ -1956,27 +1956,66 @@ function createCreditValue(
    CREATE FILM DETAILS HEADER
    ========================================================= */
 
-function createFilmDetailsHeader(
-    film
-) {
+function createFilmDetailsHeader(film) {
 
     const poster =
         escapeHTML(
             film.poster || ""
         );
 
-
     const title =
         escapeHTML(
             film.title || ""
         );
-
 
     const year =
         escapeHTML(
             film.year || ""
         );
 
+    const directors =
+        getDirectorNames(
+            film.director
+        );
+
+    const cast =
+        getCastNames(
+            film.cast
+        );
+
+    const directorHTML =
+        directors.length
+            ? directors
+                .map(
+                    name => `
+                        <span class="film-details-director-tag">
+                            ${escapeHTML(name)}
+                        </span>
+                    `
+                )
+                .join("")
+            : `
+                <span class="director-unavailable">
+                    Director information unavailable
+                </span>
+            `;
+
+    const castHTML =
+        cast.length
+            ? cast
+                .map(
+                    name => `
+                        <span class="film-details-cast-tag">
+                            ${escapeHTML(name)}
+                        </span>
+                    `
+                )
+                .join("")
+            : `
+                <span class="cast-unavailable">
+                    Cast information unavailable
+                </span>
+            `;
 
     return `
 
@@ -2002,30 +2041,54 @@ function createFilmDetailsHeader(
             </div>
 
 
-            <div class="film-details-meta">
+            <div class="film-details-header-synopsis">
 
-                ${film.now_showing ===
-            true
+                <div class="film-details-label">
+                    SYNOPSIS
+                </div>
 
-            ? `
+                <div class="film-details-full-description">
+                    ${escapeHTML(
+        film.description ||
+        "No synopsis available."
+    )}
+                </div>
 
-                        <span
-                            class="platform now-showing"
-                        >
-                            NOW SHOWING
-                        </span>
+            </div>
 
-                    `
 
-            : ""
-        }
+            <div class="film-details-header-people">
+
+                <div class="film-details-person-group">
+
+                    <div class="film-details-label">
+                        DIRECTOR
+                    </div>
+
+                    <div class="film-details-director-tags">
+                        ${directorHTML}
+                    </div>
+
+                </div>
+
+
+                <div class="film-details-person-group">
+
+                    <div class="film-details-label">
+                        CAST
+                    </div>
+
+                    <div class="film-details-cast-tags">
+                        ${castHTML}
+                    </div>
+
+                </div>
 
             </div>
 
         </div>
 
     `;
-
 }
 
 
@@ -2673,53 +2736,6 @@ function openFilmDetails(
 
         filmDetailsHeader.innerHTML =
             createFilmDetailsHeader(
-                film
-            );
-
-    }
-
-
-    /*
-     * Full synopsis
-     */
-
-    if (
-        filmDetailsSynopsis
-    ) {
-
-        filmDetailsSynopsis.innerHTML = `
-
-            <div
-                class="film-details-label"
-            >
-                SYNOPSIS
-            </div>
-
-
-            <div
-                class="film-details-full-description"
-            >
-                ${escapeHTML(
-            film.description ||
-            "No synopsis available."
-        )}
-            </div>
-
-        `;
-
-    }
-
-
-    /*
-     * Director + Cast
-     */
-
-    if (
-        filmDetailsPeople
-    ) {
-
-        filmDetailsPeople.innerHTML =
-            createFilmDetailsPeople(
                 film
             );
 

@@ -2803,12 +2803,92 @@ html.dark-mode .theme-toggle-thumb {
 
 }
 
-/* Hide scrollbar but keep scrolling */
+/* =========================================================
+   FILM DETAILS - HIDE SCROLLBAR BUT KEEP SCROLLING
+   ========================================================= */
+
 .film-details-message {
-    scrollbar-width: none;        /* Firefox */
-    -ms-overflow-style: none;     /* IE / old Edge */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 .film-details-message::-webkit-scrollbar {
-    display: none;                /* Chrome / Edge / Safari */
+    display: none;
+}
+
+
+/* =========================================================
+   FILM DETAILS - HEADER SYNOPSIS
+   ========================================================= */
+
+.film-details-header-synopsis {
+    margin-top: 8px;
+    padding-top: 15px;
+    border-top: 1px solid var(--border-soft);
+}
+
+.film-details-header-synopsis .film-details-label {
+    margin-bottom: 6px;
+}
+
+
+/* =========================================================
+   FILM DETAILS - HEADER DIRECTOR + CAST
+   ========================================================= */
+
+.film-details-header-people {
+    display: grid;
+
+    grid-template-columns:
+        minmax(180px, 0.8fr) minmax(0, 1.5fr);
+
+    gap: 20px;
+
+    margin-top: 15px;
+    padding-top: 15px;
+
+    border-top:
+        1px solid var(--border-soft);
+}
+
+.film-details-header-people .film-details-person-group {
+    min-width: 0;
+}
+
+.film-details-header-people .film-details-director-tags,
+.film-details-header-people .film-details-cast-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 5px;
+}
+
+
+/* =========================================================
+   FILM DETAILS - HEADER MOBILE
+   ========================================================= */
+
+@media (max-width: 750px) {
+
+    .film-details-header-people {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .film-details-header-synopsis .film-details-full-description {
+        font-size: 11px;
+        line-height: 1.55;
+    }
+
+    .film-details-header-people {
+        gap: 12px;
+        margin-top: 12px;
+        padding-top: 12px;
+    }
+
 }
