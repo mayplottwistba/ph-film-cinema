@@ -243,7 +243,7 @@ const awardNames = {
         "Audience Choice Award",
 
     direction:
-        "Best Direction",
+        "Best Director",
 
     actor:
         "Best Actor",
