@@ -46,6 +46,7 @@ html.dark-mode {
     --tag-red-bg: #452525;
     --tag-red-border: #b56b6b;
     --tag-red-text: #ffd0d0;
+    cursor: url("assets/cursor-2.png") 0 0, auto !important;
 }
 
 
