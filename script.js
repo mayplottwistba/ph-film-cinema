@@ -280,6 +280,9 @@ const awardNames = {
 
     audience:
         "Audience Choice Award",
+
+    netpac:
+        "NETPAC Award",
 };
 
 
