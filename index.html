@@ -5,13 +5,23 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <link rel="icon" type="image/png" href="assets/alessandra.jpg">
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/alessandra.jpg"
+    >
 
     <title>Cinemalaya Films</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 
 </head>
 
@@ -22,11 +32,21 @@
          DEVELOPER MODAL
          ===================================================== -->
 
-    <div id="developerModal" class="developer-modal">
+    <div
+        id="developerModal"
+        class="developer-modal"
+    >
 
-        <div class="developer-message">
+        <div
+            class="developer-message"
+        >
 
-            <button type="button" class="developer-close" id="developerClose" aria-label="Close">
+            <button
+                type="button"
+                class="developer-close"
+                id="developerClose"
+                aria-label="Close"
+            >
                 ×
             </button>
 
@@ -90,7 +110,9 @@
             </p>
 
 
-            <p class="copyright-disclaimer">
+            <p
+                class="copyright-disclaimer"
+            >
                 The developer would like to thank all
                 contributors.
                 No copyright infringement is intended.
@@ -102,7 +124,9 @@
             </p>
 
 
-            <div class="developer-footer">
+            <div
+                class="developer-footer"
+            >
                 CINEMALAYA FILM DATABASE
             </div>
 
@@ -115,18 +139,26 @@
          MAIN
          ===================================================== -->
 
-    <main class="container">
+    <main
+        class="container"
+    >
 
 
         <!-- =================================================
              HEADER
              ================================================= -->
 
-        <header class="films-header">
+        <header
+            class="films-header"
+        >
 
-            <div class="header-title">
+            <div
+                class="header-title"
+            >
 
-                <div class="section-label">
+                <div
+                    class="section-label"
+                >
                     CINEMALAYA FILMS
                 </div>
 
@@ -138,46 +170,78 @@
             </div>
 
 
-            <div class="archive-actions">
+            <div
+                class="archive-actions"
+            >
 
-                <button type="button" id="homeButton" class="archive-button active">
+                <button
+                    type="button"
+                    id="homeButton"
+                    class="archive-button active"
+                >
                     HOME
                 </button>
 
 
-                <button type="button" id="castButton" class="archive-button">
+                <button
+                    type="button"
+                    id="castButton"
+                    class="archive-button"
+                >
                     CAST
                 </button>
 
 
-                <button type="button" id="directorsButton" class="archive-button">
+                <button
+                    type="button"
+                    id="directorsButton"
+                    class="archive-button"
+                >
                     DIRECTORS
                 </button>
 
 
-                <button type="button" id="findPeopleButton" class="archive-button">
+                <button
+                    type="button"
+                    id="findPeopleButton"
+                    class="archive-button"
+                >
                     ADVANCED SEARCH
                 </button>
 
 
-                <button type="button" id="filmographyButton" class="archive-button">
+                <button
+                    type="button"
+                    id="filmographyButton"
+                    class="archive-button"
+                >
                     FILMOGRAPHY
                 </button>
 
 
                 <!-- THEME -->
 
-                <label class="theme-switch" for="themeToggle">
+                <label
+                    class="theme-switch"
+                    for="themeToggle"
+                >
 
-                    <span id="themeLabel">
+                    <span
+                        id="themeLabel"
+                    >
                         LIGHT
                     </span>
 
 
-                    <input type="checkbox" id="themeToggle">
+                    <input
+                        type="checkbox"
+                        id="themeToggle"
+                    >
 
 
-                    <span class="theme-slider"></span>
+                    <span
+                        class="theme-slider"
+                    ></span>
 
                 </label>
 
@@ -190,11 +254,19 @@
              FILM CONTROLS
              ================================================= -->
 
-        <div id="filmControls" class="film-controls">
+        <div
+            id="filmControls"
+            class="film-controls"
+        >
 
-            <div class="film-filters">
+            <div
+                class="film-filters"
+            >
 
-                <select id="yearFilter" class="year-filter">
+                <select
+                    id="yearFilter"
+                    class="year-filter"
+                >
 
                     <option value="all">
                         ALL YEARS
@@ -203,7 +275,10 @@
                 </select>
 
 
-                <select id="watchFilter" class="watch-filter">
+                <select
+                    id="watchFilter"
+                    class="watch-filter"
+                >
 
                     <option value="all">
                         WHERE TO WATCH
@@ -212,13 +287,22 @@
                 </select>
 
 
-                <div class="search-wrap">
+                <div
+                    class="search-wrap"
+                >
 
-                    <input type="text" id="searchInput" class="search-input" placeholder="SEARCH FILM TITLE..."
-                        autocomplete="off">
+                    <input
+                        type="text"
+                        id="searchInput"
+                        class="search-input"
+                        placeholder="SEARCH FILM TITLE..."
+                        autocomplete="off"
+                    >
 
 
-                    <span class="search-icon">
+                    <span
+                        class="search-icon"
+                    >
                         /
                     </span>
 
@@ -233,12 +317,21 @@
              FILMS
              ================================================= -->
 
-        <section id="filmsSection" class="films-section">
+        <section
+            id="filmsSection"
+            class="films-section"
+        >
 
-            <div id="filmsGrid" class="films-grid"></div>
+            <div
+                id="filmsGrid"
+                class="films-grid"
+            ></div>
 
 
-            <div id="pagination" class="pagination"></div>
+            <div
+                id="pagination"
+                class="pagination"
+            ></div>
 
         </section>
 
@@ -247,11 +340,18 @@
              CAST
              ================================================= -->
 
-        <section id="castSection" class="cast-section">
+        <section
+            id="castSection"
+            class="cast-section"
+        >
 
-            <div class="cast-section-header">
+            <div
+                class="cast-section-header"
+            >
 
-                <div class="section-label">
+                <div
+                    class="section-label"
+                >
                     CINEMALAYA CAST
                 </div>
 
@@ -270,7 +370,10 @@
             </div>
 
 
-            <div id="castRanking" class="cast-ranking"></div>
+            <div
+                id="castRanking"
+                class="cast-ranking"
+            ></div>
 
         </section>
 
@@ -279,11 +382,18 @@
              DIRECTORS
              ================================================= -->
 
-        <section id="directorsSection" class="cast-section">
+        <section
+            id="directorsSection"
+            class="cast-section"
+        >
 
-            <div class="cast-section-header">
+            <div
+                class="cast-section-header"
+            >
 
-                <div class="section-label">
+                <div
+                    class="section-label"
+                >
                     CINEMALAYA DIRECTORS
                 </div>
 
@@ -301,7 +411,10 @@
             </div>
 
 
-            <div id="directorsRanking" class="cast-ranking"></div>
+            <div
+                id="directorsRanking"
+                class="cast-ranking"
+            ></div>
 
         </section>
 
@@ -312,16 +425,28 @@
          COMMON FILMS MODAL
          ===================================================== -->
 
-    <div id="commonFilmsModal" class="common-films-modal">
+    <div
+        id="commonFilmsModal"
+        class="common-films-modal"
+    >
 
-        <div class="common-films-message">
+        <div
+            class="common-films-message"
+        >
 
-            <button type="button" id="commonFilmsClose" class="developer-close" aria-label="Close">
+            <button
+                type="button"
+                id="commonFilmsClose"
+                class="developer-close"
+                aria-label="Close"
+            >
                 ×
             </button>
 
 
-            <div class="section-label">
+            <div
+                class="section-label"
+            >
                 FILM CONNECTION
             </div>
 
@@ -331,36 +456,65 @@
             </h2>
 
 
-            <div class="people-inputs">
+            <div
+                class="people-inputs"
+            >
 
-                <div class="person-input-wrap">
+                <div
+                    class="person-input-wrap"
+                >
 
-                    <input type="text" id="personOne" placeholder="NAME 1" autocomplete="off">
+                    <input
+                        type="text"
+                        id="personOne"
+                        placeholder="NAME 1"
+                        autocomplete="off"
+                    >
 
 
-                    <div id="personOneSuggestions" class="person-suggestions"></div>
+                    <div
+                        id="personOneSuggestions"
+                        class="person-suggestions"
+                    ></div>
 
                 </div>
 
 
-                <div class="person-input-wrap">
+                <div
+                    class="person-input-wrap"
+                >
 
-                    <input type="text" id="personTwo" placeholder="NAME 2" autocomplete="off">
+                    <input
+                        type="text"
+                        id="personTwo"
+                        placeholder="NAME 2"
+                        autocomplete="off"
+                    >
 
 
-                    <div id="personTwoSuggestions" class="person-suggestions"></div>
+                    <div
+                        id="personTwoSuggestions"
+                        class="person-suggestions"
+                    ></div>
 
                 </div>
 
             </div>
 
 
-            <button type="button" id="findCommonFilms" class="common-films-submit">
+            <button
+                type="button"
+                id="findCommonFilms"
+                class="common-films-submit"
+            >
                 FIND COMMON FILMS
             </button>
 
 
-            <div id="commonFilmsResults" class="common-films-results"></div>
+            <div
+                id="commonFilmsResults"
+                class="common-films-results"
+            ></div>
 
         </div>
 
@@ -371,16 +525,28 @@
          FILMOGRAPHY MODAL
          ===================================================== -->
 
-    <div id="filmographyModal" class="common-films-modal">
+    <div
+        id="filmographyModal"
+        class="common-films-modal"
+    >
 
-        <div class="common-films-message">
+        <div
+            class="common-films-message"
+        >
 
-            <button type="button" id="filmographyClose" class="developer-close" aria-label="Close">
+            <button
+                type="button"
+                id="filmographyClose"
+                class="developer-close"
+                aria-label="Close"
+            >
                 ×
             </button>
 
 
-            <div class="section-label">
+            <div
+                class="section-label"
+            >
                 ACTOR / CAST DATABASE
             </div>
 
@@ -390,23 +556,40 @@
             </h2>
 
 
-            <div class="person-input-wrap">
+            <div
+                class="person-input-wrap"
+            >
 
-                <input type="text" id="filmographyPerson" class="filmography-input" placeholder="SEARCH CAST MEMBER..."
-                    autocomplete="off">
+                <input
+                    type="text"
+                    id="filmographyPerson"
+                    class="filmography-input"
+                    placeholder="SEARCH CAST MEMBER..."
+                    autocomplete="off"
+                >
 
 
-                <div id="filmographySuggestions" class="person-suggestions"></div>
+                <div
+                    id="filmographySuggestions"
+                    class="person-suggestions"
+                ></div>
 
             </div>
 
 
-            <button type="button" id="findFilmography" class="common-films-submit">
+            <button
+                type="button"
+                id="findFilmography"
+                class="common-films-submit"
+            >
                 FIND FILMOGRAPHY
             </button>
 
 
-            <div id="filmographyResults" class="common-films-results"></div>
+            <div
+                id="filmographyResults"
+                class="common-films-results"
+            ></div>
 
         </div>
 
@@ -417,43 +600,64 @@
          FILM DETAILS MODAL
          ===================================================== -->
 
-    <div id="filmDetailsModal">
+    <div
+        id="filmDetailsModal"
+    >
 
-        <div class="film-details-message">
+        <div
+            class="film-details-message"
+        >
 
-            <button type="button" id="filmDetailsClose" class="developer-close" aria-label="Close">
+            <button
+                type="button"
+                id="filmDetailsClose"
+                class="developer-close"
+                aria-label="Close"
+            >
                 ×
             </button>
 
 
             <!-- HEADER / POSTER / TITLE -->
 
-            <div id="filmDetailsHeader"></div>
+            <div
+                id="filmDetailsHeader"
+            ></div>
 
 
             <!-- SYNOPSIS -->
 
-            <section id="filmDetailsSynopsis"></section>
+            <section
+                id="filmDetailsSynopsis"
+            ></section>
 
 
             <!-- DIRECTOR + CAST -->
 
-            <section id="filmDetailsPeople"></section>
+            <section
+                id="filmDetailsPeople"
+            ></section>
 
 
             <!-- PRODUCTION CREDITS -->
 
-            <section id="filmDetailsProduction"></section>
+            <section
+                id="filmDetailsProduction"
+            ></section>
 
 
             <!-- WHERE TO WATCH -->
 
-            <section id="filmDetailsWatch"></section>
+            <section
+                id="filmDetailsWatch"
+            ></section>
 
 
             <!-- AWARDS -->
 
-            <section id="filmDetailsAwards"></section>
+            <section
+                id="filmDetailsAwards"
+            ></section>
 
         </div>
 
@@ -464,7 +668,10 @@
          SCRIPT
          ===================================================== -->
 
-    <script src="script.js" defer></script>
+    <script
+        src="script.js"
+        defer
+    ></script>
 
 </body>
 
