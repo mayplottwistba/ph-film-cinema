@@ -273,7 +273,10 @@ const awardNames = {
         "Best Original Music Score",
 
     production:
-        "Best Production Design"
+        "Best Production Design",
+
+    ensemble:
+        "Best Ensemble"
 };
 
 
