@@ -7,12 +7,12 @@
         "director": "Ma-an Asuncion-Dagñalan, Abet Pagdagdagan Raz",
         "cast": "Marietta Subong, Meryll Soriano, Joey Marquez, Zaijian Jaranilla",
         "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "screenplay": "Abet Pagdagdagan Raz",
+        "production_designer": "Mao Fadul",
+        "cinematographer": "Neil Daza",
+        "editor": "Vanessa Ubas-De Leon",
+        "sound": "Jannina Mikaela Minglanilla",
+        "music": "Mikey Amistoso, Jazz Nicolas",
         "now_showing": false,
         "watch": [
             {
@@ -24,7 +24,7 @@
                 "film": false
             },
             {
-                "special_jury": false
+                "special_jury": true
             },
             {
                 "audience": false
@@ -37,8 +37,8 @@
                 "name": ""
             },
             {
-                "actress": false,
-                "name": ""
+                "actress": true,
+                "name": "Marietta Subong"
             },
             {
                 "supporting_actor": false,
