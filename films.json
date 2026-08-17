@@ -6,7 +6,7 @@
         "description": "Sylvia, a poor farmer, is unable to claim the money sent to her because she lacks the required two valid IDS. In her struggle to secure the IDs, Sylvia finds herself in a situation that challenges her character, beliefs, and morality.",
         "director": "Ma-an Asuncion-Dagñalan, Abet Pagdagdagan Raz",
         "cast": "Marietta Subong, Meryll Soriano, Joey Marquez, Zaijian Jaranilla",
-        "producers": "",
+        "producers": "Geo Lomuntad, Ma-an Asuncion-Dagñalan",
         "screenplay": "Abet Pagdagdagan Raz",
         "production_designer": "Mao Fadul",
         "cinematographer": "Neil Daza",
@@ -65,6 +65,9 @@
             },
             {
                 "production": false
+            },
+            {
+                "audience": true
             }
         ]
     },

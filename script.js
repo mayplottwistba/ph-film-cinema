@@ -276,7 +276,10 @@ const awardNames = {
         "Best Production Design",
 
     ensemble:
-        "Best Ensemble"
+        "Best Ensemble",
+
+    audience:
+        "Audience Choice Award",
 };
 
 
