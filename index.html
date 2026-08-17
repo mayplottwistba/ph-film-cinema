@@ -24,8 +24,6 @@
 
 <body>
 
-    <!-- DEVELOPER POPUP -->
-
     <div
         id="developerModal"
         class="developer-modal"
@@ -107,8 +105,6 @@
     </div>
 
 
-    <!-- MAIN -->
-
     <main class="container">
 
         <header class="films-header">
@@ -125,48 +121,51 @@
 
             </div>
 
-            <!-- NAVIGATION -->
-
             <div class="archive-actions">
 
-                <button
-                    type="button"
-                    id="homeButton"
-                    class="archive-button active"
-                >
-                    HOME
-                </button>
+    <button
+        type="button"
+        id="homeButton"
+        class="archive-button active"
+    >
+        HOME
+    </button>
 
-                <button
-                    type="button"
-                    id="castButton"
-                    class="archive-button"
-                >
-                    CAST
-                </button>
+    <button
+        type="button"
+        id="castButton"
+        class="archive-button"
+    >
+        CAST
+    </button>
 
-                <button
-                    type="button"
-                    id="findPeopleButton"
-                    class="archive-button"
-                >
-                    FIND COMMON FILMS
-                </button>
+    <button
+        type="button"
+        id="directorsButton"
+        class="archive-button"
+    >
+        DIRECTORS
+    </button>
 
-                <button
-                    type="button"
-                    id="filmographyButton"
-                    class="archive-button"
-                >
-                    FILMOGRAPHY
-                </button>
+    <button
+        type="button"
+        id="findPeopleButton"
+        class="archive-button"
+    >
+        ADVANCED SEARCH
+    </button>
 
-            </div>
+    <button
+        type="button"
+        id="filmographyButton"
+        class="archive-button"
+    >
+        FILMOGRAPHY
+    </button>
+
+</div>
 
         </header>
-
-
-        <!-- FILM FILTERS -->
 
         <div
             id="filmControls"
@@ -215,9 +214,6 @@
 
         </div>
 
-
-        <!-- FILMS -->
-
         <section
             id="filmsSection"
             class="films-section"
@@ -234,9 +230,6 @@
             ></div>
 
         </section>
-
-
-        <!-- CAST -->
 
         <section
             id="castSection"
@@ -267,10 +260,36 @@
 
         </section>
 
+        <section
+    id="directorsSection"
+    class="cast-section"
+>
+
+    <div class="cast-section-header">
+
+        <div class="section-label">
+            CINEMALAYA DIRECTORS
+        </div>
+
+        <h2>
+            MOST FEATURED DIRECTORS
+        </h2>
+
+        <p>
+            Directors with the most films
+            in the Cinemalaya catalog
+        </p>
+
+    </div>
+
+    <div
+        id="directorsRanking"
+        class="cast-ranking"
+    ></div>
+
+</section>
+
     </main>
-
-
-    <!-- COMMON FILMS POPUP -->
 
     <div
         id="commonFilmsModal"
@@ -299,8 +318,6 @@
 
             <div class="people-inputs">
 
-                <!-- NAME 1 -->
-
                 <div class="person-input-wrap">
 
                     <input
@@ -316,9 +333,6 @@
                     ></div>
 
                 </div>
-
-
-                <!-- NAME 2 -->
 
                 <div class="person-input-wrap">
 
@@ -356,9 +370,6 @@
         </div>
 
     </div>
-
-
-    <!-- FILMOGRAPHY POPUP -->
 
     <div
         id="filmographyModal"
