@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
 
     <meta
@@ -20,14 +22,37 @@
         rel="stylesheet"
         href="style.css"
     >
+
+    <!-- APPLY SAVED THEME BEFORE PAGE LOAD -->
+    <script>
+        (function () {
+            const savedTheme =
+                localStorage.getItem(
+                    "cinemalaya-theme"
+                );
+
+            if (savedTheme === "dark") {
+                document.documentElement.classList.add(
+                    "dark-mode"
+                );
+            }
+        })();
+    </script>
+
 </head>
 
 <body>
+
+
+    <!-- =========================
+         DEVELOPER POPUP
+         ========================= -->
 
     <div
         id="developerModal"
         class="developer-modal"
     >
+
         <div class="developer-message">
 
             <button
@@ -39,9 +64,11 @@
                 ×
             </button>
 
+
             <h2>
                 Hello!
             </h2>
+
 
             <p>
                 This site aims to archive all
@@ -49,6 +76,7 @@
                 present, along with details on where
                 they can be watched.
             </p>
+
 
             <p>
                 This project would like to thank all
@@ -60,6 +88,7 @@
                 the moment.
             </p>
 
+
             <p>
                 Please also understand that this site
                 is still under development, and some
@@ -70,6 +99,7 @@
                 <strong>@mayplottwistba</strong>
             </p>
 
+
             <p>
                 <strong>Update:</strong>
                 Listed are films that can be streamed
@@ -77,6 +107,7 @@
                 site, Prime Video, Apple TV, iWant,
                 and VivaOne.
             </p>
+
 
             <p>
                 For external links, migrated films are
@@ -86,6 +117,7 @@
                 sources available. Mabuhay ang
                 pelikulang Pilipino.
             </p>
+
 
             <p class="copyright-disclaimer">
                 The developer would like to thank all contributors.
@@ -97,17 +129,29 @@
                 an archival and informational project.
             </p>
 
+
             <div class="developer-footer">
                 CINEMALAYA FILM DATABASE
             </div>
 
         </div>
+
     </div>
 
 
+    <!-- =========================
+         MAIN
+         ========================= -->
+
     <main class="container">
 
+
+        <!-- =========================
+             HEADER
+             ========================= -->
+
         <header class="films-header">
+
 
             <div class="header-title">
 
@@ -121,7 +165,11 @@
 
             </div>
 
+
+            <!-- NAVIGATION + THEME -->
+
             <div class="archive-actions">
+
 
                 <button
                     type="button"
@@ -131,6 +179,7 @@
                     HOME
                 </button>
 
+
                 <button
                     type="button"
                     id="castButton"
@@ -138,6 +187,7 @@
                 >
                     CAST
                 </button>
+
 
                 <button
                     type="button"
@@ -147,6 +197,7 @@
                     DIRECTORS
                 </button>
 
+
                 <button
                     type="button"
                     id="findPeopleButton"
@@ -154,6 +205,7 @@
                 >
                     ADVANCED SEARCH
                 </button>
+
 
                 <button
                     type="button"
@@ -163,10 +215,40 @@
                     FILMOGRAPHY
                 </button>
 
+
+                <!-- LIGHT / DARK SWITCH -->
+
+                <button
+                    type="button"
+                    id="themeToggle"
+                    class="theme-toggle"
+                    aria-label="Toggle dark mode"
+                >
+
+                    <span class="theme-toggle-track">
+
+                        <span class="theme-toggle-thumb"></span>
+
+                    </span>
+
+                    <span
+                        id="themeLabel"
+                        class="theme-label"
+                    >
+                        LIGHT
+                    </span>
+
+                </button>
+
+
             </div>
 
         </header>
 
+
+        <!-- =========================
+             FILM FILTERS
+             ========================= -->
 
         <div
             id="filmControls"
@@ -175,25 +257,36 @@
 
             <div class="film-filters">
 
+
+                <!-- YEAR -->
+
                 <select
                     id="yearFilter"
                     class="year-filter"
                 >
+
                     <option value="all">
                         ALL YEARS
                     </option>
+
                 </select>
 
+
+                <!-- WHERE TO WATCH -->
 
                 <select
                     id="watchFilter"
                     class="watch-filter"
                 >
+
                     <option value="all">
                         WHERE TO WATCH
                     </option>
+
                 </select>
 
+
+                <!-- SEARCH -->
 
                 <div class="search-wrap">
 
@@ -211,10 +304,15 @@
 
                 </div>
 
+
             </div>
 
         </div>
 
+
+        <!-- =========================
+             FILMS
+             ========================= -->
 
         <section
             id="filmsSection"
@@ -226,6 +324,7 @@
                 class="films-grid"
             ></div>
 
+
             <div
                 id="pagination"
                 class="pagination"
@@ -234,6 +333,10 @@
         </section>
 
 
+        <!-- =========================
+             CAST
+             ========================= -->
+
         <section
             id="castSection"
             class="cast-section"
@@ -241,28 +344,38 @@
 
             <div class="cast-section-header">
 
+
                 <div class="section-label">
                     CINEMALAYA CAST
                 </div>
 
+
                 <h2>
                     MOST FEATURED CINEMALAYA ACTORS AND ACTRESSES
                 </h2>
+
 
                 <p>
                     Cast members with the most
                     Cinemalaya film appearances.
                 </p>
 
+
             </div>
+
 
             <div
                 id="castRanking"
                 class="cast-ranking"
             ></div>
 
+
         </section>
 
+
+        <!-- =========================
+             DIRECTORS
+             ========================= -->
 
         <section
             id="directorsSection"
@@ -271,30 +384,41 @@
 
             <div class="cast-section-header">
 
+
                 <div class="section-label">
                     CINEMALAYA DIRECTORS
                 </div>
+
 
                 <h2>
                     MOST FEATURED DIRECTORS
                 </h2>
 
+
                 <p>
-                    Directors with the most films
-                    in the Cinemalaya catalog
+                    Directors with more than one
+                    film in the Cinemalaya catalog.
                 </p>
 
+
             </div>
+
 
             <div
                 id="directorsRanking"
                 class="cast-ranking"
             ></div>
 
+
         </section>
+
 
     </main>
 
+
+    <!-- =========================
+         COMMON FILMS POPUP
+         ========================= -->
 
     <div
         id="commonFilmsModal"
@@ -302,6 +426,7 @@
     >
 
         <div class="common-films-message">
+
 
             <button
                 type="button"
@@ -312,9 +437,11 @@
                 ×
             </button>
 
+
             <div class="section-label">
                 FILM CONNECTION
             </div>
+
 
             <h2>
                 FIND COMMON FILMS
@@ -322,6 +449,9 @@
 
 
             <div class="people-inputs">
+
+
+                <!-- NAME 1 -->
 
                 <div class="person-input-wrap">
 
@@ -332,6 +462,7 @@
                         autocomplete="off"
                     >
 
+
                     <div
                         id="personOneSuggestions"
                         class="person-suggestions"
@@ -339,6 +470,8 @@
 
                 </div>
 
+
+                <!-- NAME 2 -->
 
                 <div class="person-input-wrap">
 
@@ -349,12 +482,14 @@
                         autocomplete="off"
                     >
 
+
                     <div
                         id="personTwoSuggestions"
                         class="person-suggestions"
                     ></div>
 
                 </div>
+
 
             </div>
 
@@ -373,10 +508,15 @@
                 class="common-films-results"
             ></div>
 
+
         </div>
 
     </div>
 
+
+    <!-- =========================
+         FILMOGRAPHY POPUP
+         ========================= -->
 
     <div
         id="filmographyModal"
@@ -384,6 +524,7 @@
     >
 
         <div class="common-films-message">
+
 
             <button
                 type="button"
@@ -394,6 +535,10 @@
                 ×
             </button>
 
+
+            <!-- JS CHANGES THIS FOR
+                 CAST / DIRECTOR MODE -->
+
             <div
                 id="filmographyLabel"
                 class="section-label"
@@ -401,12 +546,16 @@
                 ACTOR / CAST DATABASE
             </div>
 
-            <h2 id="filmographyTitle">
+
+            <h2
+                id="filmographyTitle"
+            >
                 FILMOGRAPHY
             </h2>
 
 
             <div class="person-input-wrap">
+
 
                 <input
                     type="text"
@@ -416,10 +565,12 @@
                     autocomplete="off"
                 >
 
+
                 <div
                     id="filmographySuggestions"
                     class="person-suggestions"
                 ></div>
+
 
             </div>
 
@@ -438,15 +589,22 @@
                 class="common-films-results"
             ></div>
 
+
         </div>
 
     </div>
 
+
+    <!-- =========================
+         SCRIPT
+         ========================= -->
 
     <script
         src="script.js"
         defer
     ></script>
 
+
 </body>
+
 </html>
