@@ -5,24 +5,30 @@
 }
 
 
-/* =========================
+/* =========================================================
    THEME VARIABLES
-   ========================= */
+   ========================================================= */
 
 :root {
     --bg: #f4f4f0;
     --surface: #ffffff;
     --surface-alt: #f1f1ed;
+
     --text: #111111;
     --text-soft: #555555;
     --text-muted: #777777;
+
     --border: #111111;
     --border-soft: #bbbbbb;
+
     --shadow: #111111;
+
     --input-bg: #ffffff;
+
     --tag-blue-bg: #dff4fc;
     --tag-blue-border: #8bcce8;
     --tag-blue-text: #24566a;
+
     --tag-red-bg: #fbe2e2;
     --tag-red-border: #e8a4a4;
     --tag-red-text: #7a3030;
@@ -33,16 +39,22 @@ html.dark-mode {
     --bg: #111111;
     --surface: #1b1b1b;
     --surface-alt: #242421;
+
     --text: #f4f4f0;
     --text-soft: #c3c3be;
     --text-muted: #999994;
+
     --border: #eeeeea;
     --border-soft: #555550;
+
     --shadow: #000000;
+
     --input-bg: #1b1b1b;
+
     --tag-blue-bg: #173744;
     --tag-blue-border: #3f91b2;
     --tag-blue-text: #bde8f8;
+
     --tag-red-bg: #452525;
     --tag-red-border: #b56b6b;
     --tag-red-text: #ffd0d0;
@@ -56,6 +68,7 @@ html {
 
 body {
     min-height: 100vh;
+
     background: var(--bg);
     color: var(--text);
 
@@ -67,11 +80,9 @@ body {
 }
 
 
-/* =========================
+/* =========================================================
    CUSTOM CURSOR
-   ========================= */
-
-/* LIGHT MODE */
+   ========================================================= */
 
 html,
 body,
@@ -79,11 +90,11 @@ button,
 a,
 select,
 input {
-    cursor: url("./assets/cursor.png") 0 0, auto !important;
+    cursor:
+        url("./assets/cursor.png") 0 0,
+        auto !important;
 }
 
-
-/* DARK MODE */
 
 html.dark-mode,
 html.dark-mode body,
@@ -91,34 +102,43 @@ html.dark-mode button,
 html.dark-mode a,
 html.dark-mode select,
 html.dark-mode input {
-    cursor: url("./assets/cursor-2.png") 0 0, auto !important;
+    cursor:
+        url("./assets/cursor-2.png") 0 0,
+        auto !important;
 }
 
 
-/* =========================
+/* =========================================================
    MAIN CONTAINER
-   ========================= */
+   ========================================================= */
 
 .container {
     width: 100%;
     max-width: 1500px;
+
     margin: 0 auto;
+
     padding: 35px;
 }
 
 
-/* =========================
+/* =========================================================
    HEADER
-   ========================= */
+   ========================================================= */
 
 .films-header {
     display: flex;
+
     align-items: flex-end;
     justify-content: space-between;
+
     gap: 25px;
+
     margin-bottom: 20px;
     padding-bottom: 18px;
-    border-bottom: 2px solid var(--border);
+
+    border-bottom:
+        2px solid var(--border);
 }
 
 
@@ -129,46 +149,60 @@ html.dark-mode input {
 
 .section-label {
     margin-bottom: 5px;
+
     color: var(--text-muted);
+
     font-family: monospace;
+
     font-size: 10px;
     font-weight: 900;
+
     letter-spacing: 1px;
+
     text-transform: uppercase;
 }
 
 
 h1 {
     color: var(--text);
+
     font-size: 38px;
     line-height: 1;
+
     font-weight: 900;
+
     letter-spacing: -2px;
 }
 
 
-/* =========================
+/* =========================================================
    ARCHIVE NAVIGATION
-   ========================= */
+   ========================================================= */
 
 .archive-actions {
     display: flex;
+
     align-items: center;
+
     gap: 5px;
+
     flex-wrap: wrap;
 }
 
 
 .archive-button {
     height: 34px;
+
     padding: 0 12px;
 
-    border: 2px solid var(--border);
+    border:
+        2px solid var(--border);
 
     background: var(--surface);
     color: var(--text);
 
     font-family: monospace;
+
     font-size: 9px;
     font-weight: 900;
 
@@ -191,7 +225,8 @@ h1 {
 
 
 .archive-button:active {
-    transform: translateY(1px);
+    transform:
+        translateY(1px);
 }
 
 
@@ -201,23 +236,29 @@ h1 {
 }
 
 
-/* =========================
+/* =========================================================
    LIGHT / DARK MODE
-   ========================= */
+   ========================================================= */
 
 .theme-toggle {
     display: flex;
+
     align-items: center;
+
     gap: 7px;
 
     height: 34px;
+
     padding: 0 4px;
 
     border: 0;
+
     background: transparent;
+
     color: var(--text);
 
     font-family: monospace;
+
     font-size: 9px;
     font-weight: 900;
 
@@ -233,7 +274,9 @@ h1 {
     width: 40px;
     height: 21px;
 
-    border: 2px solid var(--border);
+    border:
+        2px solid var(--border);
+
     border-radius: 999px;
 
     background: var(--surface);
@@ -270,7 +313,9 @@ html.dark-mode .theme-toggle-track {
 
 html.dark-mode .theme-toggle-thumb {
     background: var(--bg);
-    transform: translateX(19px);
+
+    transform:
+        translateX(19px);
 }
 
 
@@ -286,20 +331,24 @@ html.dark-mode .theme-toggle-thumb {
 }
 
 
-/* =========================
+/* =========================================================
    FILM CONTROLS
-   ========================= */
+   ========================================================= */
 
 .film-controls {
     width: 100%;
+
     margin-bottom: 20px;
 }
 
 
 .film-filters {
     display: flex;
+
     align-items: center;
+
     gap: 8px;
+
     width: 100%;
 }
 
@@ -308,15 +357,22 @@ html.dark-mode .theme-toggle-thumb {
 .watch-filter {
     width: 180px;
     height: 40px;
+
     padding: 0 12px;
 
-    border: 2px solid var(--border);
+    border:
+        2px solid var(--border);
+
     outline: none;
 
     background: var(--input-bg);
     color: var(--text);
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
     font-size: 10px;
     font-weight: 900;
 
@@ -346,14 +402,15 @@ html.dark-mode .theme-toggle-thumb {
 }
 
 
-/* =========================
+/* =========================================================
    SEARCH
-   ========================= */
+   ========================================================= */
 
 .search-wrap {
     position: relative;
 
     flex: 1;
+
     min-width: 180px;
 }
 
@@ -362,15 +419,19 @@ html.dark-mode .theme-toggle-thumb {
     width: 100%;
     height: 40px;
 
-    padding: 0 35px 0 12px;
+    padding:
+        0 35px 0 12px;
 
-    border: 2px solid var(--border);
+    border:
+        2px solid var(--border);
+
     outline: none;
 
     background: var(--input-bg);
     color: var(--text);
 
     font-family: monospace;
+
     font-size: 10px;
     font-weight: 700;
 }
@@ -383,6 +444,7 @@ html.dark-mode .theme-toggle-thumb {
 
 .search-input:focus {
     border-width: 3px;
+
     padding-left: 11px;
 }
 
@@ -393,11 +455,13 @@ html.dark-mode .theme-toggle-thumb {
     top: 50%;
     right: 12px;
 
-    transform: translateY(-50%);
+    transform:
+        translateY(-50%);
 
     color: var(--text-muted);
 
     font-family: monospace;
+
     font-size: 12px;
     font-weight: 900;
 
@@ -405,9 +469,9 @@ html.dark-mode .theme-toggle-thumb {
 }
 
 
-/* =========================
+/* =========================================================
    FILM GRID
-   ========================= */
+   ========================================================= */
 
 .films-grid {
     display: grid;
@@ -421,6 +485,10 @@ html.dark-mode .theme-toggle-thumb {
     gap: 18px;
 }
 
+
+/* =========================================================
+   FILM CARD
+   ========================================================= */
 
 .film-card {
     display: grid;
@@ -436,12 +504,15 @@ html.dark-mode .theme-toggle-thumb {
 
     background: var(--surface);
 
-    border: 2px solid var(--border);
+    border:
+        2px solid var(--border);
 
     box-shadow:
         5px 5px 0 var(--shadow);
 
     overflow: hidden;
+
+    cursor: pointer;
 
     transition:
         transform 0.15s ease,
@@ -460,9 +531,9 @@ html.dark-mode .theme-toggle-thumb {
 }
 
 
-/* =========================
+/* =========================================================
    POSTER
-   ========================= */
+   ========================================================= */
 
 .poster-wrap {
     width: 135px;
@@ -470,7 +541,8 @@ html.dark-mode .theme-toggle-thumb {
 
     background: #deded9;
 
-    border: 2px solid var(--border);
+    border:
+        2px solid var(--border);
 
     overflow: hidden;
 }
@@ -500,6 +572,7 @@ html.dark-mode .theme-toggle-thumb {
     color: var(--text-muted);
 
     font-family: monospace;
+
     font-size: 8px;
     font-weight: 900;
 
@@ -507,12 +580,13 @@ html.dark-mode .theme-toggle-thumb {
 }
 
 
-/* =========================
+/* =========================================================
    FILM INFORMATION
-   ========================= */
+   ========================================================= */
 
 .film-info {
     display: flex;
+
     flex-direction: column;
 
     min-width: 0;
@@ -525,15 +599,19 @@ html.dark-mode .theme-toggle-thumb {
     width: fit-content;
 
     margin-bottom: 7px;
-    padding: 3px 6px;
+
+    padding:
+        3px 6px;
 
     background: var(--surface-alt);
 
-    border: 1px solid var(--border);
+    border:
+        1px solid var(--border);
 
     color: var(--text);
 
     font-family: monospace;
+
     font-size: 8px;
     font-weight: 900;
 }
@@ -555,14 +633,15 @@ html.dark-mode .theme-toggle-thumb {
 }
 
 
-/* =========================
+/* =========================================================
    DESCRIPTION
-   ========================= */
+   ========================================================= */
 
 .film-description {
     display: -webkit-box;
 
     -webkit-box-orient: vertical;
+
     -webkit-line-clamp: 3;
 
     overflow: hidden;
@@ -572,19 +651,21 @@ html.dark-mode .theme-toggle-thumb {
     color: var(--text-soft);
 
     font-size: 12px;
+
     line-height: 1.45;
 }
 
 
 .film-description.expanded {
     display: block;
+
     overflow: visible;
 }
 
 
-/* =========================
+/* =========================================================
    DIRECTOR
-   ========================= */
+   ========================================================= */
 
 .film-director-label,
 .film-cast-label {
@@ -605,6 +686,7 @@ html.dark-mode .theme-toggle-thumb {
 
 .film-director {
     display: flex;
+
     flex-wrap: wrap;
 
     gap: 4px;
@@ -627,9 +709,11 @@ html.dark-mode .theme-toggle-thumb {
 
     width: fit-content;
 
-    padding: 4px 8px;
+    padding:
+        4px 8px;
 
-    border: 1px solid
+    border:
+        1px solid
         var(--tag-red-border);
 
     border-radius: 999px;
@@ -653,14 +737,15 @@ html.dark-mode .theme-toggle-thumb {
 }
 
 
-/* =========================
+/* =========================================================
    CAST
-   ========================= */
+   ========================================================= */
 
 .film-cast {
     display: -webkit-box;
 
     -webkit-box-orient: vertical;
+
     -webkit-line-clamp: 2;
 
     overflow: hidden;
@@ -679,11 +764,11 @@ html.dark-mode .theme-toggle-thumb {
 .film-cast.expanded {
     display: flex;
 
-    overflow: visible;
-
     flex-wrap: wrap;
 
     gap: 4px;
+
+    overflow: visible;
 }
 
 
@@ -694,10 +779,14 @@ html.dark-mode .theme-toggle-thumb {
 
     width: fit-content;
 
-    margin: 0 3px 3px 0;
-    padding: 4px 8px;
+    margin:
+        0 3px 3px 0;
 
-    border: 1px solid
+    padding:
+        4px 8px;
+
+    border:
+        1px solid
         var(--tag-blue-border);
 
     border-radius: 999px;
@@ -723,9 +812,9 @@ html.dark-mode .theme-toggle-thumb {
 }
 
 
-/* =========================
+/* =========================================================
    SEE MORE
-   ========================= */
+   ========================================================= */
 
 .see-more {
     display: inline-block;
@@ -733,6 +822,7 @@ html.dark-mode .theme-toggle-thumb {
     width: fit-content;
 
     margin-bottom: 10px;
+
     padding: 0;
 
     border: 0;
@@ -764,12 +854,13 @@ html.dark-mode .theme-toggle-thumb {
 }
 
 
-/* =========================
+/* =========================================================
    WHERE TO WATCH
-   ========================= */
+   ========================================================= */
 
 .watch-label {
     margin-top: auto;
+
     margin-bottom: 6px;
 
     color: var(--text-soft);
@@ -803,9 +894,11 @@ html.dark-mode .theme-toggle-thumb {
     min-width: 55px;
     height: 22px;
 
-    padding: 0 8px;
+    padding:
+        0 8px;
 
-    border: 1px solid var(--border);
+    border:
+        1px solid var(--border);
 
     font-family: monospace;
 
@@ -818,69 +911,87 @@ html.dark-mode .theme-toggle-thumb {
 }
 
 
-/* =========================
-   PLATFORMS
-   ========================= */
+/* =========================================================
+   PLATFORM COLORS
+   ========================================================= */
 
 .platform.netflix {
     background: #e50914;
+
     color: #fff;
+
     border-color: #e50914;
 }
 
 
 .platform.juanflix {
     background: #ffd400;
+
     color: #111;
+
     border-color: #ffd400;
 }
 
 
 .platform.ccp {
     background: #111;
+
     color: #fff;
+
     border-color: #111;
 }
 
 
 .platform.youtube {
     background: #ff0000 !important;
+
     color: #fff !important;
+
     border-color: #ff0000 !important;
 }
 
 
 .platform.prime {
     background: #9edcf5;
+
     color: #16485d;
+
     border-color: #9edcf5;
 }
 
 
 .platform.appletv {
     background: #c8c8c8;
+
     color: #111;
+
     border-color: #c8c8c8;
 }
 
 
 .platform.iwant {
     background: #9b59b6;
+
     color: #fff;
+
     border-color: #9b59b6;
 }
 
 
 .platform.viva {
     background: #f47b20;
+
     color: #fff;
+
     border-color: #f47b20;
 }
 
 
 .platform.external {
     background: var(--surface);
+
     color: var(--text);
+
     border-color: var(--border);
 
     cursor: pointer;
@@ -889,13 +1000,16 @@ html.dark-mode .theme-toggle-thumb {
 
 .platform.external:hover {
     background: var(--text);
+
     color: var(--bg);
 }
 
 
 .platform.youtube:hover {
     background: #cc0000 !important;
+
     color: #fff !important;
+
     border-color: #cc0000 !important;
 }
 
@@ -940,18 +1054,20 @@ html.dark-mode .theme-toggle-thumb {
 }
 
 
-/* =========================
-   EMPTY
-   ========================= */
+/* =========================================================
+   EMPTY FILMS
+   ========================================================= */
 
 .empty-films {
     grid-column: 1 / -1;
 
-    padding: 60px 20px;
+    padding:
+        60px 20px;
 
     background: var(--surface);
 
-    border: 2px solid var(--border);
+    border:
+        2px solid var(--border);
 
     color: var(--text);
 
@@ -964,9 +1080,9 @@ html.dark-mode .theme-toggle-thumb {
 }
 
 
-/* =========================
+/* =========================================================
    PAGINATION
-   ========================= */
+   ========================================================= */
 
 .pagination {
     display: flex;
@@ -984,9 +1100,11 @@ html.dark-mode .theme-toggle-thumb {
     min-width: 32px;
     height: 32px;
 
-    padding: 0 8px;
+    padding:
+        0 8px;
 
-    border: 2px solid var(--border);
+    border:
+        2px solid var(--border);
 
     background: var(--surface);
 
@@ -1003,25 +1121,28 @@ html.dark-mode .theme-toggle-thumb {
 
 .pagination button:hover {
     background: var(--text);
+
     color: var(--bg);
 }
 
 
 .pagination button.active {
     background: var(--text);
+
     color: var(--bg);
 }
 
 
 .pagination button:disabled {
     opacity: 0.3;
+
     cursor: not-allowed;
 }
 
 
-/* =========================
-   CAST / DIRECTORS SECTION
-   ========================= */
+/* =========================================================
+   CAST / DIRECTORS
+   ========================================================= */
 
 .cast-section {
     display: none;
@@ -1035,9 +1156,11 @@ html.dark-mode .theme-toggle-thumb {
 
 .cast-section-header {
     margin-bottom: 20px;
+
     padding-bottom: 15px;
 
-    border-bottom: 2px solid var(--border);
+    border-bottom:
+        2px solid var(--border);
 }
 
 
@@ -1059,6 +1182,7 @@ html.dark-mode .theme-toggle-thumb {
     color: var(--text-soft);
 
     font-size: 11px;
+
     line-height: 1.5;
 }
 
@@ -1088,11 +1212,13 @@ html.dark-mode .theme-toggle-thumb {
 
     min-height: 65px;
 
-    padding: 10px 12px;
+    padding:
+        10px 12px;
 
     background: var(--surface);
 
-    border: 2px solid var(--border);
+    border:
+        2px solid var(--border);
 
     box-shadow:
         4px 4px 0 var(--shadow);
@@ -1127,6 +1253,7 @@ html.dark-mode .theme-toggle-thumb {
     height: 38px;
 
     background: var(--text);
+
     color: var(--bg);
 
     font-family: monospace;
@@ -1147,9 +1274,11 @@ html.dark-mode .theme-toggle-thumb {
 
 
 .cast-film-count {
-    padding: 5px 8px;
+    padding:
+        5px 8px;
 
-    border: 1px solid
+    border:
+        1px solid
         var(--tag-blue-border);
 
     border-radius: 999px;
@@ -1169,9 +1298,539 @@ html.dark-mode .theme-toggle-thumb {
 }
 
 
-/* =========================
-   COMMON FILMS / FILMOGRAPHY
-   ========================= */
+/* =========================================================
+   =========================================================
+   FILM DETAILS MODAL
+   =========================================================
+   ========================================================= */
+
+.film-details-modal {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1500;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 25px;
+
+    background:
+        rgba(0, 0, 0, 0.62);
+
+    backdrop-filter: blur(3px);
+}
+
+
+.film-details-modal.active {
+    display: flex;
+}
+
+
+/* =========================================================
+   BIG FILM DETAILS CARD
+   ========================================================= */
+
+.film-details-message {
+    position: relative;
+
+    width: 100%;
+
+    max-width: 1050px;
+
+    max-height: 90vh;
+
+    padding: 28px;
+
+    background: var(--bg);
+
+    color: var(--text);
+
+    border:
+        2px solid var(--border);
+
+    box-shadow:
+        10px 10px 0 var(--shadow);
+
+    overflow-y: auto;
+
+    animation:
+        filmDetailsIn
+        0.18s ease;
+}
+
+
+@keyframes filmDetailsIn {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   FILM DETAILS HEADER
+   ========================================================= */
+
+.film-details-header {
+    display: grid;
+
+    grid-template-columns:
+        210px minmax(0, 1fr);
+
+    gap: 25px;
+
+    padding-bottom: 25px;
+
+    border-bottom:
+        2px solid var(--border);
+}
+
+
+.film-details-poster {
+    width: 210px;
+    height: 300px;
+
+    background: #deded9;
+
+    border:
+        2px solid var(--border);
+
+    overflow: hidden;
+}
+
+
+.film-details-poster img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.film-details-main {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.film-details-year {
+    display: inline-block;
+
+    width: fit-content;
+
+    margin-bottom: 8px;
+
+    padding:
+        4px 7px;
+
+    background:
+        var(--surface-alt);
+
+    border:
+        1px solid var(--border);
+
+    color: var(--text);
+
+    font-family: monospace;
+
+    font-size: 9px;
+    font-weight: 900;
+}
+
+
+.film-details-title {
+    margin-bottom: 15px;
+
+    color: var(--text);
+
+    font-size: 36px;
+
+    line-height: 0.95;
+
+    font-weight: 900;
+
+    letter-spacing: -1.5px;
+
+    text-transform: uppercase;
+}
+
+
+.film-details-meta {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 5px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   DETAIL LABELS
+   ========================================================= */
+
+.film-details-label {
+    margin-bottom: 5px;
+
+    color: var(--text-soft);
+
+    font-family: monospace;
+
+    font-size: 9px;
+    font-weight: 900;
+
+    letter-spacing: 0.5px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   SYNOPSIS
+   ========================================================= */
+
+.film-details-synopsis {
+    color: var(--text-soft);
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+.film-details-full-description {
+    color: var(--text-soft);
+
+    font-size: 13px;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   DETAIL BLOCKS
+   ========================================================= */
+
+.film-details-block {
+    padding:
+        20px 0;
+
+    border-bottom:
+        1px solid var(--border-soft);
+}
+
+
+.film-details-block:last-child {
+    border-bottom: 0;
+}
+
+
+/* =========================================================
+   PEOPLE
+   ========================================================= */
+
+.film-details-people-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0, 1fr)
+        );
+
+    gap: 20px;
+}
+
+
+.film-details-person-group {
+    min-width: 0;
+}
+
+
+.film-details-director-tags,
+.film-details-cast-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 5px;
+}
+
+
+.film-details-director-tag {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding:
+        5px 9px;
+
+    border:
+        1px solid
+        var(--tag-red-border);
+
+    border-radius: 999px;
+
+    background:
+        var(--tag-red-bg);
+
+    color:
+        var(--tag-red-text);
+
+    font-size: 10px;
+
+    font-weight: 600;
+}
+
+
+.film-details-cast-tag {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding:
+        5px 9px;
+
+    border:
+        1px solid
+        var(--tag-blue-border);
+
+    border-radius: 999px;
+
+    background:
+        var(--tag-blue-bg);
+
+    color:
+        var(--tag-blue-text);
+
+    font-size: 10px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   PRODUCTION CREDITS
+   ========================================================= */
+
+.film-details-production-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0, 1fr)
+        );
+
+    column-gap: 30px;
+
+    row-gap: 16px;
+}
+
+
+.production-credit {
+    min-width: 0;
+}
+
+
+.production-credit-label {
+    margin-bottom: 4px;
+
+    color: var(--text-soft);
+
+    font-family: monospace;
+
+    font-size: 9px;
+    font-weight: 900;
+
+    text-transform: uppercase;
+}
+
+
+.production-credit-value {
+    color: var(--text);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   WHERE TO WATCH - POPUP
+   ========================================================= */
+
+.film-details-watch {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 6px;
+}
+
+
+.film-details-watch .platform {
+    height: 25px;
+
+    min-width: 65px;
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   AWARDS
+   ========================================================= */
+
+.film-details-awards {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.film-award {
+    display: grid;
+
+    grid-template-columns:
+        22px minmax(0, 1fr);
+
+    gap: 8px;
+
+    align-items: start;
+
+    padding:
+        10px 12px;
+
+    background: var(--surface);
+
+    border:
+        1px solid var(--border);
+}
+
+
+.film-award-icon {
+    color: var(--text);
+
+    font-size: 12px;
+
+    line-height: 1.2;
+}
+
+
+.film-award-content {
+    min-width: 0;
+}
+
+
+.film-award-name {
+    color: var(--text);
+
+    font-family: monospace;
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    text-transform: uppercase;
+}
+
+
+.film-award-recipient {
+    margin-top: 3px;
+
+    color: var(--text-soft);
+
+    font-size: 10px;
+
+    font-weight: 600;
+}
+
+
+.film-awards-empty {
+    padding: 15px;
+
+    border:
+        1px dashed
+        var(--border-soft);
+
+    color: var(--text-muted);
+
+    font-family: monospace;
+
+    font-size: 9px;
+
+    font-weight: 900;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   FILM DETAILS CLOSE BUTTON
+   ========================================================= */
+
+.film-details-message
+.developer-close {
+
+    z-index: 5;
+
+    top: 12px;
+    right: 14px;
+
+    width: 34px;
+    height: 34px;
+
+    background: var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    color: var(--text);
+
+    line-height: 32px;
+
+    text-align: center;
+}
+
+
+.film-details-message
+.developer-close:hover {
+
+    background: var(--text);
+
+    color: var(--bg);
+}
+
+
+/* =========================================================
+   COMMON FILMS MODAL
+   ========================================================= */
 
 .common-films-modal {
     position: fixed;
@@ -1201,14 +1860,17 @@ html.dark-mode .theme-toggle-thumb {
     position: relative;
 
     width: 100%;
+
     max-width: 700px;
+
     max-height: 90vh;
 
     padding: 25px;
 
     background: var(--bg);
 
-    border: 2px solid var(--border);
+    border:
+        2px solid var(--border);
 
     box-shadow:
         8px 8px 0 var(--shadow);
@@ -1225,6 +1887,7 @@ html.dark-mode .theme-toggle-thumb {
     color: var(--text);
 
     font-size: 28px;
+
     line-height: 1;
 
     font-weight: 900;
@@ -1233,9 +1896,9 @@ html.dark-mode .theme-toggle-thumb {
 }
 
 
-/* =========================
+/* =========================================================
    CLOSE BUTTON
-   ========================= */
+   ========================================================= */
 
 .developer-close {
     position: absolute;
@@ -1254,9 +1917,13 @@ html.dark-mode .theme-toggle-thumb {
 
     color: var(--text);
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
 
     font-size: 25px;
+
     font-weight: 400;
 
     line-height: 30px;
@@ -1267,19 +1934,23 @@ html.dark-mode .theme-toggle-thumb {
 
 .developer-close:hover {
     background: var(--text);
+
     color: var(--bg);
 }
 
 
-/* =========================
+/* =========================================================
    PEOPLE INPUTS
-   ========================= */
+   ========================================================= */
 
 .people-inputs {
     display: grid;
 
     grid-template-columns:
-        repeat(2, minmax(0, 1fr));
+        repeat(
+            2,
+            minmax(0, 1fr)
+        );
 
     gap: 8px;
 }
@@ -1297,17 +1968,22 @@ html.dark-mode .theme-toggle-thumb {
     width: 100%;
     height: 40px;
 
-    padding: 0 12px;
+    padding:
+        0 12px;
 
-    border: 2px solid var(--border);
+    border:
+        2px solid var(--border);
+
     outline: none;
 
     background: var(--input-bg);
+
     color: var(--text);
 
     font-family: monospace;
 
     font-size: 10px;
+
     font-weight: 700;
 
     text-transform: uppercase;
@@ -1326,14 +2002,15 @@ html.dark-mode .theme-toggle-thumb {
 }
 
 
-/* =========================
+/* =========================================================
    SUGGESTIONS
-   ========================= */
+   ========================================================= */
 
 .person-suggestions {
     position: absolute;
 
     top: calc(100% + 3px);
+
     left: 0;
     right: 0;
 
@@ -1347,7 +2024,8 @@ html.dark-mode .theme-toggle-thumb {
 
     background: var(--surface);
 
-    border: 2px solid var(--border);
+    border:
+        2px solid var(--border);
 
     box-shadow:
         4px 4px 0 var(--shadow);
@@ -1364,7 +2042,8 @@ html.dark-mode .theme-toggle-thumb {
 
     width: 100%;
 
-    padding: 9px 10px;
+    padding:
+        9px 10px;
 
     border: 0;
 
@@ -1372,11 +2051,16 @@ html.dark-mode .theme-toggle-thumb {
         1px solid var(--border-soft);
 
     background: var(--surface);
+
     color: var(--text);
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
 
     font-size: 10px;
+
     font-weight: 700;
 
     text-align: left;
@@ -1392,13 +2076,14 @@ html.dark-mode .theme-toggle-thumb {
 
 .person-suggestion:hover {
     background: var(--text);
+
     color: var(--bg);
 }
 
 
-/* =========================
+/* =========================================================
    FIND BUTTON
-   ========================= */
+   ========================================================= */
 
 .common-films-submit {
     width: 100%;
@@ -1406,14 +2091,17 @@ html.dark-mode .theme-toggle-thumb {
 
     margin-top: 10px;
 
-    border: 2px solid var(--border);
+    border:
+        2px solid var(--border);
 
     background: var(--text);
+
     color: var(--bg);
 
     font-family: monospace;
 
     font-size: 9px;
+
     font-weight: 900;
 
     text-transform: uppercase;
@@ -1424,13 +2112,14 @@ html.dark-mode .theme-toggle-thumb {
 
 .common-films-submit:hover {
     background: var(--surface);
+
     color: var(--text);
 }
 
 
-/* =========================
+/* =========================================================
    COMMON RESULTS
-   ========================= */
+   ========================================================= */
 
 .common-films-results {
     margin-top: 18px;
@@ -1438,9 +2127,11 @@ html.dark-mode .theme-toggle-thumb {
 
 
 .common-films-empty {
-    padding: 30px 15px;
+    padding:
+        30px 15px;
 
-    border: 2px solid var(--border);
+    border:
+        2px solid var(--border);
 
     background: var(--surface);
 
@@ -1449,6 +2140,7 @@ html.dark-mode .theme-toggle-thumb {
     font-family: monospace;
 
     font-size: 10px;
+
     font-weight: 900;
 
     text-align: center;
@@ -1464,11 +2156,13 @@ html.dark-mode .theme-toggle-thumb {
     gap: 12px;
 
     margin-bottom: 10px;
+
     padding: 8px;
 
     background: var(--surface);
 
-    border: 1px solid var(--border);
+    border:
+        1px solid var(--border);
 
     color: var(--text);
 }
@@ -1480,7 +2174,8 @@ html.dark-mode .theme-toggle-thumb {
 
     background: #ddd;
 
-    border: 1px solid var(--border);
+    border:
+        1px solid var(--border);
 
     overflow: hidden;
 }
@@ -1507,16 +2202,19 @@ html.dark-mode .theme-toggle-thumb {
     font-family: monospace;
 
     font-size: 8px;
+
     font-weight: 900;
 }
 
 
 .common-film-title {
-    margin: 4px 0 8px;
+    margin:
+        4px 0 8px;
 
     color: var(--text);
 
     font-size: 15px;
+
     line-height: 1.1;
 
     font-weight: 900;
@@ -1539,10 +2237,11 @@ html.dark-mode .theme-toggle-thumb {
 
     align-items: center;
 
-    padding: 4px 8px;
+    padding:
+        4px 8px;
 
-    border: 1px solid
-        var(--tag-blue-border);
+    border:
+        1px solid var(--tag-blue-border);
 
     border-radius: 999px;
 
@@ -1553,13 +2252,14 @@ html.dark-mode .theme-toggle-thumb {
         var(--tag-blue-text);
 
     font-size: 9px;
+
     font-weight: 600;
 }
 
 
-/* =========================
+/* =========================================================
    FILMOGRAPHY
-   ========================= */
+   ========================================================= */
 
 .filmography-input {
     display: block;
@@ -1575,11 +2275,13 @@ html.dark-mode .theme-toggle-thumb {
     gap: 12px;
 
     margin-bottom: 10px;
+
     padding: 8px;
 
     background: var(--surface);
 
-    border: 1px solid var(--border);
+    border:
+        1px solid var(--border);
 
     color: var(--text);
 }
@@ -1591,7 +2293,8 @@ html.dark-mode .theme-toggle-thumb {
 
     background: #ddd;
 
-    border: 1px solid var(--border);
+    border:
+        1px solid var(--border);
 
     overflow: hidden;
 }
@@ -1618,16 +2321,19 @@ html.dark-mode .theme-toggle-thumb {
     font-family: monospace;
 
     font-size: 8px;
+
     font-weight: 900;
 }
 
 
 .filmography-title {
-    margin: 4px 0 8px;
+    margin:
+        4px 0 8px;
 
     color: var(--text);
 
     font-size: 15px;
+
     line-height: 1.1;
 
     font-weight: 900;
@@ -1643,10 +2349,11 @@ html.dark-mode .theme-toggle-thumb {
 
     width: fit-content;
 
-    padding: 4px 8px;
+    padding:
+        4px 8px;
 
-    border: 1px solid
-        var(--tag-blue-border);
+    border:
+        1px solid var(--tag-blue-border);
 
     border-radius: 999px;
 
@@ -1657,6 +2364,7 @@ html.dark-mode .theme-toggle-thumb {
         var(--tag-blue-text);
 
     font-size: 9px;
+
     font-weight: 600;
 }
 
@@ -1669,15 +2377,16 @@ html.dark-mode .theme-toggle-thumb {
     font-family: monospace;
 
     font-size: 9px;
+
     font-weight: 900;
 
     text-transform: uppercase;
 }
 
 
-/* =========================
+/* =========================================================
    DEVELOPER MODAL
-   ========================= */
+   ========================================================= */
 
 .developer-modal {
     position: fixed;
@@ -1702,14 +2411,17 @@ html.dark-mode .theme-toggle-thumb {
     position: relative;
 
     width: 100%;
+
     max-width: 600px;
+
     max-height: 85vh;
 
     padding: 28px;
 
     background: var(--bg);
 
-    border: 2px solid var(--border);
+    border:
+        2px solid var(--border);
 
     box-shadow:
         8px 8px 0 var(--shadow);
@@ -1726,6 +2438,7 @@ html.dark-mode .theme-toggle-thumb {
     color: var(--text);
 
     font-size: 30px;
+
     line-height: 1;
 
     font-weight: 900;
@@ -1738,12 +2451,14 @@ html.dark-mode .theme-toggle-thumb {
     color: var(--text-soft);
 
     font-size: 11px;
+
     line-height: 1.55;
 }
 
 
 .developer-message strong {
     color: var(--text);
+
     font-weight: 900;
 }
 
@@ -1762,6 +2477,7 @@ html.dark-mode .theme-toggle-thumb {
 
 .developer-footer {
     margin-top: 20px;
+
     padding-top: 10px;
 
     border-top:
@@ -1772,20 +2488,22 @@ html.dark-mode .theme-toggle-thumb {
     font-family: monospace;
 
     font-size: 8px;
+
     font-weight: 900;
 
     letter-spacing: 1px;
 }
 
 
-/* =========================
-   MOBILE
-   ========================= */
+/* =========================================================
+   FILM DETAILS MOBILE
+   ========================================================= */
 
 @media (max-width: 1100px) {
 
     .films-header {
         align-items: flex-start;
+
         flex-direction: column;
     }
 
@@ -1801,7 +2519,8 @@ html.dark-mode .theme-toggle-thumb {
 
 
     .search-wrap {
-        flex: 1 1 200px;
+        flex:
+            1 1 200px;
     }
 
 }
@@ -1821,17 +2540,97 @@ html.dark-mode .theme-toggle-thumb {
 
     .year-filter,
     .watch-filter {
-        flex: 1 1 180px;
+        flex:
+            1 1 180px;
     }
 
 
     .search-wrap {
-        flex: 1 1 100%;
+        flex:
+            1 1 100%;
     }
 
 
     .cast-ranking {
         grid-template-columns: 1fr;
+    }
+
+
+    .film-details-header {
+        grid-template-columns:
+            160px minmax(0, 1fr);
+
+        gap: 18px;
+    }
+
+
+    .film-details-poster {
+        width: 160px;
+        height: 228px;
+    }
+
+
+    .film-details-title {
+        font-size: 30px;
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+    .film-details-modal {
+        padding: 12px;
+    }
+
+
+    .film-details-message {
+        max-height: 94vh;
+
+        padding: 20px;
+
+        box-shadow:
+            6px 6px 0 var(--shadow);
+    }
+
+
+    .film-details-header {
+        grid-template-columns:
+            120px minmax(0, 1fr);
+
+        gap: 15px;
+
+        padding-bottom: 20px;
+    }
+
+
+    .film-details-poster {
+        width: 120px;
+        height: 172px;
+    }
+
+
+    .film-details-title {
+        font-size: 25px;
+    }
+
+
+    .film-details-synopsis {
+        font-size: 11px;
+    }
+
+
+    .film-details-people-grid {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+
+    .film-details-production-grid {
+        grid-template-columns: 1fr;
+
+        row-gap: 13px;
     }
 
 }
@@ -1872,6 +2671,7 @@ html.dark-mode .theme-toggle-thumb {
 
     .film-filters {
         flex-direction: column;
+
         align-items: stretch;
     }
 
@@ -1880,6 +2680,7 @@ html.dark-mode .theme-toggle-thumb {
     .watch-filter,
     .search-wrap {
         width: 100%;
+
         flex: none;
     }
 
@@ -1953,6 +2754,70 @@ html.dark-mode .theme-toggle-thumb {
 
     .cast-name {
         font-size: 11px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .film-details-header {
+        grid-template-columns:
+            90px minmax(0, 1fr);
+
+        gap: 12px;
+    }
+
+
+    .film-details-poster {
+        width: 90px;
+        height: 130px;
+    }
+
+
+    .film-details-title {
+        font-size: 20px;
+
+        letter-spacing: -0.8px;
+    }
+
+
+    .film-details-year {
+        font-size: 8px;
+    }
+
+
+    .film-details-label,
+    .production-credit-label {
+        font-size: 8px;
+    }
+
+
+    .film-details-cast-tag,
+    .film-details-director-tag {
+        font-size: 9px;
+    }
+
+
+    .film-details-block {
+        padding:
+            15px 0;
+    }
+
+
+    .film-details-message {
+        padding: 16px;
+    }
+
+
+    .film-award {
+        padding:
+            8px 10px;
+    }
+
+
+    .film-award-name {
+        font-size: 9px;
     }
 
 }

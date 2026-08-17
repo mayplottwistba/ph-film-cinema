@@ -2,13 +2,11 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="icon" type="image/png" href="assets/alessandra.jpg">
-
     <title>Cinemalaya Catalog</title>
-
     <link rel="stylesheet" href="style.css">
 
     <!-- defaults light mode / saved mode -->
@@ -26,19 +24,15 @@
             }
         })();
     </script>
+
 </head>
 
 <body>
-
-    <!-- pop-up developer message -->
     <div id="developerModal" class="developer-modal">
-
         <div class="developer-message">
             <button type="button" class="developer-close" id="developerClose" aria-label="Close">
                 ×
             </button>
-
-
             <h2>
                 Hello!
             </h2>
@@ -71,10 +65,11 @@
             </p>
 
             <p>
-                In this catalog are Cinemalaya films
-                that can be streamed from YouTube,
-                Netflix, JuanFlix, CCP site, Prime Video,
-                Apple TV, iWant, and VivaOne.
+                <strong>Update:</strong>
+                Listed are films that can be streamed
+                from YouTube, Netflix, JuanFlix, CCP
+                site, Prime Video, Apple TV, iWant,
+                and VivaOne.
             </p>
 
             <p>
@@ -85,25 +80,24 @@
                 Mabuhay ang pelikulang Pilipino.
             </p>
 
-
             <p class="copyright-disclaimer">
-                The developer would like to thank all contributors.
-                No copyright infringement is intended.
-                All film titles, posters, descriptions,
-                names, trademarks, and other copyrighted
-                materials belong to their respective
-                owners. This site is intended solely as
-                an archival and informational project.
+                The developer would like to thank all
+                contributors. No copyright infringement
+                is intended. All film titles, posters,
+                descriptions, names, trademarks, and
+                other copyrighted materials belong to
+                their respective owners. This site is
+                intended solely as an archival and
+                informational project.
             </p>
 
             <div class="developer-footer">
-                CINEMALAYA FILM CATALOG
+                CINEMALAYA CATALOG
             </div>
         </div>
     </div>
 
     <main class="container">
-
         <header class="films-header">
             <div class="header-title">
                 <div class="section-label">
@@ -116,17 +110,14 @@
             </div>
 
 
-            <!-- navigation bar & tools -->
             <div class="archive-actions">
                 <button type="button" id="homeButton" class="archive-button active">
                     HOME
                 </button>
 
-
                 <button type="button" id="castButton" class="archive-button">
                     CAST
                 </button>
-
 
                 <button type="button" id="directorsButton" class="archive-button">
                     DIRECTORS
@@ -141,9 +132,7 @@
                 </button>
 
 
-                <!-- dark mode switch | 8/17 -->
-                <button type="button" id="themeToggle" class="theme-toggle" aria-label="toggle dark mode">
-
+                <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light and dark mode">
                     <span class="theme-toggle-track">
                         <span class="theme-toggle-thumb"></span>
                     </span>
@@ -156,11 +145,9 @@
         </header>
 
 
-        <!-- start of filters -->
         <div id="filmControls" class="film-controls">
             <div class="film-filters">
-
-                <!-- year filter -->
+                <!-- YEAR -->
                 <select id="yearFilter" class="year-filter">
 
                     <option value="all">
@@ -168,8 +155,6 @@
                     </option>
                 </select>
 
-
-                <!-- stream filter -->
                 <select id="watchFilter" class="watch-filter">
 
                     <option value="all">
@@ -177,10 +162,8 @@
                     </option>
                 </select>
 
-
-                <!-- title search -->
                 <div class="search-wrap">
-                    <input type="text" id="searchInput" class="search-input" placeholder="Search film title..."
+                    <input type="text" id="searchInput" class="search-input" placeholder="SEARCH FILM TITLE..."
                         autocomplete="off">
 
                     <span class="search-icon">
@@ -189,28 +172,18 @@
 
                 </div>
 
-
             </div>
 
         </div>
 
 
-        <!-- films display -->
         <section id="filmsSection" class="films-section">
-
             <div id="filmsGrid" class="films-grid"></div>
-
-
             <div id="pagination" class="pagination"></div>
         </section>
 
-
-        <!-- cast display -->
-
         <section id="castSection" class="cast-section">
-
             <div class="cast-section-header">
-
                 <div class="section-label">
                     CINEMALAYA ACTORS
                 </div>
@@ -223,18 +196,14 @@
                     Cast members with the most
                     Cinemalaya film appearances.
                 </p>
-            </div>
 
+            </div>
             <div id="castRanking" class="cast-ranking"></div>
         </section>
-
-
-        <!-- directors display -->
 
         <section id="directorsSection" class="cast-section">
 
             <div class="cast-section-header">
-
                 <div class="section-label">
                     CINEMALAYA DIRECTORS
                 </div>
@@ -244,8 +213,8 @@
                 </h2>
 
                 <p>
-                    Directors with more than one
-                    film in the Cinemalaya catalog.
+                    Directors with the most films
+                    in the Cinemalaya catalog.
                 </p>
 
             </div>
@@ -254,12 +223,32 @@
         </section>
     </main>
 
+    <div id="filmDetailsModal" class="film-details-modal">
+        <div class="film-details-message">
+            <button type="button" id="filmDetailsClose" class="developer-close" aria-label="Close film details">
+                ×
+            </button>
+            <div id="filmDetailsHeader" class="film-details-header"></div>
+            <div id="filmDetailsSynopsis" class="film-details-block"></div>
+            <div id="filmDetailsPeople" class="film-details-block"></div>
 
-    <!-- find common films function -->
+            <div id="filmDetailsProduction" class="film-details-block"></div>
+
+            <div id="filmDetailsWatch" class="film-details-block"></div>
+
+            <div id="filmDetailsAwards" class="film-details-block"></div>
+
+
+        </div>
+
+    </div>
+
+
 
     <div id="commonFilmsModal" class="common-films-modal">
 
         <div class="common-films-message">
+
 
             <button type="button" id="commonFilmsClose" class="developer-close" aria-label="Close">
                 ×
@@ -270,70 +259,89 @@
                 FILM CONNECTION
             </div>
 
+
             <h2>
                 FIND COMMON FILMS
             </h2>
 
+
+
             <div class="people-inputs">
-                <!-- Actor 1 -->
+
+
                 <div class="person-input-wrap">
-                    <input type="text" id="personOne" placeholder="ACTOR 1" autocomplete="off">
+
+                    <input type="text" id="personOne" placeholder="NAME 1" autocomplete="off">
 
 
-                    <div id="personOneSuggestions" class="person-suggestions">
-                    </div>
+                    <div id="personOneSuggestions" class="person-suggestions"></div>
 
                 </div>
 
 
-                <!-- Actor 2 -->
-                <div class="person-input-wrap">
-                    <input type="text" id="personTwo" placeholder="ACTOR 2" autocomplete="off">
 
-                    <div id="personTwoSuggestions" class="person-suggestions">
-                    </div>
+                <div class="person-input-wrap">
+
+                    <input type="text" id="personTwo" placeholder="NAME 2" autocomplete="off">
+
+
+                    <div id="personTwoSuggestions" class="person-suggestions"></div>
+
                 </div>
+
             </div>
+
+
 
             <button type="button" id="findCommonFilms" class="common-films-submit">
                 FIND COMMON FILMS
             </button>
 
-            <div id="commonFilmsResults" class="common-films-results">
-            </div>
+
+
+            <div id="commonFilmsResults" class="common-films-results"></div>
+
+
         </div>
     </div>
-
-
-    <!-- search filmography pop up -->
 
     <div id="filmographyModal" class="common-films-modal">
 
         <div class="common-films-message">
+
+
             <button type="button" id="filmographyClose" class="developer-close" aria-label="Close">
                 ×
             </button>
 
-            <div id="filmographyLabel" class="section-label">
-                ACTOR / CAST CATALOG
+
+            <div class="section-label">
+                ACTOR / CAST DATABASE
             </div>
 
-            <h2 id="filmographyTitle">
+
+            <h2>
                 FILMOGRAPHY
             </h2>
 
 
+
             <div class="person-input-wrap">
+
                 <input type="text" id="filmographyPerson" class="filmography-input" placeholder="SEARCH CAST MEMBER..."
                     autocomplete="off">
 
-                <div id="filmographySuggestions" class="person-suggestions">
-                </div>
+
+                <div id="filmographySuggestions" class="person-suggestions"></div>
+
             </div>
+
+
 
             <button type="button" id="findFilmography" class="common-films-submit">
                 FIND FILMOGRAPHY
             </button>
+
 
 
             <div id="filmographyResults" class="common-films-results"></div>
