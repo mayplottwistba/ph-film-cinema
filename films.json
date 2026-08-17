@@ -297,7 +297,7 @@
         ],
         "awards": [
             {
-                "film": false
+                "film": true
             },
             {
                 "special_jury": false
