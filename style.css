@@ -477,10 +477,8 @@ html.dark-mode .theme-toggle-thumb {
     display: grid;
 
     grid-template-columns:
-        repeat(
-            auto-fill,
-            minmax(450px, 1fr)
-        );
+        repeat(auto-fill,
+            minmax(450px, 1fr));
 
     gap: 18px;
 }
@@ -713,8 +711,7 @@ html.dark-mode .theme-toggle-thumb {
         4px 8px;
 
     border:
-        1px solid
-        var(--tag-red-border);
+        1px solid var(--tag-red-border);
 
     border-radius: 999px;
 
@@ -786,8 +783,7 @@ html.dark-mode .theme-toggle-thumb {
         4px 8px;
 
     border:
-        1px solid
-        var(--tag-blue-border);
+        1px solid var(--tag-blue-border);
 
     border-radius: 999px;
 
@@ -1191,10 +1187,8 @@ html.dark-mode .theme-toggle-thumb {
     display: grid;
 
     grid-template-columns:
-        repeat(
-            auto-fill,
-            minmax(300px, 1fr)
-        );
+        repeat(auto-fill,
+            minmax(300px, 1fr));
 
     gap: 10px;
 }
@@ -1278,8 +1272,7 @@ html.dark-mode .theme-toggle-thumb {
         5px 8px;
 
     border:
-        1px solid
-        var(--tag-blue-border);
+        1px solid var(--tag-blue-border);
 
     border-radius: 999px;
 
@@ -1358,8 +1351,7 @@ html.dark-mode .theme-toggle-thumb {
     overflow-y: auto;
 
     animation:
-        filmDetailsIn
-        0.18s ease;
+        filmDetailsIn 0.18s ease;
 }
 
 
@@ -1554,10 +1546,8 @@ html.dark-mode .theme-toggle-thumb {
     display: grid;
 
     grid-template-columns:
-        repeat(
-            2,
-            minmax(0, 1fr)
-        );
+        repeat(2,
+            minmax(0, 1fr));
 
     gap: 20px;
 }
@@ -1587,8 +1577,7 @@ html.dark-mode .theme-toggle-thumb {
         5px 9px;
 
     border:
-        1px solid
-        var(--tag-red-border);
+        1px solid var(--tag-red-border);
 
     border-radius: 999px;
 
@@ -1613,8 +1602,7 @@ html.dark-mode .theme-toggle-thumb {
         5px 9px;
 
     border:
-        1px solid
-        var(--tag-blue-border);
+        1px solid var(--tag-blue-border);
 
     border-radius: 999px;
 
@@ -1638,10 +1626,8 @@ html.dark-mode .theme-toggle-thumb {
     display: grid;
 
     grid-template-columns:
-        repeat(
-            2,
-            minmax(0, 1fr)
-        );
+        repeat(2,
+            minmax(0, 1fr));
 
     column-gap: 30px;
 
@@ -1776,8 +1762,7 @@ html.dark-mode .theme-toggle-thumb {
     padding: 15px;
 
     border:
-        1px dashed
-        var(--border-soft);
+        1px dashed var(--border-soft);
 
     color: var(--text-muted);
 
@@ -1795,8 +1780,7 @@ html.dark-mode .theme-toggle-thumb {
    FILM DETAILS CLOSE BUTTON
    ========================================================= */
 
-.film-details-message
-.developer-close {
+.film-details-message .developer-close {
 
     z-index: 5;
 
@@ -1819,8 +1803,7 @@ html.dark-mode .theme-toggle-thumb {
 }
 
 
-.film-details-message
-.developer-close:hover {
+.film-details-message .developer-close:hover {
 
     background: var(--text);
 
@@ -1947,10 +1930,8 @@ html.dark-mode .theme-toggle-thumb {
     display: grid;
 
     grid-template-columns:
-        repeat(
-            2,
-            minmax(0, 1fr)
-        );
+        repeat(2,
+            minmax(0, 1fr));
 
     gap: 8px;
 }
