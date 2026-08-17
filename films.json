@@ -2176,8 +2176,7 @@
         "now_showing": false,
         "watch": [
                 {
-                    "type": "external",
-                    "url": "https://www.bilibili.tv/en/video/2048794844"
+                    "type": "none"
                 }
             ]
     },
