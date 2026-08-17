@@ -1660,7 +1660,7 @@ html.dark-mode .theme-toggle-thumb {
     font-size: 11.5px;
 
     font-weight: normal;
-    font-weight: 700;
+    font-weight: 400;
 
     line-height: 1.4;
 }
@@ -2916,14 +2916,14 @@ html.dark-mode .theme-toggle-thumb {
     width: fit-content;
     padding: 4px 8px;
 
-    background: black;
+    background: rgb(28, 26, 26);
     color: #fff;
 
     border: 1px solid #777;
     border-radius: 999px;
 
     font-size: 9px;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 1.2;
 }
 
@@ -2948,7 +2948,7 @@ html.dark-mode .production-credit-value {
 
     border-color: #fff;
     font-size: 9px;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 1.2;
 }
 
@@ -2996,6 +2996,6 @@ html.dark-mode .production-credit-value {
     border-radius: 999px;
 
     font-size: 9px;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 1.2;
 }
