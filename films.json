@@ -6,7 +6,12 @@
         "description": "Sylvia, a poor farmer, is unable to claim the money sent to her because she lacks the required two valid IDS. In her struggle to secure the IDs, Sylvia finds herself in a situation that challenges her character, beliefs, and morality.",
         "director": "Ma-an Asuncion-Dagñalan, Abet Pagdagdagan Raz",
         "cast": "Marietta Subong, Meryll Soriano, Joey Marquez, Zaijian Jaranilla",
-        "now_showing": true
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
     },
     {
         "year": 2026,
@@ -15,7 +20,12 @@
         "description": "In a provincial Philippine town, the naïve daughter of the mayor comes home with a video of a powerful family friend abusing his dog.",
         "cast": "Maxine Ignacio, Frances Ignacio, Jojit Lorenzo, Bituin Escalante, Reymund Domingo, Anthony Falcon",
         "director": "Dustin Celestino",
-        "now_showing": true
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
     },
     {
         "year": 2026,
@@ -24,7 +34,12 @@
         "description": "At the first clash of their fighting spiders, Ilay and Ten-ten knew they would go home as losers. Anton, the winner of the fight, will once again lord over their school. At the sideline is Mel, a newcomer and a city boy, watching the rowdy play in awe, unaware that soon he will become an ally of Ilay and Ten-ten against the real neighborhood bully.",
         "cast": "Raine Dela Cruz, Kenneth “Butchoy” Vincent Mendoza, Don Rishmond Cerbito, Prince España, Brian Arda, Don Melvin Boongaling, Katrish Aristoki, Elora Españo, Hershey Neri, Pau Benitez, Anton Nolasco, Francis Mata, Tabs Sumulong, Manuel Genabe, Pio Raphael Benedicto, Jers Guiwa, Rapahel Del Prado, Jhaniel Pellado, Rencel Bago, Gene Trillana, Dave Ignacio, Wesley “Budoy” San Sebastian, Marian Lavado, April Obnamia, Alicia Bea Obligado",
         "director": "JL Burgos",
-        "now_showing": true
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
     },
     {
         "year": 2026,
@@ -33,7 +48,12 @@
         "description": "In a remote village scarred by years of conflict, a young army lieutenant introduces football to children. As the game begins to heal wounds and rebuild trust, he forms a fragile bond with a child soldier — forcing both to choose between the innocence they’ve lost and the violent realities of war.",
         "cast": "Ruru Madrid, Iza Calzado, Ronnie Lazaro, Sue Ramirez, KD Omalin, Jhong Hilario, Cholo Barretto, Edwin Nombre, Rosh Barman, Tyke Sanchez",
         "director": "Mark Duane Angos",
-        "now_showing": true
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
     },
     {
         "year": 2026,
@@ -42,7 +62,12 @@
         "description": "Near the 40th day of her estranged father’s death, a woman returns to her family’s ancestral home where three generations of women are bound together by grief, madness, and evil thicker than blood.",
         "cast": "Janine Gutierrez, Lucas Andalio, Cherry Pie Picache, Agot Isidro, Ness Roque, Jackie Lou Blanco, Bart Guingona, Alejandra Cortez",
         "director": "Giancarlo Abrahan",
-        "now_showing": true
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
     },
     {
         "year": 2026,
@@ -51,7 +76,12 @@
         "description": "A coming-of-age story of two friends in Mindoro – Niko, a Manila boy, and Ayan, a Mangyan. Their unique bond spans a whole summer of being introduced to each other’s culture and lifestyle, with Niko teaching Ayan how to read, who in turn teaches Niko how to swim.",
         "cast": "Beaver Magtalas, Bryce Nicolo Mercader, Dennis Dato, Noelle Polack, Nikki Valdez, Luis Alandy, Karl Medina, Queenay Mercado, Deanne Bautista, Benedix Ramos",
         "director": "Alpha Habon",
-        "now_showing": true
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
     },
     {
         "year": 2026,
@@ -60,7 +90,12 @@
         "description": "Longing for love and the promise of a better life, a grandmother finds herself swept into an unexpected online romance that challenges her sense of worth, family, and the dreams she refuses to let go of.",
         "cast": "Ruby Ruiz, Alessandra de Rossi, Beverly Salviejo, Yani Villarosa",
         "director": "Vahn Leinard C. Pascual",
-        "now_showing": true
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
     },
     {
         "year": 2026,
@@ -69,7 +104,12 @@
         "description": "Bound by a love kept in silence, a man struggles to remain seen within a family that once made him feel at home.",
         "cast": "Martin del Rosario, Miguel Odron, Yayo Aguila, Epy Quizon, Madeleine Nicolas, Bodjie Pascua, Bong Cabrera, Adrian Lindayag, Nour Hooshmand",
         "director": "David Corpuz",
-        "now_showing": true
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
     },
     {
         "year": 2026,
@@ -78,7 +118,12 @@
         "description": "Paring Bert, a priest, and his parishioner, Santos, a taxi driver, embark on a gritty journey to reconcile their moral conflicts while they elude an assassination attempt.",
         "cast": "Rocco Nacino, Floyd Tena, Chai Fonacier, Jess Mendoza, Glenn Sevilla Mas, Justin Mclaire, Brian Arda, Hershey Neri, Bor Ocampo, Hope Summer Skye",
         "director": "May-i Guia Padilla",
-        "now_showing": true
+        "now_showing": false,
+        "watch": [
+                {
+                    "type": "none"
+                }
+            ]
     },
     {
         "year": 2013,
