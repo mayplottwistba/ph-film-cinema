@@ -760,6 +760,8 @@ function createFilmCard(film) {
             <img
                 src="${escapeHTML(film.poster || "")}"
                 alt="${escapeHTML(film.title || "")}"
+                loading="lazy"
+                decoding="async"
             >
 
         </div>
@@ -1191,6 +1193,8 @@ function createFilmDetailsHeader(film) {
             <img
                 src="${poster}"
                 alt="${title}"
+                loading="lazy"
+                decoding="async"
             >
 
         </div>
@@ -1964,6 +1968,8 @@ function findCommonFilms() {
                             <img
                                 src="${escapeHTML(film.poster || "")}"
                                 alt="${escapeHTML(film.title || "")}"
+                                loading="lazy"
+                                decoding="async"
                             >
 
                         </div>
@@ -2179,6 +2185,8 @@ function findFilmography() {
                     <img
                         src="${escapeHTML(film.poster || "")}"
                         alt="${escapeHTML(film.title || "")}"
+                        loading="lazy"
+                        decoding="async"
                     >
 
                 </div>
@@ -2563,6 +2571,8 @@ function openDirectorFilmography(director) {
                     <img
                         src="${escapeHTML(film.poster || "")}"
                         alt="${escapeHTML(film.title || "")}"
+                        loading="lazy"
+                decoding="async"
                     >
 
                 </div>
