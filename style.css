@@ -84,24 +84,14 @@ body {
    CUSTOM CURSOR
    ========================================================= */
 
-html,
-body,
-button,
-a,
-select,
-input {
+* {
     cursor:
         url("./assets/cursor.png") 0 0,
         auto !important;
 }
 
 
-html.dark-mode,
-html.dark-mode body,
-html.dark-mode button,
-html.dark-mode a,
-html.dark-mode select,
-html.dark-mode input {
+html.dark-mode {
     cursor:
         url("./assets/cursor-2.png") 0 0,
         auto !important;
