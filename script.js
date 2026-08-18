@@ -3265,115 +3265,385 @@ if (themeToggle) {
   });
 }
 
+/* =========================================================
+   CAST AWARDS TABLE
+   5 YEARS PER PAGE
+   ========================================================= */
+
+let castAwardsPage = 1;
+
+const castAwardsPerPage = 5;
+
+
 function buildCastAwardsTable() {
-  const container = document.getElementById("castAwardsTable");
 
-  if (!container) {
-    return;
-  }
+    const container =
+        document.getElementById(
+            "castAwardsTable"
+        );
 
-  // Get all years from films.json
-  const years = [
-    ...new Set(
-      films
-        .map((film) => Number(film.year))
-        .filter((year) => !Number.isNaN(year)),
-    ),
-  ].sort((a, b) => a - b);
+    if (!container) {
+        return;
+    }
 
-  if (!years.length) {
-    container.innerHTML = `
+
+    /*
+     * Get all years from films.json
+     *
+     * Earliest year first.
+     */
+
+    const years = [
+        ...new Set(
+            films
+                .map(
+                    film =>
+                        Number(film.year)
+                )
+                .filter(
+                    year =>
+                        !Number.isNaN(year)
+                )
+        )
+    ].sort(
+        (a, b) => a - b
+    );
+
+
+    if (!years.length) {
+
+        container.innerHTML = `
             <div class="empty-films">
                 NO AWARD DATA FOUND
             </div>
         `;
 
-    return;
-  }
+        return;
+    }
 
-  const rows = years
-    .map((year) => {
-      const getWinner = (awardKey) => {
+
+    /*
+     * Total pages
+     */
+
+    const totalPages =
+        Math.ceil(
+            years.length /
+            castAwardsPerPage
+        );
+
+
+    /*
+     * Keep page valid
+     */
+
+    if (
+        castAwardsPage >
+        totalPages
+    ) {
+        castAwardsPage =
+            totalPages;
+    }
+
+
+    if (
+        castAwardsPage < 1
+    ) {
+        castAwardsPage = 1;
+    }
+
+
+    /*
+     * Get only 5 years
+     * for the current page.
+     */
+
+    const startIndex =
+        (castAwardsPage - 1) *
+        castAwardsPerPage;
+
+
+    const pageYears =
+        years.slice(
+            startIndex,
+            startIndex +
+                castAwardsPerPage
+        );
+
+
+    /*
+     * Find winners
+     */
+
+    function getWinner(
+        year,
+        awardKey
+    ) {
+
         const winners = [];
 
+
         films
-          .filter((film) => Number(film.year) === year)
-          .forEach((film) => {
-            const awards = Array.isArray(film.awards) ? film.awards : [];
+            .filter(
+                film =>
+                    Number(film.year) ===
+                    Number(year)
+            )
+            .forEach(
+                film => {
 
-            awards.forEach((award) => {
-              if (award && award[awardKey] === true && award.name) {
-                winners.push(award.name);
-              }
-            });
-          });
+                    const awards =
+                        Array.isArray(
+                            film.awards
+                        )
+                            ? film.awards
+                            : [];
 
-        return [...new Set(winners)];
-      };
 
-      const actor = getWinner("actor");
+                    awards.forEach(
+                        award => {
 
-      const actress = getWinner("actress");
+                            if (
+                                award &&
+                                award[awardKey] === true &&
+                                award.name
+                            ) {
 
-      const supportingActor = getWinner("supporting_actor");
+                                winners.push(
+                                    award.name
+                                );
 
-      const supportingActress = getWinner("supporting_actress");
+                            }
 
-      const renderWinner = (names) => {
-        if (!names.length) {
-          return "—";
+                        }
+                    );
+
+                }
+            );
+
+
+        return [
+            ...new Set(
+                winners
+            )
+        ];
+
+    }
+
+
+    /*
+     * Render winner names
+     */
+
+    function renderWinner(
+        names
+    ) {
+
+        if (
+            !names.length
+        ) {
+            return "—";
         }
 
+
         return names
-          .map(
-            (name) => `
-                        <div class="cast-award-winner">
-                            ${escapeHTML(name)}
-                        </div>
-                    `,
-          )
-          .join("");
-      };
+            .map(
+                name => `
+                    <div class="cast-award-winner">
+                        ${escapeHTML(
+                            name
+                        )}
+                    </div>
+                `
+            )
+            .join("");
 
-      return `
-            <tr>
+    }
 
-                <td class="cast-award-year">
-                    ${year}
-                </td>
 
-                <td>
-                    ${renderWinner(actor)}
-                </td>
+    /*
+     * Build rows
+     */
 
-                <td>
-                    ${renderWinner(actress)}
-                </td>
+    const rows =
+        pageYears
+            .map(
+                year => {
 
-                <td>
-                    ${renderWinner(supportingActor)}
-                </td>
+                    const actor =
+                        getWinner(
+                            year,
+                            "actor"
+                        );
 
-                <td>
-                    ${renderWinner(supportingActress)}
-                </td>
+                    const actress =
+                        getWinner(
+                            year,
+                            "actress"
+                        );
 
-            </tr>
+                    const supportingActor =
+                        getWinner(
+                            year,
+                            "supporting_actor"
+                        );
+
+                    const supportingActress =
+                        getWinner(
+                            year,
+                            "supporting_actress"
+                        );
+
+
+                    return `
+
+                        <tr>
+
+                            <td
+                                class="cast-award-year"
+                            >
+                                ${year}
+                            </td>
+
+                            <td>
+                                ${renderWinner(
+                                    actor
+                                )}
+                            </td>
+
+                            <td>
+                                ${renderWinner(
+                                    actress
+                                )}
+                            </td>
+
+                            <td>
+                                ${renderWinner(
+                                    supportingActor
+                                )}
+                            </td>
+
+                            <td>
+                                ${renderWinner(
+                                    supportingActress
+                                )}
+                            </td>
+
+                        </tr>
+
+                    `;
+
+                }
+            )
+            .join("");
+
+
+    /*
+     * Pagination
+     */
+
+    let paginationHTML = "";
+
+
+    if (
+        totalPages > 1
+    ) {
+
+        paginationHTML = `
+
+            <div
+                class="cast-awards-pagination"
+            >
+
+                <button
+                    type="button"
+                    class="cast-awards-page-button"
+                    data-page="prev"
+                    ${
+                        castAwardsPage === 1
+                            ? "disabled"
+                            : ""
+                    }
+                >
+                    ‹
+                </button>
+
+
+                ${Array.from(
+                    {
+                        length:
+                            totalPages
+                    },
+                    (_, index) => {
+
+                        const page =
+                            index + 1;
+
+
+                        return `
+
+                            <button
+                                type="button"
+                                class="
+                                    cast-awards-page-button
+                                    ${
+                                        page ===
+                                        castAwardsPage
+                                            ? "active"
+                                            : ""
+                                    }
+                                "
+                                data-page="${page}"
+                            >
+                                ${page}
+                            </button>
+
+                        `;
+
+                    }
+                ).join("")}
+
+
+                <button
+                    type="button"
+                    class="cast-awards-page-button"
+                    data-page="next"
+                    ${
+                        castAwardsPage ===
+                        totalPages
+                            ? "disabled"
+                            : ""
+                    }
+                >
+                    ›
+                </button>
+
+            </div>
+
         `;
-    })
-    .join("");
 
-  container.innerHTML = `
+    }
+
+
+    /*
+     * Final HTML
+     */
+
+    container.innerHTML = `
 
         <div class="cast-awards-table-wrap">
 
-            <table class="cast-awards-table">
+            <table
+                class="cast-awards-table"
+            >
 
                 <thead>
 
                     <tr>
 
-                        <th>YEAR</th>
+                        <th>
+                            YEAR
+                        </th>
 
                         <th>
                             BEST ACTOR
@@ -3395,15 +3665,72 @@ function buildCastAwardsTable() {
 
                 </thead>
 
+
                 <tbody>
+
                     ${rows}
+
                 </tbody>
 
             </table>
 
         </div>
 
+
+        ${paginationHTML}
+
     `;
+
+
+    /*
+     * Pagination events
+     */
+
+    container
+        .querySelectorAll(
+            ".cast-awards-page-button"
+        )
+        .forEach(
+            button => {
+
+                button.addEventListener(
+                    "click",
+                    () => {
+
+                        const page =
+                            button.dataset.page;
+
+
+                        if (
+                            page === "prev"
+                        ) {
+
+                            castAwardsPage--;
+
+                        } else if (
+                            page === "next"
+                        ) {
+
+                            castAwardsPage++;
+
+                        } else {
+
+                            castAwardsPage =
+                                Number(
+                                    page
+                                );
+
+                        }
+
+
+                        buildCastAwardsTable();
+
+                    }
+                );
+
+            }
+        );
+
 }
 
 loadTheme();
