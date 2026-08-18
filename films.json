@@ -1349,13 +1349,14 @@
         "description": "A young couple navigates the challenges of raising their autistic son in an increasingly unforgiving world, testing their love and resilience.",
         "director": "Jonathan Jurilla",
         "cast": "RK Bagatsing, Jane Oineza, John Tyrron Ramos, Milton Dionzon, Mai-Mai Montelibano, Jaden Biel Fernandez, Chart Motus, Mary Jane Quilisadio, Mandy Alonso, Tey Sevilleno",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "producers": "Sonny Calvento, Arden Rod Condez, Sheron R. Dayoc",
+        "screenplay": "Jonathan Jurilla, Arden Rod Condez, Ayu Martinez, Angel Benjamin",
+        "production_designer": "Kurt Soberano",
+        "cinematographer": "Rommel Sales",
+        "editor": "John Paul Somera Ponce",
+        "sound": "Lamberto Casas Jr.",
+        "music": "Andrew Florentino",
+        "genre":"Romance, Drama, Comedy",
         "now_showing": false,
         "watch": [
             {
@@ -1418,13 +1419,14 @@
         "description": "A land-grabbing tycoon and a former sexy male actor are in a tight race for mayor in a small town. When violence erupts, Emmy, a teacher, runs into the wilderness with a ballot box, the last copy of the election result.",
         "director": "Kip Oebanda",
         "cast": "Marian Rivera, Will Ashley,Royce Cabrera, Nico Antonio, Donna Cariaga, Sassa Gurl, Esnyr Ranollo, Sue Prado, Raheel Bhyria, Joel Saracho, Gardo Versoza, Mae Paner, Myke Salomon, Carlo Enciso Catu, Dylan Ray Talon, Jade Castro",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "producers": "Nessa S. Valdellon, Lilybeth G. Rasonable",
+        "screenplay": "Kip Oebanda",
+        "production_designer": "Eero Yves Francisco",
+        "cinematographer": "Tey Clamor",
+        "editor": "Chuck Gutierrez",
+        "sound": "Albert Michael Idioma, Nicole Rosacay",
+        "music": "Emerzon Texon",
+        "genre": "Drama, Thriller",
         "now_showing": false,
         "watch": [
             {
@@ -1449,8 +1451,8 @@
                 "name": ""
             },
             {
-                "actress": false,
-                "name": ""
+                "actress": true,
+                "name": "Marian Rivera"
             },
             {
                 "supporting_actor": false,
@@ -1487,13 +1489,14 @@
         "description": "According to legend, an Ati chieftain traded their land to Bornean datus for a gold necklace and hat, leaving the mountains to the Atis. Today, even those are threatened and violently seized.",
         "director": "Richard Salvadico, Arlie Sumagaysay",
         "cast": "Jenaica Sangher, Felipe Ganancial, Ariel Barba, Arnel Barba, Alicia Ganancial, Ronnie Elosendo, Rowena Casten, Susan Casten, Noel Palacios, Erlino Elosendo, Domingga Eno, Jay Trenas",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "producers": "Bridget Ng-Ting, Sheron R. Dayoc, Arden Rod Condez, Sonny Calvento",
+        "screenplay": "Arden Rod Condez, Arlie Sweet Sumagaysay",
+        "production_designer": "Lynne Belle Salvadico",
+        "cinematographer": "Pabelle Manikan",
+        "editor": "Pabelle Manikan",
+        "sound": "Alexis Tomboc, Lamberto Casas Jr.",
+        "music": "Paulo Almaden, The Ati People of Kabarangkalan / Nagpana",
+        "genre": "Documentary, Drama",
         "now_showing": false,
         "watch": [
             {
@@ -1502,7 +1505,7 @@
         ],
         "awards": [
             {
-                "film": false
+                "film": true
             },
             {
                 "special_jury": false
@@ -1522,15 +1525,15 @@
                 "name": ""
             },
             {
-                "supporting_actor": false,
-                "name": ""
+                "supporting_actor": true,
+                "name": "Felipe Ganancial"
             },
             {
                 "supporting_actress": false,
                 "name": ""
             },
             {
-                "screenplay": false
+                "screenplay": true
             },
             {
                 "cinematography": false
@@ -1542,10 +1545,13 @@
                 "sound": false
             },
             {
-                "music": false
+                "music": true
             },
             {
                 "production": false
+            },
+            {
+                "netpac": true
             }
         ]
     },
@@ -1556,13 +1562,14 @@
         "description": "A filmmaker uncovers the hard truths surrounding the enforced disappearance of his older brother.",
         "director": "JL Burgos",
         "cast": "",
-        "producers": "",
-        "screenplay": "",
+        "producers": "Ramona Nieva",
+        "screenplay": "JL Burgos, Bernardine De Belen",
         "production_designer": "",
-        "cinematographer": "",
+        "cinematographer": "Chantal Eco, Jonard Nabus, Gabriel Pancho, Mark Z. Saludes",
         "editor": "",
-        "sound": "",
-        "music": "",
+        "sound": "Jedd Dumaguina",
+        "music": "Bong Ramilo",
+        "genre":"Documentary",
         "now_showing": false,
         "watch": [
             {
@@ -1574,7 +1581,7 @@
                 "film": false
             },
             {
-                "special_jury": false
+                "special_jury": true
             },
             {
                 "audience": false
@@ -1625,13 +1632,14 @@
         "description": "As a driver travels from Baguio to Manila on an absurd errand from his boss, his car transforms into an echo chamber of memories, spanning the chasms of time, class, and character.",
         "director": "Dominic Bekaert",
         "cast": "Sid Lucero, Art Acuña, Nanding Josef, Elora Españo, Elora Españo, Eric Kelly, Thea Marabut",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "producers": "Dee Nermal, Clementine Comoy, Dominic Bekaert",
+        "screenplay": "Sarge Lacuesta",
+        "production_designer": "Joamar-John Dominguez Canosa",
+        "cinematographer": "Steven Evangelio",
+        "editor": "Dominic Bekaert",
+        "sound": "Jedd Dumaguina",
+        "music": "Michael Benedicto",
+        "genre":"Drama",
         "now_showing": false,
         "watch": [
             {
@@ -1674,10 +1682,10 @@
                 "cinematography": false
             },
             {
-                "editing": false
+                "editing": true
             },
             {
-                "sound": false
+                "sound": true
             },
             {
                 "music": false
@@ -1694,13 +1702,14 @@
         "description": "A struggling farmer joins forces with a local policeman to rescue his grandson and take down a marijuana cartel, triggering a deeply personal journey that tests their beliefs and integrity.",
         "director": "BC Amparado",
         "cast": "Cedrick Juan, Perry Dizon, BJ Tolits Forbes, Ranzel, Dong Abay and Lui Manansala",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "producers": "Tin Velasco",
+        "screenplay": "BC Amparado",
+        "production_designer": "Juan Pablo Pineda III",
+        "cinematographer": "Emmanuel Rei I. Liwanag",
+        "editor": "Maria Estela Paiso",
+        "sound": "Emilio Bien A. Sparks",
+        "music": "Willie Apa, Jr.",
+        "genre": "Comedy, Drama",
         "now_showing": false,
         "watch": [
             {
@@ -1715,7 +1724,7 @@
                 "special_jury": false
             },
             {
-                "audience": false
+                "audience": true
             },
             {
                 "direction": false
@@ -1763,13 +1772,14 @@
         "description": "Embroiled in a legal battle against a powerful figure, a deaf boy, with the support of his parents, cross paths with a court sign language interpreter who can speak but is voiceless in her own home.",
         "director": "Lawrence Fajardo",
         "cast": "Mylene Dizon, Nor Domingo, Ina Feleo, Ruby Ruiz, Enzo Osorio, Angie Castrence, Marvin Yap, Rom Factolerin, Rome Mallari, Ruslan Jacob Asumbrado",
-        "producers": "",
-        "screenplay": "",
+        "producers": "Krisma Fajardo, Honeylyn Joy Alipio, Mylene Dizon, Satur Dela Rosa, Roberto Yñiguez, Meg Bryan Bermudez, Antonette Perez, Neil Howard Bantoc, Ysabelle Denoga",
+        "screenplay": "Honeylyn Joy Alipio",
         "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "cinematographer": "Roberto Yñiguez",
+        "editor": "Lawrence Fajardo, Ysabelle Denoga",
+        "sound": "Jannina Mikaela Minglanilla, Michaela Docena",
+        "music": "Sebastian 'Basti' Artadi",
+        "genre": "Drama",
         "now_showing": false,
         "watch": [
             {
@@ -1790,8 +1800,8 @@
                 "direction": false
             },
             {
-                "actor": false,
-                "name": ""
+                "actor": true,
+                "name": "Enzo Osorio"
             },
             {
                 "actress": false,
@@ -1832,13 +1842,14 @@
         "description": "The discovery of a mysterious alien shell in a trench transforms the lives of two star crossed lovers – Paleng and Eliong – and their threatened coastal village in Davao City, unearthing secrets deeper than the surrounding perilous waters.",
         "director": "Joshua Caesar Medroso",
         "cast": "Edmund Telmo, Andre Miguel, Sue Prado, Raul Arellano, Ram Botero, Perry Dizon, Fe Gingging Hyde, Tads Obach, Alyssa Makiling, Ryle Equia",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "producers": "Gutierrez Mangansakan II, Jake Consing",
+        "screenplay": "Joshua Caesar Medroso",
+        "production_designer": "Perry Dizon",
+        "cinematographer": "Arnel Mardoquio, Arnel Barbarona",
+        "editor": "Edmund M. Telmo",
+        "sound": "Jen Balberona, Allan Balberona",
+        "music": "Allan Balberona",
+        "genre": "Sci-Fi, Drama, Mystery"
         "now_showing": false,
         "watch": [
             {
@@ -1871,8 +1882,8 @@
                 "name": ""
             },
             {
-                "supporting_actress": false,
-                "name": ""
+                "supporting_actress": true,
+                "name": "Sue Prado"
             },
             {
                 "screenplay": false
@@ -1901,13 +1912,14 @@
         "description": "As two estranged half-sisters reunite at their father’s funeral, they mend their differences, find solace in shared grief, and become instrumental in the city’s ongoing recovery.",
         "director": "Jaime Pacena II",
         "cast": "Gabby Padilla, Arisa Nakano",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "producers": "Dan Villegas, Masumi Soga, Leoby Marquez, Jaime Pacena II",
+        "screenplay": "Jaime Pacena II",
+        "production_designer": "Eero Yves Francisco",
+        "cinematographer": "Dan Villegas",
+        "editor": "Marya Ignacio",
+        "sound": "Allen Roy Santos",
+        "music": "Len Calvo",
+        "genre": "Drama"
         "now_showing": false,
         "watch": [
             {
@@ -1925,15 +1937,15 @@
                 "audience": false
             },
             {
-                "direction": false
+                "direction": true
             },
             {
                 "actor": false,
                 "name": ""
             },
             {
-                "actress": false,
-                "name": ""
+                "actress": true,
+                "name": "Gabby Padilla"
             },
             {
                 "supporting_actor": false,
@@ -1947,7 +1959,7 @@
                 "screenplay": false
             },
             {
-                "cinematography": false
+                "cinematography": true
             },
             {
                 "editing": false
@@ -1959,7 +1971,7 @@
                 "music": false
             },
             {
-                "production": false
+                "production": true
             }
         ]
     },
@@ -1971,12 +1983,13 @@
         "director": "Julius Lumiqued",
         "cast": "Mai Fanglayan, Arvin Balageo",
         "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
+        "screenplay": "Julius Lumiqued, Amador T. Daguio",
+        "production_designer": "Rochelle Bakisan",
+        "cinematographer": "Richard Cawed",
+        "editor": "May-i Guia Padilla",
+        "sound": "Kurt 'Ayeo-eo' Lumbag Alalag",
         "music": "",
+        "genre":"Drama",
         "now_showing": false,
         "watch": [
             {
