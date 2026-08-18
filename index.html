@@ -1,357 +1,292 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="assets/alessandra.jpg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/alessandra.jpg" />
     <title>Cinemalaya Catalog</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <!-- defaults light mode / saved mode -->
     <script>
-        (function () {
-            const savedTheme =
-                localStorage.getItem(
-                    "cinemalaya-theme"
-                );
+      (function () {
+        const savedTheme = localStorage.getItem("cinemalaya-theme");
 
-            if (savedTheme === "dark") {
-                document.documentElement.classList.add(
-                    "dark-mode"
-                );
-            }
-        })();
+        if (savedTheme === "dark") {
+          document.documentElement.classList.add("dark-mode");
+        }
+      })();
     </script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div id="developerModal" class="developer-modal">
-        <div class="developer-message">
-            <button type="button" class="developer-close" id="developerClose" aria-label="Close">
-                ×
-            </button>
-            <h2>
-                Hello!
-            </h2>
+      <div class="developer-message">
+        <button
+          type="button"
+          class="developer-close"
+          id="developerClose"
+          aria-label="Close"
+        >
+          ×
+        </button>
+        <h2>Hello!</h2>
 
-            <p>
-                This site aims to archive all
-                Cinemalaya films from 2005 to the
-                present, along with details on where
-                they can be watched.
-            </p>
+        <p>
+          This site aims to archive all Cinemalaya films from 2005 to the
+          present, along with details on where they can be watched.
+        </p>
 
-            <p>
-                This project would like to thank all
-                the individuals who have compiled lists
-                of films available on different
-                streaming platforms, as well as those
-                who have uploaded external links for
-                films that have no known source as of
-                the moment.
-            </p>
+        <p>
+          This project would like to thank all the individuals who have compiled
+          lists of films available on different streaming platforms, as well as
+          those who have uploaded external links for films that have no known
+          source as of the moment.
+        </p>
 
-            <p>
-                Please also understand that this site
-                is still under development, and some
-                information may contain errors or
-                inconsistencies. If you have any
-                suggestions, corrections, or questions,
-                feel free to drop me a message on X:
-                <strong>@mayplottwistba</strong>
-            </p>
+        <p>
+          Please also understand that this site is still under development, and
+          some information may contain errors or inconsistencies. If you have
+          any suggestions, corrections, or questions, feel free to drop me a
+          message on X:
+          <strong>@mayplottwistba</strong>
+        </p>
 
-            <p>
-                <strong>Update:</strong>
-                Listed are films that can be streamed
-                from YouTube, Netflix, JuanFlix, CCP
-                site, Prime Video, Apple TV, iWant,
-                and VivaOne.
-            </p>
+        <p>
+          <strong>Update:</strong>
+          Listed are films that can be streamed from YouTube, Netflix, JuanFlix,
+          CCP site, Prime Video, Apple TV, iWant, and VivaOne.
+        </p>
 
-            <p>
-                External links are also available for those
-                that does not have any known source as of the
-                moment. These external sources are <strong>not</strong> official
-                and will be de-linked once there is a source available.
-                Mabuhay ang pelikulang Pilipino.
-            </p>
+        <p>
+          External links are also available for those that does not have any
+          known source as of the moment. These external sources are
+          <strong>not</strong> official and will be de-linked once there is a
+          source available. Mabuhay ang pelikulang Pilipino.
+        </p>
 
-            <p class="copyright-disclaimer">
-                The developer would like to thank all
-                contributors. No copyright infringement
-                is intended. All film titles, posters,
-                descriptions, names, trademarks, and
-                other copyrighted materials belong to
-                their respective owners. This site is
-                intended solely as an archival and
-                informational project.
-            </p>
+        <p class="copyright-disclaimer">
+          The developer would like to thank all contributors. No copyright
+          infringement is intended. All film titles, posters, descriptions,
+          names, trademarks, and other copyrighted materials belong to their
+          respective owners. This site is intended solely as an archival and
+          informational project.
+        </p>
 
-            <div class="developer-footer">
-                CINEMALAYA CATALOG
-            </div>
-        </div>
+        <div class="developer-footer">CINEMALAYA CATALOG</div>
+      </div>
     </div>
 
     <main class="container">
-        <header class="films-header">
-            <div class="header-title">
-                <div class="section-label">
-                    CINEMALAYA FILMS
-                </div>
+      <header class="films-header">
+        <div class="header-title">
+          <div class="section-label">CINEMALAYA FILMS</div>
 
-                <h1>
-                    CATALOG
-                </h1>
-            </div>
-
-
-            <div class="archive-actions">
-                <button type="button" id="homeButton" class="archive-button active">
-                    HOME
-                </button>
-
-                <button type="button" id="castButton" class="archive-button">
-                    CAST
-                </button>
-
-                <button type="button" id="directorsButton" class="archive-button">
-                    DIRECTORS
-                </button>
-
-                <button type="button" id="findPeopleButton" class="archive-button">
-                    ADVANCED SEARCH
-                </button>
-
-                <button type="button" id="filmographyButton" class="archive-button">
-                    FILMOGRAPHY
-                </button>
-
-
-                <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light and dark mode">
-                    <span class="theme-toggle-track">
-                        <span class="theme-toggle-thumb"></span>
-                    </span>
-
-                    <span id="themeLabel" class="theme-label">
-                        LIGHT
-                    </span>
-                </button>
-            </div>
-        </header>
-
-
-        <div id="filmControls" class="film-controls">
-            <div class="film-filters">
-                <!-- YEAR -->
-                <select id="yearFilter" class="year-filter">
-
-                    <option value="all">
-                        ALL YEARS
-                    </option>
-                </select>
-
-                <select id="watchFilter" class="watch-filter">
-
-                    <option value="all">
-                        WHERE TO WATCH
-                    </option>
-                </select>
-
-                <div class="search-wrap">
-                    <input type="text" id="searchInput" class="search-input" placeholder="SEARCH FILM TITLE..."
-                        autocomplete="off">
-
-                    <span class="search-icon">
-                        /
-                    </span>
-
-                </div>
-
-            </div>
-
+          <h1>CATALOG</h1>
         </div>
 
+        <div class="archive-actions">
+          <button type="button" id="homeButton" class="archive-button active">
+            HOME
+          </button>
 
-        <section id="filmsSection" class="films-section">
-            <div id="filmsGrid" class="films-grid"></div>
-            <div id="pagination" class="pagination"></div>
-        </section>
+          <button type="button" id="castButton" class="archive-button">
+            CAST
+          </button>
 
-        <section id="castSection" class="cast-section">
-            <div class="cast-section-header">
-                <div class="section-label">
-                    CINEMALAYA ACTORS
-                </div>
+          <button type="button" id="directorsButton" class="archive-button">
+            DIRECTORS
+          </button>
 
-                <h2>
-                    MOST FEATURED CINEMALAYA ACTORS AND ACTRESSES
-                </h2>
+          <button type="button" id="findPeopleButton" class="archive-button">
+            ADVANCED SEARCH
+          </button>
 
-                <p>
-                    Cast members with the most
-                    Cinemalaya film appearances.
-                </p>
+          <button type="button" id="filmographyButton" class="archive-button">
+            FILMOGRAPHY
+          </button>
 
-            </div>
-            <div id="castRanking" class="cast-ranking"></div>
-        </section>
+          <button
+            type="button"
+            id="themeToggle"
+            class="theme-toggle"
+            aria-label="Toggle light and dark mode"
+          >
+            <span class="theme-toggle-track">
+              <span class="theme-toggle-thumb"></span>
+            </span>
 
-        <section id="directorsSection" class="cast-section">
+            <span id="themeLabel" class="theme-label"> LIGHT </span>
+          </button>
+        </div>
+      </header>
 
-            <div class="cast-section-header">
-                <div class="section-label">
-                    CINEMALAYA DIRECTORS
-                </div>
+      <div id="filmControls" class="film-controls">
+        <div class="film-filters">
+          <!-- YEAR -->
+          <select id="yearFilter" class="year-filter">
+            <option value="all">ALL YEARS</option>
+          </select>
 
-                <h2>
-                    MOST FEATURED DIRECTORS
-                </h2>
+          <select id="watchFilter" class="watch-filter">
+            <option value="all">WHERE TO WATCH</option>
+          </select>
 
-                <p>
-                    Directors with the most films
-                    in the Cinemalaya catalog.
-                </p>
+          <div class="search-wrap">
+            <input
+              type="text"
+              id="searchInput"
+              class="search-input"
+              placeholder="SEARCH FILM TITLE..."
+              autocomplete="off"
+            />
 
-            </div>
+            <span class="search-icon"> / </span>
+          </div>
+        </div>
+      </div>
 
-            <div id="directorsRanking" class="cast-ranking"></div>
-        </section>
+      <section id="filmsSection" class="films-section">
+        <div id="filmsGrid" class="films-grid"></div>
+        <div id="pagination" class="pagination"></div>
+      </section>
+
+      <section id="castSection" class="cast-section">
+        <div class="cast-section-header">
+          <div class="section-label">CINEMALAYA ACTORS</div>
+
+          <h2>MOST FEATURED CINEMALAYA ACTORS AND ACTRESSES</h2>
+
+          <p>Cast members with the most Cinemalaya film appearances.</p>
+        </div>
+        <div id="castRanking" class="cast-ranking"></div>
+
+        <div class="cast-section-header acting-awards-header">
+          <div class="section-label">ACTING AWARDS</div>
+
+          <h2>CINEMALAYA ACTING AWARDS</h2>
+
+          <p>Winners of the Cinemalaya acting awards by year.</p>
+        </div>
+
+        <div id="castAwardsTable"></div>
+      </section>
+
+      <section id="directorsSection" class="cast-section">
+        <div class="cast-section-header">
+          <div class="section-label">CINEMALAYA DIRECTORS</div>
+
+          <h2>MOST FEATURED DIRECTORS</h2>
+
+          <p>Directors with the most films in the Cinemalaya catalog.</p>
+        </div>
+
+        <div id="directorsRanking" class="cast-ranking"></div>
+      </section>
     </main>
 
     <div id="filmDetailsModal" class="film-details-modal">
-        <div class="film-details-message">
-            <button type="button" id="filmDetailsClose" class="developer-close" aria-label="Close film details">
-                ×
-            </button>
-            <div id="filmDetailsHeader" class="film-details-header"></div>
+      <div class="film-details-message">
+        <button
+          type="button"
+          id="filmDetailsClose"
+          class="developer-close"
+          aria-label="Close film details"
+        >
+          ×
+        </button>
+        <div id="filmDetailsHeader" class="film-details-header"></div>
 
-            <div id="filmDetailsProduction" class="film-details-block"></div>
+        <div id="filmDetailsProduction" class="film-details-block"></div>
 
-            <div id="filmDetailsWatch" class="film-details-block"></div>
+        <div id="filmDetailsWatch" class="film-details-block"></div>
 
-            <div id="filmDetailsAwards" class="film-details-block"></div>
-
-
-        </div>
-
+        <div id="filmDetailsAwards" class="film-details-block"></div>
+      </div>
     </div>
 
-
-
     <div id="commonFilmsModal" class="common-films-modal">
+      <div class="common-films-message">
+        <button
+          type="button"
+          id="commonFilmsClose"
+          class="developer-close"
+          aria-label="Close"
+        >
+          ×
+        </button>
 
-        <div class="common-films-message">
+        <div class="section-label">FILM CONNECTION</div>
 
+        <h2>FIND COMMON FILMS</h2>
 
-            <button type="button" id="commonFilmsClose" class="developer-close" aria-label="Close">
-                ×
-            </button>
+        <div class="people-inputs">
+          <div class="person-input-wrap">
+            <input
+              type="text"
+              id="personOne"
+              placeholder="NAME 1"
+              autocomplete="off"
+            />
 
+            <div id="personOneSuggestions" class="person-suggestions"></div>
+          </div>
 
-            <div class="section-label">
-                FILM CONNECTION
-            </div>
+          <div class="person-input-wrap">
+            <input
+              type="text"
+              id="personTwo"
+              placeholder="NAME 2"
+              autocomplete="off"
+            />
 
-
-            <h2>
-                FIND COMMON FILMS
-            </h2>
-
-
-
-            <div class="people-inputs">
-
-
-                <div class="person-input-wrap">
-
-                    <input type="text" id="personOne" placeholder="NAME 1" autocomplete="off">
-
-
-                    <div id="personOneSuggestions" class="person-suggestions"></div>
-
-                </div>
-
-
-
-                <div class="person-input-wrap">
-
-                    <input type="text" id="personTwo" placeholder="NAME 2" autocomplete="off">
-
-
-                    <div id="personTwoSuggestions" class="person-suggestions"></div>
-
-                </div>
-
-            </div>
-
-
-
-            <button type="button" id="findCommonFilms" class="common-films-submit">
-                FIND COMMON FILMS
-            </button>
-
-
-
-            <div id="commonFilmsResults" class="common-films-results"></div>
-
-
+            <div id="personTwoSuggestions" class="person-suggestions"></div>
+          </div>
         </div>
+
+        <button type="button" id="findCommonFilms" class="common-films-submit">
+          FIND COMMON FILMS
+        </button>
+
+        <div id="commonFilmsResults" class="common-films-results"></div>
+      </div>
     </div>
 
     <div id="filmographyModal" class="common-films-modal">
+      <div class="common-films-message">
+        <button
+          type="button"
+          id="filmographyClose"
+          class="developer-close"
+          aria-label="Close"
+        >
+          ×
+        </button>
 
-        <div class="common-films-message">
+        <div class="section-label">ACTOR / CAST DATABASE</div>
 
+        <h2>FILMOGRAPHY</h2>
 
-            <button type="button" id="filmographyClose" class="developer-close" aria-label="Close">
-                ×
-            </button>
+        <div class="person-input-wrap">
+          <input
+            type="text"
+            id="filmographyPerson"
+            class="filmography-input"
+            placeholder="SEARCH CAST MEMBER..."
+            autocomplete="off"
+          />
 
-
-            <div class="section-label">
-                ACTOR / CAST DATABASE
-            </div>
-
-
-            <h2>
-                FILMOGRAPHY
-            </h2>
-
-
-
-            <div class="person-input-wrap">
-
-                <input type="text" id="filmographyPerson" class="filmography-input" placeholder="SEARCH CAST MEMBER..."
-                    autocomplete="off">
-
-
-                <div id="filmographySuggestions" class="person-suggestions"></div>
-
-            </div>
-
-
-
-            <button type="button" id="findFilmography" class="common-films-submit">
-                FIND FILMOGRAPHY
-            </button>
-
-
-
-            <div id="filmographyResults" class="common-films-results"></div>
-
-
+          <div id="filmographySuggestions" class="person-suggestions"></div>
         </div>
 
+        <button type="button" id="findFilmography" class="common-films-submit">
+          FIND FILMOGRAPHY
+        </button>
+
+        <div id="filmographyResults" class="common-films-results"></div>
+      </div>
     </div>
 
     <script src="script.js" defer></script>
-
-
-</body>
-
+  </body>
 </html>

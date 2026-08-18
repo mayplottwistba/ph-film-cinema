@@ -230,7 +230,7 @@ async function loadFilms() {
     populateWatchFilters();
 
     buildCastRanking();
-
+    buildCastAwardsTable();
     buildDirectorsRanking();
 
     currentPage = 1;
@@ -2444,29 +2444,13 @@ function buildDirectorsRanking() {
     )
     .join("");
 
-    directorsRanking
-    .querySelectorAll(
-        ".cast-ranking-card"
-    )
-    .forEach(
-        card => {
+  directorsRanking.querySelectorAll(".cast-ranking-card").forEach((card) => {
+    card.addEventListener("click", () => {
+      const director = card.dataset.director;
 
-            card.addEventListener(
-                "click",
-                () => {
-
-                    const director =
-                        card.dataset.director;
-
-                    openDirectorFilmography(
-                        director
-                    );
-
-                }
-            );
-
-        }
-    );
+      openDirectorFilmography(director);
+    });
+  });
 }
 
 /* =========================================================
@@ -2500,95 +2484,61 @@ function findDirectorFilms(searchName) {
    ========================================================= */
 
 function openDirectorFilmography(director) {
+  if (!filmographyModal || !filmographyResults) {
+    return;
+  }
 
-    if (
-        !filmographyModal ||
-        !filmographyResults
-    ) {
-        return;
-    }
+  filmographyModal.classList.add("active");
 
-    filmographyModal.classList.add(
-        "active"
-    );
+  if (filmographyPerson) {
+    filmographyPerson.value = director;
+  }
 
-    if (filmographyPerson) {
-        filmographyPerson.value =
-            director;
-    }
+  if (filmographySuggestions) {
+    filmographySuggestions.innerHTML = "";
 
-    if (filmographySuggestions) {
-        filmographySuggestions.innerHTML =
-            "";
+    filmographySuggestions.classList.remove("active");
+  }
 
-        filmographySuggestions.classList.remove(
-            "active"
-        );
-    }
+  /*
+   * Find all films directed by this person
+   */
+  const matchingFilms = findDirectorFilms(director);
 
-    /*
-     * Find all films directed by this person
-     */
-    const matchingFilms =
-        findDirectorFilms(
-            director
-        );
+  filmographyResults.innerHTML = "";
 
-    filmographyResults.innerHTML =
-        "";
-
-    if (
-        matchingFilms.length ===
-        0
-    ) {
-
-        filmographyResults.innerHTML = `
+  if (matchingFilms.length === 0) {
+    filmographyResults.innerHTML = `
             <div class="common-films-empty">
                 NO FILMS FOUND
             </div>
         `;
 
-        return;
+    return;
+  }
+
+  /*
+   * Newest first,
+   * then alphabetical.
+   */
+  matchingFilms.sort((a, b) => {
+    if (Number(a.year) !== Number(b.year)) {
+      return Number(b.year) - Number(a.year);
     }
 
-    /*
-     * Newest first,
-     * then alphabetical.
-     */
-    matchingFilms.sort(
-        (a, b) => {
-
-            if (
-                Number(a.year) !==
-                Number(b.year)
-            ) {
-
-                return (
-                    Number(b.year) -
-                    Number(a.year)
-                );
-
-            }
-
-            return String(
-                a.title || ""
-            ).localeCompare(
-                String(
-                    b.title || ""
-                ),
-                undefined,
-                {
-                    sensitivity:
-                        "base"
-                }
-            );
-        }
+    return String(a.title || "").localeCompare(
+      String(b.title || ""),
+      undefined,
+      {
+        sensitivity: "base",
+      },
     );
+  });
 
-    /*
-     * Film count
-     */
-    filmographyResults.innerHTML = `
+  /*
+   * Film count
+   */
+  filmographyResults.innerHTML = `
         <div class="filmography-count">
             ${matchingFilms.length}
             FILM${matchingFilms.length === 1 ? "" : "S"}
@@ -2596,33 +2546,23 @@ function openDirectorFilmography(director) {
         </div>
     `;
 
-    /*
-     * Create results
-     */
-    matchingFilms.forEach(
-        film => {
+  /*
+   * Create results
+   */
+  matchingFilms.forEach((film) => {
+    const result = document.createElement("div");
 
-            const result =
-                document.createElement(
-                    "div"
-                );
+    result.className = "filmography-result";
 
-            result.className =
-                "filmography-result";
-
-            result.innerHTML = `
+    result.innerHTML = `
 
                 <div
                     class="filmography-poster"
                 >
 
                     <img
-                        src="${escapeHTML(
-                            film.poster || ""
-                        )}"
-                        alt="${escapeHTML(
-                            film.title || ""
-                        )}"
+                        src="${escapeHTML(film.poster || "")}"
+                        alt="${escapeHTML(film.title || "")}"
                     >
 
                 </div>
@@ -2634,17 +2574,13 @@ function openDirectorFilmography(director) {
                     <div
                         class="filmography-year"
                     >
-                        ${escapeHTML(
-                            film.year || ""
-                        )}
+                        ${escapeHTML(film.year || "")}
                     </div>
 
                     <div
                         class="filmography-title"
                     >
-                        ${escapeHTML(
-                            film.title || ""
-                        )}
+                        ${escapeHTML(film.title || "")}
                     </div>
 
                     <span
@@ -2657,32 +2593,20 @@ function openDirectorFilmography(director) {
 
             `;
 
-            /*
-             * Clicking a film opens
-             * the full film details.
-             */
-            result.addEventListener(
-                "click",
-                () => {
+    /*
+     * Clicking a film opens
+     * the full film details.
+     */
+    result.addEventListener("click", () => {
+      closeFilmography();
 
-                    closeFilmography();
+      openFilmDetails(film);
+    });
 
-                    openFilmDetails(
-                        film
-                    );
+    result.style.cursor = "pointer";
 
-                }
-            );
-
-            result.style.cursor =
-                "pointer";
-
-            filmographyResults.appendChild(
-                result
-            );
-
-        }
-    );
+    filmographyResults.appendChild(result);
+  });
 }
 
 /* =========================================================
@@ -3339,6 +3263,147 @@ if (themeToggle) {
 
     setTheme(!isDark);
   });
+}
+
+function buildCastAwardsTable() {
+  const container = document.getElementById("castAwardsTable");
+
+  if (!container) {
+    return;
+  }
+
+  // Get all years from films.json
+  const years = [
+    ...new Set(
+      films
+        .map((film) => Number(film.year))
+        .filter((year) => !Number.isNaN(year)),
+    ),
+  ].sort((a, b) => a - b);
+
+  if (!years.length) {
+    container.innerHTML = `
+            <div class="empty-films">
+                NO AWARD DATA FOUND
+            </div>
+        `;
+
+    return;
+  }
+
+  const rows = years
+    .map((year) => {
+      const getWinner = (awardKey) => {
+        const winners = [];
+
+        films
+          .filter((film) => Number(film.year) === year)
+          .forEach((film) => {
+            const awards = Array.isArray(film.awards) ? film.awards : [];
+
+            awards.forEach((award) => {
+              if (award && award[awardKey] === true && award.name) {
+                winners.push(award.name);
+              }
+            });
+          });
+
+        return [...new Set(winners)];
+      };
+
+      const actor = getWinner("actor");
+
+      const actress = getWinner("actress");
+
+      const supportingActor = getWinner("supporting_actor");
+
+      const supportingActress = getWinner("supporting_actress");
+
+      const renderWinner = (names) => {
+        if (!names.length) {
+          return "—";
+        }
+
+        return names
+          .map(
+            (name) => `
+                        <div class="cast-award-winner">
+                            ${escapeHTML(name)}
+                        </div>
+                    `,
+          )
+          .join("");
+      };
+
+      return `
+            <tr>
+
+                <td class="cast-award-year">
+                    ${year}
+                </td>
+
+                <td>
+                    ${renderWinner(actor)}
+                </td>
+
+                <td>
+                    ${renderWinner(actress)}
+                </td>
+
+                <td>
+                    ${renderWinner(supportingActor)}
+                </td>
+
+                <td>
+                    ${renderWinner(supportingActress)}
+                </td>
+
+            </tr>
+        `;
+    })
+    .join("");
+
+  container.innerHTML = `
+
+        <div class="cast-awards-table-wrap">
+
+            <table class="cast-awards-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>YEAR</th>
+
+                        <th>
+                            BEST ACTOR
+                        </th>
+
+                        <th>
+                            BEST ACTRESS
+                        </th>
+
+                        <th>
+                            BEST SUPPORTING ACTOR
+                        </th>
+
+                        <th>
+                            BEST SUPPORTING ACTRESS
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+                    ${rows}
+                </tbody>
+
+            </table>
+
+        </div>
+
+    `;
 }
 
 loadTheme();

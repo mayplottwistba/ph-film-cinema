@@ -1,655 +1,588 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
 
 /* =========================================================
    THEME VARIABLES
    ========================================================= */
 
 :root {
-    --bg: #f4f4f0;
-    --surface: #ffffff;
-    --surface-alt: #f1f1ed;
+  --bg: #f4f4f0;
+  --surface: #ffffff;
+  --surface-alt: #f1f1ed;
 
-    --text: #111111;
-    --text-soft: #555555;
-    --text-muted: #777777;
+  --text: #111111;
+  --text-soft: #555555;
+  --text-muted: #777777;
 
-    --border: #111111;
-    --border-soft: #bbbbbb;
+  --border: #111111;
+  --border-soft: #bbbbbb;
 
-    --shadow: #111111;
+  --shadow: #111111;
 
-    --input-bg: #ffffff;
+  --input-bg: #ffffff;
 
-    --tag-blue-bg: #dff4fc;
-    --tag-blue-border: #8bcce8;
-    --tag-blue-text: #24566a;
+  --tag-blue-bg: #dff4fc;
+  --tag-blue-border: #8bcce8;
+  --tag-blue-text: #24566a;
 
-    --tag-red-bg: #fbe2e2;
-    --tag-red-border: #e8a4a4;
-    --tag-red-text: #7a3030;
+  --tag-red-bg: #fbe2e2;
+  --tag-red-border: #e8a4a4;
+  --tag-red-text: #7a3030;
 }
-
 
 html.dark-mode {
-    --bg: #111111;
-    --surface: #1b1b1b;
-    --surface-alt: #242421;
+  --bg: #111111;
+  --surface: #1b1b1b;
+  --surface-alt: #242421;
 
-    --text: #f4f4f0;
-    --text-soft: #c3c3be;
-    --text-muted: #999994;
+  --text: #f4f4f0;
+  --text-soft: #c3c3be;
+  --text-muted: #999994;
 
-    --border: #eeeeea;
-    --border-soft: #555550;
+  --border: #eeeeea;
+  --border-soft: #555550;
 
-    --shadow: #000000;
+  --shadow: #000000;
 
-    --input-bg: #1b1b1b;
+  --input-bg: #1b1b1b;
 
-    --tag-blue-bg: #173744;
-    --tag-blue-border: #3f91b2;
-    --tag-blue-text: #bde8f8;
+  --tag-blue-bg: #173744;
+  --tag-blue-border: #3f91b2;
+  --tag-blue-text: #bde8f8;
 
-    --tag-red-bg: #452525;
-    --tag-red-border: #b56b6b;
-    --tag-red-text: #ffd0d0;
+  --tag-red-bg: #452525;
+  --tag-red-border: #b56b6b;
+  --tag-red-text: #ffd0d0;
 }
-
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
-
 
 body {
-    min-height: 100vh;
+  min-height: 100vh;
 
-    background: var(--bg);
-    color: var(--text);
+  background: var(--bg);
+  color: var(--text);
 
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 
-    transition:
-        background-color 0.25s ease,
-        color 0.25s ease;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
 }
-
 
 /* =========================================================
    CUSTOM CURSOR
    ========================================================= */
 
 * {
-    cursor:
-        url("./assets/cursor.png") 0 0,
-        auto !important;
+  cursor:
+    url("./assets/cursor.png") 0 0,
+    auto !important;
 }
 
-
-html.dark-mode *{
-    cursor:
-        url("./assets/cursor-2.png") 0 0,
-        auto !important;
+html.dark-mode * {
+  cursor:
+    url("./assets/cursor-2.png") 0 0,
+    auto !important;
 }
-
 
 /* =========================================================
    MAIN CONTAINER
    ========================================================= */
 
 .container {
-    width: 100%;
-    max-width: 1500px;
+  width: 100%;
+  max-width: 1500px;
 
-    margin: 0 auto;
+  margin: 0 auto;
 
-    padding: 35px;
+  padding: 35px;
 }
-
 
 /* =========================================================
    HEADER
    ========================================================= */
 
 .films-header {
-    display: flex;
+  display: flex;
 
-    align-items: flex-end;
-    justify-content: space-between;
+  align-items: flex-end;
+  justify-content: space-between;
 
-    gap: 25px;
+  gap: 25px;
 
-    margin-bottom: 20px;
-    padding-bottom: 18px;
+  margin-bottom: 20px;
+  padding-bottom: 18px;
 
-    border-bottom:
-        2px solid var(--border);
+  border-bottom: 2px solid var(--border);
 }
-
 
 .header-title {
-    flex-shrink: 0;
+  flex-shrink: 0;
 }
-
 
 .section-label {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 
-    color: var(--text-muted);
+  color: var(--text-muted);
 
-    font-family: monospace;
+  font-family: monospace;
 
-    font-size: 10px;
-    font-weight: 900;
+  font-size: 10px;
+  font-weight: 900;
 
-    letter-spacing: 1px;
+  letter-spacing: 1px;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
-
 
 h1 {
-    color: var(--text);
+  color: var(--text);
 
-    font-size: 38px;
-    line-height: 1;
+  font-size: 38px;
+  line-height: 1;
 
-    font-weight: 900;
+  font-weight: 900;
 
-    letter-spacing: -2px;
+  letter-spacing: -2px;
 }
-
 
 /* =========================================================
    ARCHIVE NAVIGATION
    ========================================================= */
 
 .archive-actions {
-    display: flex;
+  display: flex;
 
-    align-items: center;
+  align-items: center;
 
-    gap: 5px;
+  gap: 5px;
 
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-
 
 .archive-button {
-    height: 34px;
+  height: 34px;
 
-    padding: 0 12px;
+  padding: 0 12px;
 
-    border:
-        2px solid var(--border);
+  border: 2px solid var(--border);
 
-    background: var(--surface);
-    color: var(--text);
+  background: var(--surface);
+  color: var(--text);
 
-    font-family: monospace;
+  font-family: monospace;
 
-    font-size: 9px;
-    font-weight: 900;
+  font-size: 9px;
+  font-weight: 900;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    transition:
-        background 0.15s ease,
-        color 0.15s ease,
-        border-color 0.15s ease,
-        transform 0.15s ease;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.15s ease;
 }
-
 
 .archive-button:hover {
-    background: var(--text);
-    color: var(--bg);
+  background: var(--text);
+  color: var(--bg);
 }
-
 
 .archive-button:active {
-    transform:
-        translateY(1px);
+  transform: translateY(1px);
 }
-
 
 .archive-button.active {
-    background: var(--text);
-    color: var(--bg);
+  background: var(--text);
+  color: var(--bg);
 }
-
 
 /* =========================================================
    LIGHT / DARK MODE
    ========================================================= */
 
 .theme-toggle {
-    display: flex;
+  display: flex;
 
-    align-items: center;
+  align-items: center;
 
-    gap: 7px;
+  gap: 7px;
 
-    height: 34px;
+  height: 34px;
 
-    padding: 0 4px;
+  padding: 0 4px;
 
-    border: 0;
+  border: 0;
 
-    background: transparent;
+  background: transparent;
 
-    color: var(--text);
+  color: var(--text);
 
-    font-family: monospace;
+  font-family: monospace;
 
-    font-size: 9px;
-    font-weight: 900;
+  font-size: 9px;
+  font-weight: 900;
 
-    cursor: pointer;
+  cursor: pointer;
 }
-
 
 .theme-toggle-track {
-    position: relative;
+  position: relative;
 
-    display: block;
+  display: block;
 
-    width: 40px;
-    height: 21px;
+  width: 40px;
+  height: 21px;
 
-    border:
-        2px solid var(--border);
+  border: 2px solid var(--border);
 
-    border-radius: 999px;
+  border-radius: 999px;
 
-    background: var(--surface);
+  background: var(--surface);
 
-    transition:
-        background 0.2s ease,
-        border-color 0.2s ease;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
 }
-
 
 .theme-toggle-thumb {
-    position: absolute;
+  position: absolute;
 
-    top: 2px;
-    left: 2px;
+  top: 2px;
+  left: 2px;
 
-    width: 13px;
-    height: 13px;
+  width: 13px;
+  height: 13px;
 
-    border-radius: 50%;
+  border-radius: 50%;
 
-    background: var(--text);
+  background: var(--text);
 
-    transition:
-        transform 0.2s ease,
-        background 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
 }
-
 
 html.dark-mode .theme-toggle-track {
-    background: var(--text);
+  background: var(--text);
 }
-
 
 html.dark-mode .theme-toggle-thumb {
-    background: var(--bg);
+  background: var(--bg);
 
-    transform:
-        translateX(19px);
+  transform: translateX(19px);
 }
-
 
 .theme-label {
-    min-width: 32px;
+  min-width: 32px;
 
-    color: var(--text);
+  color: var(--text);
 
-    font-size: 8px;
-    font-weight: 900;
+  font-size: 8px;
+  font-weight: 900;
 
-    text-align: left;
+  text-align: left;
 }
-
 
 /* =========================================================
    FILM CONTROLS
    ========================================================= */
 
 .film-controls {
-    width: 100%;
+  width: 100%;
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
-
 
 .film-filters {
-    display: flex;
+  display: flex;
 
-    align-items: center;
+  align-items: center;
 
-    gap: 8px;
+  gap: 8px;
 
-    width: 100%;
+  width: 100%;
 }
-
 
 .year-filter,
 .watch-filter {
-    width: 180px;
-    height: 40px;
+  width: 180px;
+  height: 40px;
 
-    padding: 0 12px;
+  padding: 0 12px;
 
-    border:
-        2px solid var(--border);
+  border: 2px solid var(--border);
 
-    outline: none;
+  outline: none;
 
-    background: var(--input-bg);
-    color: var(--text);
+  background: var(--input-bg);
+  color: var(--text);
 
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 
-    font-size: 10px;
-    font-weight: 900;
+  font-size: 10px;
+  font-weight: 900;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 
-    cursor: pointer;
+  cursor: pointer;
 }
-
 
 .year-filter:hover,
 .watch-filter:hover {
-    background: var(--text);
-    color: var(--bg);
+  background: var(--text);
+  color: var(--bg);
 }
-
 
 .year-filter:focus,
 .watch-filter:focus {
-    border-width: 3px;
+  border-width: 3px;
 }
-
 
 .year-filter option,
 .watch-filter option {
-    background: var(--input-bg);
-    color: var(--text);
+  background: var(--input-bg);
+  color: var(--text);
 }
-
 
 /* =========================================================
    SEARCH
    ========================================================= */
 
 .search-wrap {
-    position: relative;
+  position: relative;
 
-    flex: 1;
+  flex: 1;
 
-    min-width: 180px;
+  min-width: 180px;
 }
-
 
 .search-input {
-    width: 100%;
-    height: 40px;
+  width: 100%;
+  height: 40px;
 
-    padding:
-        0 35px 0 12px;
+  padding: 0 35px 0 12px;
 
-    border:
-        2px solid var(--border);
+  border: 2px solid var(--border);
 
-    outline: none;
+  outline: none;
 
-    background: var(--input-bg);
-    color: var(--text);
+  background: var(--input-bg);
+  color: var(--text);
 
-    font-family: monospace;
+  font-family: monospace;
 
-    font-size: 10px;
-    font-weight: 700;
+  font-size: 10px;
+  font-weight: 700;
 }
-
 
 .search-input::placeholder {
-    color: var(--text-muted);
+  color: var(--text-muted);
 }
-
 
 .search-input:focus {
-    border-width: 3px;
+  border-width: 3px;
 
-    padding-left: 11px;
+  padding-left: 11px;
 }
-
 
 .search-icon {
-    position: absolute;
+  position: absolute;
 
-    top: 50%;
-    right: 12px;
+  top: 50%;
+  right: 12px;
 
-    transform:
-        translateY(-50%);
+  transform: translateY(-50%);
 
-    color: var(--text-muted);
+  color: var(--text-muted);
 
-    font-family: monospace;
+  font-family: monospace;
 
-    font-size: 12px;
-    font-weight: 900;
+  font-size: 12px;
+  font-weight: 900;
 
-    pointer-events: none;
+  pointer-events: none;
 }
-
 
 /* =========================================================
    FILM GRID
    ========================================================= */
 
 .films-grid {
-    display: grid;
+  display: grid;
 
-    grid-template-columns:
-        repeat(auto-fill,
-            minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 
-    gap: 18px;
+  gap: 18px;
 }
-
 
 /* =========================================================
    FILM CARD
    ========================================================= */
 
 .film-card {
-    display: grid;
+  display: grid;
 
-    grid-template-columns:
-        135px minmax(0, 1fr);
+  grid-template-columns: 135px minmax(0, 1fr);
 
-    gap: 18px;
+  gap: 18px;
 
-    min-height: 225px;
+  min-height: 225px;
 
-    padding: 15px;
+  padding: 15px;
 
-    background: var(--surface);
+  background: var(--surface);
 
-    border:
-        2px solid var(--border);
+  border: 2px solid var(--border);
 
-    box-shadow:
-        5px 5px 0 var(--shadow);
+  box-shadow: 5px 5px 0 var(--shadow);
 
-    overflow: hidden;
+  overflow: hidden;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    transition:
-        transform 0.15s ease,
-        box-shadow 0.15s ease,
-        background-color 0.25s ease,
-        border-color 0.25s ease;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease;
 }
-
 
 .film-card:hover {
-    transform:
-        translate(-2px, -2px);
+  transform: translate(-2px, -2px);
 
-    box-shadow:
-        7px 7px 0 var(--shadow);
+  box-shadow: 7px 7px 0 var(--shadow);
 }
-
 
 /* =========================================================
    POSTER
    ========================================================= */
 
 .poster-wrap {
-    width: 135px;
-    height: 195px;
+  width: 135px;
+  height: 195px;
 
-    background: #deded9;
+  background: #deded9;
 
-    border:
-        2px solid var(--border);
+  border: 2px solid var(--border);
 
-    overflow: hidden;
+  overflow: hidden;
 }
-
 
 .poster-wrap img {
-    display: block;
+  display: block;
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    object-fit: cover;
+  object-fit: cover;
 }
-
 
 .poster-missing {
-    display: flex;
+  display: flex;
 
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    padding: 10px;
+  padding: 10px;
 
-    color: var(--text-muted);
+  color: var(--text-muted);
 
-    font-family: monospace;
+  font-family: monospace;
 
-    font-size: 8px;
-    font-weight: 900;
+  font-size: 8px;
+  font-weight: 900;
 
-    text-align: center;
+  text-align: center;
 }
-
 
 /* =========================================================
    FILM INFORMATION
    ========================================================= */
 
 .film-info {
-    display: flex;
+  display: flex;
 
-    flex-direction: column;
+  flex-direction: column;
 
-    min-width: 0;
+  min-width: 0;
 }
-
 
 .film-year {
-    display: inline-block;
+  display: inline-block;
 
-    width: fit-content;
+  width: fit-content;
 
-    margin-bottom: 7px;
+  margin-bottom: 7px;
 
-    padding:
-        3px 6px;
+  padding: 3px 6px;
 
-    background: var(--surface-alt);
+  background: var(--surface-alt);
 
-    border:
-        1px solid var(--border);
+  border: 1px solid var(--border);
 
-    color: var(--text);
+  color: var(--text);
 
-    font-family: monospace;
+  font-family: monospace;
 
-    font-size: 8px;
-    font-weight: 900;
+  font-size: 8px;
+  font-weight: 900;
 }
-
 
 .film-title {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 
-    color: var(--text);
+  color: var(--text);
 
-    font-size: 21px;
-    line-height: 1;
+  font-size: 21px;
+  line-height: 1;
 
-    font-weight: 900;
+  font-weight: 900;
 
-    letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
-
 
 /* =========================================================
    DESCRIPTION
    ========================================================= */
 
 .film-description {
-    display: -webkit-box;
+  display: -webkit-box;
 
-    -webkit-box-orient: vertical;
+  -webkit-box-orient: vertical;
 
-    -webkit-line-clamp: 3;
+  -webkit-line-clamp: 3;
 
-    overflow: hidden;
+  overflow: hidden;
 
-    margin-bottom: 4px;
+  margin-bottom: 4px;
 
-    color: var(--text-soft);
+  color: var(--text-soft);
 
-    font-size: 12px;
+  font-size: 12px;
 
-    line-height: 1.45;
+  line-height: 1.45;
 }
-
 
 .film-description.expanded {
-    display: block;
+  display: block;
 
-    overflow: visible;
+  overflow: visible;
 }
-
 
 /* =========================================================
    DIRECTOR
@@ -657,629 +590,553 @@ html.dark-mode .theme-toggle-thumb {
 
 .film-director-label,
 .film-cast-label {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 
-    color: var(--text-soft);
+  color: var(--text-soft);
 
-    font-family: monospace;
+  font-family: monospace;
 
-    font-size: 9px;
-    font-weight: 900;
+  font-size: 9px;
+  font-weight: 900;
 
-    letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
-
 
 .film-director {
-    display: flex;
+  display: flex;
 
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 
-    gap: 4px;
+  gap: 4px;
 
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 
-    color: var(--text);
+  color: var(--text);
 
-    font-size: 10px;
-    font-weight: 700;
+  font-size: 10px;
+  font-weight: 700;
 
-    line-height: 1.3;
+  line-height: 1.3;
 }
-
 
 .director-tag {
-    display: inline-flex;
+  display: inline-flex;
 
-    align-items: center;
+  align-items: center;
 
-    width: fit-content;
+  width: fit-content;
 
-    padding:
-        4px 8px;
+  padding: 4px 8px;
 
-    border:
-        1px solid var(--tag-red-border);
+  border: 1px solid var(--tag-red-border);
 
-    border-radius: 999px;
+  border-radius: 999px;
 
-    background:
-        var(--tag-red-bg);
+  background: var(--tag-red-bg);
 
-    color:
-        var(--tag-red-text);
+  color: var(--tag-red-text);
 
-    font-size: 9px;
-    font-weight: 600;
+  font-size: 9px;
+  font-weight: 600;
 }
-
 
 .director-unavailable {
-    color: var(--text-muted);
+  color: var(--text-muted);
 
-    font-size: 9px;
-    font-weight: 600;
+  font-size: 9px;
+  font-weight: 600;
 }
-
 
 /* =========================================================
    CAST
    ========================================================= */
 
 .film-cast {
-    display: -webkit-box;
+  display: -webkit-box;
 
-    -webkit-box-orient: vertical;
+  -webkit-box-orient: vertical;
 
-    -webkit-line-clamp: 2;
+  -webkit-line-clamp: 2;
 
-    overflow: hidden;
+  overflow: hidden;
 
-    margin-bottom: 4px;
+  margin-bottom: 4px;
 
-    color: var(--text);
+  color: var(--text);
 
-    font-size: 10px;
-    font-weight: 700;
+  font-size: 10px;
+  font-weight: 700;
 
-    line-height: 1.3;
+  line-height: 1.3;
 }
-
 
 .film-cast.expanded {
-    display: flex;
+  display: flex;
 
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 
-    gap: 4px;
+  gap: 4px;
 
-    overflow: visible;
+  overflow: visible;
 }
-
 
 .cast-tag {
-    display: inline-flex;
+  display: inline-flex;
 
-    align-items: center;
+  align-items: center;
 
-    width: fit-content;
+  width: fit-content;
 
-    margin:
-        0 3px 3px 0;
+  margin: 0 3px 3px 0;
 
-    padding:
-        4px 8px;
+  padding: 4px 8px;
 
-    border:
-        1px solid var(--tag-blue-border);
+  border: 1px solid var(--tag-blue-border);
 
-    border-radius: 999px;
+  border-radius: 999px;
 
-    background:
-        var(--tag-blue-bg);
+  background: var(--tag-blue-bg);
 
-    color:
-        var(--tag-blue-text);
+  color: var(--tag-blue-text);
 
-    font-size: 9px;
-    font-weight: 600;
+  font-size: 9px;
+  font-weight: 600;
 
-    line-height: 1.2;
+  line-height: 1.2;
 }
-
 
 .cast-unavailable {
-    color: var(--text-muted);
+  color: var(--text-muted);
 
-    font-size: 9px;
-    font-weight: 600;
+  font-size: 9px;
+  font-weight: 600;
 }
-
 
 /* =========================================================
    SEE MORE
    ========================================================= */
 
 .see-more {
-    display: inline-block;
+  display: inline-block;
 
-    width: fit-content;
+  width: fit-content;
 
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 
-    padding: 0;
+  padding: 0;
 
-    border: 0;
+  border: 0;
 
-    background: none;
+  background: none;
 
-    color: var(--text-muted);
+  color: var(--text-muted);
 
-    font-family: monospace;
+  font-family: monospace;
 
-    font-size: 8px;
-    font-weight: 900;
+  font-size: 8px;
+  font-weight: 900;
 
-    text-decoration: none;
+  text-decoration: none;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 
-    cursor: pointer;
+  cursor: pointer;
 }
-
 
 .see-more:hover {
-    color: var(--text);
+  color: var(--text);
 }
-
 
 .see-more:focus {
-    outline: none;
+  outline: none;
 }
-
 
 /* =========================================================
    WHERE TO WATCH
    ========================================================= */
 
 .watch-label {
-    margin-top: auto;
+  margin-top: auto;
 
-    margin-bottom: 6px;
+  margin-bottom: 6px;
 
-    color: var(--text-soft);
+  color: var(--text-soft);
 
-    font-family: monospace;
+  font-family: monospace;
 
-    font-size: 9px;
-    font-weight: 900;
+  font-size: 9px;
+  font-weight: 900;
 
-    letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
-
 
 .watch-options {
-    display: flex;
+  display: flex;
 
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 
-    gap: 5px;
+  gap: 5px;
 }
-
 
 .platform {
-    display: inline-flex;
+  display: inline-flex;
 
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 
-    min-width: 55px;
-    height: 22px;
+  min-width: 55px;
+  height: 22px;
 
-    padding:
-        0 8px;
+  padding: 0 8px;
 
-    border:
-        1px solid var(--border);
+  border: 1px solid var(--border);
 
-    font-family: monospace;
+  font-family: monospace;
 
-    font-size: 8px;
-    font-weight: 900;
+  font-size: 8px;
+  font-weight: 900;
 
-    text-decoration: none;
+  text-decoration: none;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
-
 
 /* =========================================================
    PLATFORM COLORS
    ========================================================= */
 
 .platform.netflix {
-    background: #e50914;
+  background: #e50914;
 
-    color: #fff;
+  color: #fff;
 
-    border-color: #e50914;
+  border-color: #e50914;
 }
-
 
 .platform.juanflix {
-    background: #ffd400;
+  background: #ffd400;
 
-    color: #111;
+  color: #111;
 
-    border-color: #ffd400;
+  border-color: #ffd400;
 }
-
 
 .platform.ccp {
-    background: #111;
+  background: #111;
 
-    color: #fff;
+  color: #fff;
 
-    border-color: #111;
+  border-color: #111;
 }
-
 
 .platform.youtube {
-    background: #ff0000 !important;
+  background: #ff0000 !important;
 
-    color: #fff !important;
+  color: #fff !important;
 
-    border-color: #ff0000 !important;
+  border-color: #ff0000 !important;
 }
-
 
 .platform.prime {
-    background: #9edcf5;
+  background: #9edcf5;
 
-    color: #16485d;
+  color: #16485d;
 
-    border-color: #9edcf5;
+  border-color: #9edcf5;
 }
-
 
 .platform.appletv {
-    background: #c8c8c8;
+  background: #c8c8c8;
 
-    color: #111;
+  color: #111;
 
-    border-color: #c8c8c8;
+  border-color: #c8c8c8;
 }
-
 
 .platform.iwant {
-    background: #9b59b6;
+  background: #9b59b6;
 
-    color: #fff;
+  color: #fff;
 
-    border-color: #9b59b6;
+  border-color: #9b59b6;
 }
-
 
 .platform.viva {
-    background: #f47b20;
+  background: #f47b20;
 
-    color: #fff;
+  color: #fff;
 
-    border-color: #f47b20;
+  border-color: #f47b20;
 }
-
 
 .platform.external {
-    background: var(--surface);
+  background: var(--surface);
 
-    color: var(--text);
+  color: var(--text);
 
-    border-color: var(--border);
+  border-color: var(--border);
 
-    cursor: pointer;
+  cursor: pointer;
 }
-
 
 .platform.external:hover {
-    background: var(--text);
+  background: var(--text);
 
-    color: var(--bg);
+  color: var(--bg);
 }
-
 
 .platform.youtube:hover {
-    background: #cc0000 !important;
+  background: #cc0000 !important;
 
-    color: #fff !important;
+  color: #fff !important;
 
-    border-color: #cc0000 !important;
+  border-color: #cc0000 !important;
 }
-
 
 .platform.prime:hover {
-    background: #7ccbe9;
+  background: #7ccbe9;
 }
-
 
 .platform.appletv:hover {
-    background: #aaa;
+  background: #aaa;
 }
-
 
 .platform.iwant:hover {
-    background: #81489a;
+  background: #81489a;
 }
-
 
 .platform.viva:hover {
-    background: #d96312;
+  background: #d96312;
 }
-
 
 .platform.none {
-    background: var(--surface-alt);
+  background: var(--surface-alt);
 
-    color: var(--text-muted);
+  color: var(--text-muted);
 
-    border-color: var(--border-soft);
+  border-color: var(--border-soft);
 
-    border-style: dashed;
+  border-style: dashed;
 }
-
 
 .platform.now-showing {
-    background: #22a447;
+  background: #22a447;
 
-    color: #fff;
+  color: #fff;
 
-    border-color: #22a447;
+  border-color: #22a447;
 }
-
 
 /* =========================================================
    EMPTY FILMS
    ========================================================= */
 
 .empty-films {
-    grid-column: 1 / -1;
+  grid-column: 1 / -1;
 
-    padding:
-        60px 20px;
+  padding: 60px 20px;
 
-    background: var(--surface);
+  background: var(--surface);
 
-    border:
-        2px solid var(--border);
+  border: 2px solid var(--border);
 
-    color: var(--text);
+  color: var(--text);
 
-    text-align: center;
+  text-align: center;
 
-    font-family: monospace;
+  font-family: monospace;
 
-    font-size: 11px;
-    font-weight: 900;
+  font-size: 11px;
+  font-weight: 900;
 }
-
 
 /* =========================================================
    PAGINATION
    ========================================================= */
 
 .pagination {
-    display: flex;
+  display: flex;
 
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 
-    gap: 5px;
+  gap: 5px;
 
-    margin-top: 30px;
+  margin-top: 30px;
 }
-
 
 .pagination button {
-    min-width: 32px;
-    height: 32px;
+  min-width: 32px;
+  height: 32px;
 
-    padding:
-        0 8px;
+  padding: 0 8px;
 
-    border:
-        2px solid var(--border);
+  border: 2px solid var(--border);
 
-    background: var(--surface);
+  background: var(--surface);
 
-    color: var(--text);
+  color: var(--text);
 
-    font-family: monospace;
+  font-family: monospace;
 
-    font-size: 9px;
-    font-weight: 900;
+  font-size: 9px;
+  font-weight: 900;
 
-    cursor: pointer;
+  cursor: pointer;
 }
-
 
 .pagination button:hover {
-    background: var(--text);
+  background: var(--text);
 
-    color: var(--bg);
+  color: var(--bg);
 }
-
 
 .pagination button.active {
-    background: var(--text);
+  background: var(--text);
 
-    color: var(--bg);
+  color: var(--bg);
 }
-
 
 .pagination button:disabled {
-    opacity: 0.3;
+  opacity: 0.3;
 
-    cursor: not-allowed;
+  cursor: not-allowed;
 }
-
 
 /* =========================================================
    CAST / DIRECTORS
    ========================================================= */
 
 .cast-section {
-    display: none;
+  display: none;
 }
-
 
 .cast-section.active {
-    display: block;
+  display: block;
 }
-
 
 .cast-section-header {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    padding-bottom: 15px;
+  padding-bottom: 15px;
 
-    border-bottom:
-        2px solid var(--border);
+  border-bottom: 2px solid var(--border);
 }
-
 
 .cast-section-header h2 {
-    margin-bottom: 6px;
+  margin-bottom: 6px;
 
-    color: var(--text);
+  color: var(--text);
 
-    font-size: 32px;
-    line-height: 1;
+  font-size: 32px;
+  line-height: 1;
 
-    font-weight: 900;
+  font-weight: 900;
 
-    letter-spacing: -1px;
+  letter-spacing: -1px;
 }
-
 
 .cast-section-header p {
-    color: var(--text-soft);
+  color: var(--text-soft);
 
-    font-size: 11px;
+  font-size: 11px;
 
-    line-height: 1.5;
+  line-height: 1.5;
 }
-
 
 .cast-ranking {
-    display: grid;
+  display: grid;
 
-    grid-template-columns:
-        repeat(auto-fill,
-            minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 
-    gap: 10px;
+  gap: 10px;
 }
-
 
 .cast-ranking-card {
-    display: grid;
+  display: grid;
 
-    grid-template-columns:
-        48px minmax(0, 1fr) auto;
+  grid-template-columns: 48px minmax(0, 1fr) auto;
 
-    align-items: center;
+  align-items: center;
 
-    gap: 12px;
+  gap: 12px;
 
-    min-height: 65px;
+  min-height: 65px;
 
-    padding:
-        10px 12px;
+  padding: 10px 12px;
 
-    background: var(--surface);
+  background: var(--surface);
 
-    border:
-        2px solid var(--border);
+  border: 2px solid var(--border);
 
-    box-shadow:
-        4px 4px 0 var(--shadow);
+  box-shadow: 4px 4px 0 var(--shadow);
 
-    color: var(--text);
+  color: var(--text);
 
-    cursor: pointer;
+  cursor: pointer;
 
-    transition:
-        transform 0.15s ease,
-        box-shadow 0.15s ease,
-        background-color 0.25s ease;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background-color 0.25s ease;
 }
-
 
 .cast-ranking-card:hover {
-    transform:
-        translate(-2px, -2px);
+  transform: translate(-2px, -2px);
 
-    box-shadow:
-        6px 6px 0 var(--shadow);
+  box-shadow: 6px 6px 0 var(--shadow);
 }
-
 
 .cast-rank {
-    display: flex;
+  display: flex;
 
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 
-    width: 38px;
-    height: 38px;
+  width: 38px;
+  height: 38px;
 
-    background: var(--text);
+  background: var(--text);
 
-    color: var(--bg);
+  color: var(--bg);
 
-    font-family: monospace;
+  font-family: monospace;
 
-    font-size: 10px;
-    font-weight: 900;
+  font-size: 10px;
+  font-weight: 900;
 }
-
 
 .cast-name {
-    min-width: 0;
+  min-width: 0;
 
-    color: var(--text);
+  color: var(--text);
 
-    font-size: 12px;
-    font-weight: 800;
+  font-size: 12px;
+  font-weight: 800;
 }
-
 
 .cast-film-count {
-    padding:
-        5px 8px;
+  padding: 5px 8px;
 
-    border:
-        1px solid var(--tag-blue-border);
+  border: 1px solid var(--tag-blue-border);
 
-    border-radius: 999px;
+  border-radius: 999px;
 
-    background:
-        var(--tag-blue-bg);
+  background: var(--tag-blue-bg);
 
-    color:
-        var(--tag-blue-text);
+  color: var(--tag-blue-text);
 
-    font-family: monospace;
+  font-family: monospace;
 
-    font-size: 8px;
-    font-weight: 900;
+  font-size: 8px;
+  font-weight: 900;
 
-    white-space: nowrap;
+  white-space: nowrap;
 }
-
 
 /* =========================================================
    =========================================================
@@ -1288,1603 +1145,1366 @@ html.dark-mode .theme-toggle-thumb {
    ========================================================= */
 
 .film-details-modal {
-    position: fixed;
+  position: fixed;
 
-    inset: 0;
+  inset: 0;
 
-    z-index: 1500;
+  z-index: 1500;
 
-    display: none;
+  display: none;
 
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 
-    padding: 25px;
+  padding: 25px;
 
-    background:
-        rgba(0, 0, 0, 0.62);
+  background: rgba(0, 0, 0, 0.62);
 
-    backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
 }
-
 
 .film-details-modal.active {
-    display: flex;
+  display: flex;
 }
-
 
 /* =========================================================
    BIG FILM DETAILS CARD
    ========================================================= */
 
 .film-details-message {
-    position: relative;
+  position: relative;
 
-    width: 100%;
+  width: 100%;
 
-    max-width: 1050px;
+  max-width: 1050px;
 
-    max-height: 90vh;
+  max-height: 90vh;
 
-    padding: 28px;
+  padding: 28px;
 
-    background: var(--bg);
+  background: var(--bg);
 
-    color: var(--text);
+  color: var(--text);
 
-    border:
-        2px solid var(--border);
+  border: 2px solid var(--border);
 
-    box-shadow:
-        10px 10px 0 var(--shadow);
+  box-shadow: 10px 10px 0 var(--shadow);
 
-    overflow-y: auto;
+  overflow-y: auto;
 
-    animation:
-        filmDetailsIn 0.18s ease;
+  animation: filmDetailsIn 0.18s ease;
 }
-
 
 @keyframes filmDetailsIn {
+  from {
+    opacity: 0;
 
-    from {
-        opacity: 0;
+    transform: translateY(8px);
+  }
 
-        transform:
-            translateY(8px);
-    }
+  to {
+    opacity: 1;
 
-    to {
-        opacity: 1;
-
-        transform:
-            translateY(0);
-    }
-
+    transform: translateY(0);
+  }
 }
-
 
 /* =========================================================
    FILM DETAILS HEADER
    ========================================================= */
 
 .film-details-header {
-    display: grid;
+  display: grid;
 
-    grid-template-columns:
-        210px minmax(0, 1fr);
+  grid-template-columns: 210px minmax(0, 1fr);
 
-    gap: 25px;
+  gap: 25px;
 
-    padding-bottom: 25px;
+  padding-bottom: 25px;
 
-    border-bottom:
-        2px solid var(--border);
+  border-bottom: 2px solid var(--border);
 }
-
 
 .film-details-poster {
-    width: 210px;
-    height: 300px;
+  width: 210px;
+  height: 300px;
 
-    background: #deded9;
+  background: #deded9;
 
-    border:
-        2px solid var(--border);
+  border: 2px solid var(--border);
 
-    overflow: hidden;
+  overflow: hidden;
 }
-
 
 .film-details-poster img {
-    display: block;
+  display: block;
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    object-fit: cover;
+  object-fit: cover;
 }
-
 
 .film-details-main {
-    min-width: 0;
+  min-width: 0;
 
-    display: flex;
+  display: flex;
 
-    flex-direction: column;
+  flex-direction: column;
 }
-
 
 .film-details-year {
-    display: inline-block;
+  display: inline-block;
 
-    width: fit-content;
+  width: fit-content;
 
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 
-    padding:
-        4px 7px;
+  padding: 4px 7px;
 
-    background:
-        var(--surface-alt);
+  background: var(--surface-alt);
 
-    border:
-        1px solid var(--border);
+  border: 1px solid var(--border);
 
-    color: var(--text);
+  color: var(--text);
 
-    font-family: monospace;
+  font-family: monospace;
 
-    font-size: 9px;
-    font-weight: 900;
+  font-size: 9px;
+  font-weight: 900;
 }
-
 
 .film-details-title {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 
-    color: var(--text);
+  color: var(--text);
 
-    font-size: 36px;
+  font-size: 36px;
 
-    line-height: 0.95;
+  line-height: 0.95;
 
-    font-weight: 900;
+  font-weight: 900;
 
-    letter-spacing: -1.5px;
+  letter-spacing: -1.5px;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
-
 
 .film-details-meta {
-    display: flex;
+  display: flex;
 
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 
-    gap: 5px;
+  gap: 5px;
 
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
-
 
 /* =========================================================
    DETAIL LABELS
    ========================================================= */
 
 .film-details-label {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 
-    color: var(--text-soft);
+  color: var(--text-soft);
 
-    font-family: monospace;
+  font-family: monospace;
 
-    font-size: 9px;
-    font-weight: 900;
+  font-size: 9px;
+  font-weight: 900;
 
-    letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
-
 
 /* =========================================================
    SYNOPSIS
    ========================================================= */
 
 .film-details-synopsis {
-    color: var(--text-soft);
+  color: var(--text-soft);
 
-    font-size: 13px;
+  font-size: 13px;
 
-    line-height: 1.6;
+  line-height: 1.6;
 }
-
 
 .film-details-full-description {
-    color: var(--text-soft);
+  color: var(--text-soft);
 
-    font-size: 13px;
+  font-size: 13px;
 
-    line-height: 1.65;
+  line-height: 1.65;
 }
-
 
 /* =========================================================
    DETAIL BLOCKS
    ========================================================= */
 
 .film-details-block {
-    padding:
-        20px 0;
+  padding: 20px 0;
 
-    border-bottom:
-        1px solid var(--border-soft);
+  border-bottom: 1px solid var(--border-soft);
 }
-
 
 .film-details-block:last-child {
-    border-bottom: 0;
+  border-bottom: 0;
 }
-
 
 /* =========================================================
    PEOPLE
    ========================================================= */
 
 .film-details-people-grid {
-    display: grid;
+  display: grid;
 
-    grid-template-columns:
-        repeat(2,
-            minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 
-    gap: 20px;
+  gap: 20px;
 }
-
 
 .film-details-person-group {
-    min-width: 0;
+  min-width: 0;
 }
-
 
 .film-details-director-tags,
 .film-details-cast-tags {
-    display: flex;
+  display: flex;
 
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 
-    gap: 5px;
+  gap: 5px;
 }
-
 
 .film-details-director-tag {
-    display: inline-flex;
+  display: inline-flex;
 
-    align-items: center;
+  align-items: center;
 
-    padding:
-        5px 9px;
+  padding: 5px 9px;
 
-    border:
-        1px solid var(--tag-red-border);
+  border: 1px solid var(--tag-red-border);
 
-    border-radius: 999px;
+  border-radius: 999px;
 
-    background:
-        var(--tag-red-bg);
+  background: var(--tag-red-bg);
 
-    color:
-        var(--tag-red-text);
+  color: var(--tag-red-text);
 
-    font-size: 10px;
+  font-size: 10px;
 
-    font-weight: 600;
+  font-weight: 600;
 }
-
 
 .film-details-cast-tag {
-    display: inline-flex;
+  display: inline-flex;
 
-    align-items: center;
+  align-items: center;
 
-    padding:
-        5px 9px;
+  padding: 5px 9px;
 
-    border:
-        1px solid var(--tag-blue-border);
+  border: 1px solid var(--tag-blue-border);
 
-    border-radius: 999px;
+  border-radius: 999px;
 
-    background:
-        var(--tag-blue-bg);
+  background: var(--tag-blue-bg);
 
-    color:
-        var(--tag-blue-text);
+  color: var(--tag-blue-text);
 
-    font-size: 10px;
+  font-size: 10px;
 
-    font-weight: 600;
+  font-weight: 600;
 }
-
 
 /* =========================================================
    PRODUCTION CREDITS
    ========================================================= */
 
 .film-details-production-grid {
-    display: grid;
+  display: grid;
 
-    grid-template-columns:
-        repeat(2,
-            minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 
-    column-gap: 30px;
+  column-gap: 30px;
 
-    row-gap: 16px;
+  row-gap: 16px;
 }
-
 
 .production-credit {
-    min-width: 0;
+  min-width: 0;
 }
-
 
 .production-credit-label {
-    margin-bottom: 4px;
+  margin-bottom: 4px;
 
-    color: var(--text-soft);
+  color: var(--text-soft);
 
-    font-family: monospace;
+  font-family: monospace;
 
-    font-size: 10px;
-    font-weight: 600;
+  font-size: 10px;
+  font-weight: 600;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
-
 
 .production-credit-value {
-    color: var(--text);
+  color: var(--text);
 
-    font-size: 11.5px;
+  font-size: 11.5px;
 
-    font-weight: normal;
-    font-weight: 400;
+  font-weight: normal;
+  font-weight: 400;
 
-    line-height: 1.4;
+  line-height: 1.4;
 }
-
 
 /* =========================================================
    WHERE TO WATCH - POPUP
    ========================================================= */
 
 .film-details-watch {
-    display: flex;
+  display: flex;
 
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 
-    gap: 6px;
+  gap: 6px;
 }
-
 
 .film-details-watch .platform {
-    height: 25px;
+  height: 25px;
 
-    min-width: 65px;
+  min-width: 65px;
 
-    font-size: 9px;
+  font-size: 9px;
 }
-
 
 /* =========================================================
    AWARDS
    ========================================================= */
 
 .film-details-awards {
-    display: flex;
+  display: flex;
 
-    flex-direction: column;
+  flex-direction: column;
 
-    gap: 7px;
+  gap: 7px;
 }
-
 
 .film-award {
-    display: grid;
+  display: grid;
 
-    grid-template-columns:
-        22px minmax(0, 1fr);
+  grid-template-columns: 22px minmax(0, 1fr);
 
-    gap: 8px;
+  gap: 8px;
 
-    align-items: start;
+  align-items: start;
 
-    padding:
-        10px 12px;
+  padding: 10px 12px;
 
-    background: var(--surface);
+  background: var(--surface);
 
-    border:
-        1px solid var(--border);
+  border: 1px solid var(--border);
 }
-
 
 .film-award-icon {
-    color: var(--text);
+  color: var(--text);
 
-    font-size: 12px;
+  font-size: 12px;
 
-    line-height: 1.2;
+  line-height: 1.2;
 }
-
 
 .film-award-content {
-    min-width: 0;
+  min-width: 0;
 }
-
 
 .film-award-name {
-    color: var(--text);
+  color: var(--text);
 
-    font-family: monospace;
+  font-family: monospace;
 
-    font-size: 10px;
+  font-size: 10px;
 
-    font-weight: 900;
+  font-weight: 900;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
-
 
 .film-award-recipient {
-    margin-top: 3px;
+  margin-top: 3px;
 
-    color: var(--text-soft);
+  color: var(--text-soft);
 
-    font-size: 10px;
+  font-size: 10px;
 
-    font-weight: 600;
+  font-weight: 600;
 }
-
 
 .film-awards-empty {
-    padding: 15px;
+  padding: 15px;
 
-    border:
-        1px dashed var(--border-soft);
+  border: 1px dashed var(--border-soft);
 
-    color: var(--text-muted);
+  color: var(--text-muted);
 
-    font-family: monospace;
+  font-family: monospace;
 
-    font-size: 9px;
+  font-size: 9px;
 
-    font-weight: 900;
+  font-weight: 900;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
-
 
 /* =========================================================
    FILM DETAILS CLOSE BUTTON
    ========================================================= */
 
 .film-details-message .developer-close {
+  z-index: 5;
 
-    z-index: 5;
+  top: 12px;
+  right: 14px;
 
-    top: 12px;
-    right: 14px;
+  width: 34px;
+  height: 34px;
 
-    width: 34px;
-    height: 34px;
+  background: var(--surface);
 
-    background: var(--surface);
+  border: 1px solid var(--border);
 
-    border:
-        1px solid var(--border);
+  color: var(--text);
 
-    color: var(--text);
+  line-height: 32px;
 
-    line-height: 32px;
-
-    text-align: center;
+  text-align: center;
 }
-
 
 .film-details-message .developer-close:hover {
+  background: var(--text);
 
-    background: var(--text);
-
-    color: var(--bg);
+  color: var(--bg);
 }
-
 
 /* =========================================================
    COMMON FILMS MODAL
    ========================================================= */
 
 .common-films-modal {
-    position: fixed;
+  position: fixed;
 
-    inset: 0;
+  inset: 0;
 
-    z-index: 1000;
+  z-index: 1000;
 
-    display: none;
+  display: none;
 
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 
-    padding: 20px;
+  padding: 20px;
 
-    background:
-        rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.55);
 }
-
 
 .common-films-modal.active {
-    display: flex;
+  display: flex;
 }
-
 
 .common-films-message {
-    position: relative;
+  position: relative;
 
-    width: 100%;
+  width: 100%;
 
-    max-width: 700px;
+  max-width: 700px;
 
-    max-height: 90vh;
+  max-height: 90vh;
 
-    padding: 25px;
+  padding: 25px;
 
-    background: var(--bg);
+  background: var(--bg);
 
-    border:
-        2px solid var(--border);
+  border: 2px solid var(--border);
 
-    box-shadow:
-        8px 8px 0 var(--shadow);
+  box-shadow: 8px 8px 0 var(--shadow);
 
-    color: var(--text);
+  color: var(--text);
 
-    overflow-y: auto;
+  overflow-y: auto;
 }
-
 
 .common-films-message h2 {
-    margin-bottom: 18px;
+  margin-bottom: 18px;
 
-    color: var(--text);
+  color: var(--text);
 
-    font-size: 28px;
+  font-size: 28px;
 
-    line-height: 1;
+  line-height: 1;
 
-    font-weight: 900;
+  font-weight: 900;
 
-    letter-spacing: -1px;
+  letter-spacing: -1px;
 }
-
 
 /* =========================================================
    CLOSE BUTTON
    ========================================================= */
 
 .developer-close {
-    position: absolute;
+  position: absolute;
 
-    top: 10px;
-    right: 12px;
+  top: 10px;
+  right: 12px;
 
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 
-    padding: 0;
+  padding: 0;
 
-    border: 0;
+  border: 0;
 
-    background: transparent;
+  background: transparent;
 
-    color: var(--text);
+  color: var(--text);
 
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 
-    font-size: 25px;
+  font-size: 25px;
 
-    font-weight: 400;
+  font-weight: 400;
 
-    line-height: 30px;
+  line-height: 30px;
 
-    cursor: pointer;
+  cursor: pointer;
 }
-
 
 .developer-close:hover {
-    background: var(--text);
+  background: var(--text);
 
-    color: var(--bg);
+  color: var(--bg);
 }
-
 
 /* =========================================================
    PEOPLE INPUTS
    ========================================================= */
 
 .people-inputs {
-    display: grid;
+  display: grid;
 
-    grid-template-columns:
-        repeat(2,
-            minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 
-    gap: 8px;
+  gap: 8px;
 }
-
 
 .person-input-wrap {
-    position: relative;
+  position: relative;
 
-    width: 100%;
+  width: 100%;
 }
-
 
 .people-inputs input,
 .filmography-input {
-    width: 100%;
-    height: 40px;
+  width: 100%;
+  height: 40px;
 
-    padding:
-        0 12px;
+  padding: 0 12px;
 
-    border:
-        2px solid var(--border);
+  border: 2px solid var(--border);
 
-    outline: none;
+  outline: none;
 
-    background: var(--input-bg);
+  background: var(--input-bg);
 
-    color: var(--text);
+  color: var(--text);
 
-    font-family: monospace;
+  font-family: monospace;
 
-    font-size: 10px;
+  font-size: 10px;
 
-    font-weight: 700;
+  font-weight: 700;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
-
 
 .people-inputs input::placeholder,
 .filmography-input::placeholder {
-    color: var(--text-muted);
+  color: var(--text-muted);
 }
-
 
 .people-inputs input:focus,
 .filmography-input:focus {
-    border-width: 3px;
+  border-width: 3px;
 }
-
 
 /* =========================================================
    SUGGESTIONS
    ========================================================= */
 
 .person-suggestions {
-    position: absolute;
+  position: absolute;
 
-    top: calc(100% + 3px);
+  top: calc(100% + 3px);
 
-    left: 0;
-    right: 0;
+  left: 0;
+  right: 0;
 
-    z-index: 20;
+  z-index: 20;
 
-    display: none;
+  display: none;
 
-    max-height: 200px;
+  max-height: 200px;
 
-    overflow-y: auto;
+  overflow-y: auto;
 
-    background: var(--surface);
+  background: var(--surface);
 
-    border:
-        2px solid var(--border);
+  border: 2px solid var(--border);
 
-    box-shadow:
-        4px 4px 0 var(--shadow);
+  box-shadow: 4px 4px 0 var(--shadow);
 }
-
 
 .person-suggestions.active {
-    display: block;
+  display: block;
 }
-
 
 .person-suggestion {
-    display: block;
+  display: block;
 
-    width: 100%;
+  width: 100%;
 
-    padding:
-        9px 10px;
+  padding: 9px 10px;
 
-    border: 0;
+  border: 0;
 
-    border-bottom:
-        1px solid var(--border-soft);
+  border-bottom: 1px solid var(--border-soft);
 
-    background: var(--surface);
+  background: var(--surface);
 
-    color: var(--text);
+  color: var(--text);
 
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 
-    font-size: 10px;
+  font-size: 10px;
 
-    font-weight: 700;
+  font-weight: 700;
 
-    text-align: left;
+  text-align: left;
 
-    cursor: pointer;
+  cursor: pointer;
 }
-
 
 .person-suggestion:last-child {
-    border-bottom: 0;
+  border-bottom: 0;
 }
-
 
 .person-suggestion:hover {
-    background: var(--text);
+  background: var(--text);
 
-    color: var(--bg);
+  color: var(--bg);
 }
-
 
 /* =========================================================
    FIND BUTTON
    ========================================================= */
 
 .common-films-submit {
-    width: 100%;
-    height: 40px;
+  width: 100%;
+  height: 40px;
 
-    margin-top: 10px;
+  margin-top: 10px;
 
-    border:
-        2px solid var(--border);
+  border: 2px solid var(--border);
 
-    background: var(--text);
+  background: var(--text);
 
-    color: var(--bg);
+  color: var(--bg);
 
-    font-family: monospace;
+  font-family: monospace;
 
-    font-size: 9px;
+  font-size: 9px;
 
-    font-weight: 900;
+  font-weight: 900;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 
-    cursor: pointer;
+  cursor: pointer;
 }
-
 
 .common-films-submit:hover {
-    background: var(--surface);
+  background: var(--surface);
 
-    color: var(--text);
+  color: var(--text);
 }
-
 
 /* =========================================================
    COMMON RESULTS
    ========================================================= */
 
 .common-films-results {
-    margin-top: 18px;
+  margin-top: 18px;
 }
-
 
 .common-films-empty {
-    padding:
-        30px 15px;
+  padding: 30px 15px;
 
-    border:
-        2px solid var(--border);
+  border: 2px solid var(--border);
 
-    background: var(--surface);
+  background: var(--surface);
 
-    color: var(--text-muted);
+  color: var(--text-muted);
 
-    font-family: monospace;
+  font-family: monospace;
 
-    font-size: 10px;
+  font-size: 10px;
 
-    font-weight: 900;
+  font-weight: 900;
 
-    text-align: center;
+  text-align: center;
 }
-
 
 .common-film-result {
-    display: grid;
+  display: grid;
 
-    grid-template-columns:
-        75px minmax(0, 1fr);
+  grid-template-columns: 75px minmax(0, 1fr);
 
-    gap: 12px;
+  gap: 12px;
 
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 
-    padding: 8px;
+  padding: 8px;
 
-    background: var(--surface);
+  background: var(--surface);
 
-    border:
-        1px solid var(--border);
+  border: 1px solid var(--border);
 
-    color: var(--text);
+  color: var(--text);
 }
-
 
 .common-film-poster {
-    width: 75px;
-    height: 105px;
+  width: 75px;
+  height: 105px;
 
-    background: #ddd;
+  background: #ddd;
 
-    border:
-        1px solid var(--border);
+  border: 1px solid var(--border);
 
-    overflow: hidden;
+  overflow: hidden;
 }
-
 
 .common-film-poster img {
-    display: block;
+  display: block;
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    object-fit: cover;
+  object-fit: cover;
 }
-
 
 .common-film-info {
-    min-width: 0;
+  min-width: 0;
 }
-
 
 .common-film-year {
-    color: var(--text-muted);
+  color: var(--text-muted);
 
-    font-family: monospace;
+  font-family: monospace;
 
-    font-size: 8px;
+  font-size: 8px;
 
-    font-weight: 900;
+  font-weight: 900;
 }
-
 
 .common-film-title {
-    margin:
-        4px 0 8px;
+  margin: 4px 0 8px;
 
-    color: var(--text);
+  color: var(--text);
 
-    font-size: 15px;
+  font-size: 15px;
 
-    line-height: 1.1;
+  line-height: 1.1;
 
-    font-weight: 900;
+  font-weight: 900;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
-
 
 .common-film-people {
-    display: flex;
+  display: flex;
 
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 
-    gap: 4px;
+  gap: 4px;
 }
-
 
 .common-film-person {
-    display: inline-flex;
+  display: inline-flex;
 
-    align-items: center;
+  align-items: center;
 
-    padding:
-        4px 8px;
+  padding: 4px 8px;
 
-    border:
-        1px solid var(--tag-blue-border);
+  border: 1px solid var(--tag-blue-border);
 
-    border-radius: 999px;
+  border-radius: 999px;
 
-    background:
-        var(--tag-blue-bg);
+  background: var(--tag-blue-bg);
 
-    color:
-        var(--tag-blue-text);
+  color: var(--tag-blue-text);
 
-    font-size: 9px;
+  font-size: 9px;
 
-    font-weight: 600;
+  font-weight: 600;
 }
-
 
 /* =========================================================
    FILMOGRAPHY
    ========================================================= */
 
 .filmography-input {
-    display: block;
+  display: block;
 }
-
 
 .filmography-result {
-    display: grid;
+  display: grid;
 
-    grid-template-columns:
-        75px minmax(0, 1fr);
+  grid-template-columns: 75px minmax(0, 1fr);
 
-    gap: 12px;
+  gap: 12px;
 
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 
-    padding: 8px;
+  padding: 8px;
 
-    background: var(--surface);
+  background: var(--surface);
 
-    border:
-        1px solid var(--border);
+  border: 1px solid var(--border);
 
-    color: var(--text);
+  color: var(--text);
 }
-
 
 .filmography-poster {
-    width: 75px;
-    height: 105px;
+  width: 75px;
+  height: 105px;
 
-    background: #ddd;
+  background: #ddd;
 
-    border:
-        1px solid var(--border);
+  border: 1px solid var(--border);
 
-    overflow: hidden;
+  overflow: hidden;
 }
-
 
 .filmography-poster img {
-    display: block;
+  display: block;
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    object-fit: cover;
+  object-fit: cover;
 }
-
 
 .filmography-info {
-    min-width: 0;
+  min-width: 0;
 }
-
 
 .filmography-year {
-    color: var(--text-muted);
+  color: var(--text-muted);
 
-    font-family: monospace;
+  font-family: monospace;
 
-    font-size: 8px;
+  font-size: 8px;
 
-    font-weight: 900;
+  font-weight: 900;
 }
-
 
 .filmography-title {
-    margin:
-        4px 0 8px;
+  margin: 4px 0 8px;
 
-    color: var(--text);
+  color: var(--text);
 
-    font-size: 15px;
+  font-size: 15px;
 
-    line-height: 1.1;
+  line-height: 1.1;
 
-    font-weight: 900;
+  font-weight: 900;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
-
 
 .filmography-role {
-    display: inline-flex;
+  display: inline-flex;
 
-    align-items: center;
+  align-items: center;
 
-    width: fit-content;
+  width: fit-content;
 
-    padding:
-        4px 8px;
+  padding: 4px 8px;
 
-    border:
-        1px solid var(--tag-blue-border);
+  border: 1px solid var(--tag-blue-border);
 
-    border-radius: 999px;
+  border-radius: 999px;
 
-    background:
-        var(--tag-blue-bg);
+  background: var(--tag-blue-bg);
 
-    color:
-        var(--tag-blue-text);
+  color: var(--tag-blue-text);
 
-    font-size: 9px;
+  font-size: 9px;
 
-    font-weight: 600;
+  font-weight: 600;
 }
-
 
 .filmography-count {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 
-    color: var(--text-soft);
+  color: var(--text-soft);
 
-    font-family: monospace;
+  font-family: monospace;
 
-    font-size: 9px;
+  font-size: 9px;
 
-    font-weight: 900;
+  font-weight: 900;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
-
 
 /* =========================================================
    DEVELOPER MODAL
    ========================================================= */
 
 .developer-modal {
-    position: fixed;
+  position: fixed;
 
-    inset: 0;
+  inset: 0;
 
-    z-index: 2000;
+  z-index: 2000;
 
-    display: flex;
+  display: flex;
 
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 
-    padding: 20px;
+  padding: 20px;
 
-    background:
-        rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.45);
 }
-
 
 .developer-message {
-    position: relative;
+  position: relative;
 
-    width: 100%;
+  width: 100%;
 
-    max-width: 600px;
+  max-width: 600px;
 
-    max-height: 85vh;
+  max-height: 85vh;
 
-    padding: 28px;
+  padding: 28px;
 
-    background: var(--bg);
+  background: var(--bg);
 
-    border:
-        2px solid var(--border);
+  border: 2px solid var(--border);
 
-    box-shadow:
-        8px 8px 0 var(--shadow);
+  box-shadow: 8px 8px 0 var(--shadow);
 
-    color: var(--text);
+  color: var(--text);
 
-    overflow-y: auto;
+  overflow-y: auto;
 }
-
 
 .developer-message h2 {
-    margin-bottom: 18px;
+  margin-bottom: 18px;
 
-    color: var(--text);
+  color: var(--text);
 
-    font-size: 30px;
+  font-size: 30px;
 
-    line-height: 1;
+  line-height: 1;
 
-    font-weight: 900;
+  font-weight: 900;
 }
-
 
 .developer-message p {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 
-    color: var(--text-soft);
+  color: var(--text-soft);
 
-    font-size: 11px;
+  font-size: 11px;
 
-    line-height: 1.55;
+  line-height: 1.55;
 }
-
 
 .developer-message strong {
-    color: var(--text);
+  color: var(--text);
 
-    font-weight: 900;
+  font-weight: 900;
 }
-
 
 .copyright-disclaimer {
-    padding-top: 15px;
+  padding-top: 15px;
 
-    border-top:
-        1px solid var(--border-soft);
+  border-top: 1px solid var(--border-soft);
 
-    color: var(--text-muted) !important;
+  color: var(--text-muted) !important;
 
-    font-size: 9px !important;
+  font-size: 9px !important;
 }
-
 
 .developer-footer {
-    margin-top: 20px;
+  margin-top: 20px;
 
-    padding-top: 10px;
+  padding-top: 10px;
 
-    border-top:
-        2px solid var(--border);
+  border-top: 2px solid var(--border);
 
-    color: var(--text-muted);
+  color: var(--text-muted);
 
-    font-family: monospace;
+  font-family: monospace;
 
-    font-size: 8px;
+  font-size: 8px;
 
-    font-weight: 900;
+  font-weight: 900;
 
-    letter-spacing: 1px;
+  letter-spacing: 1px;
 }
-
 
 /* =========================================================
    FILM DETAILS MOBILE
    ========================================================= */
 
 @media (max-width: 1100px) {
+  .films-header {
+    align-items: flex-start;
 
-    .films-header {
-        align-items: flex-start;
+    flex-direction: column;
+  }
 
-        flex-direction: column;
-    }
+  .archive-actions {
+    width: 100%;
+  }
 
+  .film-filters {
+    flex-wrap: wrap;
+  }
 
-    .archive-actions {
-        width: 100%;
-    }
-
-
-    .film-filters {
-        flex-wrap: wrap;
-    }
-
-
-    .search-wrap {
-        flex:
-            1 1 200px;
-    }
-
+  .search-wrap {
+    flex: 1 1 200px;
+  }
 }
-
 
 @media (max-width: 850px) {
+  .films-grid {
+    grid-template-columns: 1fr;
+  }
 
-    .films-grid {
-        grid-template-columns: 1fr;
-    }
+  .film-controls {
+    width: 100%;
+  }
 
+  .year-filter,
+  .watch-filter {
+    flex: 1 1 180px;
+  }
 
-    .film-controls {
-        width: 100%;
-    }
+  .search-wrap {
+    flex: 1 1 100%;
+  }
 
+  .cast-ranking {
+    grid-template-columns: 1fr;
+  }
 
-    .year-filter,
-    .watch-filter {
-        flex:
-            1 1 180px;
-    }
+  .film-details-header {
+    grid-template-columns: 160px minmax(0, 1fr);
 
+    gap: 18px;
+  }
 
-    .search-wrap {
-        flex:
-            1 1 100%;
-    }
+  .film-details-poster {
+    width: 160px;
+    height: 228px;
+  }
 
-
-    .cast-ranking {
-        grid-template-columns: 1fr;
-    }
-
-
-    .film-details-header {
-        grid-template-columns:
-            160px minmax(0, 1fr);
-
-        gap: 18px;
-    }
-
-
-    .film-details-poster {
-        width: 160px;
-        height: 228px;
-    }
-
-
-    .film-details-title {
-        font-size: 30px;
-    }
-
+  .film-details-title {
+    font-size: 30px;
+  }
 }
-
 
 @media (max-width: 750px) {
+  .film-details-modal {
+    padding: 12px;
+  }
 
-    .film-details-modal {
-        padding: 12px;
-    }
+  .film-details-message {
+    max-height: 94vh;
 
+    padding: 20px;
 
-    .film-details-message {
-        max-height: 94vh;
+    box-shadow: 6px 6px 0 var(--shadow);
+  }
 
-        padding: 20px;
+  .film-details-header {
+    grid-template-columns: 120px minmax(0, 1fr);
 
-        box-shadow:
-            6px 6px 0 var(--shadow);
-    }
+    gap: 15px;
 
+    padding-bottom: 20px;
+  }
 
-    .film-details-header {
-        grid-template-columns:
-            120px minmax(0, 1fr);
+  .film-details-poster {
+    width: 120px;
+    height: 172px;
+  }
 
-        gap: 15px;
+  .film-details-title {
+    font-size: 25px;
+  }
 
-        padding-bottom: 20px;
-    }
+  .film-details-synopsis {
+    font-size: 11px;
+  }
 
+  .film-details-people-grid {
+    grid-template-columns: 1fr;
 
-    .film-details-poster {
-        width: 120px;
-        height: 172px;
-    }
+    gap: 15px;
+  }
 
+  .film-details-production-grid {
+    grid-template-columns: 1fr;
 
-    .film-details-title {
-        font-size: 25px;
-    }
-
-
-    .film-details-synopsis {
-        font-size: 11px;
-    }
-
-
-    .film-details-people-grid {
-        grid-template-columns: 1fr;
-
-        gap: 15px;
-    }
-
-
-    .film-details-production-grid {
-        grid-template-columns: 1fr;
-
-        row-gap: 13px;
-    }
-
+    row-gap: 13px;
+  }
 }
-
 
 @media (max-width: 650px) {
+  .container {
+    padding: 20px;
+  }
 
-    .container {
-        padding: 20px;
-    }
+  .archive-actions {
+    flex-wrap: nowrap;
 
+    width: 100%;
 
-    .archive-actions {
-        flex-wrap: nowrap;
+    overflow-x: auto;
 
-        width: 100%;
+    padding-bottom: 4px;
+  }
 
-        overflow-x: auto;
+  .archive-button {
+    flex-shrink: 0;
+  }
 
-        padding-bottom: 4px;
-    }
+  .theme-toggle {
+    flex-shrink: 0;
+  }
 
+  .theme-label {
+    display: none;
+  }
 
-    .archive-button {
-        flex-shrink: 0;
-    }
+  .film-filters {
+    flex-direction: column;
 
+    align-items: stretch;
+  }
 
-    .theme-toggle {
-        flex-shrink: 0;
-    }
+  .year-filter,
+  .watch-filter,
+  .search-wrap {
+    width: 100%;
 
+    flex: none;
+  }
 
-    .theme-label {
-        display: none;
-    }
+  .film-card {
+    grid-template-columns: 100px minmax(0, 1fr);
 
+    gap: 12px;
 
-    .film-filters {
-        flex-direction: column;
+    padding: 12px;
+  }
 
-        align-items: stretch;
-    }
+  .poster-wrap {
+    width: 100px;
+    height: 145px;
+  }
 
+  .film-title {
+    font-size: 17px;
+  }
 
-    .year-filter,
-    .watch-filter,
-    .search-wrap {
-        width: 100%;
+  .film-description {
+    font-size: 10px;
+  }
 
-        flex: none;
-    }
+  .film-cast {
+    font-size: 9px;
+  }
 
+  .common-films-message {
+    padding: 20px;
+  }
 
-    .film-card {
-        grid-template-columns:
-            100px minmax(0, 1fr);
+  .people-inputs {
+    grid-template-columns: 1fr;
+  }
 
-        gap: 12px;
+  .common-film-result,
+  .filmography-result {
+    grid-template-columns: 65px minmax(0, 1fr);
+  }
 
-        padding: 12px;
-    }
+  .common-film-poster,
+  .filmography-poster {
+    width: 65px;
+    height: 90px;
+  }
 
+  .cast-ranking-card {
+    grid-template-columns: 42px minmax(0, 1fr) auto;
+  }
 
-    .poster-wrap {
-        width: 100px;
-        height: 145px;
-    }
+  .cast-rank {
+    width: 34px;
+    height: 34px;
+  }
 
-
-    .film-title {
-        font-size: 17px;
-    }
-
-
-    .film-description {
-        font-size: 10px;
-    }
-
-
-    .film-cast {
-        font-size: 9px;
-    }
-
-
-    .common-films-message {
-        padding: 20px;
-    }
-
-
-    .people-inputs {
-        grid-template-columns: 1fr;
-    }
-
-
-    .common-film-result,
-    .filmography-result {
-        grid-template-columns:
-            65px minmax(0, 1fr);
-    }
-
-
-    .common-film-poster,
-    .filmography-poster {
-        width: 65px;
-        height: 90px;
-    }
-
-
-    .cast-ranking-card {
-        grid-template-columns:
-            42px minmax(0, 1fr) auto;
-    }
-
-
-    .cast-rank {
-        width: 34px;
-        height: 34px;
-    }
-
-
-    .cast-name {
-        font-size: 11px;
-    }
-
+  .cast-name {
+    font-size: 11px;
+  }
 }
 
-
 @media (max-width: 500px) {
+  .film-details-header {
+    grid-template-columns: 90px minmax(0, 1fr);
 
-    .film-details-header {
-        grid-template-columns:
-            90px minmax(0, 1fr);
+    gap: 12px;
+  }
 
-        gap: 12px;
-    }
+  .film-details-poster {
+    width: 90px;
+    height: 130px;
+  }
 
+  .film-details-title {
+    font-size: 20px;
 
-    .film-details-poster {
-        width: 90px;
-        height: 130px;
-    }
+    letter-spacing: -0.8px;
+  }
 
+  .film-details-year {
+    font-size: 8px;
+  }
 
-    .film-details-title {
-        font-size: 20px;
+  .film-details-label,
+  .production-credit-label {
+    font-size: 8px;
+  }
 
-        letter-spacing: -0.8px;
-    }
+  .film-details-cast-tag,
+  .film-details-director-tag {
+    font-size: 9px;
+  }
 
+  .film-details-block {
+    padding: 15px 0;
+  }
 
-    .film-details-year {
-        font-size: 8px;
-    }
+  .film-details-message {
+    padding: 16px;
+  }
 
+  .film-award {
+    padding: 8px 10px;
+  }
 
-    .film-details-label,
-    .production-credit-label {
-        font-size: 8px;
-    }
-
-
-    .film-details-cast-tag,
-    .film-details-director-tag {
-        font-size: 9px;
-    }
-
-
-    .film-details-block {
-        padding:
-            15px 0;
-    }
-
-
-    .film-details-message {
-        padding: 16px;
-    }
-
-
-    .film-award {
-        padding:
-            8px 10px;
-    }
-
-
-    .film-award-name {
-        font-size: 9px;
-    }
-
+  .film-award-name {
+    font-size: 9px;
+  }
 }
 /* =========================================================
    FILM DETAILS - HIDE SCROLLBAR BUT KEEP SCROLLING
    ========================================================= */
 
 .film-details-message {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .film-details-message::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
-
 
 /* =========================================================
    FILM DETAILS - HEADER SYNOPSIS
    ========================================================= */
 
 .film-details-header-synopsis {
-    margin-top: 8px;
-    padding-top: 15px;
-    border-top: 1px solid var(--border-soft);
+  margin-top: 8px;
+  padding-top: 15px;
+  border-top: 1px solid var(--border-soft);
 }
 
 .film-details-header-synopsis .film-details-label {
-    margin-bottom: 6px;
+  margin-bottom: 6px;
 }
-
 
 /* =========================================================
    FILM DETAILS - HEADER DIRECTOR + CAST
    ========================================================= */
 
 .film-details-header-people {
-    display: grid;
+  display: grid;
 
-    grid-template-columns:
-        minmax(180px, 0.8fr)
-        minmax(0, 1.5fr);
+  grid-template-columns:
+    minmax(180px, 0.8fr)
+    minmax(0, 1.5fr);
 
-    gap: 20px;
+  gap: 20px;
 
-    margin-top: 15px;
-    padding-top: 15px;
+  margin-top: 15px;
+  padding-top: 15px;
 
-    border-top:
-        1px solid var(--border-soft);
+  border-top: 1px solid var(--border-soft);
 }
 
-.film-details-header-people
-.film-details-person-group {
-    min-width: 0;
+.film-details-header-people .film-details-person-group {
+  min-width: 0;
 }
 
-.film-details-header-people
-.film-details-director-tags,
-.film-details-header-people
-.film-details-cast-tags {
-    display: flex;
+.film-details-header-people .film-details-director-tags,
+.film-details-header-people .film-details-cast-tags {
+  display: flex;
 
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 
-    gap: 5px;
+  gap: 5px;
 }
-
 
 /* =========================================================
    FILM DETAILS - HEADER MOBILE
    ========================================================= */
 
 @media (max-width: 750px) {
-
-    .film-details-header-people {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-
+  .film-details-header-people {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
 }
 
 @media (max-width: 500px) {
+  .film-details-header-synopsis .film-details-full-description {
+    font-size: 11px;
+    line-height: 1.55;
+  }
 
-    .film-details-header-synopsis .film-details-full-description {
-        font-size: 11px;
-        line-height: 1.55;
-    }
-
-    .film-details-header-people {
-        gap: 12px;
-        margin-top: 12px;
-        padding-top: 12px;
-    }
-
+  .film-details-header-people {
+    gap: 12px;
+    margin-top: 12px;
+    padding-top: 12px;
+  }
 }
 
 /* =========================================================
@@ -2892,100 +2512,199 @@ html.dark-mode .theme-toggle-thumb {
    ========================================================= */
 
 .production-credit-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
 
-    margin-top: 8px;
+  margin-top: 8px;
 }
-
 
 .production-credit-value {
-    display: inline-flex;
-    align-items: center;
-    width: fit-content;
-    padding: 4px 8px;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 4px 8px;
 
-    background: rgb(28, 26, 26);
-    color: #fff;
+  background: rgb(28, 26, 26);
+  color: #fff;
 
-    border: 1px solid #777;
-    border-radius: 999px;
+  border: 1px solid #777;
+  border-radius: 999px;
 
-    font-size: 9px;
-    font-weight: 400;
-    line-height: 1.2;
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 1.2;
 }
 
-
 .production-credit-empty {
-    background: transparent;
-    color: var(--text-muted);
+  background: transparent;
+  color: var(--text-muted);
 
-    border: 0;
+  border: 0;
 
-    padding: 0;
-    border-radius: 0;
+  padding: 0;
+  border-radius: 0;
 }
 
 html.dark-mode .production-credit-value {
-    display: inline-flex;
-    align-items: center;
-    width: fit-content;
-    padding: 4px 8px;
-    background: white !important;
-    color: #111;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 4px 8px;
+  background: white !important;
+  color: #111;
 
-    border-color: #fff;
-    font-size: 9px;
-    font-weight: 400;
-    line-height: 1.2;
+  border-color: #fff;
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 1.2;
 }
 
 .film-details-genre-label {
-    margin-top: 14px;
+  margin-top: 14px;
 }
-
 
 .film-details-genre-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
-
 .film-details-genre-tag {
-    display: inline-flex;
-    align-items: center;
-    width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
 
-    padding: 4px 8px;
+  padding: 4px 8px;
 
-    background: #f2c94c;
-    color: #111;
+  background: #f2c94c;
+  color: #111;
 
-    border: 1px solid #f2c94c;
-    border-radius: 999px;
+  border: 1px solid #f2c94c;
+  border-radius: 999px;
 
-    font-size: 9px;
-    font-weight: 600;
-    line-height: 1.2;
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 html.dark-mode .production-credit-value {
-    display: inline-flex;
-    align-items: center;
-    width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
 
-    padding: 4px 8px;
+  padding: 4px 8px;
 
-    background: #ffffff !important;
-    color: #111111 !important;
+  background: #ffffff !important;
+  color: #111111 !important;
 
-    border: 1px solid #ffffff !important;
-    border-radius: 999px;
+  border: 1px solid #ffffff !important;
+  border-radius: 999px;
 
-    font-size: 9px;
-    font-weight: 400;
-    line-height: 1.2;
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+/* =========================================================
+   CAST AWARDS TABLE
+   ========================================================= */
+
+.cast-awards-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.cast-awards-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.cast-awards-table th,
+.cast-awards-table td {
+  padding: 14px 12px;
+  text-align: left;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.cast-awards-table th {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+
+  color: var(--text);
+}
+
+.cast-awards-table td {
+  font-size: 14px;
+  font-weight: 400;
+
+  color: var(--text);
+}
+
+.cast-awards-table th:first-child,
+.cast-awards-table td:first-child {
+  width: 80px;
+}
+
+.cast-award-year {
+  font-weight: 700 !important;
+}
+
+.cast-award-winner {
+  margin-bottom: 4px;
+}
+
+.cast-award-winner:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   CAST AWARDS PAGINATION
+   ========================================================= */
+
+.cast-awards-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 5px;
+
+  margin-top: 20px;
+}
+
+.cast-awards-page-button {
+  min-width: 34px;
+  height: 34px;
+
+  padding: 0 9px;
+
+  background: var(--bg);
+  color: var(--text);
+
+  border: 1px solid var(--border);
+
+  cursor: pointer;
+}
+
+.cast-awards-page-button:hover {
+  background: var(--text);
+  color: var(--bg);
+}
+
+.cast-awards-page-button.active {
+  background: var(--text);
+  color: var(--bg);
+}
+
+.cast-awards-page-button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.cast-awards-page-button:disabled:hover {
+  background: var(--bg);
+  color: var(--text);
 }
