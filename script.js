@@ -2496,6 +2496,196 @@ function findDirectorFilms(searchName) {
 }
 
 /* =========================================================
+   OPEN DIRECTOR FILMOGRAPHY
+   ========================================================= */
+
+function openDirectorFilmography(director) {
+
+    if (
+        !filmographyModal ||
+        !filmographyResults
+    ) {
+        return;
+    }
+
+    filmographyModal.classList.add(
+        "active"
+    );
+
+    if (filmographyPerson) {
+        filmographyPerson.value =
+            director;
+    }
+
+    if (filmographySuggestions) {
+        filmographySuggestions.innerHTML =
+            "";
+
+        filmographySuggestions.classList.remove(
+            "active"
+        );
+    }
+
+    /*
+     * Find all films directed by this person
+     */
+    const matchingFilms =
+        findDirectorFilms(
+            director
+        );
+
+    filmographyResults.innerHTML =
+        "";
+
+    if (
+        matchingFilms.length ===
+        0
+    ) {
+
+        filmographyResults.innerHTML = `
+            <div class="common-films-empty">
+                NO FILMS FOUND
+            </div>
+        `;
+
+        return;
+    }
+
+    /*
+     * Newest first,
+     * then alphabetical.
+     */
+    matchingFilms.sort(
+        (a, b) => {
+
+            if (
+                Number(a.year) !==
+                Number(b.year)
+            ) {
+
+                return (
+                    Number(b.year) -
+                    Number(a.year)
+                );
+
+            }
+
+            return String(
+                a.title || ""
+            ).localeCompare(
+                String(
+                    b.title || ""
+                ),
+                undefined,
+                {
+                    sensitivity:
+                        "base"
+                }
+            );
+        }
+    );
+
+    /*
+     * Film count
+     */
+    filmographyResults.innerHTML = `
+        <div class="filmography-count">
+            ${matchingFilms.length}
+            FILM${matchingFilms.length === 1 ? "" : "S"}
+            DIRECTED
+        </div>
+    `;
+
+    /*
+     * Create results
+     */
+    matchingFilms.forEach(
+        film => {
+
+            const result =
+                document.createElement(
+                    "div"
+                );
+
+            result.className =
+                "filmography-result";
+
+            result.innerHTML = `
+
+                <div
+                    class="filmography-poster"
+                >
+
+                    <img
+                        src="${escapeHTML(
+                            film.poster || ""
+                        )}"
+                        alt="${escapeHTML(
+                            film.title || ""
+                        )}"
+                    >
+
+                </div>
+
+                <div
+                    class="filmography-info"
+                >
+
+                    <div
+                        class="filmography-year"
+                    >
+                        ${escapeHTML(
+                            film.year || ""
+                        )}
+                    </div>
+
+                    <div
+                        class="filmography-title"
+                    >
+                        ${escapeHTML(
+                            film.title || ""
+                        )}
+                    </div>
+
+                    <span
+                        class="filmography-role"
+                    >
+                        DIRECTOR
+                    </span>
+
+                </div>
+
+            `;
+
+            /*
+             * Clicking a film opens
+             * the full film details.
+             */
+            result.addEventListener(
+                "click",
+                () => {
+
+                    closeFilmography();
+
+                    openFilmDetails(
+                        film
+                    );
+
+                }
+            );
+
+            result.style.cursor =
+                "pointer";
+
+            filmographyResults.appendChild(
+                result
+            );
+
+        }
+    );
+}
+
+/* =========================================================
    OPEN FILMOGRAPHY
    ========================================================= */
 
