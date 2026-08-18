@@ -2443,6 +2443,30 @@ function buildDirectorsRanking() {
                 `,
     )
     .join("");
+
+    directorsRanking
+    .querySelectorAll(
+        ".cast-ranking-card"
+    )
+    .forEach(
+        card => {
+
+            card.addEventListener(
+                "click",
+                () => {
+
+                    const director =
+                        card.dataset.director;
+
+                    openDirectorFilmography(
+                        director
+                    );
+
+                }
+            );
+
+        }
+    );
 }
 
 /* =========================================================
