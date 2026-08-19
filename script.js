@@ -12,22 +12,6 @@ const platformNames = {
 };
 
 const whatsNew = [
-  {
-    date: "08.18.26",
-    version: "v2.0",
-    updates: [
-      "Alternate link created. Original link was paused due to data traffic limit.",
-    ],
-  },
-
-  {
-    date: "08.18.26",
-    version: "v2.1",
-    updates: [
-      "Full film details can be viewed by clicking on the film card.",
-      "Added awards details for 2024 - 2026",
-    ],
-  },
 
   {
     date: "08.19.26",
