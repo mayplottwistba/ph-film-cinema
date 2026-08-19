@@ -2714,7 +2714,6 @@ html.dark-mode .production-credit-value {
   background: var(--bg);
   color: var(--text);
 }
-
 /* =========================================================
    WHAT'S NEW
    ========================================================= */
@@ -2748,17 +2747,23 @@ html.dark-mode .production-credit-value {
 }
 
 
+/*
+   WHAT'S NEW label
+*/
+
 .whats-new-header .section-label {
     font-size: 11px;
     font-weight: 700;
 
     letter-spacing: 0.08em;
+
+    color: #111111;
 }
 
 
 /*
- * LATEST UPDATE badge
- */
+   LATEST UPDATE badge
+*/
 
 .whats-new-header::after {
     content: "LATEST UPDATE";
@@ -2766,26 +2771,25 @@ html.dark-mode .production-credit-value {
     display: inline-flex;
     align-items: center;
 
-    padding: 5px 8px;
+    padding: 5px 9px;
 
-    background: var(--text);
-    color: var(--bg);
+    background: #111111;
+    color: #ffffff;
 
-    font-family:
-        "Roboto Mono",
-        monospace;
+    font-family: inherit;
 
     font-size: 9px;
     font-weight: 700;
 
-    letter-spacing: 0.08em;
+    letter-spacing: 0.06em;
+
+    line-height: 1;
 }
 
 
 /*
- * Hide the description because
- * the section header already explains itself.
- */
+   Hide description
+*/
 
 .whats-new-header p {
     display: none;
@@ -2819,7 +2823,7 @@ html.dark-mode .production-credit-value {
     padding: 16px 0;
 
     border-top:
-        1px solid var(--border-soft);
+        1px solid #d0d0d0;
 }
 
 
@@ -2832,54 +2836,92 @@ html.dark-mode .production-credit-value {
    DATE + VERSION
    ========================================================= */
 
-.whats-new-meta {
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 6px;
-
-    padding-top: 2px;
-}
-
-
-.whats-new-date {
-    font-family: inherit;
-
-    font-size: 14px;
-    font-weight: 600;
-
-    line-height: 1.2;
-
-    color: #111111;
-}
-
-
 /*
- * Version pill
- */
+   v2.2 | 08.19.26
+   Black rectangular badge
+*/
 
-.whats-new-version {
+.whats-new-meta {
     display: inline-flex;
-
     align-items: center;
 
     width: fit-content;
 
-    padding: 4px 8px;
+    padding: 5px 9px;
 
-    background: #777777;
+    background: #111111;
     color: #ffffff;
-
-    border: 1px solid #777777;
-    border-radius: 999px;
 
     font-family: inherit;
 
-    font-size: 10px;
-    font-weight: 600;
+    font-size: 9px;
+    font-weight: 700;
 
-    line-height: 1.2;
+    letter-spacing: 0.05em;
+
+    line-height: 1;
+}
+
+
+/*
+   Version
+*/
+
+.whats-new-version {
+    display: inline;
+
+    width: auto;
+
+    padding: 0;
+
+    margin: 0;
+
+    background: transparent;
+    color: inherit;
+
+    border: 0;
+    border-radius: 0;
+
+    font-family: inherit;
+
+    font-size: inherit;
+    font-weight: inherit;
+
+    line-height: inherit;
+}
+
+
+/*
+   Separator between version and date
+*/
+
+.whats-new-version::after {
+    content: " | ";
+}
+
+
+/*
+   Date
+*/
+
+.whats-new-date {
+    display: inline;
+
+    padding: 0;
+
+    margin: 0;
+
+    background: transparent;
+    color: inherit;
+
+    border: 0;
+
+    font-family: inherit;
+
+    font-size: inherit;
+    font-weight: inherit;
+
+    line-height: inherit;
 }
 
 
@@ -2916,11 +2958,11 @@ html.dark-mode .production-credit-value {
 
 
 /*
- * Arrow before each update
- */
+   Arrow before each update
+*/
 
 .whats-new-update::before {
-    content: "→";
+    content: "🎬";
 
     position: absolute;
 
@@ -2943,20 +2985,20 @@ html.dark-mode .production-credit-value {
    ========================================================= */
 
 /*
- * Keep the What's New panel WHITE
- * even when the rest of the site is dark.
- */
+   Keep What's New panel WHITE
+*/
 
 html.dark-mode .whats-new-section {
     background: #ffffff;
 
-    border-color: #ffffff;
+    border-top-color: #ffffff;
+    border-bottom-color: #ffffff;
 }
 
 
 /*
- * Header label
- */
+   What's New label
+*/
 
 html.dark-mode .whats-new-header .section-label {
     color: #111111;
@@ -2964,8 +3006,8 @@ html.dark-mode .whats-new-header .section-label {
 
 
 /*
- * Latest Update badge
- */
+   Latest Update badge
+*/
 
 html.dark-mode .whats-new-header::after {
     background: #111111;
@@ -2974,29 +3016,43 @@ html.dark-mode .whats-new-header::after {
 
 
 /*
- * Date
- */
+   Date + Version badge
+   Reverse in dark mode
+*/
 
-html.dark-mode .whats-new-date {
+html.dark-mode .whats-new-meta {
+    background: #ffffff;
     color: #111111;
+
+    border: 1px solid #111111;
 }
 
 
 /*
- * Version badge reverses in dark mode
- */
+   Version
+*/
 
 html.dark-mode .whats-new-version {
-    background: #111111;
-    color: #ffffff;
+    background: transparent;
+    color: inherit;
 
-    border-color: #111111;
+    border: 0;
 }
 
 
 /*
- * Update text
- */
+   Date
+*/
+
+html.dark-mode .whats-new-date {
+    background: transparent;
+    color: inherit;
+}
+
+
+/*
+   Update text
+*/
 
 html.dark-mode .whats-new-update {
     color: #111111;
@@ -3009,11 +3065,11 @@ html.dark-mode .whats-new-update::before {
 
 
 /*
- * Internal separators
- */
+   Internal separators
+*/
 
 html.dark-mode .whats-new-item {
-    border-color: #d0d0d0;
+    border-top-color: #d0d0d0;
 }
 
 
@@ -3038,23 +3094,22 @@ html.dark-mode .whats-new-item {
     .whats-new-header::after {
         font-size: 8px;
 
-        padding: 4px 6px;
+        padding: 5px 7px;
     }
 
 
     .whats-new-item {
         grid-template-columns:
-            100px
-            minmax(0, 1fr);
+            1fr;
 
-        gap: 14px;
+        gap: 12px;
 
         padding: 14px 0;
     }
 
 
-    .whats-new-date {
-        font-size: 12px;
+    .whats-new-meta {
+        font-size: 9px;
     }
 
 
