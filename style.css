@@ -2912,25 +2912,40 @@ html.dark-mode .production-credit-value {
    ========================================================= */
 
 #whatsNewSection .whats-new-content {
-    display: block !important;
-    margin: 0 !important;
+    display: flex !important;
+
+    flex-direction: column;
+
+    gap: 0 !important;
+
+    min-width: 0;
+
     padding: 0 !important;
+    margin: 0 !important;
 }
 
-#whatsNewSection .whats-new-update {
-    display: block !important;
 
-    margin: 0 !important;
+/* =========================================================
+   ACTUAL UPDATE TEXT
+   Same style as film description
+   ========================================================= */
+
+#whatsNewSection .whats-new-update {
+    display: block;
+
     padding: 0 !important;
+    margin: 0 !important;
 
     color: #111111 !important;
 
     font-family: inherit !important;
 
-    font-size: 11px !important;
+    font-size: 13px !important;
     font-weight: 400 !important;
-    line-height: 1.2 !important;
+
+    line-height: 1.45 !important;
 }
+
 
 /* Remove arrow */
 
