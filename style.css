@@ -2744,7 +2744,7 @@ html.dark-mode .production-credit-value {
     justify-content: space-between;
     align-items: center;
 
-    margin-bottom: 22px;
+    margin-bottom: 18px;
 }
 
 
@@ -2820,11 +2820,11 @@ html.dark-mode .production-credit-value {
 
     align-items: start;
 
-    column-gap: 16px;
+    column-gap: 10px;
 
     width: 100%;
 
-    padding: 10px 0;
+    padding: 6px 0;
 
     border-top: 0 !important;
 }
@@ -2840,7 +2840,7 @@ html.dark-mode .production-credit-value {
 
     width: fit-content;
 
-    padding: 7px 10px;
+    padding: 6px 9px;
 
     margin: 0;
 
@@ -2863,10 +2863,6 @@ html.dark-mode .production-credit-value {
 }
 
 
-/*
-   VERSION text
-*/
-
 #whatsNewSection .whats-new-version {
     display: inline;
 
@@ -2888,9 +2884,7 @@ html.dark-mode .production-credit-value {
 }
 
 
-/*
-   Add "VERSION "
-*/
+/* Add "VERSION " before version number */
 
 #whatsNewSection
 .whats-new-version::before {
@@ -2898,9 +2892,7 @@ html.dark-mode .production-credit-value {
 }
 
 
-/*
-   Remove old separator
-*/
+/* No separator */
 
 #whatsNewSection
 .whats-new-version::after {
@@ -2908,9 +2900,7 @@ html.dark-mode .production-credit-value {
 }
 
 
-/*
-   Date isn't displayed
-*/
+/* Date is hidden */
 
 #whatsNewSection .whats-new-date {
     display: none !important;
@@ -2926,7 +2916,7 @@ html.dark-mode .production-credit-value {
 
     flex-direction: column;
 
-    gap: 4px;
+    gap: 0 !important;
 
     min-width: 0;
 
@@ -2935,9 +2925,10 @@ html.dark-mode .production-credit-value {
 }
 
 
-/*
-   Actual update text
-*/
+/* =========================================================
+   ACTUAL UPDATE TEXT
+   Same style as film description
+   ========================================================= */
 
 #whatsNewSection .whats-new-update {
     display: block;
@@ -2949,16 +2940,14 @@ html.dark-mode .production-credit-value {
 
     font-family: inherit !important;
 
-    font-size: 16px !important;
+    font-size: 13px !important;
     font-weight: 400 !important;
 
     line-height: 1.45 !important;
 }
 
 
-/*
-   No arrow
-*/
+/* Remove arrow */
 
 #whatsNewSection
 .whats-new-update::before {
@@ -2978,6 +2967,8 @@ html.dark-mode #whatsNewSection {
 }
 
 
+/* Header */
+
 html.dark-mode
 #whatsNewSection
 .whats-new-header
@@ -2986,9 +2977,7 @@ html.dark-mode
 }
 
 
-/*
-   Latest Update remains black
-*/
+/* Latest Update */
 
 html.dark-mode
 #whatsNewSection
@@ -2998,9 +2987,7 @@ html.dark-mode
 }
 
 
-/*
-   Version badge remains black
-*/
+/* Version badge */
 
 html.dark-mode
 #whatsNewSection
@@ -3012,9 +2999,7 @@ html.dark-mode
 }
 
 
-/*
-   Update text remains dark
-*/
+/* Update text */
 
 html.dark-mode
 #whatsNewSection
@@ -3039,6 +3024,8 @@ html.dark-mode
         align-items: flex-start;
 
         gap: 12px;
+
+        margin-bottom: 16px;
     }
 
 
@@ -3052,9 +3039,12 @@ html.dark-mode
 
     #whatsNewSection
     .whats-new-item {
-        grid-template-columns: 1fr;
+        grid-template-columns:
+            1fr;
 
-        row-gap: 10px;
+        row-gap: 8px;
+
+        padding: 6px 0;
     }
 
 
@@ -3066,7 +3056,9 @@ html.dark-mode
 
     #whatsNewSection
     .whats-new-update {
-        font-size: 15px !important;
+        font-size: 13px !important;
+
+        line-height: 1.45 !important;
     }
 
 }
