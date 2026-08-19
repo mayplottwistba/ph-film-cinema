@@ -2906,6 +2906,34 @@ html.dark-mode .production-credit-value {
     display: none !important;
 }
 
+
+/* =========================================================
+   UPDATE CONTENT
+   ========================================================= */
+
+#whatsNewSection .whats-new-content {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#whatsNewSection .whats-new-update {
+    display: block !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    color: #111111 !important;
+
+    font-family: inherit !important;
+
+    font-size: 11px !important;
+    font-weight: 400 !important;
+    line-height: 1.2 !important;
+}
+
+/* Remove arrow */
+
 #whatsNewSection
 .whats-new-update::before {
     content: none !important;
