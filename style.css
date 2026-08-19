@@ -2906,49 +2906,6 @@ html.dark-mode .production-credit-value {
     display: none !important;
 }
 
-
-/* =========================================================
-   UPDATE CONTENT
-   ========================================================= */
-
-#whatsNewSection .whats-new-content {
-    display: flex !important;
-
-    flex-direction: column;
-
-    gap: 0 !important;
-
-    min-width: 0;
-
-    padding: 0 !important;
-    margin: 0 !important;
-}
-
-
-/* =========================================================
-   ACTUAL UPDATE TEXT
-   Same style as film description
-   ========================================================= */
-
-#whatsNewSection .whats-new-update {
-    display: block;
-
-    padding: 0 !important;
-    margin: 0 !important;
-
-    color: #111111 !important;
-
-    font-family: inherit !important;
-
-    font-size: 13px !important;
-    font-weight: 400 !important;
-
-    line-height: 1.45 !important;
-}
-
-
-/* Remove arrow */
-
 #whatsNewSection
 .whats-new-update::before {
     content: none !important;
