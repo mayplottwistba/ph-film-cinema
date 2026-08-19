@@ -16,8 +16,8 @@ const whatsNew = [
     date: "08.19.26",
     version: "2.2",
     updates: [
-      "External link for Last Supper No. 3 (2009) is now available.",
-      "Added new external link for Endo (2007) and 100 (2008).",
+      "External link for <strong>Last Supper No. 3 (2009)</strong> is now available.",
+      "Added new external link for <strong>Endo (2007)</strong> and <strong>100 (2008)</strong>.",
     ],
   },
 ];
@@ -3618,7 +3618,7 @@ function renderWhatsNew() {
                                             <span
                                                 class="whats-new-update"
                                             >
-                                                ${escapeHTML(item)}
+                                                ${item}
                                             </span>
                                         `,
                               )
