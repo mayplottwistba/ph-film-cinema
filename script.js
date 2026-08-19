@@ -14,7 +14,7 @@ const platformNames = {
 const whatsNew = [
   {
     date: "08.19.26",
-    version: "v2.2",
+    version: "2.2",
     updates: [
       "External link for Last Supper No. 3 (2009) now available.",
       "Added new external link for Endo (2007) and 100 (2008).",

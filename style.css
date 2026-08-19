@@ -2719,318 +2719,6 @@ html.dark-mode .production-credit-value {
    WHAT'S NEW
    ========================================================= */
 
-.whats-new-section {
-  position: relative;
-
-  margin-top: 20px;
-  margin-bottom: 26px;
-
-  padding: 18px 16px 22px;
-
-  background: #ffffff;
-
-  border-top: 2px solid var(--border);
-  border-bottom: 2px solid var(--border);
-}
-
-/* =========================================================
-   WHAT'S NEW HEADER
-   ========================================================= */
-
-.whats-new-header {
-  display: flex;
-
-  justify-content: space-between;
-  align-items: center;
-
-  margin-bottom: 18px;
-}
-
-/*
-   WHAT'S NEW label
-*/
-
-.whats-new-header .section-label {
-  font-size: 11px;
-  font-weight: 700;
-
-  letter-spacing: 0.08em;
-
-  color: #111111;
-}
-
-/*
-   LATEST UPDATE badge
-*/
-
-.whats-new-header::after {
-  content: "LATEST UPDATE";
-
-  display: inline-flex;
-  align-items: center;
-
-  padding: 5px 9px;
-
-  background: #111111;
-  color: #ffffff;
-
-  font-family: inherit;
-
-  font-size: 9px;
-  font-weight: 700;
-
-  letter-spacing: 0.06em;
-
-  line-height: 1;
-}
-
-/*
-   Hide description
-*/
-
-.whats-new-header p {
-  display: none;
-}
-
-/* =========================================================
-   UPDATE LIST
-   ========================================================= */
-
-.whats-new-list {
-  display: flex;
-
-  flex-direction: column;
-}
-
-/* =========================================================
-   INDIVIDUAL UPDATE
-   ========================================================= */
-
-.whats-new-item {
-  display: block;
-
-  padding: 14px 0;
-
-  border-top: 1px solid #d0d0d0;
-}
-
-.whats-new-item:first-child {
-  border-top: 0;
-}
-
-/* =========================================================
-   VERSION
-   ========================================================= */
-
-.whats-new-meta {
-  display: inline;
-
-  padding: 0;
-  margin: 0;
-
-  background: transparent;
-  color: #111111;
-
-  border: 0;
-
-  font-family: inherit;
-
-  font-size: 13px;
-  font-weight: 700;
-
-  line-height: 1.45;
-
-  letter-spacing: 0;
-}
-
-/*
-   Version number
-*/
-
-.whats-new-version {
-  display: inline;
-
-  padding: 0;
-  margin: 0;
-
-  background: transparent;
-  color: inherit;
-
-  border: 0;
-  border-radius: 0;
-
-  font-family: inherit;
-
-  font-size: inherit;
-  font-weight: inherit;
-
-  line-height: inherit;
-}
-
-/*
-   Add VERSION before version number
-*/
-
-.whats-new-version::before {
-  content: "VERSION ";
-}
-
-/*
-   Separator
-*/
-
-.whats-new-version::after {
-  content: " | ";
-}
-
-/*
-   Date hidden in this layout
-*/
-
-.whats-new-date {
-  display: none;
-}
-
-/* =========================================================
-   UPDATE CONTENT
-   ========================================================= */
-
-.whats-new-content {
-  display: inline;
-
-  padding: 0;
-  margin: 0;
-}
-
-/*
-   Actual update text
-   Based on the typography from your screenshot
-*/
-
-.whats-new-update {
-  display: inline;
-
-  padding: 0;
-  margin: 0;
-
-  font-family: inherit;
-
-  font-size: 16px;
-  font-weight: 400;
-
-  line-height: 1.45;
-
-  color: #111111;
-}
-
-/*
-   Remove arrow
-*/
-
-.whats-new-update::before {
-  content: none;
-}
-
-/* =========================================================
-   DARK MODE
-   ========================================================= */
-
-/*
-   Keep What's New panel WHITE
-*/
-
-html.dark-mode .whats-new-section {
-  background: #ffffff;
-
-  border-top-color: #ffffff;
-  border-bottom-color: #ffffff;
-}
-
-/*
-   Header label
-*/
-
-html.dark-mode .whats-new-header .section-label {
-  color: #111111;
-}
-
-/*
-   Latest Update badge
-*/
-
-html.dark-mode .whats-new-header::after {
-  background: #111111;
-  color: #ffffff;
-}
-
-/*
-   Version text
-*/
-
-html.dark-mode .whats-new-meta {
-  color: #111111;
-}
-
-html.dark-mode .whats-new-version {
-  color: inherit;
-}
-
-/*
-   Update text
-*/
-
-html.dark-mode .whats-new-update {
-  color: #111111;
-}
-
-/*
-   Internal separators
-*/
-
-html.dark-mode .whats-new-item {
-  border-top-color: #d0d0d0;
-}
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
-
-@media (max-width: 700px) {
-  .whats-new-section {
-    padding: 16px 12px 20px;
-  }
-
-  .whats-new-header {
-    align-items: flex-start;
-
-    gap: 12px;
-  }
-
-  .whats-new-header::after {
-    font-size: 8px;
-
-    padding: 5px 7px;
-  }
-
-  .whats-new-item {
-    padding: 12px 0;
-  }
-
-  .whats-new-meta {
-    font-size: 12px;
-  }
-
-  .whats-new-update {
-    font-size: 15px;
-
-    line-height: 1.45;
-  }
-}
-
-/* =========================================================
-   WHAT'S NEW — FINAL OVERRIDE
-   ========================================================= */
-
 #whatsNewSection {
     position: relative;
 
@@ -3056,11 +2744,13 @@ html.dark-mode .whats-new-item {
     justify-content: space-between;
     align-items: center;
 
-    margin-bottom: 18px;
+    margin-bottom: 22px;
 }
 
 
-#whatsNewSection .whats-new-header .section-label {
+#whatsNewSection
+.whats-new-header
+.section-label {
     margin: 0;
 
     color: #111111 !important;
@@ -3072,20 +2762,18 @@ html.dark-mode .whats-new-item {
 }
 
 
-#whatsNewSection .whats-new-header p {
-    display: none;
-}
+/* =========================================================
+   LATEST UPDATE BADGE
+   ========================================================= */
 
-
-/* LATEST UPDATE */
-
-#whatsNewSection .whats-new-header::after {
+#whatsNewSection
+.whats-new-header::after {
     content: "LATEST UPDATE";
 
     display: inline-flex;
     align-items: center;
 
-    padding: 6px 10px;
+    padding: 7px 10px;
 
     background: #111111 !important;
     color: #ffffff !important;
@@ -3095,8 +2783,14 @@ html.dark-mode .whats-new-item {
     font-size: 9px !important;
     font-weight: 700 !important;
 
-    line-height: 1 !important;
+    line-height: 1;
     letter-spacing: 0.05em;
+}
+
+
+#whatsNewSection
+.whats-new-header p {
+    display: none;
 }
 
 
@@ -3114,45 +2808,64 @@ html.dark-mode .whats-new-item {
 
 
 /* =========================================================
-   UPDATE ITEM
+   INDIVIDUAL UPDATE
    ========================================================= */
 
 #whatsNewSection .whats-new-item {
-    display: block;
+    display: grid;
+
+    grid-template-columns:
+        max-content
+        minmax(0, 1fr);
+
+    align-items: start;
+
+    column-gap: 16px;
 
     width: 100%;
 
-    padding: 14px 0;
+    padding: 10px 0;
 
     border-top: 0 !important;
 }
 
 
 /* =========================================================
-   VERSION
+   VERSION BADGE
    ========================================================= */
 
 #whatsNewSection .whats-new-meta {
-    display: inline;
+    display: inline-flex;
+    align-items: center;
 
-    padding: 0 !important;
-    margin: 0 !important;
+    width: fit-content;
 
-    background: transparent !important;
-    color: #111111 !important;
+    padding: 7px 10px;
+
+    margin: 0;
+
+    background: #111111 !important;
+    color: #ffffff !important;
 
     border: 0 !important;
+    border-radius: 0 !important;
 
     font-family: inherit !important;
 
-    font-size: 14px !important;
+    font-size: 9px !important;
     font-weight: 700 !important;
 
-    line-height: 1.45 !important;
+    line-height: 1 !important;
 
-    letter-spacing: 0 !important;
+    letter-spacing: 0.05em;
+
+    white-space: nowrap;
 }
 
+
+/*
+   VERSION text
+*/
 
 #whatsNewSection .whats-new-version {
     display: inline;
@@ -3175,21 +2888,29 @@ html.dark-mode .whats-new-item {
 }
 
 
-/* VERSION v2.2 */
+/*
+   Add "VERSION "
+*/
 
-#whatsNewSection .whats-new-version::before {
+#whatsNewSection
+.whats-new-version::before {
     content: "VERSION " !important;
 }
 
 
-/* VERSION v2.2 | */
+/*
+   Remove old separator
+*/
 
-#whatsNewSection .whats-new-version::after {
-    content: " | " !important;
+#whatsNewSection
+.whats-new-version::after {
+    content: "" !important;
 }
 
 
-/* Hide date */
+/*
+   Date isn't displayed
+*/
 
 #whatsNewSection .whats-new-date {
     display: none !important;
@@ -3197,32 +2918,34 @@ html.dark-mode .whats-new-item {
 
 
 /* =========================================================
-   ACTUAL UPDATE TEXT
+   UPDATE CONTENT
    ========================================================= */
 
-/*
-   This is the important part.
-
-   The update text is:
-   - normal weight
-   - 16px
-   - same clean sans-serif feel
-   - NOT bold
-*/
-
 #whatsNewSection .whats-new-content {
-    display: inline !important;
+    display: flex !important;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+    min-width: 0;
 
     padding: 0 !important;
     margin: 0 !important;
 }
 
 
+/*
+   Actual update text
+*/
+
 #whatsNewSection .whats-new-update {
-    display: inline;
+    display: block;
 
     padding: 0 !important;
     margin: 0 !important;
+
+    color: #111111 !important;
 
     font-family: inherit !important;
 
@@ -3230,24 +2953,16 @@ html.dark-mode .whats-new-item {
     font-weight: 400 !important;
 
     line-height: 1.45 !important;
-
-    color: #111111 !important;
 }
 
 
-/* Remove arrow */
+/*
+   No arrow
+*/
 
-#whatsNewSection .whats-new-update::before {
+#whatsNewSection
+.whats-new-update::before {
     content: none !important;
-}
-
-
-/* =========================================================
-   MULTIPLE UPDATES
-   ========================================================= */
-
-#whatsNewSection .whats-new-update + br {
-    line-height: 1.45;
 }
 
 
@@ -3263,27 +2978,46 @@ html.dark-mode #whatsNewSection {
 }
 
 
-html.dark-mode #whatsNewSection
+html.dark-mode
+#whatsNewSection
 .whats-new-header
 .section-label {
     color: #111111 !important;
 }
 
 
-html.dark-mode #whatsNewSection
+/*
+   Latest Update remains black
+*/
+
+html.dark-mode
+#whatsNewSection
 .whats-new-header::after {
     background: #111111 !important;
     color: #ffffff !important;
 }
 
 
-html.dark-mode #whatsNewSection
+/*
+   Version badge remains black
+*/
+
+html.dark-mode
+#whatsNewSection
 .whats-new-meta {
-    color: #111111 !important;
+    background: #111111 !important;
+    color: #ffffff !important;
+
+    border-color: #111111 !important;
 }
 
 
-html.dark-mode #whatsNewSection
+/*
+   Update text remains dark
+*/
+
+html.dark-mode
+#whatsNewSection
 .whats-new-update {
     color: #111111 !important;
 }
@@ -3310,23 +3044,29 @@ html.dark-mode #whatsNewSection
 
     #whatsNewSection
     .whats-new-header::after {
-        font-size: 8px !important;
+        padding: 6px 8px;
 
-        padding: 5px 7px;
+        font-size: 8px !important;
+    }
+
+
+    #whatsNewSection
+    .whats-new-item {
+        grid-template-columns: 1fr;
+
+        row-gap: 10px;
     }
 
 
     #whatsNewSection
     .whats-new-meta {
-        font-size: 13px !important;
+        font-size: 9px !important;
     }
 
 
     #whatsNewSection
     .whats-new-update {
         font-size: 15px !important;
-
-        line-height: 1.45 !important;
     }
 
 }
