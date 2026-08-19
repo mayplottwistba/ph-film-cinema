@@ -2912,14 +2912,8 @@ html.dark-mode .production-credit-value {
    ========================================================= */
 
 #whatsNewSection .whats-new-content {
-    display: flex !important;
-
-    flex-direction: column;
-
-    gap: 0 !important;
-
-    min-width: 0;
-
+    display: block !important;
+    line-height: 1 !important;
     padding: 0 !important;
     margin: 0 !important;
 }

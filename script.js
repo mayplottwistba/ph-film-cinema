@@ -3622,7 +3622,7 @@ function renderWhatsNew() {
                                             </span>
                                         `,
                               )
-                              .join("<br>")}
+                              .join("")}
 
                         </span>
 
