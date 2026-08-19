@@ -2714,271 +2714,222 @@ html.dark-mode .production-credit-value {
   background: var(--bg);
   color: var(--text);
 }
+
 /* =========================================================
    WHAT'S NEW
    ========================================================= */
 
 .whats-new-section {
-    position: relative;
+  position: relative;
 
-    margin-top: 20px;
-    margin-bottom: 26px;
+  margin-top: 20px;
+  margin-bottom: 26px;
 
-    padding: 18px 16px 22px;
+  padding: 18px 16px 22px;
 
-    background: #ffffff;
+  background: #ffffff;
 
-    border-top: 2px solid var(--border);
-    border-bottom: 2px solid var(--border);
+  border-top: 2px solid var(--border);
+  border-bottom: 2px solid var(--border);
 }
-
 
 /* =========================================================
    WHAT'S NEW HEADER
    ========================================================= */
 
 .whats-new-header {
-    display: flex;
+  display: flex;
 
-    justify-content: space-between;
-    align-items: center;
+  justify-content: space-between;
+  align-items: center;
 
-    margin-bottom: 18px;
+  margin-bottom: 18px;
 }
-
 
 /*
    WHAT'S NEW label
 */
 
 .whats-new-header .section-label {
-    font-size: 11px;
-    font-weight: 700;
+  font-size: 11px;
+  font-weight: 700;
 
-    letter-spacing: 0.08em;
+  letter-spacing: 0.08em;
 
-    color: #111111;
+  color: #111111;
 }
-
 
 /*
    LATEST UPDATE badge
 */
 
 .whats-new-header::after {
-    content: "LATEST UPDATE";
+  content: "LATEST UPDATE";
 
-    display: inline-flex;
-    align-items: center;
+  display: inline-flex;
+  align-items: center;
 
-    padding: 5px 9px;
+  padding: 5px 9px;
 
-    background: #111111;
-    color: #ffffff;
+  background: #111111;
+  color: #ffffff;
 
-    font-family: inherit;
+  font-family: inherit;
 
-    font-size: 9px;
-    font-weight: 700;
+  font-size: 9px;
+  font-weight: 700;
 
-    letter-spacing: 0.06em;
+  letter-spacing: 0.06em;
 
-    line-height: 1;
+  line-height: 1;
 }
-
 
 /*
    Hide description
 */
 
 .whats-new-header p {
-    display: none;
+  display: none;
 }
-
 
 /* =========================================================
    UPDATE LIST
    ========================================================= */
 
 .whats-new-list {
-    display: flex;
+  display: flex;
 
-    flex-direction: column;
+  flex-direction: column;
 }
-
 
 /* =========================================================
    INDIVIDUAL UPDATE
    ========================================================= */
 
 .whats-new-item {
-    display: grid;
+  display: block;
 
-    grid-template-columns:
-        165px
-        minmax(0, 1fr);
+  padding: 14px 0;
 
-    gap: 24px;
-
-    padding: 16px 0;
-
-    border-top:
-        1px solid #d0d0d0;
+  border-top: 1px solid #d0d0d0;
 }
-
 
 .whats-new-item:first-child {
-    border-top: 0;
+  border-top: 0;
 }
-
 
 /* =========================================================
-   DATE + VERSION
+   VERSION
    ========================================================= */
 
-/*
-   v2.2 | 08.19.26
-   Black rectangular badge
-*/
-
 .whats-new-meta {
-    display: inline-flex;
-    align-items: center;
+  display: inline;
 
-    width: fit-content;
+  padding: 0;
+  margin: 0;
 
-    padding: 5px 9px;
+  background: transparent;
+  color: #111111;
 
-    background: #111111;
-    color: #ffffff;
+  border: 0;
 
-    font-family: inherit;
+  font-family: inherit;
 
-    font-size: 9px;
-    font-weight: 700;
+  font-size: 13px;
+  font-weight: 700;
 
-    letter-spacing: 0.05em;
+  line-height: 1.45;
 
-    line-height: 1;
+  letter-spacing: 0;
 }
 
-
 /*
-   Version
+   Version number
 */
 
 .whats-new-version {
-    display: inline;
+  display: inline;
 
-    width: auto;
+  padding: 0;
+  margin: 0;
 
-    padding: 0;
+  background: transparent;
+  color: inherit;
 
-    margin: 0;
+  border: 0;
+  border-radius: 0;
 
-    background: transparent;
-    color: inherit;
+  font-family: inherit;
 
-    border: 0;
-    border-radius: 0;
+  font-size: inherit;
+  font-weight: inherit;
 
-    font-family: inherit;
-
-    font-size: inherit;
-    font-weight: inherit;
-
-    line-height: inherit;
+  line-height: inherit;
 }
 
+/*
+   Add VERSION before version number
+*/
+
+.whats-new-version::before {
+  content: "VERSION ";
+}
 
 /*
-   Separator between version and date
+   Separator
 */
 
 .whats-new-version::after {
-    content: " | ";
+  content: " | ";
 }
 
-
 /*
-   Date
+   Date hidden in this layout
 */
 
 .whats-new-date {
-    display: inline;
-
-    padding: 0;
-
-    margin: 0;
-
-    background: transparent;
-    color: inherit;
-
-    border: 0;
-
-    font-family: inherit;
-
-    font-size: inherit;
-    font-weight: inherit;
-
-    line-height: inherit;
+  display: none;
 }
 
-
 /* =========================================================
-   ACTUAL UPDATE TEXT
-   Same general typography as Cast tags
+   UPDATE CONTENT
    ========================================================= */
 
 .whats-new-content {
-    display: flex;
+  display: inline;
 
-    flex-direction: column;
-
-    gap: 7px;
-
-    padding-top: 1px;
+  padding: 0;
+  margin: 0;
 }
-
-
-.whats-new-update {
-    position: relative;
-
-    padding-left: 18px;
-
-    font-family: inherit;
-
-    font-size: 14px;
-    font-weight: 400;
-
-    line-height: 1.2;
-
-    color: #111111;
-}
-
 
 /*
-   Arrow before each update
+   Actual update text
+   Based on the typography from your screenshot
+*/
+
+.whats-new-update {
+  display: inline;
+
+  padding: 0;
+  margin: 0;
+
+  font-family: inherit;
+
+  font-size: 16px;
+  font-weight: 400;
+
+  line-height: 1.45;
+
+  color: #111111;
+}
+
+/*
+   Remove arrow
 */
 
 .whats-new-update::before {
-    content: "🎬";
-
-    position: absolute;
-
-    left: 0;
-    top: 0;
-
-    font-family: inherit;
-
-    font-size: 14px;
-    font-weight: 400;
-
-    line-height: 1.2;
-
-    color: #111111;
+  content: none;
 }
-
 
 /* =========================================================
    DARK MODE
@@ -2989,132 +2940,89 @@ html.dark-mode .production-credit-value {
 */
 
 html.dark-mode .whats-new-section {
-    background: #ffffff;
+  background: #ffffff;
 
-    border-top-color: #ffffff;
-    border-bottom-color: #ffffff;
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
 }
 
-
 /*
-   What's New label
+   Header label
 */
 
 html.dark-mode .whats-new-header .section-label {
-    color: #111111;
+  color: #111111;
 }
-
 
 /*
    Latest Update badge
 */
 
 html.dark-mode .whats-new-header::after {
-    background: #111111;
-    color: #ffffff;
+  background: #111111;
+  color: #ffffff;
 }
 
-
 /*
-   Date + Version badge
-   Reverse in dark mode
+   Version text
 */
 
 html.dark-mode .whats-new-meta {
-    background: #ffffff;
-    color: #111111;
-
-    border: 1px solid #111111;
+  color: #111111;
 }
-
-
-/*
-   Version
-*/
 
 html.dark-mode .whats-new-version {
-    background: transparent;
-    color: inherit;
-
-    border: 0;
+  color: inherit;
 }
-
-
-/*
-   Date
-*/
-
-html.dark-mode .whats-new-date {
-    background: transparent;
-    color: inherit;
-}
-
 
 /*
    Update text
 */
 
 html.dark-mode .whats-new-update {
-    color: #111111;
+  color: #111111;
 }
-
-
-html.dark-mode .whats-new-update::before {
-    color: #111111;
-}
-
 
 /*
    Internal separators
 */
 
 html.dark-mode .whats-new-item {
-    border-top-color: #d0d0d0;
+  border-top-color: #d0d0d0;
 }
-
 
 /* =========================================================
    MOBILE
    ========================================================= */
 
 @media (max-width: 700px) {
+  .whats-new-section {
+    padding: 16px 12px 20px;
+  }
 
-    .whats-new-section {
-        padding: 16px 12px 20px;
-    }
+  .whats-new-header {
+    align-items: flex-start;
 
+    gap: 12px;
+  }
 
-    .whats-new-header {
-        align-items: flex-start;
+  .whats-new-header::after {
+    font-size: 8px;
 
-        gap: 12px;
-    }
+    padding: 5px 7px;
+  }
 
+  .whats-new-item {
+    padding: 12px 0;
+  }
 
-    .whats-new-header::after {
-        font-size: 8px;
+  .whats-new-meta {
+    font-size: 12px;
+  }
 
-        padding: 5px 7px;
-    }
+  .whats-new-update {
+    font-size: 15px;
 
-
-    .whats-new-item {
-        grid-template-columns:
-            1fr;
-
-        gap: 12px;
-
-        padding: 14px 0;
-    }
-
-
-    .whats-new-meta {
-        font-size: 9px;
-    }
-
-
-    .whats-new-update {
-        font-size: 13px;
-    }
-
+    line-height: 1.45;
+  }
 }

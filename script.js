@@ -12,7 +12,6 @@ const platformNames = {
 };
 
 const whatsNew = [
-
   {
     date: "08.19.26",
     version: "v2.2",
@@ -246,7 +245,7 @@ async function loadFilms() {
     buildDirectorsRanking();
     renderWhatsNew();
     currentPage = 1;
-    
+
     renderFilms();
   } catch (error) {
     console.error("Error loading films:", error);
@@ -3596,15 +3595,9 @@ function renderWhatsNew() {
                         class="whats-new-item"
                     >
 
-                        <div
+                        <span
                             class="whats-new-meta"
                         >
-
-                            <span
-                                class="whats-new-date"
-                            >
-                                ${escapeHTML(update.date)}
-                            </span>
 
                             <span
                                 class="whats-new-version"
@@ -3612,26 +3605,26 @@ function renderWhatsNew() {
                                 ${escapeHTML(update.version)}
                             </span>
 
-                        </div>
+                        </span>
 
 
-                        <div
+                        <span
                             class="whats-new-content"
                         >
 
                             ${update.updates
                               .map(
                                 (item) => `
-                                            <div
+                                            <span
                                                 class="whats-new-update"
                                             >
                                                 ${escapeHTML(item)}
-                                            </div>
+                                            </span>
                                         `,
                               )
-                              .join("")}
+                              .join("<br>")}
 
-                        </div>
+                        </span>
 
                     </article>
 
