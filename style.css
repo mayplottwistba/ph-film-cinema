@@ -109,6 +109,10 @@ html.dark-mode * {
    ========================================================= */
 
 .films-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
   display: flex;
 
   align-items: flex-end;
@@ -117,7 +121,9 @@ html.dark-mode * {
   gap: 25px;
 
   margin-bottom: 20px;
-  padding-bottom: 18px;
+  padding: 35px 0 18px;
+
+  background: var(--bg);
 
   border-bottom: 2px solid var(--border);
 }
