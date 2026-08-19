@@ -11572,7 +11572,8 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "none"
+                "type": "external",
+                "url": "https://ok.ru/video/18049061882418"
             }
         ],
         "awards": [
@@ -11989,6 +11990,10 @@
             {
                 "type": "external",
                 "url": "https://www.bilibili.tv/en/video/2040474195"
+            },
+            {
+                "type": "external",
+                "url": "https://ok.ru/video/18049061816882"
             }
         ],
         "awards": [
@@ -12613,6 +12618,10 @@
             {
                 "type": "external",
                 "url": "https://www.bilibili.tv/en/video/4790450211914240?bstar_from=bstar-web.homepage.recommend.all"
+            },
+            {
+                "type": "external",
+                "url": "https://ok.ru/video/18050392197682"
             }
         ],
         "awards": [
