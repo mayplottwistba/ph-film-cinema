@@ -2714,76 +2714,162 @@ html.dark-mode .production-credit-value {
    ========================================================= */
 
 .whats-new-section {
-  margin-top: 0;
-  margin-bottom: 28px;
+    position: relative;
 
-  padding-bottom: 24px;
+    margin-top: 20px;
+    margin-bottom: 26px;
 
-  border-bottom: 2px solid var(--border);
+    padding: 18px 0 22px;
+
+    border-top: 2px solid var(--border);
+    border-bottom: 2px solid var(--border);
 }
+
+.whats-new-header .section-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+/* HEADER */
 
 .whats-new-header {
-  margin-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 18px;
 }
+
+
+.whats-new-header::after {
+    content: "LATEST UPDATE";
+
+    font-family:
+        "Roboto Mono",
+        monospace;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+
+    padding: 5px 8px;
+
+    background: var(--text);
+    color: var(--bg);
+}
+
 
 .whats-new-header p {
-  margin: 5px 0 0;
-
-  font-size: 13px;
-  color: var(--text-muted);
+    display: none;
 }
+
+
+/* UPDATE */
 
 .whats-new-list {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
+
 
 .whats-new-item {
-  display: grid;
+    display: grid;
 
-  grid-template-columns:
-    130px
-    minmax(0, 1fr);
+    grid-template-columns:
+        165px
+        minmax(0, 1fr);
 
-  gap: 20px;
+    gap: 24px;
 
-  padding: 12px 0;
+    padding: 16px 0;
 
-  border-top: 1px solid var(--border-soft);
+    border-top:
+        1px solid var(--border-soft);
 }
+
 
 .whats-new-item:first-child {
-  border-top: 0;
+    border-top: 0;
 }
+
+
+/* DATE / VERSION */
 
 .whats-new-meta {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+
+    padding-top: 2px;
 }
+
 
 .whats-new-date {
-  font-family: "Roboto Mono", monospace;
+    font-family:
+        "Roboto Mono",
+        monospace;
 
-  font-size: 11px;
-  font-weight: 700;
+    font-size: 15px;
+    font-weight: 700;
+
+    letter-spacing: -0.02em;
 }
+
 
 .whats-new-version {
-  font-family: "Roboto Mono", monospace;
+    display: inline-flex;
 
-  font-size: 10px;
+    width: fit-content;
 
-  color: var(--text-muted);
+    padding: 3px 7px;
+
+    border: 1px solid var(--border);
+
+    font-family:
+        "Roboto Mono",
+        monospace;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 0.05em;
 }
+
+
+/* CONTENT */
 
 .whats-new-content {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+
+    padding-top: 1px;
 }
 
+
 .whats-new-update {
-  font-size: 13px;
-  line-height: 1.4;
+    position: relative;
+
+    padding-left: 18px;
+
+    font-size: 14px;
+    line-height: 1.45;
+}
+
+
+.whats-new-update::before {
+    content: "→";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    font-family:
+        "Roboto Mono",
+        monospace;
+
+    font-weight: 700;
 }
