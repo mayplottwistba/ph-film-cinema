@@ -2937,6 +2937,7 @@ html.dark-mode .production-credit-value {
     font-size: 13px !important;
     font-weight: 400 !important;
     line-height: 1.50 !important;
+    font-style:italic !important;
 }
 
 #whatsNewSection .whats-new-update .update-film-tag {

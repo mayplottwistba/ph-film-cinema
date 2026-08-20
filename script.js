@@ -24,7 +24,7 @@ const whatsNew = [
     version: "2.2",
     updates: [
       'External link for <span class="update-film-tag">Last Supper No. 3 (2009)</span> is now available.',
-      'Added new external link for <span class="update-film-tag">Endo (2007)</span> and <span class="update-film-tag">100 (2008)</span>.',
+      'Added new external link for <span class="update-film-tag">Endo (2007)</span> and <span class="update-film-tag">100 (2008)</span>',
     ],
   }
 ];
