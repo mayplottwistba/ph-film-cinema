@@ -2716,81 +2716,51 @@ html.dark-mode .production-credit-value {
 }
 
 /* =========================================================
-   WHAT'S NEW
+   DEVELOPER POPUP — LATEST UPDATES
    ========================================================= */
 
-#whatsNewSection {
-    position: relative;
-
+.developer-updates {
     margin-top: 20px;
-    margin-bottom: 26px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 
-    padding: 18px 16px 22px;
+    border-top: 1px solid var(--border-soft);
+    border-bottom: 1px solid var(--border-soft);
 
-    background: #ffffff !important;
-
-    border-top: 2px solid #111111;
-    border-bottom: 2px solid #111111;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 
 /* =========================================================
-   HEADER
+   LATEST UPDATES HEADER
    ========================================================= */
 
-#whatsNewSection .whats-new-header {
+.developer-updates-header {
     display: flex;
-
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 
-    margin-bottom: 18px;
+    margin-bottom: 15px;
 }
 
-
-#whatsNewSection
-.whats-new-header
-.section-label {
-    margin: 0;
-
-    color: #111111 !important;
-
-    font-size: 11px !important;
-    font-weight: 700 !important;
-
-    letter-spacing: 0.08em;
-}
-
-
-/* =========================================================
-   LATEST UPDATE BADGE
-   ========================================================= */
-
-#whatsNewSection
-.whats-new-header::after {
-    content: "LATEST UPDATE";
-
+.developer-updates-header span {
     display: inline-flex;
     align-items: center;
 
-    padding: 7px 10px;
+    padding: 6px 9px;
 
-    background: #111111 !important;
-    color: #ffffff !important;
+    background: var(--text);
+    color: var(--bg);
 
-    border: 0;
-
-    font-size: 9px !important;
-    font-weight: 700 !important;
+    font-family: monospace;
+    font-size: 9px;
+    font-weight: 900;
 
     line-height: 1;
-    letter-spacing: 0.05em;
-}
+    letter-spacing: 0.5px;
 
-
-#whatsNewSection
-.whats-new-header p {
-    display: none;
+    text-transform: uppercase;
 }
 
 
@@ -2798,10 +2768,8 @@ html.dark-mode .production-credit-value {
    UPDATE LIST
    ========================================================= */
 
-#whatsNewSection .whats-new-list {
-    display: flex;
-
-    flex-direction: column;
+.developer-updates-list {
+    display: block;
 
     width: 100%;
 }
@@ -2811,325 +2779,19 @@ html.dark-mode .production-credit-value {
    INDIVIDUAL UPDATE
    ========================================================= */
 
-#whatsNewSection .whats-new-item {
+.developer-update-item {
     display: grid;
 
     grid-template-columns:
         max-content
         minmax(0, 1fr);
 
-    align-items: start;
-
-    column-gap: 10px;
-
-    width: 100%;
-
-    padding: 6px 0;
-
-    border-top: 0 !important;
-}
-
-
-/* =========================================================
-   VERSION BADGE
-   ========================================================= */
-
-#whatsNewSection .whats-new-meta {
-    display: inline-flex;
-    align-items: center;
-
-    width: fit-content;
-
-    padding: 6px 9px;
-
-    margin: 0;
-
-    background: #111111 !important;
-    color: #ffffff !important;
-
-    border: 0 !important;
-    border-radius: 0 !important;
-
-    font-family: inherit !important;
-
-    font-size: 9px !important;
-    font-weight: 700 !important;
-
-    line-height: 1 !important;
-
-    letter-spacing: 0.05em;
-
-    white-space: nowrap;
-}
-
-
-#whatsNewSection .whats-new-version {
-    display: inline;
-
-    padding: 0 !important;
-    margin: 0 !important;
-
-    background: transparent !important;
-    color: inherit !important;
-
-    border: 0 !important;
-    border-radius: 0 !important;
-
-    font-family: inherit !important;
-
-    font-size: inherit !important;
-    font-weight: inherit !important;
-
-    line-height: inherit !important;
-}
-
-
-/* Add "VERSION " before version number */
-
-#whatsNewSection
-.whats-new-version::before {
-    content: "VERSION " !important;
-}
-
-
-/* No separator */
-
-#whatsNewSection
-.whats-new-version::after {
-    content: "" !important;
-}
-
-
-/* Date is hidden */
-
-#whatsNewSection .whats-new-date {
-    display: none !important;
-}
-
-
-/* =========================================================
-   UPDATE CONTENT
-   ========================================================= */
-
-#whatsNewSection .whats-new-content {
-    display: block !important;
-    line-height: 1.5 !important;
-    padding: 0 !important;
-    margin: 0 !important;
-}
-
-
-/* =========================================================
-   ACTUAL UPDATE TEXT
-   Same style as film description
-   ========================================================= */
-
-#whatsNewSection .whats-new-update {
-    display: block;
-
-    padding: 0 !important;
-    margin: 0 !important;
-
-    color: #272323 !important;
-
-    font-family: inherit !important;
-
-    font-size: 13px !important;
-    font-weight: 400 !important;
-    line-height: 1.50 !important;
-  
-}
-
-#whatsNewSection .whats-new-update .update-film-tag {
-  display: inline-flex !important;
-
-  align-items: center !important;
-
-  width: fit-content !important;
-
-  padding: 4px 8px !important;
-
-  border: 1px solid var(--tag-red-border) !important;
-
-  border-radius: 999px !important;
-
-  background: var(--tag-red-bg) !important;
-
-  color: var(--tag-red-text) !important;
-
-  font-size: 9px !important;
-  font-weight: 600 !important;
-}
-
-
-/* Remove arrow */
-
-#whatsNewSection
-.whats-new-update::before {
-    content: none !important;
-}
-
-
-/* =========================================================
-   DARK MODE
-   ========================================================= */
-
-html.dark-mode #whatsNewSection {
-    background: #ffffff !important;
-
-    border-top-color: #111111;
-    border-bottom-color: #111111;
-}
-
-
-/* Header */
-
-html.dark-mode
-#whatsNewSection
-.whats-new-header
-.section-label {
-    color: #111111 !important;
-}
-
-
-/* Latest Update */
-
-html.dark-mode
-#whatsNewSection
-.whats-new-header::after {
-    background: #111111 !important;
-    color: #ffffff !important;
-}
-
-
-/* Version badge */
-
-html.dark-mode
-#whatsNewSection
-.whats-new-meta {
-    background: #111111 !important;
-    color: #ffffff !important;
-
-    border-color: #111111 !important;
-}
-
-
-/* Update text */
-
-html.dark-mode
-#whatsNewSection
-.whats-new-update {
-    color: #111111 !important;
-}
-
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
-
-@media (max-width: 700px) {
-
-    #whatsNewSection {
-        padding: 16px 12px 20px;
-    }
-
-
-    #whatsNewSection
-    .whats-new-header {
-        align-items: flex-start;
-
-        gap: 12px;
-
-        margin-bottom: 16px;
-    }
-
-
-    #whatsNewSection
-    .whats-new-header::after {
-        padding: 6px 8px;
-
-        font-size: 8px !important;
-    }
-
-
-    #whatsNewSection
-    .whats-new-item {
-        grid-template-columns:
-            1fr;
-
-        row-gap: 8px;
-
-        padding: 6px 0;
-    }
-
-
-    #whatsNewSection
-    .whats-new-meta {
-        font-size: 9px !important;
-    }
-
-
-    #whatsNewSection
-    .whats-new-update {
-        font-size: 13px !important;
-
-        line-height: 1.45 !important;
-    }
-
-}
-
-/* =========================================================
-   DEVELOPER POPUP — LATEST UPDATES
-   ========================================================= */
-
-.developer-updates {
-    margin-top: 24px;
-    padding-top: 18px;
-    padding-bottom: 18px;
-
-    border-top: 1px solid #bdbdbd;
-    border-bottom: 1px solid #bdbdbd;
-}
-
-
-/* HEADER */
-
-.developer-updates-header {
-    display: flex;
-    justify-content: flex-end;
-
-    margin-bottom: 14px;
-}
-
-.developer-updates-header span {
-    display: inline-flex;
-    align-items: center;
-
-    padding: 7px 10px;
-
-    background: #111;
-    color: #fff;
-
-    font-size: 9px;
-    font-weight: 700;
-
-    line-height: 1;
-    letter-spacing: .05em;
-}
-
-
-/* UPDATE */
-
-.developer-update-item {
-    display: grid;
-
-    grid-template-columns: max-content minmax(0, 1fr);
-
     column-gap: 10px;
 
     align-items: start;
 
-    margin-bottom: 8px;
+    margin: 0 0 8px 0;
+    padding: 0;
 }
 
 .developer-update-item:last-child {
@@ -3137,19 +2799,26 @@ html.dark-mode
 }
 
 
-/* VERSION */
+/* =========================================================
+   VERSION BOX
+   ========================================================= */
 
 .developer-update-version {
     display: inline-flex;
     align-items: center;
 
+    width: fit-content;
+
     padding: 6px 9px;
 
-    background: #111;
-    color: #fff;
+    background: var(--text);
+    color: var(--bg);
 
+    border: 0;
+
+    font-family: monospace;
     font-size: 9px;
-    font-weight: 700;
+    font-weight: 900;
 
     line-height: 1;
 
@@ -3157,48 +2826,121 @@ html.dark-mode
 }
 
 
-/* UPDATE TEXT */
+/* =========================================================
+   UPDATE TEXT
+   SAME STYLE AS DEVELOPER POPUP BODY
+   ========================================================= */
 
 .developer-update-text {
-    font-size: 13px;
-    font-weight: 400;
+    display: block;
 
-    line-height: 1.3;
+    margin: 0;
+    padding: 0;
 
-    color: #111;
-}
+    color: var(--text-soft);
 
-
-/* FILM TAGS */
-
-.developer-updates .update-film-tag {
-    display: inline-block;
-
-    padding: 3px 8px;
-
-    background: #ffe3e3;
-    color: #8d2020;
-
-    border: 1px solid #ffaaaa;
-    border-radius: 999px;
+    font-family: Arial, Helvetica, sans-serif;
 
     font-size: 11px;
     font-weight: 400;
 
-    line-height: 1.2;
-
-    white-space: nowrap;
+    line-height: 1.55;
 }
 
 
-/* MOBILE */
+/* =========================================================
+   FILM TAG
+   SAME STYLE AS DIRECTOR TAG
+   ========================================================= */
+
+.developer-updates .update-film-tag {
+    display: inline-flex;
+    align-items: center;
+
+    width: fit-content;
+
+    padding: 4px 8px;
+
+    background: var(--tag-red-bg);
+    color: var(--tag-red-text);
+
+    border: 1px solid var(--tag-red-border);
+    border-radius: 999px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    white-space: nowrap;
+
+    vertical-align: middle;
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+html.dark-mode .developer-updates {
+    border-top-color: var(--border-soft);
+    border-bottom-color: var(--border-soft);
+}
+
+html.dark-mode .developer-updates-header span {
+    background: var(--text);
+    color: var(--bg);
+}
+
+html.dark-mode .developer-update-version {
+    background: var(--text);
+    color: var(--bg);
+}
+
+html.dark-mode .developer-update-text {
+    color: var(--text-soft);
+}
+
+html.dark-mode .developer-updates .update-film-tag {
+    background: var(--tag-red-bg);
+    color: var(--tag-red-text);
+    border-color: var(--tag-red-border);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
 
 @media (max-width: 600px) {
+
+    .developer-updates {
+        margin-top: 18px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+    .developer-updates-header {
+        margin-bottom: 14px;
+    }
 
     .developer-update-item {
         grid-template-columns: 1fr;
 
         row-gap: 7px;
+
+        margin-bottom: 10px;
+    }
+
+    .developer-update-version {
+        width: fit-content;
+    }
+
+    .developer-update-text {
+        font-size: 11px;
+        line-height: 1.55;
     }
 
 }
