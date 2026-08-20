@@ -2338,7 +2338,8 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "none"
+                "type": "external",
+                "url": "https://ok.ru/video/18062931397170"
             }
         ],
         "awards": [
@@ -5043,7 +5044,8 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "none"
+                "type": "external",
+                "url": "https://ok.ru/video/18062931331634"
             }
         ],
         "awards": [

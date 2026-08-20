@@ -14,6 +14,13 @@ const platformNames = {
 const whatsNew = [
   {
     date: "08.20.26",
+    version: "2.4",
+    updates: [
+      'External links for <span class="update-film-tag">Baconaua (2017)</span> and <span class="update-film-tag">Ang Duyan ng Magiting (2024)</span> are now available.'
+    ],
+  },
+  {
+    date: "08.20.26",
     version: "2.3",
     updates: [
       'External link for <span class="update-film-tag">Ang Huling Araw ng Linggo (2006)</span> is now available.'

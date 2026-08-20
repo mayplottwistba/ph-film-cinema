@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://cinemalaya-catalog.vercel.app",
+      "permanent": true
+    }
+  ]
+}
