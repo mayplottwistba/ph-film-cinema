@@ -3647,5 +3647,29 @@ function renderWhatsNew() {
     .join("");
 }
 
+function renderDeveloperUpdates() {
+    const container = document.getElementById("developerWhatsNewList");
+
+    if (!container) return;
+
+    container.innerHTML = whatsNew
+        .map(update => `
+            <div class="developer-update-item">
+
+                <div class="developer-update-version">
+                    VERSION ${update.version}
+                </div>
+
+                <div class="developer-update-text">
+                    ${update.updates.join("<br>")}
+                </div>
+
+            </div>
+        `)
+        .join("");
+}
+
+renderDeveloperUpdates();
+
 loadTheme();
 loadFilms();
