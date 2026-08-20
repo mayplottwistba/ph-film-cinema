@@ -16,24 +16,24 @@ const whatsNew = [
     date: "08.20.26",
     version: "2.4",
     updates: [
-      'External links for <b><i>Baconaua (2017)</i></b>, <b><i>The Baseball Player (2022)</i></b>, and <b><i>Ang Duyan ng Magiting (2023)</i></b> are now available.'
+      "External links for <b><i>Teoriya (2011) </i></b>, <b><i>Sampaguita, National Flower (2010)</i></b>, <b><i>Colorum (2009)</i></b>, <b><i>Cuchera (2011)</i></b>, <b><i>Baconaua (2017)</i></b>, <b><i>The Baseball Player (2022)</i></b>, and <b><i>Ang Duyan ng Magiting (2023)</i></b> are now available.",
     ],
   },
   {
     date: "08.20.26",
     version: "2.3",
     updates: [
-      'External link for <b><i>Ang Huling Araw ng Linggo (2006)</i></b> is now available.'
+      "External link for <b><i>Ang Huling Araw ng Linggo (2006)</i></b> is now available.",
     ],
   },
   {
     date: "08.19.26",
     version: "2.2",
     updates: [
-      'External link for <b><i>Last Supper No. 3 (2009)</i></b> is now available.',
-      'Added new external link for <b><i>Endo (2007)</i></b> and <b><i>100 (2008)</i></b>',
+      "External link for <b><i>Last Supper No. 3 (2009)</i></b> is now available.",
+      "Added new external link for <b><i>Endo (2007)</i></b> and <b><i>100 (2008)</i></b>",
     ],
-  }
+  },
 ];
 
 const filmsGrid = document.getElementById("filmsGrid");
@@ -164,6 +164,75 @@ let currentPage = 1;
 
 const filmsPerPage = 15;
 
+const watchedCount = document.getElementById("watchedCount");
+
+const watchedTotal = document.querySelector(".watched-total");
+
+const watchedStorageKey = function getWatchedFilms() {
+  try {
+    const saved = localStorage.getItem(watchedStorageKey);
+
+    if (!saved) {
+      return new Set();
+    }
+
+    const parsed = JSON.parse(saved);
+
+    if (!Array.isArray(parsed)) {
+      return new Set();
+    }
+
+    return new Set(parsed);
+  } catch (error) {
+    console.error("Unable to load watched films:", error);
+
+    return new Set();
+  }
+};
+
+/*
+ * Save watched films.
+ */
+function saveWatchedFilms(watchedFilms) {
+  localStorage.setItem(watchedStorageKey, JSON.stringify([...watchedFilms]));
+}
+
+/*
+ * Create a stable ID for each film.
+ *
+ * We don't need to modify films.json.
+ */
+function getFilmWatchId(film) {
+  return [film.year || "", film.title || ""].join("|").toLowerCase().trim();
+}
+
+/*
+ * Update WATCHED XX / TOTAL FILMS
+ */
+function updateWatchedCount() {
+  if (!watchedCount || !watchedTotal) {
+    return;
+  }
+
+  const watchedFilms = getWatchedFilms();
+
+  const total = films.length;
+
+  let watched = 0;
+
+  films.forEach((film) => {
+    const filmId = getFilmWatchId(film);
+
+    if (watchedFilms.has(filmId)) {
+      watched++;
+    }
+  });
+
+  watchedCount.textContent = String(watched).padStart(2, "0");
+
+  watchedTotal.textContent = `/ ${String(total).padStart(2, "0")} FILMS`;
+}
+
 /* =========================================================
    AWARD NAMES
    ========================================================= */
@@ -258,6 +327,7 @@ async function loadFilms() {
     buildCastAwardsTable();
     buildDirectorsRanking();
     renderWhatsNew();
+    updateWatchedCount();
     currentPage = 1;
 
     renderFilms();
@@ -778,9 +848,31 @@ function createFilmCard(film) {
 
   const directorTags = createDirectorTag(film.director);
 
+  const filmWatchId = getFilmWatchId(film);
+
+  const watchedFilms = getWatchedFilms();
+
+  const isWatched = watchedFilms.has(filmWatchId);
+
   card.innerHTML = `
 
-        <div class="poster-wrap">
+    <label
+        class="watched-checkbox"
+        title="Mark as watched"
+    >
+        <input
+            type="checkbox"
+            class="film-watched"
+            data-film-id="${escapeHTML(filmWatchId)}"
+            ${isWatched ? "checked" : ""}
+        >
+
+        <span>
+            WATCHED
+        </span>
+    </label>
+
+    <div class="poster-wrap">
 
             <img
                 src="${escapeHTML(film.poster || "")}"
@@ -884,6 +976,26 @@ function createFilmCard(film) {
 
   setupSeeMore(card);
 
+  const watchedCheckbox = card.querySelector(".film-watched");
+
+  if (watchedCheckbox) {
+    watchedCheckbox.addEventListener("change", (event) => {
+      event.stopPropagation();
+
+      const watchedFilms = getWatchedFilms();
+
+      if (event.target.checked) {
+        watchedFilms.add(filmWatchId);
+      } else {
+        watchedFilms.delete(filmWatchId);
+      }
+
+      saveWatchedFilms(watchedFilms);
+
+      updateWatchedCount();
+    });
+  }
+
   /* =====================================================
        CARD CLICK
        ===================================================== */
@@ -895,7 +1007,7 @@ function createFilmCard(film) {
      * the card.
      */
 
-    if (event.target.closest("a, button")) {
+    if (event.target.closest("a, button, .watched-checkbox")) {
       return;
     }
 
@@ -3648,12 +3760,13 @@ function renderWhatsNew() {
 }
 
 function renderDeveloperUpdates() {
-    const container = document.getElementById("developerWhatsNewList");
+  const container = document.getElementById("developerWhatsNewList");
 
-    if (!container) return;
+  if (!container) return;
 
-    container.innerHTML = whatsNew
-        .map(update => `
+  container.innerHTML = whatsNew
+    .map(
+      (update) => `
             <div class="developer-update-item">
 
                 <div class="developer-update-version">
@@ -3665,8 +3778,9 @@ function renderDeveloperUpdates() {
                 </div>
 
             </div>
-        `)
-        .join("");
+        `,
+    )
+    .join("");
 }
 
 renderDeveloperUpdates();

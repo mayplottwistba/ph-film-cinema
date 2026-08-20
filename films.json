@@ -10121,7 +10121,8 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "none"
+                "type": "external",
+                "url": "https://ok.ru/video/18062691994162"
             }
         ],
         "awards": [

@@ -2720,210 +2720,358 @@ html.dark-mode .production-credit-value {
    ========================================================= */
 
 .developer-updates {
-    margin-top: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
-    border-top: 1px solid var(--border-soft);
-    border-bottom: 1px solid var(--border-soft);
+  border-top: 1px solid var(--border-soft);
+  border-bottom: 1px solid var(--border-soft);
 
-    width: 100%;
-    box-sizing: border-box;
+  width: 100%;
+  box-sizing: border-box;
 }
-
 
 /* =========================================================
    LATEST UPDATES HEADER — LEFT
    ========================================================= */
 
 .developer-updates-header {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .developer-updates-header span {
-    display: inline-flex;
-    align-items: center;
+  display: inline-flex;
+  align-items: center;
 
-    padding: 6px 9px;
+  padding: 6px 9px;
 
-    background: var(--text);
-    color: var(--bg);
+  background: var(--text);
+  color: var(--bg);
 
-    font-family: monospace;
-    font-size: 9px;
-    font-weight: 900;
+  font-family: monospace;
+  font-size: 9px;
+  font-weight: 900;
 
-    line-height: 1;
-    letter-spacing: 0.5px;
+  line-height: 1;
+  letter-spacing: 0.5px;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
-
 
 /* =========================================================
    UPDATE LIST
    ========================================================= */
 
 .developer-updates-list {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
-
 
 /* =========================================================
    INDIVIDUAL UPDATE
    ========================================================= */
 
 .developer-update-item {
-    display: grid;
+  display: grid;
 
-    grid-template-columns: max-content minmax(0, 1fr);
+  grid-template-columns: max-content minmax(0, 1fr);
 
-    column-gap: 12px;
+  column-gap: 12px;
 
-    align-items: start;
+  align-items: start;
 
-    margin: 0 0 8px 0;
-    padding: 0;
+  margin: 0 0 8px 0;
+  padding: 0;
 }
 
 .developer-update-item:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
-
 
 /* =========================================================
    VERSION BOX — RED
    ========================================================= */
 
 .developer-update-version {
-    display: inline-flex;
-    align-items: center;
+  display: inline-flex;
+  align-items: center;
 
-    width: fit-content;
+  width: fit-content;
 
-    padding: 6px 9px;
+  padding: 6px 9px;
 
-    background: var(--tag-red-bg);
-    color: var(--tag-red-text);
+  background: var(--tag-red-bg);
+  color: var(--tag-red-text);
 
-    border: 1px solid var(--tag-red-border);
-    border-radius: 0;
+  border: 1px solid var(--tag-red-border);
+  border-radius: 0;
 
-    font-family: monospace;
-    font-size: 9px;
-    font-weight: 900;
+  font-family: monospace;
+  font-size: 9px;
+  font-weight: 900;
 
-    line-height: 1;
+  line-height: 1;
 
-    white-space: nowrap;
+  white-space: nowrap;
 }
-
 
 /* =========================================================
    UPDATE TEXT
    ========================================================= */
 
 .developer-update-text {
-    display: block;
+  display: block;
 
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    color: var(--text-soft);
+  color: var(--text-soft);
 
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 
-    font-size: 11px;
-    font-weight: 400;
+  font-size: 11px;
+  font-weight: 400;
 
-    line-height: 1.55;
+  line-height: 1.55;
 }
-
 
 /* =========================================================
    FILM TAGS
    ========================================================= */
 
 .developer-updates .update-film-tag {
-    display: inline-flex;
-    align-items: flex-start; 
-    padding: 4px 7px;
+  display: inline-flex;
+  align-items: flex-start;
+  padding: 4px 7px;
 
-    /* background: var(--tag-red-bg);*/
-    color: var(--tag-red-text);
+  /* background: var(--tag-red-bg);*/
+  color: var(--tag-red-text);
 
-    /*border: 1px solid var(--tag-red-border);
+  /*border: 1px solid var(--tag-red-border);
     border-radius: 999px;*/
 
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 
-    font-size: 11px;
-    font-weight: 600;
+  font-size: 11px;
+  font-weight: 600;
 
-    line-height: 1.5;
+  line-height: 1.5;
 
-    white-space: nowrap;
+  white-space: nowrap;
 
-    vertical-align: middle;
+  vertical-align: middle;
 }
-
 
 /* =========================================================
    DARK MODE
    ========================================================= */
 
 html.dark-mode .developer-update-version {
-    background: var(--tag-red-bg);
-    color: var(--tag-red-text);
-    border-color: var(--tag-red-border);
+  background: var(--tag-red-bg);
+  color: var(--tag-red-text);
+  border-color: var(--tag-red-border);
 }
 
 html.dark-mode .developer-updates-header span {
-    background: var(--text);
-    color: var(--bg);
+  background: var(--text);
+  color: var(--bg);
 }
 
 html.dark-mode .developer-update-text {
-    color: var(--text-soft);
+  color: var(--text-soft);
 }
-
 
 /* =========================================================
    MOBILE
    ========================================================= */
 
 @media (max-width: 600px) {
+  .developer-updates {
+    margin-top: 18px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
 
-    .developer-updates {
-        margin-top: 18px;
-        padding-top: 14px;
-        padding-bottom: 14px;
-    }
+  .developer-updates-header {
+    margin-bottom: 14px;
+  }
 
-    .developer-updates-header {
-        margin-bottom: 14px;
-    }
+  .developer-update-item {
+    grid-template-columns: 1fr;
 
-    .developer-update-item {
-        grid-template-columns: 1fr;
+    row-gap: 7px;
 
-        row-gap: 7px;
+    margin-bottom: 10px;
+  }
 
-        margin-bottom: 10px;
-    }
+  .developer-update-version {
+    width: fit-content;
+  }
 
-    .developer-update-version {
-        width: fit-content;
-    }
+  .developer-update-text {
+    font-size: 11px;
+    line-height: 1.55;
+  }
+}
 
-    .developer-update-text {
-        font-size: 11px;
-        line-height: 1.55;
-    }
+/* =========================================================
+   WATCHED SUMMARY
+   ========================================================= */
 
+.watched-summary {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  margin-top: 12px;
+  margin-bottom: 16px;
+
+  font-family: monospace;
+  font-size: 10px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.watched-label {
+  font-weight: 900;
+  letter-spacing: 0.5px;
+}
+
+#watchedCount {
+  font-weight: 900;
+}
+
+.watched-total {
+  color: var(--text-soft);
+}
+
+/* =========================================================
+   FILM CARD
+   ========================================================= */
+
+.film-card {
+  position: relative;
+}
+
+/* =========================================================
+   WATCHED CHECKBOX
+   ========================================================= */
+
+.watched-checkbox {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  z-index: 10;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 5px 8px;
+
+  background: var(--bg);
+  color: var(--text);
+
+  border: 1px solid var(--text);
+
+  font-family: monospace;
+  font-size: 9px;
+  font-weight: 900;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.watched-checkbox input {
+  position: absolute;
+
+  opacity: 0;
+
+  width: 0;
+  height: 0;
+}
+
+/* Custom checkbox */
+.watched-checkbox span::before {
+  content: "";
+
+  display: inline-block;
+
+  width: 10px;
+  height: 10px;
+
+  margin-right: 2px;
+
+  border: 1px solid currentColor;
+
+  vertical-align: -2px;
+
+  box-sizing: border-box;
+}
+
+/* Checked state */
+.watched-checkbox input:checked + span::before {
+  content: "✓";
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--text);
+  color: var(--bg);
+
+  font-size: 8px;
+  font-weight: 900;
+}
+
+/* Hover */
+.watched-checkbox:hover {
+  opacity: 0.75;
+}
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+html.dark-mode .watched-checkbox {
+  background: var(--bg);
+  color: var(--text);
+
+  border-color: var(--text);
+}
+
+html.dark-mode .watched-checkbox input:checked + span::before {
+  background: var(--text);
+  color: var(--bg);
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .watched-summary {
+    margin-top: 10px;
+    margin-bottom: 14px;
+
+    font-size: 9px;
+  }
+
+  .watched-checkbox {
+    top: 8px;
+    right: 8px;
+
+    padding: 5px 7px;
+
+    font-size: 8px;
+  }
 }
