@@ -16,7 +16,7 @@ const whatsNew = [
     date: "08.20.26",
     version: "2.4",
     updates: [
-      'External links for <span class="update-film-tag">Baconaua (2017)</span> <span class="update-film-tag">The Baseball Player (2022)</span> and <span class="update-film-tag">Ang Duyan ng Magiting (2023)</span> are now available.'
+      'External links for <b><i>Baconaua (2017)</i></b>, <b><i>The Baseball Player (2022)</i></b>, and <b><i>Ang Duyan ng Magiting (2023)</i></b> are now available.'
     ],
   },
   {
