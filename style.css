@@ -2937,7 +2937,7 @@ html.dark-mode .production-credit-value {
     font-size: 13px !important;
     font-weight: 400 !important;
     line-height: 1.50 !important;
-    
+  
 }
 
 #whatsNewSection .whats-new-update .update-film-tag {
@@ -2949,14 +2949,14 @@ html.dark-mode .production-credit-value {
 
   padding: 4px 8px !important;
 
-  border: 1px solid rgb(82, 82, 8) !important;
+  border: 1px solid var(--tag-red-border) !important;
 
   border-radius: 999px !important;
 
-  background: yellow !important;
+  background: var(--tag-red-bg) !important;
 
-  color: black !important;
-  font-style:italic !important;
+  color: var(--tag-red-text) !important;
+
   font-size: 9px !important;
   font-weight: 600 !important;
 }
