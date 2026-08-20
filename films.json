@@ -9844,7 +9844,8 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "none"
+                "type": "external",
+                "url": "https://ok.ru/video/18064627075634"
             }
         ],
         "awards": [
@@ -10954,7 +10955,8 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "none"
+                "type": "external",
+                "url": "https://ok.ru/video/18062692059698"
             }
         ],
         "awards": [
@@ -11368,7 +11370,8 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "none"
+                "type": "external",
+                "url": "https://ok.ru/video/18062692125234"
             }
         ],
         "awards": [
