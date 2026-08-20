@@ -23,15 +23,15 @@ const whatsNew = [
     date: "08.20.26",
     version: "2.3",
     updates: [
-      'External link for <span class="update-film-tag">Ang Huling Araw ng Linggo (2006)</span> is now available.'
+      'External link for <b><i>Ang Huling Araw ng Linggo (2006)</i></b> is now available.'
     ],
   },
   {
     date: "08.19.26",
     version: "2.2",
     updates: [
-      'External link for <span class="update-film-tag">Last Supper No. 3 (2009)</span> is now available.',
-      'Added new external link for <span class="update-film-tag">Endo (2007)</span> and <span class="update-film-tag">100 (2008)</span>',
+      'External link for <b><i>Last Supper No. 3 (2009)</i></b> is now available.',
+      'Added new external link for <b><i>Endo (2007)</i></b> and <b><i>100 (2008)</i></b>',
     ],
   }
 ];
