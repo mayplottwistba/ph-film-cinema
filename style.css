@@ -2733,12 +2733,12 @@ html.dark-mode .production-credit-value {
 
 
 /* =========================================================
-   LATEST UPDATES HEADER
+   LATEST UPDATES HEADER — LEFT
    ========================================================= */
 
 .developer-updates-header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
 
     margin-bottom: 15px;
@@ -2770,7 +2770,6 @@ html.dark-mode .production-credit-value {
 
 .developer-updates-list {
     display: block;
-
     width: 100%;
 }
 
@@ -2782,11 +2781,9 @@ html.dark-mode .production-credit-value {
 .developer-update-item {
     display: grid;
 
-    grid-template-columns:
-        max-content
-        minmax(0, 1fr);
+    grid-template-columns: max-content minmax(0, 1fr);
 
-    column-gap: 10px;
+    column-gap: 12px;
 
     align-items: start;
 
@@ -2800,7 +2797,7 @@ html.dark-mode .production-credit-value {
 
 
 /* =========================================================
-   VERSION BOX
+   VERSION BOX — RED
    ========================================================= */
 
 .developer-update-version {
@@ -2811,10 +2808,11 @@ html.dark-mode .production-credit-value {
 
     padding: 6px 9px;
 
-    background: var(--text);
-    color: var(--bg);
+    background: var(--tag-red-bg);
+    color: var(--tag-red-text);
 
-    border: 0;
+    border: 1px solid var(--tag-red-border);
+    border-radius: 0;
 
     font-family: monospace;
     font-size: 9px;
@@ -2828,7 +2826,6 @@ html.dark-mode .production-credit-value {
 
 /* =========================================================
    UPDATE TEXT
-   SAME STYLE AS DEVELOPER POPUP BODY
    ========================================================= */
 
 .developer-update-text {
@@ -2849,8 +2846,7 @@ html.dark-mode .production-credit-value {
 
 
 /* =========================================================
-   FILM TAG
-   SAME STYLE AS DIRECTOR TAG
+   FILM TAGS
    ========================================================= */
 
 .developer-updates .update-film-tag {
@@ -2884,9 +2880,10 @@ html.dark-mode .production-credit-value {
    DARK MODE
    ========================================================= */
 
-html.dark-mode .developer-updates {
-    border-top-color: var(--border-soft);
-    border-bottom-color: var(--border-soft);
+html.dark-mode .developer-update-version {
+    background: var(--tag-red-bg);
+    color: var(--tag-red-text);
+    border-color: var(--tag-red-border);
 }
 
 html.dark-mode .developer-updates-header span {
@@ -2894,19 +2891,8 @@ html.dark-mode .developer-updates-header span {
     color: var(--bg);
 }
 
-html.dark-mode .developer-update-version {
-    background: var(--text);
-    color: var(--bg);
-}
-
 html.dark-mode .developer-update-text {
     color: var(--text-soft);
-}
-
-html.dark-mode .developer-updates .update-film-tag {
-    background: var(--tag-red-bg);
-    color: var(--tag-red-text);
-    border-color: var(--tag-red-border);
 }
 
 
