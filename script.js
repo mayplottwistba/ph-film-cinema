@@ -164,38 +164,70 @@ let currentPage = 1;
 
 const filmsPerPage = 15;
 
-const watchedCount = document.getElementById("watchedCount");
+/* =========================================================
+   WATCHED FILMS
+   ========================================================= */
 
-const watchedTotal = document.querySelector(".watched-total");
+const watchedCount =
+  document.getElementById("watchedCount");
 
-const watchedStorageKey = function getWatchedFilms() {
+const watchedTotal =
+  document.querySelector(".watched-total");
+
+const watchedStorageKey =
+  "cinemalaya-watched-films";
+
+
+/*
+ * Get saved watched films.
+ *
+ * Stored as an array of film keys.
+ */
+function getWatchedFilms() {
   try {
-    const saved = localStorage.getItem(watchedStorageKey);
+    const saved =
+      localStorage.getItem(
+        watchedStorageKey
+      );
 
     if (!saved) {
       return new Set();
     }
 
-    const parsed = JSON.parse(saved);
+    const parsed =
+      JSON.parse(saved);
 
     if (!Array.isArray(parsed)) {
       return new Set();
     }
 
     return new Set(parsed);
+
   } catch (error) {
-    console.error("Unable to load watched films:", error);
+    console.error(
+      "Unable to load watched films:",
+      error
+    );
 
     return new Set();
   }
-};
+}
+
 
 /*
  * Save watched films.
  */
-function saveWatchedFilms(watchedFilms) {
-  localStorage.setItem(watchedStorageKey, JSON.stringify([...watchedFilms]));
+function saveWatchedFilms(
+  watchedFilms
+) {
+  localStorage.setItem(
+    watchedStorageKey,
+    JSON.stringify(
+      [...watchedFilms]
+    )
+  );
 }
+
 
 /*
  * Create a stable ID for each film.
@@ -203,34 +235,61 @@ function saveWatchedFilms(watchedFilms) {
  * We don't need to modify films.json.
  */
 function getFilmWatchId(film) {
-  return [film.year || "", film.title || ""].join("|").toLowerCase().trim();
+  return [
+    film.year || "",
+    film.title || ""
+  ]
+    .join("|")
+    .toLowerCase()
+    .trim();
 }
+
 
 /*
  * Update WATCHED XX / TOTAL FILMS
  */
 function updateWatchedCount() {
-  if (!watchedCount || !watchedTotal) {
+  if (
+    !watchedCount ||
+    !watchedTotal
+  ) {
     return;
   }
 
-  const watchedFilms = getWatchedFilms();
+  const watchedFilms =
+    getWatchedFilms();
 
-  const total = films.length;
+  const total =
+    films.length;
 
   let watched = 0;
 
-  films.forEach((film) => {
-    const filmId = getFilmWatchId(film);
+  films.forEach(
+    film => {
+      const filmId =
+        getFilmWatchId(film);
 
-    if (watchedFilms.has(filmId)) {
-      watched++;
+      if (
+        watchedFilms.has(
+          filmId
+        )
+      ) {
+        watched++;
+      }
     }
-  });
+  );
 
-  watchedCount.textContent = String(watched).padStart(2, "0");
+  watchedCount.textContent =
+    String(watched).padStart(
+      2,
+      "0"
+    );
 
-  watchedTotal.textContent = `/ ${String(total).padStart(2, "0")} FILMS`;
+  watchedTotal.textContent =
+    `/ ${String(total).padStart(
+      2,
+      "0"
+    )} FILMS`;
 }
 
 /* =========================================================
