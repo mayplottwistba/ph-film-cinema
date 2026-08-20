@@ -2913,7 +2913,7 @@ html.dark-mode .production-credit-value {
 
 #whatsNewSection .whats-new-content {
     display: block !important;
-    line-height: 1 !important;
+    line-height: 1.5 !important;
     padding: 0 !important;
     margin: 0 !important;
 }
@@ -2936,7 +2936,7 @@ html.dark-mode .production-credit-value {
 
     font-size: 13px !important;
     font-weight: 400 !important;
-    line-height: 1.00 !important;
+    line-height: 1.50 !important;
 }
 
 #whatsNewSection .whats-new-update .update-film-tag {
