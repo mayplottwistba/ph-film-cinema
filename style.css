@@ -2851,10 +2851,7 @@ html.dark-mode .production-credit-value {
 
 .developer-updates .update-film-tag {
     display: inline-flex;
-    align-items: center;
-
-    width: fit-content;
-
+    align-items: flex-start; 
     padding: 4px 7px;
 
     /* background: var(--tag-red-bg);*/
