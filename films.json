@@ -2293,16 +2293,16 @@
                 "name": ""
             },
             {
-                "actress": false,
-                "name": ""
+                "actress": true,
+                "name": "Pat Tingjuy"
             },
             {
                 "supporting_actor": false,
                 "name": ""
             },
             {
-                "supporting_actress": true,
-                "name": "Pat Tingjuy"
+                "supporting_actress": false,
+                "name": "none"
             },
             {
                 "screenplay": false
@@ -3339,8 +3339,8 @@
                 "name": ""
             },
             {
-                "supporting_actress": false,
-                "name": ""
+                "supporting_actress": true,
+                "name": "Ruby Ruiz"
             },
             {
                 "screenplay": false
@@ -4029,8 +4029,8 @@
                 "name": ""
             },
             {
-                "actress": false,
-                "name": ""
+                "actress": true,
+                "name": "Ruby Ruiz"
             },
             {
                 "supporting_actor": false,
