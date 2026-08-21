@@ -3525,63 +3525,6 @@ function buildCastAwardsTable() {
     return;
   }
 
-    /*
-   * =========================================================
-   * ACTING AWARD COUNTS
-   * ========================================================= */
-
-  const specificAwardWins = new Map();
-  const overallAwardWins = new Map();
-
-  const actingAwardKeys = [
-    "actor",
-    "actress",
-    "supporting_actor",
-    "supporting_actress",
-  ];
-
-  films.forEach((film) => {
-    const awards = Array.isArray(film.awards)
-      ? film.awards
-      : [];
-
-    awards.forEach((award) => {
-      if (!award || !award.name) {
-        return;
-      }
-
-      actingAwardKeys.forEach((awardKey) => {
-        if (award[awardKey] !== true) {
-          return;
-        }
-
-        const name = String(award.name).trim();
-        const normalizedName = formatName(name);
-
-        /*
-         * Count this specific award.
-         */
-        if (!specificAwardWins.has(normalizedName)) {
-          specificAwardWins.set(normalizedName, {});
-        }
-
-        const personSpecific =
-          specificAwardWins.get(normalizedName);
-
-        personSpecific[awardKey] =
-          (personSpecific[awardKey] || 0) + 1;
-
-        /*
-         * Count all acting awards.
-         */
-        overallAwardWins.set(
-          normalizedName,
-          (overallAwardWins.get(normalizedName) || 0) + 1,
-        );
-      });
-    });
-  });
-
   /*
    * Total pages
    */
@@ -3635,51 +3578,21 @@ function buildCastAwardsTable() {
    * Render winner names
    */
 
-  function renderWinner(names, awardKey) {
-  if (!names.length) {
-    return "—";
+  function renderWinner(names) {
+    if (!names.length) {
+      return "—";
+    }
+
+    return names
+      .map(
+        (name) => `
+                    <div class="cast-award-winner">
+                        ${escapeHTML(name)}
+                    </div>
+                `,
+      )
+      .join("");
   }
-
-  return names
-    .map((name) => {
-      const normalizedName = formatName(name);
-
-      const specific =
-        specificAwardWins.get(normalizedName)?.[awardKey] || 0;
-
-      const overall =
-        overallAwardWins.get(normalizedName) || 0;
-
-      return `
-        <div class="cast-award-winner">
-
-          <span class="cast-award-name">
-            ${escapeHTML(name)}
-          </span>
-
-          <span class="cast-award-badges">
-
-            <span
-              class="cast-award-badge cast-award-badge-specific"
-              title="Wins of this specific award"
-            >
-              ${specific}
-            </span>
-
-            <span
-              class="cast-award-badge cast-award-badge-overall"
-              title="Total acting award wins"
-            >
-              ${overall}
-            </span>
-
-          </span>
-
-        </div>
-      `;
-    })
-    .join("");
-}
 
   /*
    * Build rows
@@ -3706,19 +3619,19 @@ function buildCastAwardsTable() {
                             </td>
 
                             <td>
-                                ${renderWinner(actor, "actor")}
+                                ${renderWinner(actor)}
                             </td>
 
                             <td>
-                                ${renderWinner(actress, "actress")}
+                                ${renderWinner(actress)}
                             </td>
 
                             <td>
-                                ${renderWinner(supportingActor, "supporting_actor")}
+                                ${renderWinner(supportingActor)}
                             </td>
 
                             <td>
-                                ${renderWinner(supportingActress, "supporting_actress")}
+                                ${renderWinner(supportingActress)}
                             </td>
 
                         </tr>
@@ -3795,35 +3708,7 @@ function buildCastAwardsTable() {
 
   container.innerHTML = `
 
-    <div class="cast-awards-legend">
-
-        <div class="cast-awards-legend-item">
-
-            <span class="cast-award-badge cast-award-badge-specific">
-                0
-            </span>
-
-            <span>
-                WINS OF THIS SPECIFIC AWARD
-            </span>
-
-        </div>
-
-        <div class="cast-awards-legend-item">
-
-            <span class="cast-award-badge cast-award-badge-overall">
-                0
-            </span>
-
-            <span>
-                TOTAL ACTING AWARD WINS
-            </span>
-
-        </div>
-
-    </div>
-
-    <div class="cast-awards-table-wrap">
+        <div class="cast-awards-table-wrap">
 
             <table
                 class="cast-awards-table"
