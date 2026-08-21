@@ -2052,13 +2052,13 @@
         "description": "When an alien comes back to take him, a mouthless young man’s life twists and turns as his memories untangle.",
         "director": "Carl Joseph E. Papa",
         "cast": "Carlo Aquino, Gio Gahol, Dolly de Leon, Christela Marquez, Jeremy F. Mendoza, Jeydah Cawed, Joshua Cabiladas, Janzeil Siachongco, Willy Malit, Gina Mian, Red Musni, Anna Marie Mendoza, Anna Velario, Armando Salonga, Clarisse Grajo, Dan Villegas, Eero Yves Francisco, Emmanuel Salulog, Hazel Valera, Jan Arthur Miro Embog, Jules Custodio, Kennejin Rivera, Kyle Jumayne Francisco, Levi Jagonia, Maxine Joaquin, Mercy Malit, Meriam Lopez, Orville Alia, Ma. Sarah Perez, Shaira Advincula, Wendy Barredo, Zara Jerisha Loayon",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "producers": "Anna Velario, Geo Lomuntad, Dan Villegas",
+        "screenplay": "Carl Joseph E. Papa",
+        "production_designer": "Eero Yves Francisco",
+        "cinematographer": "Jethro Jamon",
+        "editor": "Benjamin Gonzales Tolentino",
+        "sound": "Lamberto Casas Jr., Alex Tomboc",
+        "music": "Teresa Barrozo",
         "now_showing": false,
         "watch": [
             {
@@ -2067,7 +2067,7 @@
         ],
         "awards": [
             {
-                "film": false
+                "film": true
             },
             {
                 "special_jury": false
@@ -2091,8 +2091,8 @@
                 "name": ""
             },
             {
-                "supporting_actress": false,
-                "name": ""
+                "supporting_actress": true,
+                "name": "Dolly de Leon"
             },
             {
                 "screenplay": false
@@ -2111,6 +2111,9 @@
             },
             {
                 "production": false
+            },
+            {
+                "netpac": true
             }
         ]
     },
@@ -2121,13 +2124,13 @@
         "description": "While creating the subtitles of a film, a young Filipina translator and a middle-aged Japanese director test the limits of language and understanding.",
         "director": "Jopy Arnaldo",
         "cast": "Gabby Padilla, Ken Yamamura, Emmanuel Dela Cruz, Carlos Sison",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
+        "producers": "Kirstie Contrevida",
+        "screenplay": "Jopy Arnaldo",
+        "production_designer": "Ana Lou Sanchez",
+        "cinematographer": "Mycko David",
+        "editor": "Lawrence S. Ang",
         "sound": "",
-        "music": "",
+        "music": "Emmanuel Aguila",
         "now_showing": false,
         "watch": [
             {
@@ -2164,7 +2167,7 @@
                 "name": ""
             },
             {
-                "screenplay": false
+                "screenplay": true
             },
             {
                 "cinematography": false
@@ -2185,18 +2188,18 @@
     },
     {
         "year": 2023,
-        "title": "Huling Palabas",
+        "title": "Huling Palabas (Fin)",
         "poster": "assets/palabas.jpg",
         "description": "In the summer of 2001, 16-year-old Andoy searches for his long-lost father in the most unlikely of things — VHS tapes. His reality becomes mystified when two movie-like characters appear in their small hometown.",
         "director": "Ryan Machado",
         "cast": "Shun Mark Gomez, Bon Bon Andrew Lentejas, Cedrick Juan, Serena Magiliw, Jay Gonzaga, Senanda Gomez, Adelyn Fabon, Glenn Mas",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "producers": "Ferdinand Lapuz, Ronnie Ramos",
+        "screenplay": "Ryan Machado",
+        "production_designer": "David Esguerra",
+        "cinematographer": "Theo Lozada",
+        "editor": "Kurt Abrahan, Mark Cyril Bautista",
+        "sound": "Immanuel Verona",
+        "music": "Arvy Dimaculangan",
         "now_showing": false,
         "watch": [
             {
@@ -2214,7 +2217,7 @@
                 "audience": false
             },
             {
-                "direction": false
+                "direction": true
             },
             {
                 "actor": false,
@@ -2225,8 +2228,8 @@
                 "name": ""
             },
             {
-                "supporting_actor": false,
-                "name": ""
+                "supporting_actor": true,
+                "name": "Bon Andrew Lentejas"
             },
             {
                 "supporting_actress": false,
@@ -2259,13 +2262,13 @@
         "description": "Everything changes when an awkward teenager joins the volleyball team and falls for the volleyball team captain.",
         "director": "Samantha Lee",
         "cast": "Pat Tingjuy, Aya Fernandez, Agot Isidro",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "producers": "Dan Villegas, Antoinette Jadaone, Angel Tomas, Kren V. Yap, Samantha Lee, Jan Pineda",
+        "screenplay": "Samantha Lee, Natts Jadaone",
+        "production_designer": "Kaye Banaag",
+        "cinematographer": "Choice Israel",
+        "editor": "Ilsa Malsi",
+        "sound": "Alex Tomboc, Lamberto Casas Jr.",
+        "music": "Len Calvo",
         "now_showing": false,
         "watch": [
             {
@@ -2280,7 +2283,7 @@
                 "special_jury": false
             },
             {
-                "audience": false
+                "audience": true
             },
             {
                 "direction": false
@@ -2298,8 +2301,8 @@
                 "name": ""
             },
             {
-                "supporting_actress": false,
-                "name": ""
+                "supporting_actress": true,
+                "name": "Pat Tingjuy"
             },
             {
                 "screenplay": false
@@ -2308,7 +2311,7 @@
                 "cinematography": false
             },
             {
-                "editing": false
+                "editing": true
             },
             {
                 "sound": false
@@ -2328,13 +2331,13 @@
         "description": "Jose, a student, leaves his mother a letter to inform her that he’s leaving home to learn why people decide to join the underground movement. His decision reaches Michael, the chancellor of the university where he studies.",
         "director": "Dustin Celestino",
         "cast": "Dolly de Leon, Bituin Escalante, Agot Isidro, Miggy Jimenez, Jojit Lorenzo, Frances Ignacio, Paolo O’Hara, Joel Saracho, Dylan Ray Talon",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "producers": "Janel Gutierrez Celestino",
+        "screenplay": "Dustin Celestino",
+        "production_designer": "Josiah Hiponia",
+        "cinematographer": "Kara Moreno",
+        "editor": "Janel Gutierrez Celestino",
+        "sound": "Andrea Teresa Idioma",
+        "music": "Paulo Protacio",
         "now_showing": false,
         "watch": [
             {
@@ -2347,7 +2350,7 @@
                 "film": false
             },
             {
-                "special_jury": false
+                "special_jury": true
             },
             {
                 "audience": false
@@ -2398,13 +2401,13 @@
         "description": "A fading social media influencer and a struggling musician exploit each other in a not-so- fake relationship.",
         "director": "John Rogers",
         "cast": "Khalil Ramos, Ashley Ortega, Adrianna So, John Silverio, Angellie Sanoy, Rachel Coates, Marnie Lapus",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "producers": "Ferdinand Lapuz, Elmer L. Gatchalian, Ana Cecilia Famador",
+        "screenplay": "Shane David, John Rogers",
+        "production_designer": "Carmela Danao",
+        "cinematographer": "Che Espiritu",
+        "editor": "Noah Tonga",
+        "sound": "Lamberto Casas Jr., Alex Tomboc",
+        "music": "Paulo Protacio",
         "now_showing": false,
         "watch": [
             {
@@ -2467,13 +2470,13 @@
         "description": "A man embarks on a soul-stirring expedition on a mystical mountain to look for the golden deer, and finds solace in an unlikely friendship with a spirited mountain boy.",
         "director": "Kenneth De la Cruz",
         "cast": "Ron Matthews Espinosa, John NIel Pagntalan",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
+        "producers": "Robert Rodriguez, Dominique Ponsaran Medioda, Hope Abilo",
+        "screenplay": "Kenneth de la Cruz",
+        "production_designer": "Marrz Capanang",
+        "cinematographer": "Mark Tarroza Dizon",
         "editor": "",
-        "sound": "",
-        "music": "",
+        "sound": "Emmanuel Lerona",
+        "music": "Steve Magbanua",
         "now_showing": false,
         "watch": [
             {
@@ -2536,13 +2539,13 @@
         "description": "Cinemalaya’s first documentary in the full-length competition follows three women named Maria on a journey to seek truth and fight for justice as the Philippines becomes a shrinking civic and democratic space that fosters a culture of impunity.",
         "director": "JP Habac",
         "cast": "Maria Leonor Robredo, Maria, Mary Ann",
-        "producers": "",
-        "screenplay": "",
+        "producers": "Bryan Kristoffer J. Brazil, Jedd Dumaguina, Wesley Yap",
+        "screenplay": "Sheryl Rose M. Andes",
         "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "cinematographer": "Mai Calapardo, Daniel Ramos, Sheryl Rose M. Andes",
+        "editor": "Benjamin Gonzales Tolentino",
+        "sound": "Jedd Dumaguina",
+        "music": "Len Calvo",
         "now_showing": false,
         "watch": [
             {
@@ -2606,13 +2609,13 @@
         "description": "After having a one-night stand, an arrogant playboy and a timid young woman discover that any kind of pleasure or pain they inflict on themselves can be felt simultaneously by the other person.",
         "director": "Gian Arre",
         "cast": "Mikoy Morales, Jorrybell Agoto, Breech Mae Valencia, Olivia Banela, Albert Briones",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "producers": "Rea Robles",
+        "screenplay": "Gian Arre",
+        "production_designer": "Andrea Molina",
+        "cinematographer": "Yves Publico",
+        "editor": "Gian Arre",
+        "sound": "Gian Arre",
+        "music": "Rangy Valido",
         "now_showing": false,
         "watch": [
             {
@@ -2633,8 +2636,8 @@
                 "direction": false
             },
             {
-                "actor": false,
-                "name": ""
+                "actor": true,
+                "name": "Mikoy Morales"
             },
             {
                 "actress": false,
@@ -2658,7 +2661,7 @@
                 "editing": false
             },
             {
-                "sound": false
+                "sound": true
             },
             {
                 "music": false
@@ -2675,12 +2678,12 @@
         "description": "A disconnected desperate guy forges a deal with a group of privileged misfits to plan a secret party at the height of a global pandemic, for a chance to escape his reality.",
         "director": "Kevin Mayuga",
         "cast": "Juan Karlos Labajo, Jorrybell Agoto, Ana Abad Santos, Chaye Mogg, Nour Hooshmand, Jico Umali, Aaron Maniego, Renee Dominique, Lottie Bie, Zara Loayan",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
+        "producers": "Jan Pineda, Bianx Basilio",
+        "screenplay": "Abbey de Guia-Mayuga, Benedict O. Mendoza",
+        "production_designer": "Kaye Banaag",
+        "cinematographer": "Martika Ramirez Escobar",
+        "editor": "Maria Estela Paiso",
+        "sound": "Denise Simone, Emilio Bien A. Sparks",
         "music": "",
         "now_showing": false,
         "watch": [
@@ -2721,7 +2724,7 @@
                 "screenplay": false
             },
             {
-                "cinematography": false
+                "cinematography": true
             },
             {
                 "editing": false
@@ -2730,10 +2733,10 @@
                 "sound": false
             },
             {
-                "music": false
+                "music": true
             },
             {
-                "production": false
+                "production": true
             }
         ]
     },
