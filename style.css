@@ -3077,20 +3077,14 @@ html.dark-mode .watched-checkbox input:checked + span::before {
 }
 
 /* =========================================================
-   CAST AWARDS - WINNER BADGES
+   ACTING AWARD BADGES
    ========================================================= */
 
 .cast-award-winner {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   gap: 7px;
-
   margin-bottom: 5px;
-}
-
-.cast-award-winner:last-child {
-  margin-bottom: 0;
 }
 
 .cast-award-name {
@@ -3103,106 +3097,59 @@ html.dark-mode .watched-checkbox input:checked + span::before {
   gap: 3px;
 }
 
-/*
- * Small square number badges
- */
-
 .cast-award-badge {
+  width: 18px;
+  height: 18px;
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
-  width: 18px;
-  height: 18px;
+  border-radius: 2px;
 
-  flex: 0 0 18px;
-
-  font-size: 8px;
+  font-size: 9px;
   font-weight: 700;
   line-height: 1;
-
-  border-radius: 2px;
 }
 
-/*
- * MAROON
- * Number of wins for this specific award
- */
+/* MAROON = SPECIFIC AWARD WINS */
 
 .cast-award-badge-specific {
   background: #6b1f2b;
-  color: #fff;
+  color: #ffffff;
 }
 
-/*
- * BLACK
- * Total acting award wins
- */
+/* BLACK = OVERALL ACTING AWARD WINS */
 
 .cast-award-badge-overall {
-  background: #111;
-  color: #fff;
+  background: #000000;
+  color: #ffffff;
 }
 
 
 /* =========================================================
-   CAST AWARDS - LEGEND
+   AWARD LEGEND
    ========================================================= */
 
 .cast-awards-legend {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-
   gap: 18px;
 
-  margin-bottom: 14px;
+  margin-bottom: 15px;
 }
 
 .cast-awards-legend-item {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-
   gap: 7px;
 
   font-size: 9px;
   font-weight: 600;
   letter-spacing: 0.03em;
-
-  color: var(--text-muted);
 }
 
-.cast-awards-legend .cast-award-badge {
-  width: 18px;
-  height: 18px;
-  flex: 0 0 18px;
-}
-
-
-/* =========================================================
-   CAST AWARDS - MOBILE
-   ========================================================= */
-
-@media (max-width: 650px) {
-
-  .cast-awards-legend {
-    gap: 10px 15px;
-  }
-
-  .cast-awards-legend-item {
-    font-size: 8px;
-  }
-
-  .cast-award-winner {
-    gap: 5px;
-  }
-
-  .cast-award-badge {
-    width: 17px;
-    height: 17px;
-    flex-basis: 17px;
-
-    font-size: 7px;
-  }
-
+.cast-awards-legend-item .cast-award-badge {
+  flex-shrink: 0;
 }
