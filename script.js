@@ -18,7 +18,7 @@ const whatsNew = [
     date: "08.21.26",
     version: "3.2",
     updates: [
-      "Removed Youtube links for <b><i> Fuccbois (2019) </b></i>,<b><i> Ang Katiwala (2012) </b></i>,<b><i> Two Funerals (2010) </b></i>,<b><i> Astig (2009) </b></i><b><i> Ang Pagdadalaga ni Maximo Oliveros (2005), and<b><i> Room Boy (2005) </b></i> </b></i> as the uploaders do not come from official accounts", 
+      "Removed Youtube links for <b><i> Fuccbois (2019)</b></i>,<b><i> Ang Katiwala (2012)</b></i>,<b><i> Two Funerals (2010)</b></i>,<b><i> Astig (2009),</b></i> <b><i> Ang Pagdadalaga ni Maximo Oliveros (2005), and<b><i> Room Boy (2005) </b></i> </b></i> as the uploaders do not come from official accounts", 
     ],
   },
   {
