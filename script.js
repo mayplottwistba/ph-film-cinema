@@ -3894,7 +3894,7 @@ function renderPlatformSummary() {
     "kinema",
     "amazon",
     "alexanderstreet",
-    "external",
+    "none",
   ];
 
   const counts = {};
