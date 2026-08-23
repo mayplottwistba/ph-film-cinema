@@ -75,6 +75,8 @@ const watchFilter = document.getElementById("watchFilter");
 
 const searchInput = document.getElementById("searchInput");
 
+const platformSummary = document.getElementById("platformSummary");
+
 /* =========================================================
    NAVIGATION
    ========================================================= */
@@ -410,7 +412,7 @@ async function loadFilms() {
     populateYears();
 
     populateWatchFilters();
-
+    renderPlatformSummary();
     buildCastRanking();
     buildCastAwardsTable();
     buildDirectorsRanking();
@@ -3872,6 +3874,76 @@ function renderDeveloperUpdates() {
             </div>
         `,
     )
+    .join("");
+}
+
+function renderPlatformSummary() {
+  if (!platformSummary) {
+    return;
+  }
+
+  const summaryPlatforms = [
+    "netflix",
+    "juanflix",
+    "ccp",
+    "youtube",
+    "prime",
+    "appletv",
+    "iwant",
+    "viva",
+    "kinema",
+    "amazon",
+    "alexanderstreet",
+    "external",
+  ];
+
+  const counts = {};
+
+  summaryPlatforms.forEach((type) => {
+    counts[type] = 0;
+  });
+
+  films.forEach((film) => {
+    if (!Array.isArray(film.watch)) {
+      return;
+    }
+
+    const platformsInFilm = new Set();
+
+    film.watch.forEach((source) => {
+      if (!source || !source.type) {
+        return;
+      }
+
+      if (summaryPlatforms.includes(source.type)) {
+        platformsInFilm.add(source.type);
+      }
+    });
+
+    platformsInFilm.forEach((type) => {
+      counts[type]++;
+    });
+  });
+
+  platformSummary.innerHTML = summaryPlatforms
+    .map((type) => {
+      const name =
+        platformNames[type] || type;
+
+      return `
+        <div
+          class="platform-summary-card platform-summary-${escapeHTML(type)}"
+        >
+          <div class="platform-summary-name">
+            ${escapeHTML(name)}
+          </div>
+
+          <div class="platform-summary-count">
+            ${counts[type]}
+          </div>
+        </div>
+      `;
+    })
     .join("");
 }
 

@@ -3126,7 +3126,6 @@ html.dark-mode .watched-checkbox input:checked + span::before {
   color: #ffffff;
 }
 
-
 /* =========================================================
    AWARD LEGEND
    ========================================================= */
@@ -3139,7 +3138,6 @@ html.dark-mode .watched-checkbox input:checked + span::before {
 
   margin-bottom: 15px;
 }
-
 
 .cast-awards-legend-item {
   display: flex;
@@ -3189,4 +3187,185 @@ html.dark-mode .watched-checkbox input:checked + span::before {
   background: #511620;
   color: #fff;
   border-color: #511620;
+}
+
+/* =========================================================
+   STREAMING PLATFORM SUMMARY
+   ========================================================= */
+
+.platform-summary {
+  display: grid;
+
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+
+  gap: 10px;
+
+  margin-bottom: 20px;
+}
+
+/* =========================================================
+   PLATFORM SUMMARY CARD
+   ========================================================= */
+
+.platform-summary-card {
+  min-height: 78px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 10px;
+
+  border: 1px solid transparent;
+
+  text-align: center;
+
+  transition:
+    transform 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.platform-summary-card:hover {
+  transform: translateY(-2px);
+
+  opacity: 0.9;
+}
+
+/* PLATFORM NAME */
+
+.platform-summary-name {
+  font-family: monospace;
+
+  font-size: 10px;
+
+  font-weight: 900;
+
+  line-height: 1.2;
+
+  text-transform: uppercase;
+}
+
+/* NUMBER */
+
+.platform-summary-count {
+  margin-top: 5px;
+
+  font-family: monospace;
+
+  font-size: 22px;
+
+  font-weight: 900;
+
+  line-height: 1;
+}
+
+/* =========================================================
+   PLATFORM COLORS
+   Same colors as the platform tags
+   ========================================================= */
+
+.platform-summary-netflix {
+  background: #e50914;
+  color: #fff;
+  border-color: #e50914;
+}
+
+.platform-summary-juanflix {
+  background: #f39c12;
+  color: #fff;
+  border-color: #f39c12;
+}
+
+.platform-summary-ccp {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+.platform-summary-youtube {
+  background: #ff0000;
+  color: #fff;
+  border-color: #ff0000;
+}
+
+.platform-summary-prime {
+  background: #00a8e1;
+  color: #fff;
+  border-color: #00a8e1;
+}
+
+.platform-summary-appletv {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.platform-summary-iwant {
+  background: #9b59b6;
+  color: #fff;
+  border-color: #9b59b6;
+}
+
+.platform-summary-viva {
+  background: #f47b20;
+  color: #fff;
+  border-color: #f47b20;
+}
+
+.platform-summary-kinema {
+  background: #c8a2c8;
+  color: #111;
+  border-color: #c8a2c8;
+}
+
+.platform-summary-amazon {
+  background: #3b82f6;
+  color: #fff;
+  border-color: #3b82f6;
+}
+
+.platform-summary-alexanderstreet {
+  background: #6b1f2b;
+  color: #fff;
+  border-color: #6b1f2b;
+}
+
+.platform-summary-external {
+  background: var(--surface);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .platform-summary {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .platform-summary {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 7px;
+  }
+
+  .platform-summary-card {
+    min-height: 68px;
+  }
+
+  .platform-summary-name {
+    font-size: 8px;
+  }
+
+  .platform-summary-count {
+    font-size: 18px;
+  }
 }
