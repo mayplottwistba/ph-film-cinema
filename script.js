@@ -11,10 +11,17 @@ const platformNames = {
   amazon: "Amazon",
   alexanderstreet: "Alexander Street",
   none: "No known source",
+  highballtv: "Highball TV",
 };
 
 const whatsNew = [
   {
+    date: "08.21.26",
+    version: "3.6",
+    updates: [
+      "<b><i> Engkwentro (2009)</b></i> is available for streaming at Highball TV (Free Trial account)", 
+    ],
+  },{
     date: "08.21.26",
     version: "3.5",
     updates: [
@@ -529,6 +536,8 @@ function populateWatchFilters() {
     ["kinema", "Kinema"],
 
     ["amazon", "Amazon"],
+
+    ["highballtv", "Highball TV"],
 
     ["alexanderstreet", "Alexander Street"]
 

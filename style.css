@@ -811,9 +811,17 @@ html.dark-mode .theme-toggle-thumb {
   text-transform: uppercase;
 }
 
-/* =========================================================
-   PLATFORM COLORS
-   ========================================================= */
+.platform.highballtv {
+  background: #ff69b4;
+  color: #fff;
+  border-color: #ff69b4;
+}
+
+.platform.highballtv:hover {
+  background: #ff4fa3;
+  color: #fff;
+  border-color: #ff4fa3;
+}
 
 .platform.netflix {
   background: #e50914;
