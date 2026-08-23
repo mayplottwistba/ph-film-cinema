@@ -3795,6 +3795,9 @@
         "watch": [
             {
                 "type": "appletv"
+            },
+            {
+                "type": "iwant"
             }
         ],
         "awards": [
@@ -9551,6 +9554,10 @@
         "watch": [
             {
                 "type": "juanflix"
+            },
+            {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=bjgf7lZLU6c"
             }
         ],
         "awards": [
