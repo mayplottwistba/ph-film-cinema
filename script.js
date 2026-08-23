@@ -15,7 +15,7 @@ const whatsNew = [
     date: "08.21.26",
     version: "3.0",
     updates: [
-      "Removed external links from films that have known sources.", 
+      "Removed external links from films that are not on any streaming platform", 
     ],
   }
 ];
