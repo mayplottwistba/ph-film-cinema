@@ -5455,7 +5455,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "none"
+                "type": "ccp"
             }
         ],
         "awards": [
