@@ -18,7 +18,7 @@ const whatsNew = [
     date: "08.21.26",
     version: "3.3",
     updates: [
-      "Added links for <b><i> Kadin (2007)</b></i>, and <b><i> ICU Bed #7 (2007)</b></i> are also available on Alexander Street", 
+      "Added sources for <b><i> Kadin (2007)</b></i>, and <b><i> ICU Bed #7 (2007)</b></i> as they are both available on Alexander Street", 
     ],
   },
   {
