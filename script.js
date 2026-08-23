@@ -13,41 +13,12 @@ const platformNames = {
 
 const whatsNew = [
   {
-    date: "08.21.26",
-    version: "2.5.2",
+    date: "08.23.26",
+    version: "3",
     updates: [
-      "A non-HD version of <b><i>Room Boy (2005)</i></b> is found on YouTube.", 
+      "Removed external links for films that have no known source.", 
     ],
-  },
-  {
-    date: "08.21.26",
-    version: "2.5",
-    updates: [
-      "Added download links for <b><i>Niño (2011) </i></b>, <b><i>Porno (2013)</i></b>, <b><i>Children's Show (2014)</i></b>, <b><i>Brutus (2008)</i></b>, <b><i>Rotonda (2006)</i></b>, <b><i>Gulong (2007)</i></b>, <b><i>Ligaw Liham (2007)</i></b>, <b><i>In da Red Corner (2006)</i></b>, <b><i>Sigwa (2010)</i></b>, and <b><i>Maria (2023)</i></b>." 
-    ],
-  },
-  {
-    date: "08.20.26",
-    version: "2.4",
-    updates: [
-      "External links for <b><i>Teoriya (2011) </i></b>, <b><i>Sampaguita, National Flower (2010)</i></b>, <b><i>Colorum (2009)</i></b>, <b><i>Cuchera (2011)</i></b>, <b><i>Baconaua (2017)</i></b>, <b><i>The Baseball Player (2022)</i></b>, and <b><i>Ang Duyan ng Magiting (2023)</i></b> are now available.",
-    ],
-  },
-  {
-    date: "08.20.26",
-    version: "2.3",
-    updates: [
-      "External link for <b><i>Ang Huling Araw ng Linggo (2006)</i></b> is now available.",
-    ],
-  },
-  {
-    date: "08.19.26",
-    version: "2.2",
-    updates: [
-      "External link for <b><i>Last Supper No. 3 (2009)</i></b> is now available.",
-      "Added new external link for <b><i>Endo (2007)</i></b> and <b><i>100 (2008)</i></b>",
-    ],
-  },
+  }
 ];
 
 const filmsGrid = document.getElementById("filmsGrid");
