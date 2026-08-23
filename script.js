@@ -6,8 +6,7 @@ const platformNames = {
   prime: "Prime Video",
   appletv: "Apple TV",
   iwant: "iWant",
-  viva: "VivaOne",
-  external: "External",
+  viva: "VivaOne"
   none: "No known source",
 };
 
