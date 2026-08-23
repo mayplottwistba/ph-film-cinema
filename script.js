@@ -6,16 +6,17 @@ const platformNames = {
   prime: "Prime Video",
   appletv: "Apple TV",
   iwant: "iWant",
-  viva: "VivaOne"
+  viva: "VivaOne",
+  external: "External",
   none: "No known source",
 };
 
 const whatsNew = [
   {
-    date: "08.23.26",
-    version: "3",
+    date: "08.21.26",
+    version: "2.5.2",
     updates: [
-      "Removed external links for films that have no known source.", 
+      "A non-HD version of <b><i>Room Boy (2005)</i></b> is found on YouTube.", 
     ],
   }
 ];
