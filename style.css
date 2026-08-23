@@ -3281,9 +3281,9 @@ html.dark-mode .watched-checkbox input:checked + span::before {
 }
 
 .platform-summary-ccp {
-  background: #111;
+  background: #582103;
   color: #fff;
-  border-color: #111;
+  border-color: #582103;
 }
 
 .platform-summary-youtube {
