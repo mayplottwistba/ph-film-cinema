@@ -3100,7 +3100,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "none"
+                "type": "prime"
             }
         ],
         "awards": [
@@ -3376,7 +3376,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "none"
+                "type": "viva"
             }
         ],
         "awards": [
@@ -5247,7 +5247,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "none"
+                "type": "viva"
             }
         ],
         "awards": [
@@ -5316,7 +5316,8 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "none"
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=zfZFOiswfug&pp=ygUNcmVxdWl0ZWQgMjAxNw%3D%3D"
             }
         ],
         "awards": [
@@ -5524,6 +5525,10 @@
         "watch": [
             {
                 "type": "juanflix"
+            },
+            {
+                "type": "youtube",
+                "url": "https://www.youtube.com/watch?v=5tKIAYOlSgM&pp=ygUPbWVyY3VyeSBpcyBtaW5l"
             }
         ],
         "awards": [
@@ -8645,7 +8650,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "none"
+                "type": "appletv"
             }
         ],
         "awards": [
@@ -10570,7 +10575,7 @@
         "title": "Donor",
         "poster": "assets/donor.jpg",
         "description": "Desperate for money, Lizette pursues the dark and thankless world of organ donation, hoping for a better life.",
-        "director": "G.B. Sampedro",
+        "director": "Mark Meily",
         "cast": "Baron Geisler, Meryll Soriano, Jao Mapa, Karla Pambid, Lilit Reyes, Kristina Syfu, Joy Viado",
         "producers": "",
         "screenplay": "",
@@ -13205,7 +13210,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "none"
+                "type": "amazon"
             }
         ],
         "awards": [
@@ -13619,7 +13624,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "none"
+                "type": "iwant"
             }
         ],
         "awards": [

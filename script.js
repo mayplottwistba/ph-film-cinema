@@ -16,6 +16,13 @@ const platformNames = {
 const whatsNew = [
   {
     date: "08.21.26",
+    version: "3.5",
+    updates: [
+      "Added official sites for the following: <b><i> Requited (2017)</b></i> (Youtube), <b><i> Mercury is Mine (2016)</b></i> (Youtube), <b><i> Ang Pagdadalaga ni Maximo Oliveros (2005)</b></i> (iWant), <b><i> Bakit 'Di Mo Sabihin (Tell Her) (2022)</b></i> (Prime Video), <b><i> Kaluskos (2022)</b></i> (VivaOne), <b><i> Ang Pamilyang Hindi Lumuluha (2017)</b></i> (VivaOne), <b><i> Kalayaan (Wildlife) (2012)</b></i> (Buy or Rent on AppleTV), <b><i> Donsol (2006)</b></i> (Pinoy Box Office on Amazon Prime - US only)", 
+    ],
+  },
+  {
+    date: "08.21.26",
     version: "3.4",
     updates: [
       "<b><i> Ang Babae sa Septic Tank (2011)</b></i> is available on iWant", 
