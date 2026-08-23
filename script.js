@@ -477,11 +477,9 @@ function populateWatchFilters() {
 
     ["viva", "VivaOne"],
 
-    ["external", "External"],
+    ["none", "No known source"]
 
-    ["none", "No known source"],
-
-    ["now_showing", "Now Showing"],
+    // ["now_showing", "Now Showing"],
   ];
 
   platforms.forEach(([value, label]) => {
