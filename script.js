@@ -16,6 +16,13 @@ const platformNames = {
 const whatsNew = [
   {
     date: "08.21.26",
+    version: "3.4",
+    updates: [
+      "<b><i> Ang Babae sa Septic Tank (2011)</b></i> is available on iWant", 
+    ],
+  },
+  {
+    date: "08.21.26",
     version: "3.3",
     updates: [
       "Added sources for <b><i> Kadin (2007)</b></i>, and <b><i> ICU Bed #7 (2007)</b></i> as they are both available on Alexander Street", 
