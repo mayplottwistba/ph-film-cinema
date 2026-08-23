@@ -3523,7 +3523,7 @@ function buildCastAwardsTable() {
         `;
 
     return;
-  }
+  } 
 
   /*
    * Total pages

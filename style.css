@@ -3140,6 +3140,7 @@ html.dark-mode .watched-checkbox input:checked + span::before {
   margin-bottom: 15px;
 }
 
+
 .cast-awards-legend-item {
   display: flex;
   align-items: center;

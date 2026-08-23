@@ -2341,8 +2341,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://ok.ru/video/18062931397170"
+                "type": "none"
             }
         ],
         "awards": [
@@ -2549,8 +2548,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "gofile.io/d/dIukG6n7"
+                "type": "none"
             }
         ],
         "awards": [
@@ -3102,8 +3100,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://www.bilibili.tv/en/video/4788939789179392"
+                "type": "none"
             }
         ],
         "awards": [
@@ -3379,8 +3376,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://www.bilibili.tv/en/video/4796948850939392"
+                "type": "none"
             }
         ],
         "awards": [
@@ -3449,8 +3445,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://ok.ru/video/18062931462706"
+                "type": "none"
             }
         ],
         "awards": [
@@ -4007,8 +4002,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://ok.ru/video/18014684449330"
+                "type": "none"
             }
         ],
         "awards": [
@@ -4564,8 +4558,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://www.bilibili.tv/en/video/2046421743"
+                "type": "none"
             }
         ],
         "awards": [
@@ -4634,8 +4627,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://www.bilibili.tv/en/video/2043121792"
+                "type": "none"
             }
         ],
         "awards": [
@@ -5049,8 +5041,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://ok.ru/video/18062931331634"
+                "type": "none"
             }
         ],
         "awards": [
@@ -5188,8 +5179,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://www.bilibili.tv/en/video/2044185208"
+                "type": "none"
             }
         ],
         "awards": [
@@ -5258,8 +5248,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://www.bilibili.tv/en/video/4790035590414848"
+                "type": "none"
             }
         ],
         "awards": [
@@ -5328,8 +5317,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://www.bilibili.tv/en/video/4790159258158080"
+                "type": "none"
             }
         ],
         "awards": [
@@ -5398,8 +5386,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://www.bilibili.tv/en/video/4795445324158977"
+                "type": "none"
             }
         ],
         "awards": [
@@ -5813,8 +5800,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://www.bilibili.tv/en/video/4795383336802304"
+                "type": "none"
             }
         ],
         "awards": [
@@ -5883,8 +5869,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://www.bilibili.tv/en/video/2042566038"
+                "type": "none"
             }
         ],
         "awards": [
@@ -6022,8 +6007,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://ok.ru/video/18014678026802"
+                "type": "none"
             }
         ],
         "awards": [
@@ -6924,8 +6908,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "gofile.io/d/VebBrmpJ"
+                "type": "none"
             }
         ],
         "awards": [
@@ -6994,8 +6977,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://ok.ru/video/18014679140914"
+                "type": "none"
             }
         ],
         "awards": [
@@ -7832,8 +7814,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "gofile.io/d/7Lc3J28z"
+                "type": "none"
             }
         ],
         "awards": [
@@ -8178,8 +8159,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://ok.ru/video/18014682942002"
+                "type": "none"
             }
         ],
         "awards": [
@@ -9013,10 +8993,6 @@
             {
                 "type": "youtube",
                 "url": "https://www.youtube.com/watch?v=yZo9UMGi2Jc&msockid=2112ed8896ed11f18fa73d0e46f5af91"
-            },
-            {
-                "type": "external",
-                "url": "https://www.bilibili.tv/en/video/2043354417"
             }
         ],
         "awards": [
@@ -9085,8 +9061,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://www.bilibili.tv/en/video/4799122820700672"
+                "type": "none"
             }
         ],
         "awards": [
@@ -9641,8 +9616,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://www.bilibili.tv/en/video/2049237029"
+                "type": "none"
             }
         ],
         "awards": [
@@ -9711,8 +9685,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://www.bilibili.tv/en/video/2043536601"
+                "type": "none"
             }
         ],
         "awards": [
@@ -9850,8 +9823,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://ok.ru/video/18064627075634"
+                "type": "none"
             }
         ],
         "awards": [
@@ -9989,8 +9961,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://www.bilibili.tv/en/video/2046653328"
+                "type": "none"
             }
         ],
         "awards": [
@@ -10059,8 +10030,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "gofile.io/d/LawUSvTB"
+                "type": "none"
             }
         ],
         "awards": [
@@ -10129,8 +10099,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://ok.ru/video/18062691994162"
+                "type": "none"
             }
         ],
         "awards": [
@@ -10616,8 +10585,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://www.bilibili.tv/en/video/2045610161"
+                "type": "none"
             }
         ],
         "awards": [
@@ -10686,8 +10654,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "gofile.io/d/8IC0iRnD"
+                "type": "none"
             }
         ],
         "awards": [
@@ -10963,8 +10930,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://ok.ru/video/18062692059698"
+                "type": "none"
             }
         ],
         "awards": [
@@ -11378,8 +11344,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://ok.ru/video/18062692125234"
+                "type": "none"
             }
         ],
         "awards": [
@@ -11517,8 +11482,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://www.bilibili.tv/en/video/2043509629"
+                "type": "none"
             }
         ],
         "awards": [
@@ -11587,8 +11551,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://ok.ru/video/18049061882418"
+                "type": "none"
             }
         ],
         "awards": [
@@ -12003,12 +11966,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://www.bilibili.tv/en/video/2040474195"
-            },
-            {
-                "type": "external",
-                "url": "https://ok.ru/video/18049061816882"
+                "type": "none"
             }
         ],
         "awards": [
@@ -12146,8 +12104,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "gofile.io/d/6BK0wQi0"
+                "type": "none"
             }
         ],
         "awards": [
@@ -12354,8 +12311,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://www.bilibili.tv/en/video/2043055727"
+                "type": "none"
             }
         ],
         "awards": [
@@ -12632,12 +12588,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://www.bilibili.tv/en/video/4790450211914240?bstar_from=bstar-web.homepage.recommend.all"
-            },
-            {
-                "type": "external",
-                "url": "https://ok.ru/video/18050392197682"
+                "type": "none"
             }
         ],
         "awards": [
@@ -12706,8 +12657,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "gofile.io/d/WlN1N9Vh"
+                "type": "none"
             }
         ],
         "awards": [
@@ -12845,8 +12795,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "gofile.io/d/F4ckOutf"
+                "type": "none"
             }
         ],
         "awards": [
@@ -12915,8 +12864,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://ok.ru/video/3306345466622"
+                "type": "none"
             }
         ],
         "awards": [
@@ -13261,8 +13209,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://ok.ru/video/18014676388402"
+                "type": "none"
             }
         ],
         "awards": [
@@ -13331,8 +13278,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://ok.ru/video/16318361111294"
+                "type": "none"
             }
         ],
         "awards": [
@@ -13401,8 +13347,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "gofile.io/d/cVuhv1Rt"
+                "type": "none"
             }
         ],
         "awards": [
@@ -13471,8 +13416,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "gofile.io/d/HOppikie"
+                "type": "none"
             }
         ],
         "awards": [
@@ -13610,8 +13554,7 @@
         "now_showing": false,
         "watch": [
             {
-                "type": "external",
-                "url": "https://www.bilibili.tv/en/video/4788088252275200"
+                "type": "none"
             }
         ],
         "awards": [
