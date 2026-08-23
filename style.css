@@ -3154,3 +3154,39 @@ html.dark-mode .watched-checkbox input:checked + span::before {
 .cast-awards-legend-item .cast-award-badge {
   flex-shrink: 0;
 }
+
+.platform.kinema {
+  background: #c8a2c8;
+  color: #111;
+  border-color: #c8a2c8;
+}
+
+.platform.kinema:hover {
+  background: #b78bb7;
+  color: #111;
+  border-color: #b78bb7;
+}
+
+.platform.amazon {
+  background: #3b82f6;
+  color: #fff;
+  border-color: #3b82f6;
+}
+
+.platform.amazon:hover {
+  background: #2563eb;
+  color: #fff;
+  border-color: #2563eb;
+}
+
+.platform.alexanderstreet {
+  background: #6b1f2b;
+  color: #fff;
+  border-color: #6b1f2b;
+}
+
+.platform.alexanderstreet:hover {
+  background: #511620;
+  color: #fff;
+  border-color: #511620;
+}

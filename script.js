@@ -7,10 +7,20 @@ const platformNames = {
   appletv: "Apple TV",
   iwant: "iWant",
   viva: "VivaOne",
+  kinema: "Kinema",
+  amazon: "Amazon",
+  alexanderstreet: "Alexander Street",
   none: "No known source",
 };
 
 const whatsNew = [
+  {
+    date: "08.21.26",
+    version: "3.1",
+    updates: [
+      "Added new sources: <b><i> Ang Duyan ng Magiting (2023) </i></b>is available at Kinema. <b><i> Respeto (2017) </i></b> and <b><i> Batad: Sa Paang Palay (2006) </i></b> are available for <strong>rent</strong> at Amazon. <b><i> Saan Nagtatago Si Happiness (2006) </i></b> and <b><i> Sampaguita, National Flower (2010) </i></b> are available at Alexander Street.", 
+    ],
+  },
   {
     date: "08.21.26",
     version: "3.0",
@@ -477,7 +487,13 @@ function populateWatchFilters() {
 
     ["viva", "VivaOne"],
 
-    ["none", "No known source"]
+    ["none", "No known source"],
+
+    ["kinema", "Kinema"],
+
+    ["amazon", "Amazon"],
+
+    ["alexanderstreet", "Alexander Street"]
 
     // ["now_showing", "Now Showing"],
   ];
