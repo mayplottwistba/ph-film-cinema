@@ -515,6 +515,9 @@ function populateWatchFilters() {
     `;
 
   const platforms = [
+
+    ["none", "No known source"],
+    
     ["netflix", "Netflix"],
 
     ["juanflix", "Juanflix"],
@@ -531,7 +534,6 @@ function populateWatchFilters() {
 
     ["viva", "VivaOne"],
 
-    ["none", "No known source"],
 
     ["kinema", "Kinema"],
 
