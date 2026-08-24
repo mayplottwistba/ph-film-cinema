@@ -2613,58 +2613,116 @@ html.dark-mode .production-credit-value {
 }
 
 /* =========================================================
-   CAST AWARDS TABLE
+   CAST AWARDS TABLE — COMPACT OUTLINE STYLE
    ========================================================= */
 
 .cast-awards-table-wrap {
   width: 100%;
   overflow-x: auto;
+
+  /* keeps the table visually contained */
+  border: 1px solid var(--border);
 }
 
 .cast-awards-table {
   width: 100%;
+
   border-collapse: collapse;
   table-layout: fixed;
+
+  background: var(--surface);
 }
 
+/* ALL CELLS */
 .cast-awards-table th,
 .cast-awards-table td {
-  padding: 14px 12px;
+  padding: 10px 12px;
+
   text-align: left;
+  vertical-align: middle;
 
+  border-right: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-}
-
-.cast-awards-table th {
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
 
   color: var(--text);
 }
 
+/* remove right border from last column */
+.cast-awards-table th:last-child,
+.cast-awards-table td:last-child {
+  border-right: 0;
+}
+
+/* remove bottom border from final row */
+.cast-awards-table tr:last-child td {
+  border-bottom: 0;
+}
+
+/* HEADER */
+.cast-awards-table th {
+  height: 38px;
+
+  background: var(--surface-alt);
+
+  font-family: monospace;
+  font-size: 9px;
+  font-weight: 900;
+
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+
+  text-transform: uppercase;
+}
+
+/* WINNERS */
 .cast-awards-table td {
-  font-size: 14px;
+  min-height: 42px;
+
+  font-size: 11px;
   font-weight: 400;
 
-  color: var(--text);
+  line-height: 1.4;
 }
 
+/* YEAR COLUMN */
 .cast-awards-table th:first-child,
 .cast-awards-table td:first-child {
-  width: 80px;
+  width: 70px;
 }
 
 .cast-award-year {
-  font-weight: 700 !important;
+  font-family: monospace;
+
+  font-size: 11px;
+  font-weight: 900 !important;
 }
 
+/* MULTIPLE WINNERS */
 .cast-award-winner {
-  margin-bottom: 4px;
+  margin: 0;
+
+  line-height: 1.45;
 }
 
-.cast-award-winner:last-child {
-  margin-bottom: 0;
+.cast-award-winner + .cast-award-winner {
+  margin-top: 2px;
+}
+
+/* subtle row interaction */
+.cast-awards-table tbody tr:hover {
+  background: var(--surface-alt);
+}
+
+.acting-awards-header h2 {
+  font-size: 26px;
+  line-height: 1.05;
+  letter-spacing: -1px;
+  margin-bottom: 5px;
+}
+
+.acting-awards-header p {
+  font-size: 11px;
+  color: var(--text-soft);
 }
 
 /* =========================================================
