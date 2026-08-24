@@ -2745,13 +2745,13 @@
         "description": "A progressive rock band composed of privileged teenagers get arrested for drug possession, and are brought into the “Blue Room” where they must make the difficult choice between freedom or standing up for what they believe in.",
         "director": "Ma-an Asuncion-Dagñalan",
         "cast": "Elijah Canlas, Juan Karlos Labajo, Nour Hooshmand, Harvey Bautista, Keoni Jin, Soliman Cruz, Bombi Plata, Jericho Arceo, Bon Bon Andrew Lentejas, Ricardo Cepeda",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "producers": "Siege Ledesma, Ma-an Asuncion-Dagñalan, Wilfredo Manalang, Ferdy Lapuz",
+        "screenplay": "Siege Ledesma, Ma-an Asuncion-Dagñalan",
+        "production_designer": "Marxie Maolen Fadul",
+        "cinematographer": "Neil Daza",
+        "editor": "Vanessa U. De Leon",
+        "sound": "Jannina Mikaela Minglanilla, Michael Keanu Cruz",
+        "music": "Mikey Amistoso, Jazz Nicolas",
         "now_showing": false,
         "watch": [
             {
@@ -2763,13 +2763,13 @@
                 "film": false
             },
             {
-                "special_jury": false
+                "special_jury": true
             },
             {
                 "audience": false
             },
             {
-                "direction": false
+                "direction": true
             },
             {
                 "actor": false,
@@ -2780,8 +2780,8 @@
                 "name": ""
             },
             {
-                "supporting_actor": false,
-                "name": ""
+                "supporting_actor": true,
+                "name": "Soliman Cruz"
             },
             {
                 "supporting_actress": false,
@@ -2791,7 +2791,7 @@
                 "screenplay": false
             },
             {
-                "cinematography": false
+                "cinematography": true
             },
             {
                 "editing": false
@@ -2803,7 +2803,7 @@
                 "music": false
             },
             {
-                "production": false
+                "production": true
             }
         ]
     },
@@ -2815,11 +2815,11 @@
         "director": "Anna Isabelle Matutina",
         "cast": "Max Eigenmann, Bing Pimentel, Vance Larena, Claudia Enriquez, Nor Domingo, Pamela Miras, Paolo Villaluna",
         "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
+        "screenplay": "Anna Isabelle Matutina",
+        "production_designer": "Marielle Hizon",
+        "cinematographer": "Jippy Pascua",
+        "editor": "Michael Lacanilao, Anna Isabelle Matutina",
+        "sound": "Lamberto Casas Jr.",
         "music": "",
         "now_showing": false,
         "watch": [
@@ -2845,8 +2845,8 @@
                 "name": ""
             },
             {
-                "actress": false,
-                "name": ""
+                "actress": true,
+                "name": "Max Eigenmann"
             },
             {
                 "supporting_actor": false,
@@ -2883,13 +2883,13 @@
         "description": "A woman relieves the heavy burden from her past when she finally exacts revenge on the man who murdered her entire family.",
         "director": "TM Malones",
         "cast": "Max Eigenmann, Jess Mendoza, Myles Robles, Ronnie Lazaro, Sunshine Teodoro",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "producers": "Sara Santiago, TM Malones",
+        "screenplay": "Joseph Israel M. Laban",
+        "production_designer": "Buggy Amplayo",
+        "cinematographer": "TM Malones",
+        "editor": "Tara Illenberger",
+        "sound": "Immanuel Verona",
+        "music": "Armor Rapista",
         "now_showing": false,
         "watch": [
             {
@@ -2904,7 +2904,7 @@
                 "special_jury": false
             },
             {
-                "audience": false
+                "audience": true
             },
             {
                 "direction": false
@@ -2952,13 +2952,13 @@
         "description": "A retired government employee’s new hobby leads to existential desperation and financial complications.",
         "director": "Milo Alto Paz, Cynthia Cruz-Paz",
         "cast": "Peewee O'Hara, Jerry O'Hara, Donna Cariaga, Dexter Doria, Nanding Josef, Lui Manansala, Johanah Basanta",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "producers": "Ariel Diaz",
+        "screenplay": "Milo Alto-Paz, Cynthia Cruz-Paz",
+        "production_designer": "Nestor Lopez, Jr.",
+        "cinematographer": "Ogi Sugatan",
+        "editor": "Chiarra Mogol",
+        "sound": "Allan Marcelo Hilado",
+        "music": "Peach Quebral",
         "now_showing": false,
         "watch": [
             {
@@ -3007,7 +3007,7 @@
                 "sound": false
             },
             {
-                "music": false
+                "music": true
             },
             {
                 "production": false
@@ -3019,15 +3019,15 @@
         "title": "Angkas",
         "poster": "assets/angkas.jpg",
         "description": "Leo is not just an ordinary habal-habal driver. He is the resident ambulance and delivery man in a remote village in Compostela Valley who is hired to transport the dead down the mountain. One day, his estranged friend Miguel appeared on his doorstep and insisted to join Leo in fetching the corpse of Ditas, their childhood friend who is a rebel pursued by the military.",
-        "director": "Rainerio C. Yamson II",
+        "director": "Rain Yamson",
         "cast": "Joem Bascon, Benjamin Alves, Meryll Soriano, Jolo Estrada, Soliman Cruz, Ruby Ruiz, Mercedes Cabral",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "producers": "Ferdy Lapuz, Martin Mayuga",
+        "screenplay": "Jaymar Santos Castro",
+        "production_designer": "Gie Shock Jose",
+        "cinematographer": "Rain Yamson",
+        "editor": "John Wong",
+        "sound": "Gie Shock Jose",
+        "music": "Marc Jayson Jose",
         "now_showing": false,
         "watch": [
             {
@@ -3090,13 +3090,13 @@
         "description": "Deaf couple Miguel and Nat have been struggling to keep their marriage. After a huge fight, Miguel leaves his wife alone in Manila and decides to live in Baler with their kids. ",
         "director": "Real S. Florido",
         "cast": "JC De Vera, Janine Gutierrez, Divine Aucina, Sheenly Gener, RJ Agustin, Sunshine Teodoro, Althea Ruedas, Luke Simon Cornel, Dess Verzosa, Disney Aguila, Jamil Carvajal",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "producers": "Real Florido, RJ Agustin, Vincent del Rosario III, Vic del Rosario Jr., Valerie S. Del Rosario",
+        "screenplay": "Floriza Francisco Reyes",
+        "production_designer": "Heart Eusebio",
+        "cinematographer": "Lee Briones-Meily",
+        "editor": "Tara Illenberger",
+        "sound": "Ronald de Asis",
+        "music": "Teresa Barrozo",
         "now_showing": false,
         "watch": [
             {
@@ -3159,13 +3159,13 @@
         "description": "Two young siblings go on a fantastical adventure to satiate their much-coveted and delectable craving for batsoy.",
         "director": "Ronald Espinosa Batallones",
         "cast": "Sean Ethan Sotto, Markko Cambas, Karen Laurrie Mendoza, Nathan J. Sotto, Jonalie Asdolo, Annalyn Biona Hipolito",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "producers": "Martin Mayuga, Ferdinand Lapuz",
+        "screenplay": "Ronald Espinosa Batallones",
+        "production_designer": "Kyle Fermindoza",
+        "cinematographer": "Jun Morden",
+        "editor": "Kyle Fermindoza, Richard Martin Mayuga, Jun Morden",
+        "sound": "Timothy John Jambalos",
+        "music": "Rodrigo J. Sotto Jr.",
         "now_showing": false,
         "watch": [
             {
@@ -3228,13 +3228,13 @@
         "description": "Acting as if coming home from a vacation, young Marawi war veteran Wesley is excited to bring his girlfriend Ritz home to meet his family. Showered with unsolicited hero worship upon his homecoming, Wesley struggles to reconnect his present relationships with his family and lover all while celebrating the town fiesta.",
         "director": "Sheenly Gener",
         "cast": "Gio Gahol, Kate Alejandrino, AIR",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "producers": "Sheenly Gener, Chuck Gutierrez, Baby Ruth Villarama",
+        "screenplay": "Andrian Legaspi",
+        "production_designer": "Michael Bayot",
+        "cinematographer": "Francis Ricardo Buhay III",
+        "editor": "Chuck Gutierrez",
+        "sound": "Pepe Manikan",
+        "music": "Pepe Manikan",
         "now_showing": false,
         "watch": [
             {
@@ -3280,7 +3280,7 @@
                 "editing": false
             },
             {
-                "sound": false
+                "sound": true
             },
             {
                 "music": false
@@ -3297,13 +3297,13 @@
         "description": "Anton is an aspiring boxer. He hopes to continue the legacy of his older brother Saul who was given a chance to escape poverty by joining a competition in the city but later faced tragedy. Against his mother’s wishes, Anton leaves their small fishing town to pursue boxing in Manila where he unravels the ugly truth of the brutal sport.",
         "director": "Christian Paolo Lat",
         "cast": "Andrew Ramsay, Duane Lucas Pascua, Ruby Ruiz, Rolando Inocencio, Dido de la Paz, Ruth Lopez-Dee, Elan Villafuerte, Shun Andrei Bacalla, Roel Abao, Kiko Matos, Jun Nayra, Jan Rebong, Chanel Latorre",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "producers": "Wins Cabico, Jiro Garbes",
+        "screenplay": "Mia Salisbury, Christian Paolo Lat, Lester Caacbay, Anju De Vera",
+        "production_designer": "Melvin Lacerna",
+        "cinematographer": "Dominic Lat",
+        "editor": "Sebastian Olivedo, Alec Figuracion",
+        "sound": "Paulo Protacio",
+        "music": "Paulo Protacio",
         "now_showing": false,
         "watch": [
             {
@@ -3366,13 +3366,13 @@
         "description": "Rebekah files for sole custody for her young daughter Amaya. But this doesn’t sit well with her estranged husband Jay. Amid the custody battle, Rebekah finds another “Amaya” under the bed.",
         "director": "Roman S. Perez Jr.",
         "cast": "Coleen Garcia, Queenzy Calma, Karl Medina, Cara Gonzales, Elora Españo",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "producers": "Wilma Hollis",
+        "screenplay": "Enrique S. Villasis",
+        "production_designer": "Junebert Cantila",
+        "cinematographer": "Rodolfo Amandy Jr.",
+        "editor": "Chrisel Galeno-Desuasido",
+        "sound": "Immanuel Verona, Fatima Nerikka P. Salim",
+        "music": "Emerzon Texon",
         "now_showing": false,
         "watch": [
             {
@@ -3435,13 +3435,13 @@
         "description": "Amir, a 17-year-old Moro child soldier whose father was killed in an all-out war in 2000, dreams to live a different life – he wants to become a baseball player. Training extensively with his coach, he makes it to the final tryout of a local university.",
         "director": "Carlo Obispo",
         "cast": "Tommy Alejandrino, JM San Jose, Tess Antonio, Don Melvin Boongaling, Sue Prado, Pongs Leonardo, Joel Saracho, Bon Lentejas, Ely Cellan, Arnold Reyes",
-        "producers": "",
-        "screenplay": "",
-        "production_designer": "",
-        "cinematographer": "",
-        "editor": "",
-        "sound": "",
-        "music": "",
+        "producers": "Marvin Reyes, Carlo Obispo",
+        "screenplay": "Carlo Obispo",
+        "production_designer": "Michael Bayot",
+        "cinematographer": "Marvin Reyes",
+        "editor": "Zig Madamba Dulay",
+        "sound": "Alex Tomboc",
+        "music": "Pepe Manikan",
         "now_showing": false,
         "watch": [
             {
@@ -3450,7 +3450,7 @@
         ],
         "awards": [
             {
-                "film": false
+                "film": true
             },
             {
                 "special_jury": false
@@ -3462,8 +3462,8 @@
                 "direction": false
             },
             {
-                "actor": false,
-                "name": ""
+                "actor": true,
+                "name": "Tommy Alejandrino"
             },
             {
                 "actress": false,
@@ -3478,13 +3478,13 @@
                 "name": ""
             },
             {
-                "screenplay": false
+                "screenplay": true
             },
             {
                 "cinematography": false
             },
             {
-                "editing": false
+                "editing": true
             },
             {
                 "sound": false
