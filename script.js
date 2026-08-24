@@ -517,7 +517,7 @@ function populateWatchFilters() {
   const platforms = [
 
     ["none", "No known source"],
-    
+
     ["netflix", "Netflix"],
 
     ["juanflix", "Juanflix"],
@@ -3938,20 +3938,23 @@ function renderPlatformSummary() {
 
   platformSummary.innerHTML = summaryPlatforms
     .map((type) => {
-      const name =
-        platformNames[type] || type;
+      const name = platformNames[type] || type;
 
       return `
-        <div
-          class="platform-summary-card platform-summary-${escapeHTML(type)}"
-        >
-          <div class="platform-summary-name">
-            ${escapeHTML(name)}
-          </div>
+        <div class="platform-summary-item">
 
-          <div class="platform-summary-count">
-            ${counts[type]}
-          </div>
+          <span
+            class="platform-summary-square platform-summary-${escapeHTML(type)}"
+          ></span>
+
+          <span class="platform-summary-name">
+            ${escapeHTML(name)}
+          </span>
+
+          <span class="platform-summary-count">
+            (${counts[type]})
+          </span>
+
         </div>
       `;
     })
