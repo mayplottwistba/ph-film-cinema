@@ -16,12 +16,20 @@ const platformNames = {
 
 const whatsNew = [
   {
+    date: "08.25.26",
+    version: "3.7",
+    updates: [
+      "<b><i> Kusina (2016)</b></i> is available for streaming at VivaOne and for Rent / Buy on YouTube", 
+    ],
+  },
+  {
     date: "08.21.26",
     version: "3.6",
     updates: [
       "<b><i> Engkwentro (2009)</b></i> is available for streaming at Highball TV (Free Trial account)", 
     ],
-  },{
+  },
+  {
     date: "08.21.26",
     version: "3.5",
     updates: [

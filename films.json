@@ -5897,6 +5897,10 @@
     "watch": [
       {
         "type": "viva"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=gt9sxo7e5sA"
       }
     ],
     "awards": [
