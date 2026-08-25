@@ -1024,7 +1024,7 @@ function createFilmCard(film) {
             </button>
 
 
-            <div class="film-director-label">
+            <!-- <div class="film-director-label">
                 DIRECTOR
             </div>
 
@@ -1050,7 +1050,7 @@ function createFilmCard(film) {
                 data-target="cast"
             >
                 SEE MORE
-            </button>
+            </button> -->
 
 
             <div class="watch-label">
