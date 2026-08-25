@@ -3367,24 +3367,3 @@ html.dark-mode .watched-checkbox input:checked + span::before {
     flex-basis: 9px;
   }
 }
-
-.film-title-row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.film-title {
-  min-width: 0;
-  flex: 1;
-}
-
-.film-letterboxd-rating {
-  flex-shrink: 0;
-
-  font-family: monospace;
-  font-size: 10px;
-  font-weight: 900;
-  white-space: nowrap;
-}

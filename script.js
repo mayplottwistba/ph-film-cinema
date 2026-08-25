@@ -1050,7 +1050,7 @@ function createFilmCard(film) {
                 data-target="cast"
             >
                 SEE MORE
-            </button> 
+            </button> -->
 
 
             <div class="watch-label">
