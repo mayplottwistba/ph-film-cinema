@@ -3728,7 +3728,7 @@
   {
     "year": 2019,
     "title": "Ani (The Harvest)",
-    "poster": "assets/musmos.jpg",
+    "poster": "assets/ani.jpg",
     "description": "Set in the year 2050 at the State of Bicol, Philippines, Mithi,an orphaned boy moves to a farm to live with his estranged grandfather, Mauricio. When the old man falls ill, and as thecrops in their farm seem to fall ill with him, the boy embarkson a quest with his malfunctioning robot to search for magicalgrains that he believes can save the man’s life.",
     "director": "Kim Zuñiga, Sandro Del Rosario",
     "cast": "Zyrendela Cruz, Ricky Davao, Miguel Valdes, Marc Felix, Anna Luna, JM Canlas, Rolando Inocencio, Raphael Robes, Victor Medina, Mio Maranan, Chryssta Cordoves, Jermaine Choa Peck",
@@ -5896,7 +5896,7 @@
     "now_showing": false,
     "watch": [
       {
-        "type": "none"
+        "type": "viva"
       }
     ],
     "awards": [
