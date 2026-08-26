@@ -3626,14 +3626,18 @@ function buildCastAwardsTable() {
    */
 
   function renderWinner(names) {
-    if (!names.length) {
-      return "—";
-    }
-
-    return names
-      .map((winner) => `<b>${winner.name}</b> <em>(${winner.film})</em>`)
-      .join("<br>");
+  if (!names.length) {
+    return "—";
   }
+
+  return names
+    .map((winner) => {
+      const cleanFilmTitle = winner.film.replace(/\s*\([^)]*\)\s*$/, "");
+
+      return `<b>${winner.name}</b> <em>(${cleanFilmTitle})</em>`;
+    })
+    .join("<br>");
+}
 
   /*
    * Build rows
