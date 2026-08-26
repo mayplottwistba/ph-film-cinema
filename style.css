@@ -3367,3 +3367,52 @@ html.dark-mode .watched-checkbox input:checked + span::before {
     flex-basis: 9px;
   }
 }
+
+.letterboxd-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  width: fit-content;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  padding: 6px 9px;
+
+  border: 1px solid var(--border);
+  background: var(--surface);
+
+  color: var(--text);
+
+  font-family: monospace;
+  font-size: 8px;
+  font-weight: 900;
+
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.letterboxd-link:hover {
+  background: var(--text);
+  color: var(--bg);
+}
+
+.letterboxd-logo {
+  width: 18px;
+  height: 18px;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+.letterboxd-arrow {
+  font-size: 11px;
+  margin-left: 2px;
+}

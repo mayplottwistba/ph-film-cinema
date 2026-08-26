@@ -19,65 +19,65 @@ const whatsNew = [
     date: "08.25.26",
     version: "3.7",
     updates: [
-      "<b><i> Kusina (2016)</b></i> is available for streaming at VivaOne and for Rent / Buy on YouTube", 
+      "<b><i> Kusina (2016)</b></i> is available for streaming at VivaOne and for Rent / Buy on YouTube",
     ],
   },
   {
     date: "08.21.26",
     version: "3.6",
     updates: [
-      "<b><i> Engkwentro (2009)</b></i> is available for streaming at Highball TV (Free Trial account)", 
+      "<b><i> Engkwentro (2009)</b></i> is available for streaming at Highball TV (Free Trial account)",
     ],
   },
   {
     date: "08.21.26",
     version: "3.5",
     updates: [
-      "<b><i> Sa Gabing Nanahimik ang mga Kuliglig (2017)</b></i> source is avaiable (CCP site)", 
+      "<b><i> Sa Gabing Nanahimik ang mga Kuliglig (2017)</b></i> source is avaiable (CCP site)",
     ],
   },
   {
     date: "08.21.26",
     version: "3.5",
     updates: [
-      "Added official sites for the following: <b><i> Requited (2017)</b></i> (Youtube), <b><i> Mercury is Mine (2016)</b></i> (Youtube), <b><i> Ang Pagdadalaga ni Maximo Oliveros (2005)</b></i> (iWant), <b><i> Bakit 'Di Mo Sabihin (Tell Her) (2022)</b></i> (Prime Video), <b><i> Kaluskos (2022)</b></i> (VivaOne), <b><i> Ang Pamilyang Hindi Lumuluha (2017)</b></i> (VivaOne), <b><i> Kalayaan (Wildlife) (2012)</b></i> (Buy or Rent on AppleTV), <b><i> Donsol (2006)</b></i> (Pinoy Box Office on Amazon Prime - US only)", 
+      "Added official sites for the following: <b><i> Requited (2017)</b></i> (Youtube), <b><i> Mercury is Mine (2016)</b></i> (Youtube), <b><i> Ang Pagdadalaga ni Maximo Oliveros (2005)</b></i> (iWant), <b><i> Bakit 'Di Mo Sabihin (Tell Her) (2022)</b></i> (Prime Video), <b><i> Kaluskos (2022)</b></i> (VivaOne), <b><i> Ang Pamilyang Hindi Lumuluha (2017)</b></i> (VivaOne), <b><i> Kalayaan (Wildlife) (2012)</b></i> (Buy or Rent on AppleTV), <b><i> Donsol (2006)</b></i> (Pinoy Box Office on Amazon Prime - US only)",
     ],
   },
   {
     date: "08.21.26",
     version: "3.4",
     updates: [
-      "<b><i> Ang Babae sa Septic Tank (2011)</b></i> is available on iWant", 
+      "<b><i> Ang Babae sa Septic Tank (2011)</b></i> is available on iWant",
     ],
   },
   {
     date: "08.21.26",
     version: "3.3",
     updates: [
-      "Added sources for <b><i> Kadin (2007)</b></i>, and <b><i> ICU Bed #7 (2007)</b></i> as they are both available on Alexander Street", 
+      "Added sources for <b><i> Kadin (2007)</b></i>, and <b><i> ICU Bed #7 (2007)</b></i> as they are both available on Alexander Street",
     ],
   },
   {
     date: "08.21.26",
     version: "3.2",
     updates: [
-      "Removed Youtube links for <b><i> Fuccbois (2019)</b></i>,<b><i> Ang Katiwala (2012)</b></i>,<b><i> Two Funerals (2010)</b></i>,<b><i> Astig (2009),</b></i> <b><i> Ang Pagdadalaga ni Maximo Oliveros (2005)</b></i>, and<b><i> Room Boy (2005) </b></i> as the uploaders do not come from official accounts", 
+      "Removed Youtube links for <b><i> Fuccbois (2019)</b></i>,<b><i> Ang Katiwala (2012)</b></i>,<b><i> Two Funerals (2010)</b></i>,<b><i> Astig (2009),</b></i> <b><i> Ang Pagdadalaga ni Maximo Oliveros (2005)</b></i>, and<b><i> Room Boy (2005) </b></i> as the uploaders do not come from official accounts",
     ],
   },
   {
     date: "08.21.26",
     version: "3.1",
     updates: [
-      "Added new sources: <b><i> Ang Duyan ng Magiting (2023) </i></b>is available at Kinema. <b><i> Respeto (2017) </i></b> and <b><i> Batad: Sa Paang Palay (2006) </i></b> are available for <strong>rent</strong> at Amazon. <b><i> Saan Nagtatago Si Happiness (2006) </i></b> and <b><i> Sampaguita, National Flower (2010) </i></b> are available at Alexander Street.", 
+      "Added new sources: <b><i> Ang Duyan ng Magiting (2023) </i></b>is available at Kinema. <b><i> Respeto (2017) </i></b> and <b><i> Batad: Sa Paang Palay (2006) </i></b> are available for <strong>rent</strong> at Amazon. <b><i> Saan Nagtatago Si Happiness (2006) </i></b> and <b><i> Sampaguita, National Flower (2010) </i></b> are available at Alexander Street.",
     ],
   },
   {
     date: "08.21.26",
     version: "3.0",
     updates: [
-      "Removed external links from films that are not on any streaming platform", 
+      "Removed external links from films that are not on any streaming platform",
     ],
-  }
+  },
 ];
 
 const filmsGrid = document.getElementById("filmsGrid");
@@ -214,15 +214,11 @@ const filmsPerPage = 15;
    WATCHED FILMS
    ========================================================= */
 
-const watchedCount =
-  document.getElementById("watchedCount");
+const watchedCount = document.getElementById("watchedCount");
 
-const watchedTotal =
-  document.querySelector(".watched-total");
+const watchedTotal = document.querySelector(".watched-total");
 
-const watchedStorageKey =
-  "cinemalaya-watched-films";
-
+const watchedStorageKey = "cinemalaya-watched-films";
 
 /*
  * Get saved watched films.
@@ -231,49 +227,32 @@ const watchedStorageKey =
  */
 function getWatchedFilms() {
   try {
-    const saved =
-      localStorage.getItem(
-        watchedStorageKey
-      );
+    const saved = localStorage.getItem(watchedStorageKey);
 
     if (!saved) {
       return new Set();
     }
 
-    const parsed =
-      JSON.parse(saved);
+    const parsed = JSON.parse(saved);
 
     if (!Array.isArray(parsed)) {
       return new Set();
     }
 
     return new Set(parsed);
-
   } catch (error) {
-    console.error(
-      "Unable to load watched films:",
-      error
-    );
+    console.error("Unable to load watched films:", error);
 
     return new Set();
   }
 }
 
-
 /*
  * Save watched films.
  */
-function saveWatchedFilms(
-  watchedFilms
-) {
-  localStorage.setItem(
-    watchedStorageKey,
-    JSON.stringify(
-      [...watchedFilms]
-    )
-  );
+function saveWatchedFilms(watchedFilms) {
+  localStorage.setItem(watchedStorageKey, JSON.stringify([...watchedFilms]));
 }
-
 
 /*
  * Create a stable ID for each film.
@@ -281,61 +260,34 @@ function saveWatchedFilms(
  * We don't need to modify films.json.
  */
 function getFilmWatchId(film) {
-  return [
-    film.year || "",
-    film.title || ""
-  ]
-    .join("|")
-    .toLowerCase()
-    .trim();
+  return [film.year || "", film.title || ""].join("|").toLowerCase().trim();
 }
-
 
 /*
  * Update WATCHED XX / TOTAL FILMS
  */
 function updateWatchedCount() {
-  if (
-    !watchedCount ||
-    !watchedTotal
-  ) {
+  if (!watchedCount || !watchedTotal) {
     return;
   }
 
-  const watchedFilms =
-    getWatchedFilms();
+  const watchedFilms = getWatchedFilms();
 
-  const total =
-    films.length;
+  const total = films.length;
 
   let watched = 0;
 
-  films.forEach(
-    film => {
-      const filmId =
-        getFilmWatchId(film);
+  films.forEach((film) => {
+    const filmId = getFilmWatchId(film);
 
-      if (
-        watchedFilms.has(
-          filmId
-        )
-      ) {
-        watched++;
-      }
+    if (watchedFilms.has(filmId)) {
+      watched++;
     }
-  );
+  });
 
-  watchedCount.textContent =
-    String(watched).padStart(
-      2,
-      "0"
-    );
+  watchedCount.textContent = String(watched).padStart(2, "0");
 
-  watchedTotal.textContent =
-    `/ ${String(total).padStart(
-      2,
-      "0"
-    )} FILMS`;
+  watchedTotal.textContent = `/ ${String(total).padStart(2, "0")} FILMS`;
 }
 
 /* =========================================================
@@ -523,7 +475,6 @@ function populateWatchFilters() {
     `;
 
   const platforms = [
-
     ["none", "No known source"],
 
     ["netflix", "Netflix"],
@@ -542,14 +493,13 @@ function populateWatchFilters() {
 
     ["viva", "VivaOne"],
 
-
     ["kinema", "Kinema"],
 
     ["amazon", "Amazon"],
 
     ["highballtv", "Highball TV"],
 
-    ["alexanderstreet", "Alexander Street"]
+    ["alexanderstreet", "Alexander Street"],
 
     // ["now_showing", "Now Showing"],
   ];
@@ -1052,6 +1002,28 @@ function createFilmCard(film) {
                 SEE MORE
             </button> -->
 
+                        ${
+                          film.letterboxd
+                            ? `
+                  <a
+                    class="letterboxd-link"
+                    href="${escapeHTML(film.letterboxd)}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="assets/letterboxd.png"
+                      alt="Letterboxd"
+                      class="letterboxd-logo"
+                    />
+
+                    <span>OPEN IN LETTERBOXD</span>
+                    <span class="letterboxd-arrow">↗</span>
+                  </a>
+                `
+                            : ""
+                        }
+
 
             <div class="watch-label">
                 WHERE TO WATCH:
@@ -1191,7 +1163,6 @@ function renderFilms() {
 
   const filteredFilms = getFilteredFilms();
 
-  
   const totalFilms = filteredFilms.length;
 
   const totalPages = Math.ceil(totalFilms / filmsPerPage);
@@ -3569,7 +3540,7 @@ function buildCastAwardsTable() {
         `;
 
     return;
-  } 
+  }
 
   /*
    * Total pages
