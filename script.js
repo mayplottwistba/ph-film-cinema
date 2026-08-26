@@ -1031,8 +1031,8 @@ function createFilmCard(film) {
                       class="letterboxd-logo"
                     />
 
-                    <span>OPEN IN LETTERBOXD</span>
-                    <span class="letterboxd-arrow">↗</span>
+                    <!-- <span>OPEN IN LETTERBOXD</span>
+                    <span class="letterboxd-arrow">↗</span> -->
                   </a>
                 `
                             : ""
