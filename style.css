@@ -3466,3 +3466,22 @@ html.dark-mode .watched-checkbox input:checked + span::before {
   font-size: 11px;
   margin-left: 1px;
 }
+
+.filmography-award {
+  display: inline-block;
+
+  width: fit-content;
+
+  margin-top: 6px;
+  padding: 3px 7px;
+
+  background: #e6b800;
+  color: #111;
+
+  font-family: monospace;
+  font-size: 8px;
+  font-weight: 900;
+
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}

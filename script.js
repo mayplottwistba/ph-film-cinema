@@ -2419,39 +2419,57 @@ function findFilmography() {
                 </div>
 
 
-                <div
-                    class="filmography-info"
-                >
+                <div class="filmography-info">
 
-                    <div
-                        class="filmography-year"
-                    >
-                        ${escapeHTML(film.year || "")}
-                    </div>
+    <div class="filmography-year">
+        ${escapeHTML(film.year || "")}
+    </div>
 
+    <div class="filmography-title">
+        ${escapeHTML(film.title || "")}
+    </div>
 
-                    <div
-                        class="filmography-title"
-                    >
-                        ${escapeHTML(film.title || "")}
-                    </div>
+    ${
+      matchedCastName
+        ? `
+            <span class="filmography-role">
+                ${escapeHTML(matchedCastName)}
+            </span>
+        `
+        : ""
+    }
 
+    ${
+      Array.isArray(film.awards)
+        ? film.awards
+            .filter(
+              (award) =>
+                award &&
+                award.name &&
+                formatName(award.name) === formatName(searchName)
+            )
+            .map((award) => {
+              let awardTitle = "";
 
-                    ${
-                      matchedCastName
-                        ? `
+              if (award.actor === true) {
+                awardTitle = "⭐ BEST ACTOR";
+              } else if (award.actress === true) {
+                awardTitle = "⭐ BEST ACTRESS";
+              } else if (award.supporting_actor === true) {
+                awardTitle = "⭐ BEST SUPPORTING ACTOR";
+              } else if (award.supporting_actress === true) {
+                awardTitle = "⭐ BEST SUPPORTING ACTRESS";
+              }
 
-                                <span
-                                    class="filmography-role"
-                                >
-                                    ${escapeHTML(matchedCastName)}
-                                </span>
+              return awardTitle
+                ? `<div class="filmography-award">${awardTitle}</div>`
+                : "";
+            })
+            .join("")
+        : ""
+    }
 
-                            `
-                        : ""
-                    }
-
-                </div>
+</div>
 
             `;
 
