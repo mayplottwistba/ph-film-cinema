@@ -959,6 +959,44 @@ function createFilmCard(film) {
                 ${escapeHTML(film.title || "")}
             </div>
 
+            <div class="watch-section">
+
+            <div class="watch-label">
+                WHERE TO WATCH:
+            </div>
+
+            <div class="watch-links-row">
+
+            <div class="watch-options">
+                ${watchOptions}
+            </div>
+
+             ${
+               film.letterboxd
+                 ? `
+                  <a
+                    class="letterboxd-link"
+                    href="${escapeHTML(film.letterboxd)}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="assets/letterboxd.png"
+                      alt="Letterboxd"
+                      class="letterboxd-logo"
+                    />
+
+                    <!-- <span>OPEN IN LETTERBOXD</span>
+                    <span class="letterboxd-arrow">↗</span> -->
+                  </a>
+                `
+                 : ""
+             }
+
+                         </div>
+
+            </div>
+
 
             <div class="film-description">
                 ${escapeHTML(film.description || "")}
@@ -1004,43 +1042,7 @@ function createFilmCard(film) {
 
                        
 
-          <div class="watch-section">
-
-            <div class="watch-label">
-                WHERE TO WATCH:
-            </div>
-
-            <div class="watch-links-row">
-
-            <div class="watch-options">
-                ${watchOptions}
-            </div>
-
-             ${
-                          film.letterboxd
-                            ? `
-                  <a
-                    class="letterboxd-link"
-                    href="${escapeHTML(film.letterboxd)}"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src="assets/letterboxd.png"
-                      alt="Letterboxd"
-                      class="letterboxd-logo"
-                    />
-
-                    <!-- <span>OPEN IN LETTERBOXD</span>
-                    <span class="letterboxd-arrow">↗</span> -->
-                  </a>
-                `
-                            : ""
-                        }
-
-                         </div>
-
-</div>
+          
 
 
         </div>
