@@ -3440,7 +3440,7 @@ html.dark-mode .watched-checkbox input:checked + span::before {
 
   padding: 6px 9px;
 
-  /* border: 1px solid var(--border);*/
+  border: none !important;
   background: var(--surface);
 
   color: var(--text);
