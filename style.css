@@ -2678,8 +2678,9 @@ html.dark-mode .production-credit-value {
 .cast-awards-table td {
   min-height: 42px;
 
-  font-size: 11px;
-  font-weight: 400;
+  font-family: monospace;
+  font-size: 10px;
+  font-weight: 900;
 
   line-height: 1.4;
 }
