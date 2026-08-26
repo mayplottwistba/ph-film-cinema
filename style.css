@@ -548,7 +548,7 @@ html.dark-mode .theme-toggle-thumb {
 }
 
 .film-title {
-  margin-bottom: 2px;
+  margin-bottom: 7px;
 
   color: var(--text);
 
@@ -1924,7 +1924,7 @@ html.dark-mode .theme-toggle-thumb {
 }
 
 .common-film-title {
-  margin: 2px 0 8px;
+  margin: 4px 0 8px;
 
   color: var(--text);
 
