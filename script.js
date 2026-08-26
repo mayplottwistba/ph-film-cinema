@@ -961,9 +961,9 @@ function createFilmCard(film) {
 
             <div class="watch-section">
 
-            <div class="watch-label">
+            <!-- <div class="watch-label">
                 WHERE TO WATCH:
-            </div>
+            </div> -->
 
             <div class="watch-links-row">
 
