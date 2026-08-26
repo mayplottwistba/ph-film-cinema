@@ -3614,7 +3614,7 @@ function buildCastAwardsTable() {
 
     return names
       .map((winner) => `${winner.name} <em>(${winner.film})</em>`)
-      .join("");
+      .join("<br>");
   }
 
   /*
