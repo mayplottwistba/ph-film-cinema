@@ -3416,3 +3416,63 @@ html.dark-mode .watched-checkbox input:checked + span::before {
   font-size: 11px;
   margin-left: 2px;
 }
+
+.watch-links-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.watch-platforms {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.letterboxd-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  width: fit-content;
+
+  padding: 6px 9px;
+
+  border: 1px solid var(--border);
+  background: var(--surface);
+
+  color: var(--text);
+
+  font-family: monospace;
+  font-size: 8px;
+  font-weight: 900;
+
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  white-space: nowrap;
+
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.letterboxd-link:hover {
+  background: var(--text);
+  color: var(--bg);
+}
+
+.letterboxd-logo {
+  width: 18px;
+  height: 18px;
+  display: block;
+  object-fit: contain;
+}
+
+.letterboxd-arrow {
+  font-size: 11px;
+  margin-left: 1px;
+}

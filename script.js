@@ -1002,7 +1002,21 @@ function createFilmCard(film) {
                 SEE MORE
             </button> -->
 
-                        ${
+                       
+
+          <div class="watch-section">
+
+            <div class="watch-label">
+                WHERE TO WATCH:
+            </div>
+
+            <div class="watch-links-row">
+
+            <div class="watch-options">
+                ${watchOptions}
+            </div>
+
+             ${
                           film.letterboxd
                             ? `
                   <a
@@ -1024,15 +1038,9 @@ function createFilmCard(film) {
                             : ""
                         }
 
+                         </div>
 
-            <div class="watch-label">
-                WHERE TO WATCH:
-            </div>
-
-
-            <div class="watch-options">
-                ${watchOptions}
-            </div>
+</div>
 
 
         </div>
