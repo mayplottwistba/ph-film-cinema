@@ -3398,11 +3398,6 @@ html.dark-mode .watched-checkbox input:checked + span::before {
     color 0.15s ease;
 }
 
-.letterboxd-link:hover {
-  background: var(--text);
-  color: var(--bg);
-}
-
 .letterboxd-logo {
   width: 18px;
   height: 18px;
