@@ -3585,12 +3585,22 @@ function buildCastAwardsTable() {
 
         awards.forEach((award) => {
           if (award && award[awardKey] === true && award.name) {
-            winners.push(award.name);
+            winners.push({
+              name: award.name,
+              film: film.title || film.name || "",
+            });
           }
         });
       });
 
-    return [...new Set(winners)];
+    // Remove duplicate winner + film combinations
+    return winners.filter(
+      (winner, index, self) =>
+        index ===
+        self.findIndex(
+          (item) => item.name === winner.name && item.film === winner.film,
+        ),
+    );
   }
 
   /*
@@ -3603,13 +3613,7 @@ function buildCastAwardsTable() {
     }
 
     return names
-      .map(
-        (name) => `
-                    <div class="cast-award-winner">
-                        ${escapeHTML(name)}
-                    </div>
-                `,
-      )
+      .map((winner) => `${winner.name} <em>(${winner.film})</em>`)
       .join("");
   }
 
