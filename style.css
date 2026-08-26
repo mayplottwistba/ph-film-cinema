@@ -3475,7 +3475,7 @@ html.dark-mode .watched-checkbox input:checked + span::before {
   margin-top: 6px;
   padding: 3px 7px;
 
-  background: #e6b800;
+  background: white;
   color: #111;
 
   font-family: monospace;
