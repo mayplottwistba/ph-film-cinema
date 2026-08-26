@@ -550,8 +550,6 @@ html.dark-mode .theme-toggle-thumb {
 .film-title {
   margin-bottom: 10px;
 
-  min-height: 63px; /* reserves space for 3 title lines */
-
   color: var(--text);
 
   font-size: 21px;
@@ -2435,12 +2433,6 @@ html.dark-mode .theme-toggle-thumb {
 /* =========================================================
    FILM DETAILS - HIDE SCROLLBAR BUT KEEP SCROLLING
    ========================================================= */
-
-@media (max-width: 650px) {
-  .film-title {
-    font-size: 17px;
-  }
-}
 
 .film-details-message {
   scrollbar-width: none;
