@@ -1216,8 +1216,8 @@ function renderFilms() {
     currentPage = totalPages;
   }
 
-  platformSummary.style.display = "block";
-  watchedSummary.style.display = "block";
+  platformSummary.style.display = "";
+  watchedSummary.style.display = "";
 
   const startIndex = (currentPage - 1) * filmsPerPage;
 
