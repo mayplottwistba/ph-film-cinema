@@ -3416,7 +3416,7 @@ html.dark-mode .watched-checkbox input:checked + span::before {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 3px;
 }
 
 .watch-platforms {
