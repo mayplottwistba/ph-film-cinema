@@ -3004,6 +3004,8 @@ function showDirectors() {
 function hideFilmList() {
   if (filmsGrid) {
     filmsGrid.style.display = "none";
+    platformSummary.style.display = "none";
+    watchedSummary.style.display = "none";
   }
 
   if (pagination) {
