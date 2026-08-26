@@ -551,6 +551,7 @@ html.dark-mode .theme-toggle-thumb {
   margin-bottom: 10px;
 
   color: var(--text);
+  -webkit-line-clamp: 3;
 
   font-size: 21px;
   line-height: 1;
