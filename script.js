@@ -959,8 +959,6 @@ function createFilmCard(film) {
                 ${escapeHTML(film.title || "")}
             </div>
 
-            <div class="watch-section">
-
             <div class="watch-links-row">
 
             <div class="watch-options">
@@ -990,8 +988,6 @@ function createFilmCard(film) {
              }
 
                          </div>
-
-            </div>
 
 
             <div class="film-description">
