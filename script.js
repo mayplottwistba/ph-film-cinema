@@ -3613,7 +3613,7 @@ function buildCastAwardsTable() {
     }
 
     return names
-      .map((winner) => `${winner.name} <em>(${winner.film})</em>`)
+      .map((winner) => `<b>${winner.name}</b> <em>(${winner.film})</em>`)
       .join("<br>");
   }
 
