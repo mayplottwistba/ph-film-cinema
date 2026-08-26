@@ -1191,6 +1191,7 @@ function renderFilms() {
 
   const filteredFilms = getFilteredFilms();
 
+  
   const totalFilms = filteredFilms.length;
 
   const totalPages = Math.ceil(totalFilms / filmsPerPage);
@@ -1214,6 +1215,9 @@ function renderFilms() {
   if (currentPage > totalPages) {
     currentPage = totalPages;
   }
+
+  platformSummary.style.display = "";
+  watchedSummary.style.display = "";
 
   const startIndex = (currentPage - 1) * filmsPerPage;
 
