@@ -4322,8 +4322,8 @@
         "direction": false
       },
       {
-        "actor": false,
-        "name": ""
+        "actor": true,
+        "name": "Eddie Garcia"
       },
       {
         "actress": false,
@@ -4344,7 +4344,7 @@
         "cinematography": false
       },
       {
-        "editing": false
+        "editing": true
       },
       {
         "sound": false
@@ -4388,7 +4388,7 @@
         "special_jury": false
       },
       {
-        "audience": false
+        "audience": true
       },
       {
         "direction": false
@@ -4454,7 +4454,7 @@
     ],
     "awards": [
       {
-        "film": false
+        "film": true
       },
       {
         "special_jury": false
@@ -4482,10 +4482,10 @@
         "name": ""
       },
       {
-        "screenplay": false
+        "screenplay": true
       },
       {
-        "cinematography": false
+        "cinematography": true
       },
       {
         "editing": false
@@ -4497,7 +4497,10 @@
         "music": false
       },
       {
-        "production": false
+        "production": true
+      },
+      {
+        "netpac": true
       }
     ],
     "genre": "Drama",
@@ -4542,16 +4545,16 @@
         "name": ""
       },
       {
-        "actress": false,
-        "name": ""
+        "actress": true,
+        "name": "Ai-ai delas Alas"
       },
       {
         "supporting_actor": false,
         "name": ""
       },
       {
-        "supporting_actress": false,
-        "name": ""
+        "supporting_actress": true,
+        "name": "Therese Malvar"
       },
       {
         "screenplay": false
@@ -4600,13 +4603,13 @@
         "film": false
       },
       {
-        "special_jury": false
+        "special_jury": true
       },
       {
         "audience": false
       },
       {
-        "direction": false
+        "direction": true
       },
       {
         "actor": false,
@@ -4637,7 +4640,7 @@
         "sound": false
       },
       {
-        "music": false
+        "music": true
       },
       {
         "production": false
@@ -4692,8 +4695,8 @@
         "name": ""
       },
       {
-        "supporting_actress": false,
-        "name": ""
+        "supporting_actress": true,
+        "name": "Therese Malvar"
       },
       {
         "screenplay": false
@@ -4901,8 +4904,8 @@
         "name": ""
       },
       {
-        "supporting_actor": false,
-        "name": ""
+        "supporting_actor": true,
+        "name": "Ketchup Eusebio"
       },
       {
         "supporting_actress": false,
@@ -4942,7 +4945,7 @@
     "production_designer": "Aped Santos",
     "cinematographer": "Mark Joseph Cosico",
     "editor": "Regina Aceron, Cj Villa",
-    "sound": "",
+    "sound": "Wild Sound",
     "music": "Patricia Lasaten",
     "now_showing": false,
     "watch": [
@@ -4989,7 +4992,7 @@
         "editing": false
       },
       {
-        "sound": false
+        "sound": true
       },
       {
         "music": false
@@ -5013,7 +5016,7 @@
     "production_designer": "Ericson Navarro",
     "cinematographer": "Marvin Reyes",
     "editor": "Thop Nazareno",
-    "sound": "",
+    "sound": "Wildsound",
     "music": "Pepe Manikan",
     "now_showing": false,
     "watch": [
@@ -5035,8 +5038,8 @@
         "direction": false
       },
       {
-        "actor": false,
-        "name": ""
+        "actor": true,
+        "name": "Noel Comia Jr."
       },
       {
         "actress": false,
@@ -5047,8 +5050,8 @@
         "name": ""
       },
       {
-        "supporting_actress": false,
-        "name": ""
+        "supporting_actress": true,
+        "name": "Yayo Aguila"
       },
       {
         "screenplay": false
@@ -5063,14 +5066,14 @@
         "sound": false
       },
       {
-        "music": false
+        "music": true
       },
       {
         "production": false
       }
     ],
-    "genre": "",
-    "letterboxd": ""
+    "genre": "Drama",
+    "letterboxd": "https://letterboxd.com/film/kiko-the-boxer/"
   },
   {
     "year": 2017,
@@ -5079,12 +5082,12 @@
     "description": "A husband takes flight when his wife goes missing.",
     "director": "Sonny Calvento",
     "cast": "Gina Alajar, Billy Ray Gallion, Jameson Blake, Elaine Yu, Lito Pimentel, Jerom Canlas, Sue Prado, Krystal Mejes, Dannah Cardoza, Jojo Riguerra, Lao Rodriguez, Raul Morit, JC Santos",
-    "producers": "",
+    "producers": "Tony Calvento",
     "screenplay": "Sonny Calvento",
     "production_designer": "Marxie Maolen Fadul",
     "cinematographer": "Neil Daza",
-    "editor": "",
-    "sound": "",
+    "editor": "Joris Fernandez",
+    "sound": "Mikko Quizon",
     "music": "Teresa Barrozo",
     "now_showing": false,
     "watch": [
@@ -5137,11 +5140,11 @@
         "music": false
       },
       {
-        "production": false
+        "production": true
       }
     ],
-    "genre": "",
-    "letterboxd": ""
+    "genre": "Drama, Mystery",
+    "letterboxd": "https://letterboxd.com/film/the-decaying/"
   },
   {
     "year": 2017,
@@ -5221,13 +5224,13 @@
     "description": "Bagahe follows Mercy Agbunag, an Overseas Filipino Worker whose homecoming is interrupted when she is questioned about a newborn baby found in an airplane toilet. As she is passed between the police, hospital, shelter, media, church, and government agencies, the investigation uncovers the truth about her abuse and the way she is treated by the society she returns to.",
     "director": "Zig Madamba Dulay",
     "cast": "Angeli Bayani, Shamaine Buencamino, Boots-Anson Roa, Raquel Villavicencio, Bing Pimentel, Menggie Cobarrubias, Arnold Reyes, Madeleine Nicolas, Yayo Aguila, Sue Prado, Rollie Inocencio, Matt Daclan, Micko Laurente, Chanel Latorre, Erlinda Villalobos, Alvin Nakassi, Natileigh Sitoy, Jill Palencia, Cataleya Surio, Janet Queblatin",
-    "producers": "",
-    "screenplay": "",
-    "production_designer": "",
-    "cinematographer": "",
-    "editor": "",
-    "sound": "",
-    "music": "",
+    "producers": "Jed Medrano, Zig Madamba Dulay",
+    "screenplay": "Zig Madamba Dulay",
+    "production_designer": "Aped Santos",
+    "cinematographer": "Albert Banzon",
+    "editor": "Zig Madamba Dulay",
+    "sound": "Andrew Milallos",
+    "music": "Gian Gianan",
     "now_showing": false,
     "watch": [
       {
@@ -5252,8 +5255,8 @@
         "name": ""
       },
       {
-        "actress": false,
-        "name": ""
+        "actress": true,
+        "name": "Angeli Bayani"
       },
       {
         "supporting_actor": false,
@@ -5264,7 +5267,7 @@
         "name": ""
       },
       {
-        "screenplay": false
+        "screenplay": true
       },
       {
         "cinematography": false
@@ -5282,8 +5285,8 @@
         "production": false
       }
     ],
-    "genre": "",
-    "letterboxd": ""
+    "genre": "Drama",
+    "letterboxd": "https://letterboxd.com/film/the-baggage/"
   },
   {
     "year": 2017,
@@ -5292,13 +5295,13 @@
     "description": "Set in war-torn southwestern Mindanao, the film follows Aaquil, a young farmer who becomes a teacher when volunteers from the city are too afraid to enter remote communities. When Aaquil disappears, his orphaned students turn to a rebel group and learn to fight, blaming others for the loss of their dreams.",
     "director": "Perry Escaño",
     "cast": "Alfred Vargas, Miggs Cuaderno, Marc Justine Alvarez, Micko Laurente, Lou Veloso, Mon Confiado, Loren Burgos, Kiko Matos, Marife Necesito, Ernie Garcia, Bon Bon Andrew Lentejas, Paul Sy, Alvin Barcelona, Gabrielle Concepcion, Lianne Valentino, Richard Manabat, Joane Marie Tan",
-    "producers": "",
-    "screenplay": "",
-    "production_designer": "",
-    "cinematographer": "",
-    "editor": "",
-    "sound": "",
-    "music": "",
+    "producers": "Alfred Vargas, Mira Flor Salvador, Arnold Ang, Rodel Bugayong, Maria Tess Cancio, Theodore Calaguas, Audrey Salvador, Suzanne Co, Lourdes Co, MGC Yap, Cielemar Zamora, Perry Escaño",
+    "screenplay": "Perry Escaño",
+    "production_designer": "Endi “Hai” Balbuena",
+    "cinematographer": "Randy Cura, Steven Flor",
+    "editor": "Roberto Reyes Ang",
+    "sound": "Paulo Agudelo",
+    "music": "Emerzon Texon",
     "now_showing": false,
     "watch": [
       {
@@ -5353,8 +5356,8 @@
         "production": false
       }
     ],
-    "genre": "",
-    "letterboxd": ""
+    "genre": "Drama",
+    "letterboxd": "https://letterboxd.com/film/my-teacher-who-doesnt-know-how-to-read/"
   },
   {
     "year": 2017,
@@ -5363,13 +5366,13 @@
     "description": "Cora, a wealthy landowner and media personality, searches for the mysterious “Family That Doesn’t Weep,” believed to have the power to bring lost loved ones back to their families. Hoping to reunite with her estranged husband and children, she relentlessly tracks down the elusive family in search of a miracle.",
     "director": "Mes De Guzman",
     "cast": "Sharon Cuneta, Niño Muhlach, Moi Bien, Kiko Matos, Flor Salanga, Joe Cris Villanueva, Richard Quan, Michelle Vito, Philip Olayvar, Alonzo Muhlach",
-    "producers": "",
-    "screenplay": "",
-    "production_designer": "",
-    "cinematographer": "",
-    "editor": "",
-    "sound": "",
-    "music": "",
+    "producers": "Sharon Cuneta",
+    "screenplay": "Mes de Guzman",
+    "production_designer": "Seño Dee",
+    "cinematographer": "Marvin Reyes",
+    "editor": "JD Domingo, Abbas Tabbas",
+    "sound": "Mark Lacay",
+    "music": "Danny Tiongson",
     "now_showing": false,
     "watch": [
       {
@@ -5424,8 +5427,8 @@
         "production": false
       }
     ],
-    "genre": "",
-    "letterboxd": ""
+    "genre": "Drama, Fantasy",
+    "letterboxd": "https://letterboxd.com/film/the-family-that-doesnt-weep/"
   },
   {
     "year": 2017,
@@ -5434,13 +5437,13 @@
     "description": "Matt, a man battling Parkinson’s disease and a crisis of faith, sets out to bike from Manila to Mt. Pinatubo Lake to reclaim control over his life. Along the journey, he is joined by Sandy, the person he has tried to escape but still deeply wants to be with, forcing them to confront their complicated relationship.",
     "director": "Nerissa Picadizo",
     "cast": "Jake Cuenca, Anna Luna, Richard Quan, Rommel Luna, Anne Marzan, Albert Chan Paran, Miguel Malonzo, Noubikko Ray",
-    "producers": "",
-    "screenplay": "",
-    "production_designer": "",
-    "cinematographer": "",
-    "editor": "",
-    "sound": "",
-    "music": "",
+    "producers": "Nerissa Picadizo",
+    "screenplay": "Nerissa Picadizo",
+    "production_designer": "Eero Yves Francisco",
+    "cinematographer": "Jeyow Evangelista",
+    "editor": "Silver Belen",
+    "sound": "Raffy Magsaysay",
+    "music": "Chi Capulong",
     "now_showing": false,
     "watch": [
       {
@@ -5496,8 +5499,8 @@
         "production": false
       }
     ],
-    "genre": "",
-    "letterboxd": ""
+    "genre": "Drama",
+    "letterboxd": "https://letterboxd.com/film/requited-2017/"
   },
   {
     "year": 2017,
@@ -5506,13 +5509,13 @@
     "description": "Respeto follows Hendrix, an aspiring hip-hop artist struggling with crime and poverty, who forms an unlikely friendship with Doc, an aging poet haunted by his experiences during Martial Law. As they influence each other’s lives, the film explores art, identity, and survival within the underground Filipino hip-hop scene.",
     "director": "Alberto Monteras Il",
     "cast": "Abra, Dido de la Paz, Loonie, Kate Alejandrino, Chai Fonacier, Ybes Bagadiong, Brian Arda, Thea Yrastorza, Nor Domingo",
-    "producers": "",
-    "screenplay": "",
-    "production_designer": "",
-    "cinematographer": "",
-    "editor": "",
-    "sound": "",
-    "music": "",
+    "producers": "Monster Jimenez",
+    "screenplay": "Alberto Monteras II, Njel de Mesa",
+    "production_designer": "Popo Diaz",
+    "cinematographer": "Ike Avellana",
+    "editor": "Lawrence S. Ang",
+    "sound": "Corinne de San Jose",
+    "music": "Jay Durias",
     "now_showing": false,
     "watch": [
       {
@@ -5521,13 +5524,13 @@
     ],
     "awards": [
       {
-        "film": false
+        "film": true
       },
       {
         "special_jury": false
       },
       {
-        "audience": false
+        "audience": true
       },
       {
         "direction": false
@@ -5541,8 +5544,8 @@
         "name": ""
       },
       {
-        "supporting_actor": false,
-        "name": ""
+        "supporting_actor": true,
+        "name": "Dido de la Paz"
       },
       {
         "supporting_actress": false,
@@ -5552,23 +5555,26 @@
         "screenplay": false
       },
       {
-        "cinematography": false
+        "cinematography": true
       },
       {
-        "editing": false
+        "editing": true
       },
       {
-        "sound": false
+        "sound": true
       },
       {
         "music": false
       },
       {
         "production": false
+      },
+      {
+        "netpac": true
       }
     ],
-    "genre": "",
-    "letterboxd": ""
+    "genre": "Music, Drama, Crime",
+    "letterboxd": "https://letterboxd.com/film/respect-2017/"
   },
   {
     "year": 2017,
@@ -5577,13 +5583,13 @@
     "description": "On Good Friday, Father Romi is confronted with a moral dilemma when Magda confesses to murdering her friend Dolores after discovering her affair with Victor. With only the altar boy Nonoy overhearing the confession, the two must wrestle with the burden of knowing the truth while honoring the sacred Seal of the Confessional.",
     "director": "lar Lionel B. Arondaing",
     "cast": "Angel Aquino, Jake Macapagal, Jess Mendoza, Anthony Falcon, Ricky Davao, Sam Quintana, Mercedes Cabral, Mark Dionisio",
-    "producers": "",
-    "screenplay": "",
-    "production_designer": "",
-    "cinematographer": "",
-    "editor": "",
-    "sound": "",
-    "music": "",
+    "producers": "Minda Monica Ponce-Rodriguez",
+    "screenplay": "lar Lionel B. Arondaing",
+    "production_designer": "Jan Paul Rodriguez",
+    "cinematographer": "Mai Calapardo",
+    "editor": "Mai Calapardo",
+    "sound": "Wildsound",
+    "music": "Pepe Manikan",
     "now_showing": false,
     "watch": [
       {
@@ -5638,8 +5644,8 @@
         "production": false
       }
     ],
-    "genre": "",
-    "letterboxd": ""
+    "genre": "Drama",
+    "letterboxd": "https://letterboxd.com/film/sa-gabing-nanahimik-ang-mga-kuliglig/"
   },
   {
     "year": 2016,
