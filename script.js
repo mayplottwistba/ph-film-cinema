@@ -1968,9 +1968,13 @@ function openFilmDetails(film) {
    * Awards
    */
 
-  if (filmDetailsAwards) {
-    filmDetailsAwards.innerHTML = createFilmDetailsAwards(film);
-  }
+ if (filmDetailsAwards) {
+  filmDetailsAwards.innerHTML =
+    createFilmDetailsAwards(film) +
+    createFilmDetailsTrailer(film);
+}
+
+  
 
   /*
    * Poster fallback
@@ -3972,6 +3976,63 @@ function renderPlatformSummary() {
       `;
     })
     .join("");
+}
+
+/* =========================================================
+   CREATE TRAILER
+   ========================================================= */
+
+function createFilmDetailsTrailer(film) {
+  if (!film.trailer) {
+    return "";
+  }
+
+  let trailerUrl = film.trailer;
+
+  try {
+    const url = new URL(film.trailer);
+
+    // YouTube watch URL
+    if (
+      url.hostname.includes("youtube.com") &&
+      url.searchParams.get("v")
+    ) {
+      trailerUrl =
+        `https://www.youtube.com/embed/` +
+        url.searchParams.get("v");
+    }
+
+    // YouTube short URL
+    else if (url.hostname === "youtu.be") {
+      trailerUrl =
+        `https://www.youtube.com/embed/` +
+        url.pathname.substring(1);
+    }
+
+  } catch (error) {
+    console.error("Invalid trailer URL:", film.trailer);
+    return "";
+  }
+
+  return `
+    <div class="film-details-trailer-divider"></div>
+
+    <div class="film-details-label">
+      TRAILER
+    </div>
+
+    <div class="film-trailer">
+      <div class="film-trailer-video">
+        <iframe
+          src="${escapeHTML(trailerUrl)}"
+          title="${escapeHTML(film.title || "Film Trailer")}"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  `;
 }
 
 renderDeveloperUpdates();
