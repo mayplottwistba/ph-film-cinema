@@ -6392,13 +6392,13 @@
     "description": "A policewoman roams the city of Manila to fulfill her duties as a police patrol to look for her son.",
     "director": "Nick Olanka",
     "cast": "Ai-Ai delas Alas, Perla Bautista, Bernardo Bernardo, Menggie Cobarrubias, Carlo Aquino, Cogie Domingo, Moi Bien, DM Sevilla, Julian Trono, Angeli Bayani, Cesar Montano, Carlos Morales, Mon Confiado, Eshei Mesina, Melanie Libatique, Lao Rodriguez, Mayen Estanero, Jet Aguirre, Karen Leslie Dematera, Kiko Matos, Sancho Delas Alas",
-    "producers": "",
-    "screenplay": "",
-    "production_designer": "",
-    "cinematographer": "",
-    "editor": "",
-    "sound": "",
-    "music": "",
+    "producers": "Ai-Ai delas Alas, Nick Olanka",
+    "screenplay": "Jerome Zamora, Nick Olanka, Adolfo Alix Jr.",
+    "production_designer": "Roma Regala",
+    "cinematographer": "Albert Banzon",
+    "editor": "Nick Olanka",
+    "sound": "Addiss Tabong, Mark Locsin, Dante Cuanico",
+    "music": "Michael Abadam, Francis Concio",
     "now_showing": false,
     "watch": [
       {
@@ -6454,9 +6454,9 @@
         "production": false
       }
     ],
-    "genre": "",
-    "letterboxd": "",
-    "trailer": ""
+    "genre": "Crime, Drama, Family",
+    "letterboxd": "https://letterboxd.com/film/ronda-2014/",
+    "trailer": "https://www.youtube.com/watch?v=n_Og50M8O4g&list=PLGr6o_oVYwTPCI8xPKPKS2MzhgOl_M6Ao&index=8&pp=iAQB"
   },
   {
     "year": 2014,
@@ -6465,13 +6465,13 @@
     "description": "“#Y” chronicles the adventures of the members of a generation made universal by social media, internet, sex, drugs and alcohol.",
     "director": "Gino M. Santos",
     "cast": "Elmo Magalona, Coleen Garcia, Sophie Albert, Kit Thompson, Slater Young, Chynna Ortaleza, Apollo Abraham, Joyce Ann Burton, Paco Evangelista, Julz Savard, Twinkle Dy, Rob Rownd, Lilit Reyes, Albie Casiño, Jane Torres, Benjamin Magsino, April Anne Dolot",
-    "producers": "",
-    "screenplay": "",
-    "production_designer": "",
-    "cinematographer": "",
-    "editor": "",
-    "sound": "",
-    "music": "",
+    "producers": "Gino M. Santos",
+    "screenplay": "Jeff Stelton",
+    "production_designer": "Digo Ricio",
+    "cinematographer": "Carlo Mendoza",
+    "editor": "Benjamin Gonzales Tolentino",
+    "sound": "Andrew Milallos",
+    "music": "Jorge Wieneke V",
     "now_showing": false,
     "watch": [
       {
@@ -6524,12 +6524,16 @@
         "music": false
       },
       {
+        "ensemble": true,
+        "name": "Sophie Albert, Coleen Garcia, Elmo Magalona, Chynna Ortaleza, Kit Thompson"
+      },
+      {
         "production": false
       }
     ],
-    "genre": "",
-    "letterboxd": "",
-    "trailer": ""
+    "genre": "Drama",
+    "letterboxd": "https://letterboxd.com/film/y/",
+    "trailer": "https://www.youtube.com/watch?v=caomGb188OQ&list=PLGr6o_oVYwTPCI8xPKPKS2MzhgOl_M6Ao"
   },
   {
     "year": 2014,
@@ -6538,13 +6542,13 @@
     "description": "In the middle of the preparation for the Taong Putik Festival, a young man, penniless and in love, takes on a job that goes terribly wrong. To save him, his mother now makes the most difficult decision of her life.",
     "director": "Louie Ignacio",
     "cast": "Aiko Melendez, Gabby Eigenmann, Miggs Cuaderno, Rochelle Pangilinan, Jake Vargas, Benjie Felipe, Madz Nicholas, Maila Ejercito, Jak Roberto, Rita Daniela",
-    "producers": "",
-    "screenplay": "",
-    "production_designer": "",
-    "cinematographer": "",
-    "editor": "",
-    "sound": "",
-    "music": "",
+    "producers": "Dennis C. Evangelista, Ferdinand Lapuz",
+    "screenplay": "Socorro Villanueva",
+    "production_designer": "Cyrus Khan",
+    "cinematographer": "Louie Ignacio",
+    "editor": "Carlo Francisco Manatad",
+    "sound": "Albert Michael Idioma",
+    "music": "Danny Tan",
     "now_showing": false,
     "watch": [
       {
@@ -6600,9 +6604,9 @@
         "production": false
       }
     ],
-    "genre": "",
-    "letterboxd": "",
-    "trailer": ""
+    "genre": "Drama, Crime, Family",
+    "letterboxd": "https://letterboxd.com/film/asintado/",
+    "trailer": "https://www.youtube.com/watch?v=CJDCHVneNAw"
   },
   {
     "year": 2014,
@@ -6612,12 +6616,12 @@
     "director": "Michael Tuviera",
     "cast": "Dennis Trillo, Richard Gomez, Ricky Davao, Dante Rivero, Irma Adlawan, LJ Reyes, Derek Ramsay, Raymond Bagatsing, Alex Medina, Nicco Manalo, Sunshine Garcia, JC Santos, Jerald Napoles",
     "producers": "",
-    "screenplay": "",
-    "production_designer": "",
-    "cinematographer": "",
-    "editor": "",
-    "sound": "",
-    "music": "",
+    "screenplay": "Michael Tuviera, Aloy Adlawan",
+    "production_designer": "Roy Lachica",
+    "cinematographer": "Marissa Floirendo",
+    "editor": "Tara Illenberger",
+    "sound": "Albert Michael Idioma",
+    "music": "Richard Gonzales",
     "now_showing": false,
     "watch": [
       {
@@ -6635,7 +6639,7 @@
         "audience": false
       },
       {
-        "direction": false
+        "direction": true
       },
       {
         "actor": false,
@@ -6646,24 +6650,24 @@
         "name": ""
       },
       {
-        "supporting_actor": false,
-        "name": ""
+        "supporting_actor": true,
+        "name": "Nicco Manalo"
       },
       {
         "supporting_actress": false,
         "name": ""
       },
       {
-        "screenplay": false
+        "screenplay": true
       },
       {
         "cinematography": false
       },
       {
-        "editing": false
+        "editing": true
       },
       {
-        "sound": false
+        "sound": true
       },
       {
         "music": false
@@ -6672,9 +6676,9 @@
         "production": false
       }
     ],
-    "genre": "",
-    "letterboxd": "",
-    "trailer": ""
+    "genre": "Crime, Drama, Action",
+    "letterboxd": "https://letterboxd.com/film/the-janitor-2014/",
+    "trailer": "https://www.youtube.com/watch?v=FN7i_YQydeQ"
   },
   {
     "year": 2014,
@@ -6683,13 +6687,13 @@
     "description": "A crumbling marriage between two professors takes a strange turn: the wife is entangled in a scandal with a young student, while her husband falls in love with a deity appearing as the ghost of an old flame.",
     "director": "Giancarlo Abrahan",
     "cast": "Eula Valdez, Nonie Buencamino, Ronnie Lazaro, Max Eigenmann, Martin del Rosario, Sandino Martin, Rolando Inocencio, Frances Ignacio, Pepe Herrera, Aaron Abion",
-    "producers": "",
-    "screenplay": "",
-    "production_designer": "",
-    "cinematographer": "",
-    "editor": "",
-    "sound": "",
-    "music": "",
+    "producers": "Hannah Espia",
+    "screenplay": "Giancarlo Abrahan",
+    "production_designer": "Whammy Alcazaren, Thesa Tang",
+    "cinematographer": "Rommel Sales",
+    "editor": "Benjamin Gonzales Tolentino",
+    "sound": "Mikko Quizon, Adam Newns",
+    "music": "Mon Espia",
     "now_showing": false,
     "watch": [
       {
@@ -6707,15 +6711,15 @@
         "audience": false
       },
       {
-        "direction": false
+        "direction": true
       },
       {
         "actor": false,
         "name": ""
       },
       {
-        "actress": false,
-        "name": ""
+        "actress": true,
+        "name": "Eula Valdes"
       },
       {
         "supporting_actor": false,
@@ -6726,7 +6730,7 @@
         "name": ""
       },
       {
-        "screenplay": false
+        "screenplay": true
       },
       {
         "cinematography": false
@@ -6744,9 +6748,9 @@
         "production": false
       }
     ],
-    "genre": "",
-    "letterboxd": "",
-    "trailer": ""
+    "genre": "Fantasy, Drama",
+    "letterboxd": "https://letterboxd.com/film/sparks-2014/",
+    "trailer": "https://www.youtube.com/watch?v=-L-YjC9_WYA&list=PLGr6o_oVYwTPCI8xPKPKS2MzhgOl_M6Ao&index=5&pp=iAQB"
   },
   {
     "year": 2014,
@@ -6755,13 +6759,13 @@
     "description": "Divina searches the Agusan marshlands for her daughter Rowena, attacked by a crocodile on her 13th birthday. She discovers not all predators live underwater. Based on true events.",
     "director": "Francis Pasion",
     "cast": "Angeli Bayani, Karl Medina, R.S. Francisco, Jolina Salvado",
-    "producers": "",
-    "screenplay": "",
-    "production_designer": "",
-    "cinematographer": "",
-    "editor": "",
-    "sound": "",
-    "music": "",
+    "producers": "Sarah Pagcaliwagan",
+    "screenplay": "Francis Xavier Pasion",
+    "production_designer": "Marxie Maolen Fadul",
+    "cinematographer": "Neil Daza",
+    "editor": "Carlo Francisco Manatad",
+    "sound": "Erwin Fajardo",
+    "music": "Mike Idioma",
     "now_showing": false,
     "watch": [
       {
@@ -6770,7 +6774,7 @@
     ],
     "awards": [
       {
-        "film": false
+        "film": true
       },
       {
         "special_jury": false
@@ -6801,7 +6805,7 @@
         "screenplay": false
       },
       {
-        "cinematography": false
+        "cinematography": true
       },
       {
         "editing": false
@@ -6810,15 +6814,18 @@
         "sound": false
       },
       {
-        "music": false
+        "music": true
+      },
+      {
+        "netpac": true
       },
       {
         "production": false
       }
     ],
-    "genre": "",
-    "letterboxd": "",
-    "trailer": ""
+    "genre": "Drama",
+    "letterboxd": "https://letterboxd.com/film/bwaya/",
+    "trailer": "https://www.youtube.com/watch?v=Spyw17MId6M&list=PLGr6o_oVYwTPCI8xPKPKS2MzhgOl_M6Ao&index=3&pp=iAQB"
   },
   {
     "year": 2014,
@@ -6827,13 +6834,13 @@
     "description": "When Kana, a young T’boli woman, becomes a dreamweaver, she has the chance to weave together her village’s warring clans. But, will she give up true love to do so?",
     "director": "Ida Anita del Mundo",
     "cast": "Mara Lopez, RK Bagatsing, Erlinda Villalobos, Nonie Buencamino, Bembol Roco, Alex Medina, Hazel Ann Sulan, Sarah Jane Cayugan, Michelle Manuel, Janelyn Dalisan",
-    "producers": "",
-    "screenplay": "",
-    "production_designer": "",
-    "cinematographer": "",
-    "editor": "",
+    "producers": "Clodualdo del Mundo Jr.",
+    "screenplay": "Ida Anita Q. del Mundo",
+    "production_designer": "Toym Imao",
+    "cinematographer": "Lee Briones-Meily",
+    "editor": "Sarah Roxas",
     "sound": "",
-    "music": "",
+    "music": "Diwa de Leon",
     "now_showing": false,
     "watch": [
       {
@@ -6845,7 +6852,7 @@
         "film": false
       },
       {
-        "special_jury": false
+        "special_jury": true
       },
       {
         "audience": false
@@ -6888,9 +6895,9 @@
         "production": false
       }
     ],
-    "genre": "",
-    "letterboxd": "",
-    "trailer": ""
+    "genre": "Romance, Family, Drama",
+    "letterboxd": "https://letterboxd.com/film/kna-the-dreamweaver/",
+    "trailer": "https://www.youtube.com/watch?v=KDjMKtr844E&list=PLGr6o_oVYwTPCI8xPKPKS2MzhgOl_M6Ao&index=6&pp=iAQB"
   },
   {
     "year": 2014,
@@ -6899,13 +6906,13 @@
     "description": "Kasal is a slice of life drama of a gay couple whose resolve to stay together is challenged as they attend a wedding. It also is an examination on how a gay couple navigates through the different institutions in Philippine society.",
     "director": "Joselito Altarejos",
     "cast": "Oliver Aquino, Arnold Reyes, Rita Avila, Maureen Mauricio, Rener Concepcion, Ruby Ruiz, Ron Cieno, Chloe Carpio",
-    "producers": "",
-    "screenplay": "",
-    "production_designer": "",
-    "cinematographer": "",
-    "editor": "",
-    "sound": "",
-    "music": "",
+    "producers": "Ferdinand Lapuz, Maureen Mauricio, Mahusay Kolektib",
+    "screenplay": "Zig Madamba Dulay",
+    "production_designer": "Harley Alcasid",
+    "cinematographer": "Mycko David",
+    "editor": "Zig Madamba Dulay, Joselito Altarejos",
+    "sound": "Addiss Tabong, Andrew Milallos",
+    "music": "Addiss Tabong, Andrew Milallos",
     "now_showing": false,
     "watch": [
       {
@@ -6914,7 +6921,7 @@
     ],
     "awards": [
       {
-        "film": false
+        "film": true
       },
       {
         "special_jury": false
@@ -6945,7 +6952,7 @@
         "screenplay": false
       },
       {
-        "cinematography": false
+        "cinematography": true
       },
       {
         "editing": false
@@ -6954,15 +6961,15 @@
         "sound": false
       },
       {
-        "music": false
+        "music": true
       },
       {
-        "production": false
+        "production": true
       }
     ],
-    "genre": "",
-    "letterboxd": "",
-    "trailer": ""
+    "genre": "Drama, Romance",
+    "letterboxd": "https://letterboxd.com/film/the-commitment-2014/",
+    "trailer": "https://www.youtube.com/watch?v=EJe7yhhDniY"
   },
   {
     "year": 2014,
@@ -6971,13 +6978,13 @@
     "description": "Ricardo Villena loses his fortune just as his granddaughter Anna’s wedding falls apart and his grandson Ricky struggles to finish college. Hoping to toughen them up, Ricardo brings them from their sheltered life in Forbes Park to his rundown tenement in Tondo, where they encounter people and realities far removed from their privileged upbringing.",
     "director": "Carlos Siguion-Reyna",
     "cast": "Robert Arevalo, Rez Cortez, Cris Villonco, Rafa Siguion-Reyna, Lorenz Martinez, Liza Lorena, Lui Manansala, Aiza Seguerra, Carlos Canlas, Mark Tayag, Ciara Sotto, Gian Magdangal, Eric Quizon, Ali Sotto, Audie Gemora, Hans Eckstein, Raul Montesa, Jelson Bay, Gino Ramirez, Menggie Cobarrubias",
-    "producers": "",
-    "screenplay": "",
-    "production_designer": "",
-    "cinematographer": "",
-    "editor": "",
-    "sound": "",
-    "music": "",
+    "producers": "Bibeth Orteza",
+    "screenplay": "Bibeth Orteza",
+    "production_designer": "Rolly Carino",
+    "cinematographer": "Jay Abello",
+    "editor": "Manet A. Dayrit",
+    "sound": "Albert Michael Idioma",
+    "music": "Myke Solomon",
     "now_showing": false,
     "watch": [
       {
@@ -6989,7 +6996,7 @@
         "film": false
       },
       {
-        "special_jury": false
+        "special_jury": true
       },
       {
         "audience": false
@@ -6998,8 +7005,8 @@
         "direction": false
       },
       {
-        "actor": false,
-        "name": ""
+        "actor": true,
+        "name": "Robert Arevalo"
       },
       {
         "actress": false,
@@ -7010,8 +7017,8 @@
         "name": ""
       },
       {
-        "supporting_actress": false,
-        "name": ""
+        "supporting_actress": true,
+        "name": "Cris Villonco"
       },
       {
         "screenplay": false
@@ -7032,9 +7039,9 @@
         "production": false
       }
     ],
-    "genre": "",
-    "letterboxd": "",
-    "trailer": ""
+    "genre": "Drama, Family, Comedy",
+    "letterboxd": "https://letterboxd.com/film/where-i-am-king/",
+    "trailer": "https://www.youtube.com/watch?v=GRC3nVUYw5Y"
   },
   {
     "year": 2014,
@@ -7043,13 +7050,13 @@
     "description": "Biring, a foul-mouthed woman working for a human trafficking syndicate, is framed for a murder committed by her employer Vivian and forced to confront the corruption and injustice surrounding her. As she struggles through the broken justice system, her lawyer Gerald transforms her from victim into victimizer, leading her down a dark path until she becomes like the woman who betrayed her.",
     "director": "Joel Lamangan",
     "cast": "Nora Aunor, Rocco Nacino, Rosanna Roces, Sunshine Dizon, Gardo Versoza, Chynna Ortaleza, Jeric Gonzales, Romnick Sarmenta, Jaime Pebanco, Tony Mabesa, Mailes Kanapi, Sue Prado, John Rendez, Chanel Latorre, Angela Ruiz, Menggie Cobarrubias",
-    "producers": "",
-    "screenplay": "",
-    "production_designer": "",
-    "cinematographer": "",
-    "editor": "",
-    "sound": "",
-    "music": "",
+    "producers": "Ferdinand Lapuz",
+    "screenplay": "Ricky Lee",
+    "production_designer": "Edgar Martin Littaua",
+    "cinematographer": "Nap Jamir",
+    "editor": "Vanessa U. De Leon",
+    "sound": "Lamberto Casas Jr.",
+    "music": "Emerzon Texon",
     "now_showing": false,
     "watch": [
       {
@@ -7064,7 +7071,7 @@
         "special_jury": false
       },
       {
-        "audience": false
+        "audience": true
       },
       {
         "direction": false
@@ -7074,8 +7081,8 @@
         "name": ""
       },
       {
-        "actress": false,
-        "name": ""
+        "actress": true,
+        "name": "Nora Aunor"
       },
       {
         "supporting_actor": false,
@@ -7101,12 +7108,15 @@
         "music": false
       },
       {
+        "netpac": true
+      },
+      {
         "production": false
       }
     ],
-    "genre": "",
-    "letterboxd": "",
-    "trailer": ""
+    "genre": "Drama, Family, Crime",
+    "letterboxd": "https://letterboxd.com/film/hustisya/",
+    "trailer": "https://www.youtube.com/watch?v=Hk1EFLZDFF0"
   },
   {
     "year": 2014,
@@ -7115,13 +7125,13 @@
     "description": "On her first day of retirement, 65-year-old Cory struggles to adjust to a quiet life with her husband until she unexpectedly reunites with Third, her first love. When Third asks her out, Cory finally gets the chance to fulfill the first date they never had and confront the feelings she has kept in her unsent love letters.",
     "director": "Real S. Florido",
     "cast": "Nova Villa, Dante Rivero, Freddie Webb, Ruby Ruiz, Lara Morena, RJ Agustin, Denise Barbacena, Coleen Borgonia, Ken Chan",
-    "producers": "",
-    "screenplay": "",
-    "production_designer": "",
-    "cinematographer": "",
-    "editor": "",
-    "sound": "",
-    "music": "",
+    "producers": "RJ Agustin, Real Florido, Vian Serranilla",
+    "screenplay": "Real Florido",
+    "production_designer": "Popo Diaz, Jeck Cogama",
+    "cinematographer": "Dom Dycaico",
+    "editor": "Tara Illenberger",
+    "sound": "Albert Michael Idioma",
+    "music": "Jeff Hernandez",
     "now_showing": false,
     "watch": [
       {
@@ -7143,8 +7153,8 @@
         "direction": false
       },
       {
-        "actor": false,
-        "name": ""
+        "actor": true,
+        "name": "Dante Rivero"
       },
       {
         "actress": false,
@@ -7177,9 +7187,9 @@
         "production": false
       }
     ],
-    "genre": "",
-    "letterboxd": "",
-    "trailer": ""
+    "genre": "Romance, Drama, Comedy",
+    "letterboxd": "https://letterboxd.com/film/1st-ko-si-3rd/",
+    "trailer": "https://www.youtube.com/watch?v=shVo74Y9EbI&list=PLGr6o_oVYwTPCI8xPKPKS2MzhgOl_M6Ao&index=2&pp=iAQB"
   },
   {
     "year": 2014,
@@ -7188,13 +7198,13 @@
     "description": "The film follows fraternal twins Al and Jun, who enter underground fistfighting matches to help support themselves and their grandmother amid extreme poverty. As they rise within the dangerous betting syndicate, their lives are disrupted by the unexpected return of their estranged father.",
     "director": "Roderick Cabrido",
     "cast": "Allen Dizon, Gloria Sevilla, Suzette Ranillo, Nathan Lopez, Jacob Clayton, Divine Grace Aucina, Buboy Villar, Miggs Cuaderno",
-    "producers": "",
-    "screenplay": "",
-    "production_designer": "",
-    "cinematographer": "",
-    "editor": "",
-    "sound": "",
-    "music": "",
+    "producers": "Jedd Dumaguina, Sheron Dayoc, Suzette Ranillo",
+    "screenplay": "Ralston Jover",
+    "production_designer": "Steff Dereja",
+    "cinematographer": "Mycko David",
+    "editor": "Gerone Centeno",
+    "sound": "Jonathan Hee, Bryan Dumaguina",
+    "music": "Bryan Dumaguina",
     "now_showing": false,
     "watch": [
       {
@@ -7223,8 +7233,8 @@
         "name": ""
       },
       {
-        "supporting_actor": false,
-        "name": ""
+        "supporting_actor": true,
+        "name": "Miggs Cuaderno"
       },
       {
         "supporting_actress": false,
@@ -7237,10 +7247,10 @@
         "cinematography": false
       },
       {
-        "editing": false
+        "editing": true
       },
       {
-        "sound": false
+        "sound": true
       },
       {
         "music": false
@@ -7249,9 +7259,9 @@
         "production": false
       }
     ],
-    "genre": "",
-    "letterboxd": "",
-    "trailer": ""
+    "genre": "Crime, Drama, Family",
+    "letterboxd": "https://letterboxd.com/film/childrens-show/",
+    "trailer": "https://www.youtube.com/watch?v=TXPnr7fUcsE&list=PLGr6o_oVYwTPCI8xPKPKS2MzhgOl_M6Ao&index=4&pp=iAQB"
   },
   {
     "year": 2014,
@@ -7260,13 +7270,13 @@
     "description": "Mariquina follows successful businesswoman Imelda as she prepares for the funeral of her estranged father, Romeo, a once-renowned shoemaker whose career and family fell apart. Her search for the perfect final pair of shoes forces her to confront painful memories, her mother’s departure, and the complicated relationship she had with her father. Through their story, the film explores family, identity, loss, and the rise and decline of Marikina’s shoemaking industry.",
     "director": "Milo Sogueco",
     "cast": "Mylene Dizon, Ricky Davao, Bing Pimentel, Che Ramos, Barbie Forteza, Dennis Padilla, Mel Kimura, Kenneth Paul Cruz, Erlinda Villalobos, Ruby Ruiz",
-    "producers": "",
-    "screenplay": "",
-    "production_designer": "",
-    "cinematographer": "",
-    "editor": "",
-    "sound": "",
-    "music": "",
+    "producers": "Gay Ace Domingo",
+    "screenplay": "Jerrold Tarog",
+    "production_designer": "Aped Santos",
+    "cinematographer": "Sasha Palomares",
+    "editor": "Benjamin Gonzales Tolentino",
+    "sound": "AddissTabong",
+    "music": "Jerrold Tarog",
     "now_showing": false,
     "watch": [
       {
@@ -7299,8 +7309,8 @@
         "name": ""
       },
       {
-        "supporting_actress": false,
-        "name": ""
+        "supporting_actress": true,
+        "name": "Barbie Forteza"
       },
       {
         "screenplay": false
@@ -7321,9 +7331,9 @@
         "production": false
       }
     ],
-    "genre": "",
-    "letterboxd": "",
-    "trailer": ""
+    "genre": "Drama",
+    "letterboxd": "https://letterboxd.com/film/mariquina/",
+    "trailer": "https://www.youtube.com/watch?v=S-BiCzqUbWE&list=PLGr6o_oVYwTPCI8xPKPKS2MzhgOl_M6Ao&index=7&pp=iAQB"
   },
   {
     "year": 2014,
@@ -7332,13 +7342,13 @@
     "description": "The film follows six men whose marriages have ended, each dealing with the pain and consequences of separation in a country where divorce is not an option. Their stories eventually intersect at a church wedding, where one of them decides to take a second chance at love and marriage.",
     "director": "G.B. Sampedro",
     "cast": "Victor Neri, Ricky Davao, Jason Abalos, Anjo Yllana, Erik Santos, Alfred Vargas, Ritz Azul, Angel Jacob, Melissa Mendez, Althea Vega, Sharmaine Arnaiz, Iwa Moto, Diana Zuburi, Sue Prado, Menggie Cobarrubias, Cris Pastor, K-La Rivera, Rhea Lim, Jace Flores, Patricia Javier, Katrina Halili, Joel Lamangan",
-    "producers": "",
-    "screenplay": "",
-    "production_designer": "",
-    "cinematographer": "",
-    "editor": "",
-    "sound": "",
-    "music": "",
+    "producers": "Five 2 Seven Entertainment, Production Alternative Vision Cinema",
+    "screenplay": "Enrique Ramos",
+    "production_designer": "Marielle Hizon",
+    "cinematographer": "Tom Redoble",
+    "editor": "Geoffrey William",
+    "sound": "Jess Carlos",
+    "music": "Marvin Querido",
     "now_showing": false,
     "watch": [
       {
@@ -7393,9 +7403,9 @@
         "production": false
       }
     ],
-    "genre": "",
-    "letterboxd": "",
-    "trailer": ""
+    "genre": "Drama",
+    "letterboxd": "https://letterboxd.com/film/separados/",
+    "trailer": "https://www.youtube.com/watch?v=5q6mBVNs3WM&list=PLGr6o_oVYwTPCI8xPKPKS2MzhgOl_M6Ao&index=9&pp=iAQB"
   },
   {
     "year": 2014,
@@ -7404,12 +7414,12 @@
     "description": "Set in 1941, the film follows Nitoy, Benny, Carding, and Badong, four boys from the quiet town of San Nicolas whose lives are transformed when World War II reaches the Philippines. Determined to prove they are no longer children, they join the resistance with makeshift weapons despite warnings that war is not for boys. As the Japanese occupation begins, their innocence is tested by the realities of war.",
     "director": "Janice O’Hara",
     "cast": "Nathaniel Brit, Ian De Leon, Marc Abaya, Gardo Versoza, Via Veloso, Enzo Pineda, Paolo O’Hara, Che Ramos, Diana Alferez, Dante Balois, Elijah Canlas, Angelo Martinez",
-    "producers": "",
-    "screenplay": "",
-    "production_designer": "",
-    "cinematographer": "",
-    "editor": "",
-    "sound": "",
+    "producers": "L.A. Dacula, Gustavo Neiva De Medeiros, Denise O'Hara",
+    "screenplay": "Jerry O'Hara",
+    "production_designer": "Fiel Zabat",
+    "cinematographer": "Nelson Macababat",
+    "editor": "Mark Cyril Bautista",
+    "sound": "Andrew Milallos",
     "music": "",
     "now_showing": false,
     "watch": [
@@ -7425,7 +7435,7 @@
         "special_jury": false
       },
       {
-        "audience": false
+        "audience": true
       },
       {
         "direction": false
@@ -7465,9 +7475,9 @@
         "production": false
       }
     ],
-    "genre": "",
-    "letterboxd": "",
-    "trailer": ""
+    "genre": "Drama, Crime, Family, War",
+    "letterboxd": "https://letterboxd.com/film/rice-soldiers/",
+    "trailer": "https://www.youtube.com/watch?v=vlDHYmr187I&list=PLGr6o_oVYwTPCI8xPKPKS2MzhgOl_M6Ao&index=10&pp=iAQB"
   },
   {
     "year": 2013,
