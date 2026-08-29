@@ -13567,7 +13567,7 @@
     "now_showing": false,
     "watch": [
       {
-        "type": "none"
+        "type": "ccp"
       }
     ],
     "awards": [
@@ -14205,13 +14205,13 @@
     "description": "Maxi, a boy on the cusp of his teens, is already comfortable with his homosexual feelings, with acceptance from his family. When Maxi is assaulted one evening, Victor, a police officer, comes to his aid. Maxi soon develops a crush on Victor, who shows a platonic affection for the young lad.",
     "director": "Kanakan-Balintagos",
     "cast": "Nathan Lopez, Soliman Cruz, Neil Ryan Sese, Ping Medina, JR Valentin, Bodjie Pascua, Elmo Redrico, Ivan Camacho, Lucito Lopez, Jett Desalesa, Anastacio Cruz, Roychell Torre, Peter Anthony Tumbaga, Edwin Pamanian, Rodney Luengu, Claudine Najera, Rebecca Padilla, Arnold Cruz, Julius Ray Caringal, Buck Harold Pago, Remedios Calinangan, Pepe Smith",
-    "producers": "",
-    "screenplay": "",
-    "production_designer": "",
-    "cinematographer": "",
-    "editor": "",
-    "sound": "",
-    "music": "",
+    "producers": "Moira Lang",
+    "screenplay": "Michiko Yamamoto",
+    "production_designer": "Clint Catalan, Christina Dy, Lily Esquillon",
+    "cinematographer": "Nap Jamir",
+    "editor": "Clarence Sison, Kanakan-Balintagos",
+    "sound": "Tad Ermitaño",
+    "music": "Pepe Smith",
     "now_showing": false,
     "watch": [
       {
@@ -14223,13 +14223,17 @@
         "film": false
       },
       {
-        "special_jury": false
+        "special_jury": true
       },
       {
         "audience": false
       },
       {
         "direction": false
+      },
+      {
+        "citation": true,
+        "name" : "Nathan Lopez"
       },
       {
         "actor": false,
@@ -14263,12 +14267,12 @@
         "music": false
       },
       {
-        "production": false
+        "production": true
       }
     ],
-    "genre": "",
-    "letterboxd": "",
-    "trailer": ""
+    "genre": "Drama, Comedy",
+    "letterboxd": "https://letterboxd.com/film/the-blossoming-of-maximo-oliveros/",
+    "trailer": "https://www.youtube.com/watch?v=toJa52x7wMM"
   },
   {
     "year": 2005,
@@ -14278,10 +14282,10 @@
     "director": "Sigfreid Barros-Sanchez",
     "cast": "Epy Quizon, Dwight Gaston, Boboy Garrovillo, Danny Javier, Jim Paredes, Joel Torre, Ronnie Lazaro, Roence Santos, Soliman Cruz, Shamaine Buencamino, Raul Morit, Bombi Plata, Jose F. Lacaba, Marra P.L. Lanot, Randy Punsal, Roxlee, Kris Lanot Lacaba, Sigfreid Barros-Sanchez, Odyssey Flores, Topel Lee, Hector Macaso, Richard Legaspi, Khavn",
     "producers": "",
-    "screenplay": "",
-    "production_designer": "",
-    "cinematographer": "",
-    "editor": "",
+    "screenplay": "Sigfreid Barros Sanchez",
+    "production_designer": "Donald Russ Camon",
+    "cinematographer": "Odysee Flores",
+    "editor": "Hector Macaso, Richard Burnett",
     "sound": "",
     "music": "",
     "now_showing": false,
@@ -14339,9 +14343,9 @@
         "production": false
       }
     ],
-    "genre": "",
-    "letterboxd": "",
-    "trailer": ""
+    "genre": "Comedy, Drama",
+    "letterboxd": "https://letterboxd.com/film/last-take-last-shot/",
+    "trailer": "https://www.youtube.com/watch?v=TL7eq3buy34"
   },
   {
     "year": 2005,
@@ -14350,13 +14354,13 @@
     "description": "Danny and Jonas are petty crooks whose idea of going big-time is kidnapping the only daughter of a middle-class couple for a ransom price of 50,000 pesos.",
     "director": "Mario Cornejo",
     "cast": "Michael De Mesa, Winston Elizalde, Nor Domingo, Joanne Miller, Jamie Wilson, Kelvin Yu, Lito Atienza, Jon Santos, Soxy Topacio, Arnold Reyes, Ryan Eigenmann",
-    "producers": "",
-    "screenplay": "",
-    "production_designer": "",
-    "cinematographer": "",
-    "editor": "",
-    "sound": "",
-    "music": "",
+    "producers": "Monster Jimenez",
+    "screenplay": "Mario Cornejo",
+    "production_designer": "Christina Dy",
+    "cinematographer": "Ike Avellana",
+    "editor": "Mario Cornejo, Monster Jimenez",
+    "sound": "Raffy Magsaysay",
+    "music": "Allan Feliciano",
     "now_showing": false,
     "watch": [
       {
@@ -14394,7 +14398,7 @@
         "name": ""
       },
       {
-        "screenplay": false
+        "screenplay": true
       },
       {
         "cinematography": false
@@ -14403,7 +14407,7 @@
         "editing": false
       },
       {
-        "sound": false
+        "sound": true
       },
       {
         "music": false
@@ -14412,9 +14416,9 @@
         "production": false
       }
     ],
-    "genre": "",
-    "letterboxd": "",
-    "trailer": ""
+    "genre": "Action, Comedy",
+    "letterboxd": "https://letterboxd.com/film/big-time-2005/",
+    "trailer": "https://www.youtube.com/watch?v=vfGJcJls-Fw"
   },
   {
     "year": 2005,
@@ -14423,13 +14427,13 @@
     "description": "A comedy-musical about a ten-year-old Pepot who dreams to be a movie star. Coming from a poor family, he overcomes adversity to have a chance at fulfilling his dream.",
     "director": "Clodualdo del Mundo Jr.",
     "cast": "Elijah Castillo, Rio Locsin, Cris Villanueva, Epy Quizon, Bituin Escalante, Joy Soler-de Castro, Nonie Buencamino, Shiela Mae Junsay, Cedrick Lamberte, Jian Pascual, Niña Joyel de Jesus, Tado, Lou Veloso, Yoyoy Villame, Ces Quesada, Nina Medina, Missy Maramara, Josel Batil, Jasper Clarence Ferrer, Jeon Macatangay, Nelson Evangelista, Jascha Borlas, Jonelle Francisco, Kristoffer Orbina, Robert Carl Arrojo, Richard Macaroyo, Mary Antonette Olmoguez, Emhel Sario, Joy Ann de Vera, Kate Nicole Tengco, Yvez Bañaga, Christian Macalinao, Sherwin Layoso, Cherry Lambarte, Grace Castillo, Ramon del Prado, Piah Luna, John Lawrence Layoso, Jobert Salvador, Michael Kho Lim, Melanie Casul, Joni Cham, Boots Anson-Roa, Ricky Davao, Butch Francisco, Jose Javier Reyes, Roxlee, Lourd De Veyra, Amante del Mundo, Vim Nadera, Joe Jardi, Rey Langit, Joel Torre, Tirso Cruz III",
-    "producers": "",
-    "screenplay": "",
-    "production_designer": "",
-    "cinematographer": "",
-    "editor": "",
+    "producers": "Clodualdo de Mundo Jr., Herky del Mundo",
+    "screenplay": "Clodualdo del Mundo Jr.",
+    "production_designer": "Cesar Hernando",
+    "cinematographer": "Herky del Mundo",
+    "editor": "Daniel Adapon",
     "sound": "",
-    "music": "",
+    "music": "Lorrie Ilustre",
     "now_showing": false,
     "watch": [
       {
@@ -14438,7 +14442,7 @@
     ],
     "awards": [
       {
-        "film": false
+        "film": true
       },
       {
         "special_jury": false
@@ -14472,7 +14476,7 @@
         "cinematography": false
       },
       {
-        "editing": false
+        "editing": true
       },
       {
         "sound": false
@@ -14484,9 +14488,9 @@
         "production": false
       }
     ],
-    "genre": "",
-    "letterboxd": "",
-    "trailer": ""
+    "genre": "Drama",
+    "letterboxd": "https://letterboxd.com/film/pepot-artista/",
+    "trailer": "https://www.youtube.com/watch?v=fsPrcIkR2Cc"
   },
   {
     "year": 2005,
@@ -14495,13 +14499,13 @@
     "description": "A man’s friends hire a prostitute on his birthday for him to lose his virginity. But after finding out that she is a middle-aged woman, they decide to ditch her, except for the birthday boy, who likes older women.",
     "director": "Emmanuel Dela Cruz",
     "cast": "Jaclyn Jose, Angelo Ilagan, Pierro Rodriguez, Alchris Galura, Miguel Iñigo Guño",
-    "producers": "",
-    "screenplay": "",
-    "production_designer": "",
-    "cinematographer": "",
-    "editor": "",
+    "producers": "Jade Castro, Moira Lang, Miguel V. Fabie III",
+    "screenplay": "Emmanuel Dela Cruz",
+    "production_designer": "Lena Cobangbang",
+    "cinematographer": "Miguel V. Fabie III",
+    "editor": "Jaime Davila",
     "sound": "",
-    "music": "",
+    "music": "Jessie Lasaten",
     "now_showing": false,
     "watch": [
       {
@@ -14556,9 +14560,9 @@
         "production": false
       }
     ],
-    "genre": "",
-    "letterboxd": "",
-    "trailer": ""
+    "genre": "Drama",
+    "letterboxd": "https://letterboxd.com/film/one-night-2005/",
+    "trailer": "https://www.youtube.com/watch?v=vp4HlWI7SQg"
   },
   {
     "year": 2005,
@@ -14567,13 +14571,13 @@
     "description": "A cellphone collector a.k.a. snatcher steals a drug dealer’s phone and the delivery that eventually leads into a confrontation with the syndicate’s angry boss who wants his money.",
     "director": "Michael Angelo Dagñalan",
     "cast": "Jourdan Sebastian, Joel Olano, Teddy Corpuz, Ida Ramos, Berting Labra, Archie Adamos, Maui Manalo, Ronald Tupas, Oz Mendoza, Vanessa Liwanag, Benjo Mariano, Bombi Plata, Sigfreid Barros-Sanchez, Lawrence Fajardo, Jobin Ballesteros",
-    "producers": "",
-    "screenplay": "",
-    "production_designer": "",
-    "cinematographer": "",
-    "editor": "",
-    "sound": "",
-    "music": "",
+    "producers": "Michael Angelo Dagñalan, Jun Aves, Jay Guevarra",
+    "screenplay": "Michael Angelo Dagñalan",
+    "production_designer": "Armand Samonte",
+    "cinematographer": "Rodolfo Aves Jr.",
+    "editor": "Milos Curameng",
+    "sound": "Joseph Santos",
+    "music": "Jobin Ballesteros",
     "now_showing": false,
     "watch": [
       {
@@ -14628,9 +14632,9 @@
         "production": false
       }
     ],
-    "genre": "",
-    "letterboxd": "",
-    "trailer": ""
+    "genre": "Action, Comedy, Crime",
+    "letterboxd": "https://letterboxd.com/film/snatcher/",
+    "trailer": "https://www.youtube.com/watch?v=xbvF1ZlMugk"
   },
   {
     "year": 2005,
@@ -14639,13 +14643,13 @@
     "description": "Sexually frustrated Perla wants out of her marriage; servant Lea yearns for power; streetwalker Joan has a secret; and Diana is lost in grief. They find escape and salvation in the only place that inspires hope: the karaoke bar.",
     "director": "Ron Bryant",
     "cast": "Ronnie Lazaro, Pen Medina, Elizabeth Oropesa",
-    "producers": "",
-    "screenplay": "",
-    "production_designer": "",
-    "cinematographer": "",
-    "editor": "",
+    "producers": "Byronic Films",
+    "screenplay": "Ron Bryant",
+    "production_designer": "Jupz Gutierez",
+    "cinematographer": "Rodolfo Aves Jr.",
+    "editor": "Ryan De Lara, Jeffrey Ramos",
     "sound": "",
-    "music": "",
+    "music": "Gary Granada",
     "now_showing": false,
     "watch": [
       {
@@ -14685,7 +14689,7 @@
         "screenplay": false
       },
       {
-        "cinematography": false
+        "cinematography": true
       },
       {
         "editing": false
@@ -14700,9 +14704,9 @@
         "production": false
       }
     ],
-    "genre": "",
-    "letterboxd": "",
-    "trailer": ""
+    "genre": "Comedy",
+    "letterboxd": "https://letterboxd.com/film/baryoke/",
+    "trailer": "https://www.youtube.com/watch?v=KNgV3aBDrVI"
   },
   {
     "year": 2005,
@@ -14711,13 +14715,13 @@
     "description": "Lolo Joseph, the stubborn and loud-mouthed patriarch, whose illness tears his two daughters Cely and Beth to make a decision whether to end or prolong his life.",
     "director": "Rica Arevalot",
     "cast": "Eddie Garcia, Angel Aquino, Nonie Buencamino, Irma Adlawan",
-    "producers": "",
-    "screenplay": "",
-    "production_designer": "",
-    "cinematographer": "",
-    "editor": "",
-    "sound": "",
-    "music": "",
+    "producers": "Alessandra Beltran, Rica Arevalo",
+    "screenplay": "Rica Arevalo",
+    "production_designer": "Katrina Villa",
+    "cinematographer": "Ogi Sugatan",
+    "editor": "Anna Isabelle Matutina",
+    "sound": "Nonoy Dadivas",
+    "music": "Tris Suguitan",
     "now_showing": false,
     "watch": [
       {
@@ -14735,11 +14739,11 @@
         "audience": false
       },
       {
-        "direction": false
+        "direction": true
       },
       {
-        "actor": false,
-        "name": ""
+        "actor": true,
+        "name": "Eddie Garcia"
       },
       {
         "actress": false,
@@ -14772,9 +14776,9 @@
         "production": false
       }
     ],
-    "genre": "",
-    "letterboxd": "",
-    "trailer": ""
+    "genre": "Comedy, Drama",
+    "letterboxd": "https://letterboxd.com/film/icu-bed-7/",
+    "trailer": "https://www.youtube.com/watch?v=4wblnYEFvGs"
   },
   {
     "year": 2005,
@@ -14783,13 +14787,13 @@
     "description": "Luis, a motel roomboy, finds out the place where he is renting a room is about to be demolished. This sends him hunting for a new place to live with the help of Melba, a prostitute who is a regular client at the motel. Lonely and vulnerable, Luis starts falling for Melba. But giving into his emotions means abandoning his wife, Mercy, who is recuperating from a mental relapse in a mental institution.",
     "director": "Aloy Adlawan",
     "cast": "Polo Ravales, Meryll Soriano, Chanda Romero",
-    "producers": "",
-    "screenplay": "",
-    "production_designer": "",
+    "producers": "Aloy Adlawan",
+    "screenplay": "Aloy Adlawan",
+    "production_designer": "Rei Nicolas",
     "cinematographer": "",
-    "editor": "",
+    "editor": "Bambam Luneta",
     "sound": "",
-    "music": "",
+    "music": "Dix Buhay, R.A. Rivera",
     "now_showing": false,
     "watch": [
       {
@@ -14844,8 +14848,8 @@
         "production": false
       }
     ],
-    "genre": "",
-    "letterboxd": "",
-    "trailer": ""
+    "genre": "Drama",
+    "letterboxd": "https://letterboxd.com/film/room-boy/",
+    "trailer": "https://www.youtube.com/watch?v=oCE7tsa7NCE"
   }
 ]

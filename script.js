@@ -16,6 +16,13 @@ const platformNames = {
 
 const whatsNew = [
   {
+    date: "08.29.26",
+    version: "3.8",
+    updates: [
+      "<b><i> Tukso (2007)</b></i> is available for streaming at the CCP website",
+    ],
+  },
+  {
     date: "08.25.26",
     version: "3.7",
     updates: [
@@ -324,6 +331,8 @@ const awardNames = {
   production: "Best Production Design",
 
   ensemble: "Best Ensemble",
+
+  citation: "Special Acting Performance Citation",
 
   audience: "Audience Choice Award",
 
