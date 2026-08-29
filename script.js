@@ -334,9 +334,15 @@ const awardNames = {
 
   citation: "Special Acting Performance Citation",
 
+  citation_d: "Special Citation for Directing",
+
+  citation_e: "Special Citation for Acting Ensemble",
+
   audience: "Audience Choice Award",
 
   netpac: "NETPAC Award",
+
+  nccta: "National Council for Children's Television Award",
 };
 
 /* =========================================================

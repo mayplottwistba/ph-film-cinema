@@ -7505,10 +7505,10 @@
         "film": false
       },
       {
-        "special_jury": false
+        "special_jury": true
       },
       {
-        "audience": false
+        "audience": true
       },
       {
         "direction": false
@@ -7518,8 +7518,8 @@
         "name": ""
       },
       {
-        "actress": false,
-        "name": ""
+        "actress": true,
+        "name": "Vilma Santos"
       },
       {
         "supporting_actor": false,
@@ -7530,7 +7530,7 @@
         "name": ""
       },
       {
-        "screenplay": false
+        "screenplay": true
       },
       {
         "cinematography": false
@@ -7595,8 +7595,8 @@
         "name": ""
       },
       {
-        "supporting_actor": false,
-        "name": ""
+        "supporting_actor": true,
+        "name": "Joey Paras"
       },
       {
         "supporting_actress": false,
@@ -7870,7 +7870,7 @@
     ],
     "awards": [
       {
-        "film": false
+        "film": true
       },
       {
         "special_jury": false
@@ -7879,7 +7879,7 @@
         "audience": false
       },
       {
-        "direction": false
+        "direction": true
       },
       {
         "actor": false,
@@ -7890,8 +7890,8 @@
         "name": ""
       },
       {
-        "supporting_actor": false,
-        "name": ""
+        "supporting_actor": true,
+        "name": "TJ Trinidad"
       },
       {
         "supporting_actress": false,
@@ -7901,19 +7901,19 @@
         "screenplay": false
       },
       {
-        "cinematography": false
+        "cinematography": true
       },
       {
-        "editing": false
+        "editing": true
       },
       {
-        "sound": false
+        "sound": true
       },
       {
-        "music": false
+        "music": true
       },
       {
-        "production": false
+        "production": true
       }
     ],
     "genre": "",
@@ -8057,7 +8057,7 @@
         "music": false
       },
       {
-        "production": false
+        "production": true
       }
     ],
     "genre": "",
@@ -8377,7 +8377,7 @@
         "film": false
       },
       {
-        "special_jury": false
+        "special_jury": true
       },
       {
         "audience": false
@@ -8386,8 +8386,8 @@
         "direction": false
       },
       {
-        "actor": false,
-        "name": ""
+        "actor": true,
+        "name": "Mimi Juareza"
       },
       {
         "actress": false,
@@ -8402,7 +8402,7 @@
         "name": ""
       },
       {
-        "screenplay": false
+        "screenplay": true
       },
       {
         "cinematography": false
@@ -8411,7 +8411,7 @@
         "editing": false
       },
       {
-        "sound": false
+        "sound": true
       },
       {
         "music": false
@@ -8518,50 +8518,57 @@
     ],
     "awards": [
       {
-        "film": false
+        "film": true
       },
       {
         "special_jury": false
       },
       {
-        "audience": false
+        "audience": true
       },
       {
-        "direction": false
+        "direction": true
       },
       {
         "actor": false,
         "name": ""
       },
       {
-        "actress": false,
-        "name": ""
+        "actress": true,
+        "name": "Irma Adlawan"
       },
       {
         "supporting_actor": false,
         "name": ""
       },
       {
-        "supporting_actress": false,
-        "name": ""
+        "supporting_actress": true,
+        "name": "Jasmine Curtis-Smith"
       },
       {
         "screenplay": false
       },
       {
-        "cinematography": false
+        "cinematography": true
       },
       {
-        "editing": false
+        "editing": true
       },
       {
         "sound": false
       },
       {
-        "music": false
+        "music": true
       },
       {
         "production": false
+      },
+      {
+        "netpac": true
+      },
+      {
+        "citation_e": true,
+        "name": "Irma Adlawan, Marc Alvarez, Mercedes Cabral, Jasmine Curtis-Smith, Ping Medina"
       }
     ],
     "genre": "",
@@ -8607,25 +8614,25 @@
         "name": ""
       },
       {
-        "actress": false,
-        "name": ""
+        "actress": true,
+        "name": "Judy Ann Santos, Iza Calzado, Agot Isidro, Janice de Belen"
       },
       {
         "supporting_actor": false,
         "name": ""
       },
       {
-        "supporting_actress": false,
-        "name": ""
+        "supporting_actress": true,
+        "name": "Judy Ann Santos, Iza Calzado, Agot Isidro, Janice de Belen"
       },
       {
-        "screenplay": false
+        "screenplay": true
       },
       {
         "cinematography": false
       },
       {
-        "editing": false
+        "editing": true
       },
       {
         "sound": false
@@ -8688,8 +8695,8 @@
         "name": ""
       },
       {
-        "supporting_actress": false,
-        "name": ""
+        "supporting_actress": true,
+        "name": "Anita Linda"
       },
       {
         "screenplay": false
@@ -8737,7 +8744,7 @@
     ],
     "awards": [
       {
-        "film": false
+        "film": true
       },
       {
         "special_jury": false
@@ -8746,15 +8753,15 @@
         "audience": false
       },
       {
-        "direction": false
+        "direction": true
       },
       {
         "actor": false,
         "name": ""
       },
       {
-        "actress": false,
-        "name": ""
+        "actress": true,
+        "name": "Ama Quiambao"
       },
       {
         "supporting_actor": false,
@@ -8768,7 +8775,7 @@
         "screenplay": false
       },
       {
-        "cinematography": false
+        "cinematography": true
       },
       {
         "editing": false
@@ -8781,6 +8788,9 @@
       },
       {
         "production": false
+      },
+      {
+        "netpac" : true
       }
     ],
     "genre": "",
@@ -8810,7 +8820,7 @@
     ],
     "awards": [
       {
-        "film": false
+        "film": true
       },
       {
         "special_jury": false
@@ -8830,8 +8840,8 @@
         "name": ""
       },
       {
-        "supporting_actor": false,
-        "name": ""
+        "supporting_actor": true,
+        "name": "Arthur Acuña"
       },
       {
         "supporting_actress": false,
@@ -8888,14 +8898,14 @@
         "special_jury": false
       },
       {
-        "audience": false
+        "audience": true
       },
       {
         "direction": false
       },
       {
-        "actor": false,
-        "name": ""
+        "actor": true,
+        "name": "Eddie Garcia"
       },
       {
         "actress": false,
@@ -8926,6 +8936,9 @@
       },
       {
         "production": false
+      },
+      {
+        "netpac": true
       }
     ],
     "genre": "",
@@ -8991,7 +9004,7 @@
         "editing": false
       },
       {
-        "sound": false
+        "sound": true
       },
       {
         "music": false
@@ -9057,19 +9070,19 @@
         "screenplay": false
       },
       {
-        "cinematography": false
+        "cinematography": true
       },
       {
         "editing": false
       },
       {
-        "sound": false
+        "sound": true
       },
       {
         "music": false
       },
       {
-        "production": false
+        "production": true
       }
     ],
     "genre": "",
@@ -9101,13 +9114,13 @@
         "film": false
       },
       {
-        "special_jury": false
+        "special_jury": true
       },
       {
         "audience": false
       },
       {
-        "direction": false
+        "direction": true
       },
       {
         "actor": false,
@@ -9138,7 +9151,7 @@
         "sound": false
       },
       {
-        "music": false
+        "music": true
       },
       {
         "production": false
@@ -9204,7 +9217,7 @@
         "cinematography": false
       },
       {
-        "editing": false
+        "editing": true
       },
       {
         "sound": false
@@ -9334,8 +9347,8 @@
         "name": ""
       },
       {
-        "supporting_actor": false,
-        "name": ""
+        "supporting_actor": true,
+        "name": "Joross Gambo"
       },
       {
         "supporting_actress": false,
@@ -9357,7 +9370,7 @@
         "music": false
       },
       {
-        "production": false
+        "production": true
       }
     ],
     "genre": "",
@@ -9464,7 +9477,7 @@
         "special_jury": false
       },
       {
-        "audience": false
+        "audience": true
       },
       {
         "direction": false
@@ -9498,7 +9511,7 @@
         "sound": false
       },
       {
-        "music": false
+        "music": true
       },
       {
         "production": false
@@ -9542,8 +9555,8 @@
         "direction": false
       },
       {
-        "actor": false,
-        "name": ""
+        "actor": true,
+        "name": "Kristoffer King"
       },
       {
         "actress": false,
@@ -9605,7 +9618,7 @@
         "film": false
       },
       {
-        "special_jury": false
+        "special_jury": true
       },
       {
         "audience": false
@@ -9630,7 +9643,7 @@
         "name": ""
       },
       {
-        "screenplay": false
+        "screenplay": true
       },
       {
         "cinematography": false
@@ -9681,7 +9694,7 @@
         "special_jury": false
       },
       {
-        "audience": false
+        "audience": true
       },
       {
         "direction": false
@@ -9695,8 +9708,8 @@
         "name": ""
       },
       {
-        "supporting_actor": false,
-        "name": ""
+        "supporting_actor": true,
+        "name": "Jim Pebanco"
       },
       {
         "supporting_actress": false,
@@ -9782,10 +9795,10 @@
         "cinematography": false
       },
       {
-        "editing": false
+        "editing": true
       },
       {
-        "sound": false
+        "sound": true
       },
       {
         "music": false
@@ -9821,7 +9834,7 @@
     ],
     "awards": [
       {
-        "film": false
+        "film": true
       },
       {
         "special_jury": false
@@ -9837,22 +9850,22 @@
         "name": ""
       },
       {
-        "actress": false,
-        "name": ""
+        "actress": true,
+        "name": "Raquel Villavicencio"
       },
       {
         "supporting_actor": false,
         "name": ""
       },
       {
-        "supporting_actress": false,
-        "name": ""
+        "supporting_actress": true,
+        "name": "Julia Clarete"
       },
       {
         "screenplay": false
       },
       {
-        "cinematography": false
+        "cinematography": true
       },
       {
         "editing": false
@@ -9864,7 +9877,7 @@
         "music": false
       },
       {
-        "production": false
+        "production": true
       }
     ],
     "genre": "",
@@ -9924,7 +9937,7 @@
         "screenplay": false
       },
       {
-        "cinematography": false
+        "cinematography": true
       },
       {
         "editing": false
@@ -9933,7 +9946,7 @@
         "sound": false
       },
       {
-        "music": false
+        "music": true
       },
       {
         "production": false
@@ -9981,8 +9994,8 @@
         "direction": false
       },
       {
-        "actor": false,
-        "name": ""
+        "actor": true,
+        "name": "Bembol Roco"
       },
       {
         "actress": false,
@@ -10003,7 +10016,7 @@
         "cinematography": false
       },
       {
-        "editing": false
+        "editing": true
       },
       {
         "sound": false
@@ -10050,7 +10063,7 @@
         "audience": false
       },
       {
-        "direction": false
+        "direction": true
       },
       {
         "actor": false,
@@ -10078,10 +10091,10 @@
         "editing": false
       },
       {
-        "sound": false
+        "sound": true
       },
       {
-        "music": false
+        "music": true
       },
       {
         "production": false
@@ -10113,24 +10126,24 @@
     ],
     "awards": [
       {
-        "film": false
+        "film": true
       },
       {
         "special_jury": false
       },
       {
-        "audience": false
+        "audience": true
       },
       {
-        "direction": false
+        "direction": true
       },
       {
         "actor": false,
         "name": ""
       },
       {
-        "actress": false,
-        "name": ""
+        "actress": true,
+        "name": "Eugene Domingo"
       },
       {
         "supporting_actor": false,
@@ -10141,7 +10154,7 @@
         "name": ""
       },
       {
-        "screenplay": false
+        "screenplay": true
       },
       {
         "cinematography": false
@@ -10413,8 +10426,8 @@
         "direction": false
       },
       {
-        "actor": false,
-        "name": ""
+        "actor": true,
+        "name": "Edgar Allan Guzman"
       },
       {
         "actress": false,
@@ -10476,7 +10489,7 @@
         "film": false
       },
       {
-        "special_jury": false
+        "special_jury": true
       },
       {
         "audience": false
@@ -10493,12 +10506,12 @@
         "name": ""
       },
       {
-        "supporting_actor": false,
-        "name": ""
+        "supporting_actor": true,
+        "name": "Arthur Acuña"
       },
       {
-        "supporting_actress": false,
-        "name": ""
+        "supporting_actress": true,
+        "name": "Shamaine Buencamino"
       },
       {
         "screenplay": false
@@ -10634,8 +10647,8 @@
         "name": ""
       },
       {
-        "actress": false,
-        "name": ""
+        "actress": true,
+        "name": "Lovi Poe"
       },
       {
         "supporting_actor": false,
@@ -10646,10 +10659,10 @@
         "name": ""
       },
       {
-        "screenplay": false
+        "screenplay": true
       },
       {
-        "cinematography": false
+        "cinematography": true
       },
       {
         "editing": false
@@ -10658,7 +10671,7 @@
         "sound": false
       },
       {
-        "music": false
+        "music": true
       },
       {
         "production": false
@@ -10766,13 +10779,13 @@
         "film": false
       },
       {
-        "special_jury": false
+        "special_jury": true
       },
       {
-        "audience": false
+        "audience": true
       },
       {
-        "direction": false
+        "direction": true
       },
       {
         "actor": false,
@@ -10791,10 +10804,10 @@
         "name": ""
       },
       {
-        "screenplay": false
+        "screenplay": true
       },
       {
-        "cinematography": false
+        "cinematography": true
       },
       {
         "editing": false
@@ -10907,7 +10920,7 @@
     ],
     "awards": [
       {
-        "film": false
+        "film": true
       },
       {
         "special_jury": false
@@ -10916,11 +10929,11 @@
         "audience": false
       },
       {
-        "direction": false
+        "direction": true
       },
       {
-        "actor": false,
-        "name": ""
+        "actor": true,
+        "name": "John Arcilla"
       },
       {
         "actress": false,
@@ -10941,7 +10954,7 @@
         "cinematography": false
       },
       {
-        "editing": false
+        "editing": true
       },
       {
         "sound": false
@@ -11013,7 +11026,7 @@
         "cinematography": false
       },
       {
-        "editing": false
+        "editing": true
       },
       {
         "sound": false
@@ -11051,7 +11064,7 @@
     ],
     "awards": [
       {
-        "film": false
+        "film": true
       },
       {
         "special_jury": false
@@ -11063,20 +11076,20 @@
         "direction": false
       },
       {
-        "actor": false,
-        "name": ""
+        "actor": true,
+        "name": "Baron Geisler"
       },
       {
-        "actress": false,
-        "name": ""
+        "actress": true,
+        "name": "Meryll Soriano"
       },
       {
         "supporting_actor": false,
         "name": ""
       },
       {
-        "supporting_actress": false,
-        "name": ""
+        "supporting_actress": true,
+        "name": "Karla Pambid"
       },
       {
         "screenplay": false
@@ -11094,7 +11107,7 @@
         "music": false
       },
       {
-        "production": false
+        "production": true
       }
     ],
     "genre": "",
@@ -11143,8 +11156,8 @@
         "name": ""
       },
       {
-        "supporting_actor": false,
-        "name": ""
+        "supporting_actor": true,
+        "name": "Tirso Cruz III"
       },
       {
         "supporting_actress": false,
@@ -11219,14 +11232,14 @@
         "name": ""
       },
       {
-        "supporting_actress": false,
-        "name": ""
+        "supporting_actress": true,
+        "name": "LJ Reyes"
       },
       {
         "screenplay": false
       },
       {
-        "cinematography": false
+        "cinematography": true
       },
       {
         "editing": false
@@ -11273,7 +11286,7 @@
         "special_jury": false
       },
       {
-        "audience": false
+        "audience": true
       },
       {
         "direction": false
@@ -11359,8 +11372,8 @@
         "name": ""
       },
       {
-        "supporting_actor": false,
-        "name": ""
+        "supporting_actor": true,
+        "name": "Emilio Garcia"
       },
       {
         "supporting_actress": false,
@@ -11376,7 +11389,7 @@
         "editing": false
       },
       {
-        "sound": false
+        "sound": true
       },
       {
         "music": false
@@ -11414,7 +11427,7 @@
         "film": false
       },
       {
-        "special_jury": false
+        "special_jury": true
       },
       {
         "audience": false
@@ -11630,7 +11643,7 @@
         "film": false
       },
       {
-        "special_jury": false
+        "special_jury": true
       },
       {
         "audience": false
@@ -11742,7 +11755,7 @@
         "music": false
       },
       {
-        "production": false
+        "production": true
       }
     ],
     "genre": "",
@@ -11802,7 +11815,7 @@
         "screenplay": false
       },
       {
-        "cinematography": false
+        "cinematography": true
       },
       {
         "editing": false
@@ -11843,7 +11856,7 @@
     ],
     "awards": [
       {
-        "film": false
+        "film": true
       },
       {
         "special_jury": false
@@ -11855,8 +11868,8 @@
         "direction": false
       },
       {
-        "actor": false,
-        "name": ""
+        "actor": true,
+        "name": "Lou Veloso"
       },
       {
         "actress": false,
@@ -11955,7 +11968,10 @@
         "sound": false
       },
       {
-        "music": false
+        "music": true
+      },
+      {
+        "nccta": true
       },
       {
         "production": false
@@ -11992,6 +12008,10 @@
       {
         "special_jury": false
       },
+      {
+        "citation_d": true,
+        "name:" : "Pepe Diokno"
+      }
       {
         "audience": false
       },
@@ -12059,7 +12079,7 @@
     ],
     "awards": [
       {
-        "film": false
+        "film": true
       },
       {
         "special_jury": false
@@ -12159,7 +12179,7 @@
         "name": ""
       },
       {
-        "screenplay": false
+        "screenplay": true
       },
       {
         "cinematography": false
@@ -12219,16 +12239,16 @@
         "name": ""
       },
       {
-        "actress": false,
-        "name": ""
+        "actress": true,
+        "name": "Ina Feleo"
       },
       {
         "supporting_actor": false,
         "name": ""
       },
       {
-        "supporting_actress": false,
-        "name": ""
+        "supporting_actress": true,
+        "name": "Tessie Tomas"
       },
       {
         "screenplay": false
@@ -12295,8 +12315,8 @@
         "name": ""
       },
       {
-        "supporting_actor": false,
-        "name": ""
+        "supporting_actor": true,
+        "name": "Arnold Reyes"
       },
       {
         "supporting_actress": false,
@@ -12347,7 +12367,7 @@
     ],
     "awards": [
       {
-        "film": false
+        "film": true
       },
       {
         "special_jury": false
@@ -12359,8 +12379,8 @@
         "direction": false
       },
       {
-        "actor": false,
-        "name": ""
+        "actor": true,
+        "name": "Baron Geisler"
       },
       {
         "actress": false,
@@ -12381,7 +12401,7 @@
         "cinematography": false
       },
       {
-        "editing": false
+        "editing": true
       },
       {
         "sound": false
@@ -12462,7 +12482,7 @@
         "music": false
       },
       {
-        "production": false
+        "production": true
       }
     ],
     "genre": "",
@@ -12497,29 +12517,29 @@
         "special_jury": false
       },
       {
-        "audience": false
+        "audience": true
       },
       {
-        "direction": false
+        "direction": true
       },
       {
         "actor": false,
         "name": ""
       },
       {
-        "actress": false,
-        "name": ""
+        "actress": true,
+        "name": "Mylene Dizon "
       },
       {
         "supporting_actor": false,
         "name": ""
       },
       {
-        "supporting_actress": false,
-        "name": ""
+        "supporting_actress": true,
+        "name": "Eugene Domingo"
       },
       {
-        "screenplay": false
+        "screenplay": true
       },
       {
         "cinematography": false
@@ -12638,7 +12658,7 @@
         "film": false
       },
       {
-        "special_jury": false
+        "special_jury": true
       },
       {
         "audience": false
@@ -12655,8 +12675,8 @@
         "name": ""
       },
       {
-        "supporting_actor": false,
-        "name": ""
+        "supporting_actor": true,
+        "name": "Yul Servo"
       },
       {
         "supporting_actress": false,
@@ -12666,7 +12686,7 @@
         "screenplay": false
       },
       {
-        "cinematography": false
+        "cinematography": true
       },
       {
         "editing": false
@@ -12675,7 +12695,7 @@
         "sound": false
       },
       {
-        "music": false
+        "music": true
       },
       {
         "production": false
@@ -12960,7 +12980,7 @@
         "editing": false
       },
       {
-        "sound": false
+        "sound": true
       },
       {
         "music": false
@@ -13026,7 +13046,7 @@
         "screenplay": false
       },
       {
-        "cinematography": false
+        "cinematography": true
       },
       {
         "editing": false
@@ -13068,7 +13088,7 @@
     ],
     "awards": [
       {
-        "film": false
+        "film": true
       },
       {
         "special_jury": false
@@ -13080,7 +13100,7 @@
         "direction": false
       },
       {
-        "actor": false,
+        "actor": true,
         "name": ""
       },
       {
@@ -13089,7 +13109,7 @@
       },
       {
         "supporting_actor": false,
-        "name": ""
+        "name": "Shielbert Manuel, Havy Bagatsing, Karl Eigger Balingit"
       },
       {
         "supporting_actress": false,
@@ -13105,7 +13125,7 @@
         "editing": false
       },
       {
-        "sound": false
+        "sound": true
       },
       {
         "music": false
@@ -13143,7 +13163,7 @@
         "film": false
       },
       {
-        "special_jury": false
+        "special_jury": true
       },
       {
         "audience": false
@@ -13156,8 +13176,8 @@
         "name": ""
       },
       {
-        "actress": false,
-        "name": ""
+        "actress": true,
+        "name": "Ina Feleo"
       },
       {
         "supporting_actor": false,
@@ -13315,7 +13335,7 @@
         "screenplay": false
       },
       {
-        "cinematography": false
+        "cinematography": true
       },
       {
         "editing": false
@@ -13324,7 +13344,7 @@
         "sound": false
       },
       {
-        "music": false
+        "music": true
       },
       {
         "production": false
@@ -13434,10 +13454,10 @@
         "special_jury": false
       },
       {
-        "audience": false
+        "audience": true
       },
       {
-        "direction": false
+        "direction": true
       },
       {
         "actor": false,
@@ -13600,7 +13620,7 @@
         "name": ""
       },
       {
-        "screenplay": false
+        "screenplay": true
       },
       {
         "cinematography": false
@@ -13719,7 +13739,7 @@
         "film": false
       },
       {
-        "special_jury": false
+        "special_jury": true
       },
       {
         "audience": false
@@ -13728,8 +13748,8 @@
         "direction": false
       },
       {
-        "actor": false,
-        "name": ""
+        "actor": true,
+        "name": "Alchris Galura"
       },
       {
         "actress": false,
@@ -13744,7 +13764,7 @@
         "name": ""
       },
       {
-        "screenplay": false
+        "screenplay": true
       },
       {
         "cinematography": false
@@ -13759,7 +13779,7 @@
         "music": false
       },
       {
-        "production": false
+        "production": true
       }
     ],
     "genre": "",
@@ -13804,8 +13824,8 @@
         "name": ""
       },
       {
-        "actress": false,
-        "name": ""
+        "actress": true,
+        "name": "Angel Aquino"
       },
       {
         "supporting_actor": false,
@@ -13819,7 +13839,7 @@
         "screenplay": false
       },
       {
-        "cinematography": false
+        "cinematography": true
       },
       {
         "editing": false
@@ -14013,7 +14033,7 @@
         "audience": false
       },
       {
-        "direction": false
+        "direction": true
       },
       {
         "actor": false,
@@ -14038,13 +14058,13 @@
         "cinematography": false
       },
       {
-        "editing": false
+        "editing": true
       },
       {
         "sound": false
       },
       {
-        "music": false
+        "music": true
       },
       {
         "production": false
@@ -14148,7 +14168,7 @@
     ],
     "awards": [
       {
-        "film": false
+        "film": true
       },
       {
         "special_jury": false
@@ -14182,10 +14202,10 @@
         "cinematography": false
       },
       {
-        "editing": false
+        "editing": true
       },
       {
-        "sound": false
+        "sound": true
       },
       {
         "music": false
