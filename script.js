@@ -16,6 +16,13 @@ const platformNames = {
 
 const whatsNew = [
   {
+    date: "08.30.26",
+    version: "3.9",
+    updates: [
+      "<b><i> ANi (2018)</b></i> is available for streaming (Youtube)",
+    ],
+  },
+  {
     date: "08.29.26",
     version: "3.8",
     updates: [
