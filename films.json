@@ -4664,6 +4664,9 @@
     "watch": [
       {
         "type": "netflix"
+      },
+      {
+        "type": "ccp"
       }
     ],
     "awards": [
@@ -5023,7 +5026,7 @@
     "now_showing": false,
     "watch": [
       {
-        "type": "none"
+        "type": "ccp"
       }
     ],
     "awards": [
@@ -9254,7 +9257,7 @@
     "now_showing": false,
     "watch": [
       {
-        "type": "none"
+        "type": "ccp"
       }
     ],
     "awards": [
@@ -11783,7 +11786,7 @@
     "now_showing": false,
     "watch": [
       {
-        "type": "none"
+        "type": "ccp"
       }
     ],
     "awards": [
@@ -12798,7 +12801,7 @@
     "now_showing": false,
     "watch": [
       {
-        "type": "none"
+        "type": "ccp"
       }
     ],
     "awards": [
@@ -13231,7 +13234,7 @@
     "now_showing": false,
     "watch": [
       {
-        "type": "none"
+        "type": "ccp"
       }
     ],
     "awards": [

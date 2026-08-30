@@ -20,6 +20,7 @@ const whatsNew = [
     version: "3.9",
     updates: [
       "<b><i> ANi (2018)</b></i> is available for streaming (Youtube)",
+      "<b><i> Mga Dayo (2012)</b></i>, <b><i> Musmos na Sumibol sa Gubat ng Digma (2018)</b></i>, <b><i> 24K (2009)</b></i>, <b><i> Gulong (2007)</b></i>, <b><i> My Fake American Accent (2008)</b></i>, and <b><i> Pan de Salawal (2018)</b></i> are available for streaming at the CCP Channel",
     ],
   },
   {
