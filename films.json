@@ -1688,7 +1688,13 @@
     "now_showing": false,
     "watch": [
       {
-        "type": "none"
+        "type": "prime"
+      },
+      {
+        "type": "appletv"
+      },
+      {
+        "type": "googletv"
       }
     ],
     "awards": [

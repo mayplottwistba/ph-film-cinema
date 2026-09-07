@@ -13,9 +13,17 @@ const platformNames = {
   none: "No known source",
   highballtv: "Highball TV",
   vimeo: "Vimeo",
+  googletv: "Google TV",
 };
 
 const whatsNew = [
+  {
+    date: "09.08.26",
+    version: "3.11",
+    updates: [
+      "<b><i> An Errand (2024)</b></i> is now available for streaming at Apple TV, Google TV, and Prime Video",
+    ],
+  },
   {
     date: "09.07.26",
     version: "3.10",
@@ -533,6 +541,8 @@ function populateWatchFilters() {
     ["alexanderstreet", "Alexander Street"],
     
     ["vimeo", "Vimeo"],
+
+    ["googletv", "Google TV"],
 
     // ["now_showing", "Now Showing"],
   ];
@@ -3957,6 +3967,7 @@ function renderPlatformSummary() {
     "alexanderstreet",
     "vimeo",
     "highballtv",
+    "Google TV",
     "none",
   ];
 

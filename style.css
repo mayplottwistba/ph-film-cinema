@@ -3263,6 +3263,24 @@ html.dark-mode .watched-checkbox input:checked + span::before {
   border-color: #d040da;
 }
 
+.platform.googletv {
+  background: #06742b;
+  color: #000;
+  border-color: #06742b;
+}
+
+.platform.googletv:hover {
+  background: #089c37;
+  color: #000;
+  border-color: #089c37;
+}
+
+.platform.highballtv:hover {
+  background: #d040da;
+  color: #000;
+  border-color: #d040da;
+}
+
 .platform.vimeo {
   background: #05d1c0;
   color: #000;
@@ -3371,6 +3389,10 @@ html.dark-mode .watched-checkbox input:checked + span::before {
 
 .platform-summary-vimeo {
   background: #07b3a4;
+}
+
+.platform-summary-googletv {
+  background: #089c37;
 }
 
 .platform-summary-highballtv {
