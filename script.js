@@ -3955,6 +3955,7 @@ function renderPlatformSummary() {
     "kinema",
     "amazon",
     "alexanderstreet",
+    "vimeo",
     "none",
   ];
 
