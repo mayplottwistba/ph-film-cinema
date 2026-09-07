@@ -3956,6 +3956,7 @@ function renderPlatformSummary() {
     "amazon",
     "alexanderstreet",
     "vimeo",
+    "highballtv",
     "none",
   ];
 
