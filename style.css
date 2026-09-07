@@ -3249,6 +3249,20 @@ html.dark-mode .watched-checkbox input:checked + span::before {
   border-color: #511620;
 }
 
+
+
+.platform.highballtv {
+  background: #cc1bdc;
+  color: #000;
+  border-color: #cc1bdc;
+}
+
+.platform.highballtv:hover {
+  background: #d040da;
+  color: #000;
+  border-color: #d040da;
+}
+
 .platform.vimeo {
   background: #05d1c0;
   color: #000;
@@ -3353,6 +3367,14 @@ html.dark-mode .watched-checkbox input:checked + span::before {
 
 .platform-summary-alexanderstreet {
   background: #6b1f2b;
+}
+
+.platform-summary-vimeo {
+  background: #07b3a4;
+}
+
+.platform-summary-highballtv {
+  background: #cc1bdc;
 }
 
 .platform-summary-none {
