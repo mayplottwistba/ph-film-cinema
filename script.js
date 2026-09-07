@@ -12,9 +12,17 @@ const platformNames = {
   alexanderstreet: "Alexander Street",
   none: "No known source",
   highballtv: "Highball TV",
+  vimeo: "Vimeo",
 };
 
 const whatsNew = [
+  {
+    date: "09.07.26",
+    version: "3.10",
+    updates: [
+      "<b><i> Bulawan Nga Usa (2023)</b></i> is available for streaming at Vimeo",
+    ],
+  },
   {
     date: "08.30.26",
     version: "3.9",
@@ -523,6 +531,8 @@ function populateWatchFilters() {
     ["highballtv", "Highball TV"],
 
     ["alexanderstreet", "Alexander Street"],
+    
+    ["vimeo", "Vimeo"],
 
     // ["now_showing", "Now Showing"],
   ];

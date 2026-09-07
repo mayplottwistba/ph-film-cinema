@@ -3249,6 +3249,18 @@ html.dark-mode .watched-checkbox input:checked + span::before {
   border-color: #511620;
 }
 
+.platform.vimeo {
+  background: #05d1c0;
+  color: #000;
+  border-color: #05d1c0;
+}
+
+.platform.alexanderstreet:hover {
+  background: #07b3a4;
+  color: #000;
+  border-color: #07b3a4;
+}
+
 /* =========================================================
    STREAMING PLATFORM LEGEND
    ========================================================= */

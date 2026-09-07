@@ -2555,7 +2555,8 @@
     "now_showing": false,
     "watch": [
       {
-        "type": "none"
+        "type": "vimeo",
+        "url": "https://vimeo.com/1223924697"
       }
     ],
     "awards": [
