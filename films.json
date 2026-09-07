@@ -12006,7 +12006,8 @@
     "now_showing": false,
     "watch": [
       {
-        "type": "highballtv"
+        "type": "highballtv",
+        "url": "https://www.highballtv.com/videos/clash"
       }
     ],
     "awards": [
