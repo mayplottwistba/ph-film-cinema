@@ -3967,7 +3967,7 @@ function renderPlatformSummary() {
     "alexanderstreet",
     "vimeo",
     "highballtv",
-    "Google TV",
+    "googletv",
     "none",
   ];
 
