@@ -2778,7 +2778,7 @@
     "now_showing": false,
     "watch": [
       {
-        "type": "none"
+        "type": "netflix"
       }
     ],
     "awards": [

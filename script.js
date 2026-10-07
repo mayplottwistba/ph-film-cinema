@@ -18,6 +18,13 @@ const platformNames = {
 
 const whatsNew = [
   {
+    date: "10.08.26",
+    version: "3.12",
+    updates: [
+      "<b><i> When This Is All Over (2023)</b></i> is now available for streaming on Netflix",
+    ],
+  },
+  {
     date: "09.08.26",
     version: "3.11",
     updates: [
